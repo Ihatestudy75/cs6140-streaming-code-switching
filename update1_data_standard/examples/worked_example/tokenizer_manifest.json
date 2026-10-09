@@ -1,0 +1,5 @@
+{
+  "model": "google-bert/bert-base-multilingual-cased",
+  "revision": "3f076fdb1ab68d5b2880cb87a0886f315b8146f8",
+  "tokenizer_sha256": "78b44c32238e3b5e83d1deaa63c3fa1466ddf73547ce641a36f75180079ab45f"
+}

@@ -1,0 +1,1 @@
+{"schema_version": "1.0", "sequence_id": "demo:fr_en:001:001", "record_id": "demo:fr_en:001", "item_id": 1, "language_pair": "fr_en", "languages": ["fr", "en"], "source_file": "INVENTED_EDUCATIONAL_EXAMPLE", "source_row": 1, "source_path": [0], "text": "Je pense que the referee is unfair.", "text_sha256": "a59fc4cf97d2a063d815fe7a0493bbbbcf1363fdf2793aa4b14efda59b95341f"}
