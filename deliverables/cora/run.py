@@ -218,6 +218,12 @@ def main():
     p.write_json(out / 'audit.json', audit_report)
     (out / 'all_pilot_record_ids.txt').write_text('\n'.join(sorted(pilots)) + '\n')
     p.split(SimpleNamespace(inputs=inputs, seed=6140, train_records=str(out / 'all_pilot_record_ids.txt'), out=str(out / 'combined')))
+    # Portable provenance: retain input checksums without machine-specific paths.
+    split_manifest_path = out / 'combined/split_manifest.json'
+    split_manifest = json.loads(split_manifest_path.read_text())
+    split_manifest['inputs'] = {Path(k).relative_to(ROOT).as_posix(): v
+                                for k, v in split_manifest['inputs'].items()}
+    p.write_json(split_manifest_path, split_manifest)
     data, splits = out / 'combined/labeled_tokens.jsonl', out / 'combined/splits.jsonl'
     entries = p.read_jsonl(splits)
     split_by_sid = {r['sequence_id']: r['split'] for r in entries}
