@@ -1,0 +1,203 @@
+{
+  "yue_en": {
+    "sequences": 2560,
+    "valid_positions": 54848,
+    "switches": 3030,
+    "switch_rate": 0.055243582263710615,
+    "duration_class_counts": {
+      "0": 732,
+      "1": 846,
+      "2": 1130
+    },
+    "duration_class_proportions": {
+      "0": 0.27031019202363366,
+      "1": 0.3124076809453471,
+      "2": 0.4172821270310192
+    },
+    "switches_without_duration": 322,
+    "review_status_counts": {
+      "unreviewed": 2464,
+      "reviewed": 96
+    },
+    "unknown_subwords": 1950,
+    "records": 499,
+    "pilot_records": 20,
+    "extraction_issues": {
+      "warning": 16,
+      "error": 1
+    },
+    "extraction_errors": [
+      {
+        "id": "yue_en:cb9f144e3464:108148",
+        "severity": "error",
+        "reason": "invalid character '《' (U+300A) (<unknown>, line 1)"
+      }
+    ],
+    "tokenized_sha256": "45f3c2b4e700b1b4fe0d3b0fc31e5272f92179360647772db139fd97d9932a2b",
+    "manifest": {
+      "schema_version": "1.0",
+      "tokenizer": {
+        "model": "google-bert/bert-base-multilingual-cased",
+        "revision": "3f076fdb1ab68d5b2880cb87a0886f315b8146f8",
+        "tokenizer_sha256": "78b44c32238e3b5e83d1deaa63c3fa1466ddf73547ce641a36f75180079ab45f"
+      },
+      "neutral_policy": "inherit_previous",
+      "end_policy": "observed",
+      "texts_sha256": "01c8b5542f001512c0bc2db921e4e645d156730648b2467bd90721ffaf221f06",
+      "lid_sha256": "f92ff3980ca950e955370918de98f2706f117ec65043e2b73662c27077a934fc",
+      "pipeline_sha256": "1fd93f7bf15ab3970d7211f11c9938acddc222c5e7dafee7d150f5c8832c9a0c",
+      "allow_unreviewed": true,
+      "versions": {
+        "transformers": "4.57.6",
+        "tokenizers": "0.22.2"
+      }
+    },
+    "total_tokens": 60834,
+    "unk_token_count": 1671
+  },
+  "ko_en": {
+    "sequences": 1529,
+    "valid_positions": 41863,
+    "switches": 2237,
+    "switch_rate": 0.05343620858514679,
+    "duration_class_counts": {
+      "0": 487,
+      "1": 592,
+      "2": 1084
+    },
+    "duration_class_proportions": {
+      "0": 0.22515025427646787,
+      "1": 0.2736939435968562,
+      "2": 0.5011558021266759
+    },
+    "switches_without_duration": 74,
+    "review_status_counts": {
+      "unreviewed": 1463,
+      "reviewed": 66
+    },
+    "unknown_subwords": 172,
+    "records": 500,
+    "pilot_records": 20,
+    "extraction_issues": {
+      "warning": 13
+    },
+    "extraction_errors": [],
+    "tokenized_sha256": "3ebe4d4e77352c55ceb4be068797248789908e93805648d9f7976c7bcf7f1db4",
+    "manifest": {
+      "schema_version": "1.0",
+      "tokenizer": {
+        "model": "google-bert/bert-base-multilingual-cased",
+        "revision": "3f076fdb1ab68d5b2880cb87a0886f315b8146f8",
+        "tokenizer_sha256": "78b44c32238e3b5e83d1deaa63c3fa1466ddf73547ce641a36f75180079ab45f"
+      },
+      "neutral_policy": "inherit_previous",
+      "end_policy": "observed",
+      "texts_sha256": "5e56acc05c2242302534a54a3516ac083a63f860f3b949dd782d44ee2091039b",
+      "lid_sha256": "9848d15885b0655954231d6173ec9588ef20ffe79790ea57512e715ddf54a2dd",
+      "pipeline_sha256": "1fd93f7bf15ab3970d7211f11c9938acddc222c5e7dafee7d150f5c8832c9a0c",
+      "allow_unreviewed": true,
+      "versions": {
+        "transformers": "4.57.6",
+        "tokenizers": "0.22.2"
+      }
+    },
+    "total_tokens": 43685,
+    "unk_token_count": 122
+  },
+  "ru_en": {
+    "sequences": 1564,
+    "valid_positions": 40585,
+    "switches": 2082,
+    "switch_rate": 0.05129974128372551,
+    "duration_class_counts": {
+      "0": 361,
+      "1": 696,
+      "2": 966
+    },
+    "duration_class_proportions": {
+      "0": 0.17844784972812655,
+      "1": 0.3440434997528423,
+      "2": 0.47750865051903113
+    },
+    "switches_without_duration": 59,
+    "review_status_counts": {
+      "unreviewed": 1506,
+      "reviewed": 58
+    },
+    "unknown_subwords": 109,
+    "records": 500,
+    "pilot_records": 20,
+    "extraction_issues": {},
+    "extraction_errors": [],
+    "tokenized_sha256": "07aa775ec2ce96bd64afff6b83e386f6b7fc692f5cede644aa29a719c33a8283",
+    "manifest": {
+      "schema_version": "1.0",
+      "tokenizer": {
+        "model": "google-bert/bert-base-multilingual-cased",
+        "revision": "3f076fdb1ab68d5b2880cb87a0886f315b8146f8",
+        "tokenizer_sha256": "78b44c32238e3b5e83d1deaa63c3fa1466ddf73547ce641a36f75180079ab45f"
+      },
+      "neutral_policy": "inherit_previous",
+      "end_policy": "observed",
+      "texts_sha256": "19e0ac1f457f4439b9fbf8d1f4cc5cbe20611b69c972f66d2433f1fd961c7ef0",
+      "lid_sha256": "efcd9e2cd6e97ddf821d443cb9b8390beb7e3ed0e2cd386487ce59a844a3f859",
+      "pipeline_sha256": "1fd93f7bf15ab3970d7211f11c9938acddc222c5e7dafee7d150f5c8832c9a0c",
+      "allow_unreviewed": true,
+      "versions": {
+        "transformers": "4.57.6",
+        "tokenizers": "0.22.2"
+      }
+    },
+    "total_tokens": 42364,
+    "unk_token_count": 106
+  },
+  "ms_en": {
+    "sequences": 1568,
+    "valid_positions": 36634,
+    "switches": 2929,
+    "switch_rate": 0.07995304908008953,
+    "duration_class_counts": {
+      "0": 915,
+      "1": 878,
+      "2": 953
+    },
+    "duration_class_proportions": {
+      "0": 0.3332119446467589,
+      "1": 0.3197378004369993,
+      "2": 0.3470502549162418
+    },
+    "switches_without_duration": 183,
+    "review_status_counts": {
+      "unreviewed": 1518,
+      "reviewed": 50
+    },
+    "unknown_subwords": 1512,
+    "records": 500,
+    "pilot_records": 20,
+    "extraction_issues": {
+      "warning": 7
+    },
+    "extraction_errors": [],
+    "tokenized_sha256": "38a77b4ca697e1d3312743bff46a8e61693871d055d026254d30d26c0520715f",
+    "manifest": {
+      "schema_version": "1.0",
+      "tokenizer": {
+        "model": "google-bert/bert-base-multilingual-cased",
+        "revision": "3f076fdb1ab68d5b2880cb87a0886f315b8146f8",
+        "tokenizer_sha256": "78b44c32238e3b5e83d1deaa63c3fa1466ddf73547ce641a36f75180079ab45f"
+      },
+      "neutral_policy": "inherit_previous",
+      "end_policy": "observed",
+      "texts_sha256": "a07e4509fcdb5d8b6a67217b9af84b4f5a9d9f456e87536e232dc054e1a28088",
+      "lid_sha256": "901a329571cfd7ef99f1ad6412855641b9a325983e8d39898693a2d337fa04fa",
+      "pipeline_sha256": "1fd93f7bf15ab3970d7211f11c9938acddc222c5e7dafee7d150f5c8832c9a0c",
+      "allow_unreviewed": true,
+      "versions": {
+        "transformers": "4.57.6",
+        "tokenizers": "0.22.2"
+      }
+    },
+    "total_tokens": 40205,
+    "unk_token_count": 81
+  }
+}
