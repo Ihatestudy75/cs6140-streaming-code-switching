@@ -1,0 +1,23 @@
+{
+  "source_pr": "https://github.com/Ihatestudy75/cs6140-streaming-code-switching/pull/1",
+  "source_commit": "440cbb032b57b010f909ac30d6deb223f7e642dc",
+  "python": "3.9.6",
+  "runner_sha256": "60820e297e366f732da6e094377a6255d9feb366c22d836663ef4a664e381c1c",
+  "split_sha256": "719d6812068543afeaf27cb45cd9fe60468c6951fe6c37a75b483300fd869017",
+  "data_sha256": "23ec5700bed5e7e53ded8bbc1f864d1130c0831acbdbc40430d132675994bef1",
+  "seed": 6140,
+  "evaluation": "Pseudo-label agreement. Reviewed pilot records are model-assisted and training-only.",
+  "selection_metric": "Validation positive switch F1 averaged equally over 12 language-pair x CS-type cells.",
+  "input_contract": "Token IDs at positions <=t only. No language IDs, cs_type, labels, text or future token at inference.",
+  "checks": {
+    "pilot_train_only": true,
+    "no_record_overlap": true,
+    "no_normalized_exact_text_overlap": true
+  },
+  "not_verified": [
+    "Raw CSV absent",
+    "Independent human LID quality",
+    "Near duplicates/template leakage",
+    "Retokenization from frozen tokenizer assets (assets absent)"
+  ]
+}

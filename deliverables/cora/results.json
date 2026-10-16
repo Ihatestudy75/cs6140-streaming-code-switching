@@ -1,0 +1,3916 @@
+{
+  "current_token": {
+    "config": {
+      "order": 1,
+      "min_count": 1,
+      "threshold": 0.35,
+      "validation_macro_pair_type_switch_f1": 0.5462572214838134
+    },
+    "validation": {
+      "pooled": {
+        "positions": 16565,
+        "gold_switches": 1036,
+        "tp": 519,
+        "fp": 405,
+        "fn": 517,
+        "tn": 15124,
+        "precision": 0.5616883116883117,
+        "recall": 0.500965250965251,
+        "switch_f1": 0.5295918367346939,
+        "duration_support": 972,
+        "duration_accuracy_oracle_switch": 0.5010288065843621,
+        "duration_macro_f1_oracle_switch": 0.4774811453126371,
+        "duration_confusion_matrix": [
+          [
+            76,
+            105,
+            57
+          ],
+          [
+            74,
+            164,
+            106
+          ],
+          [
+            32,
+            111,
+            247
+          ]
+        ],
+        "joint_duration_macro_f1": 0.25453407441656245
+      },
+      "by_pair_type": {
+        "ko_en | Extra-sentential / Tag switching": {
+          "positions": 1211,
+          "gold_switches": 73,
+          "tp": 66,
+          "fp": 9,
+          "fn": 7,
+          "tn": 1129,
+          "precision": 0.88,
+          "recall": 0.9041095890410958,
+          "switch_f1": 0.8918918918918919,
+          "duration_support": 71,
+          "duration_accuracy_oracle_switch": 0.6619718309859155,
+          "duration_macro_f1_oracle_switch": 0.5833614769784982,
+          "duration_confusion_matrix": [
+            [
+              3,
+              19,
+              0
+            ],
+            [
+              0,
+              36,
+              1
+            ],
+            [
+              2,
+              2,
+              8
+            ]
+          ],
+          "joint_duration_macro_f1": 0.41750841750841755
+        },
+        "ko_en | Intersentential": {
+          "positions": 1342,
+          "gold_switches": 50,
+          "tp": 42,
+          "fp": 25,
+          "fn": 8,
+          "tn": 1267,
+          "precision": 0.6268656716417911,
+          "recall": 0.84,
+          "switch_f1": 0.717948717948718,
+          "duration_support": 47,
+          "duration_accuracy_oracle_switch": 0.8723404255319149,
+          "duration_macro_f1_oracle_switch": 0.46913580246913583,
+          "duration_confusion_matrix": [
+            [
+              2,
+              1,
+              0
+            ],
+            [
+              2,
+              0,
+              1
+            ],
+            [
+              2,
+              0,
+              39
+            ]
+          ],
+          "joint_duration_macro_f1": 0.3008130081300813
+        },
+        "ko_en | Intrasentential": {
+          "positions": 1413,
+          "gold_switches": 86,
+          "tp": 39,
+          "fp": 25,
+          "fn": 47,
+          "tn": 1302,
+          "precision": 0.609375,
+          "recall": 0.45348837209302323,
+          "switch_f1": 0.52,
+          "duration_support": 86,
+          "duration_accuracy_oracle_switch": 0.47674418604651164,
+          "duration_macro_f1_oracle_switch": 0.44182095555093265,
+          "duration_confusion_matrix": [
+            [
+              9,
+              5,
+              8
+            ],
+            [
+              4,
+              6,
+              8
+            ],
+            [
+              3,
+              17,
+              26
+            ]
+          ],
+          "joint_duration_macro_f1": 0.20370370370370372
+        },
+        "ms_en | Extra-sentential / Tag switching": {
+          "positions": 829,
+          "gold_switches": 85,
+          "tp": 50,
+          "fp": 30,
+          "fn": 35,
+          "tn": 714,
+          "precision": 0.625,
+          "recall": 0.5882352941176471,
+          "switch_f1": 0.6060606060606061,
+          "duration_support": 79,
+          "duration_accuracy_oracle_switch": 0.4177215189873418,
+          "duration_macro_f1_oracle_switch": 0.3686868686868687,
+          "duration_confusion_matrix": [
+            [
+              5,
+              22,
+              3
+            ],
+            [
+              4,
+              23,
+              12
+            ],
+            [
+              1,
+              4,
+              5
+            ]
+          ],
+          "joint_duration_macro_f1": 0.20741394527802295
+        },
+        "ms_en | Intersentential": {
+          "positions": 1029,
+          "gold_switches": 47,
+          "tp": 34,
+          "fp": 34,
+          "fn": 13,
+          "tn": 948,
+          "precision": 0.5,
+          "recall": 0.723404255319149,
+          "switch_f1": 0.591304347826087,
+          "duration_support": 43,
+          "duration_accuracy_oracle_switch": 0.7209302325581395,
+          "duration_macro_f1_oracle_switch": 0.5612092825207579,
+          "duration_confusion_matrix": [
+            [
+              3,
+              2,
+              0
+            ],
+            [
+              1,
+              2,
+              6
+            ],
+            [
+              2,
+              1,
+              26
+            ]
+          ],
+          "joint_duration_macro_f1": 0.27890848786371175
+        },
+        "ms_en | Intrasentential": {
+          "positions": 1677,
+          "gold_switches": 201,
+          "tp": 59,
+          "fp": 51,
+          "fn": 142,
+          "tn": 1425,
+          "precision": 0.5363636363636364,
+          "recall": 0.2935323383084577,
+          "switch_f1": 0.37942122186495175,
+          "duration_support": 190,
+          "duration_accuracy_oracle_switch": 0.28421052631578947,
+          "duration_macro_f1_oracle_switch": 0.282101275897314,
+          "duration_confusion_matrix": [
+            [
+              23,
+              27,
+              23
+            ],
+            [
+              22,
+              17,
+              25
+            ],
+            [
+              16,
+              23,
+              14
+            ]
+          ],
+          "joint_duration_macro_f1": 0.08040404040404041
+        },
+        "ru_en | Extra-sentential / Tag switching": {
+          "positions": 1365,
+          "gold_switches": 93,
+          "tp": 68,
+          "fp": 35,
+          "fn": 25,
+          "tn": 1237,
+          "precision": 0.6601941747572816,
+          "recall": 0.7311827956989247,
+          "switch_f1": 0.6938775510204082,
+          "duration_support": 92,
+          "duration_accuracy_oracle_switch": 0.5869565217391305,
+          "duration_macro_f1_oracle_switch": 0.42981925687025463,
+          "duration_confusion_matrix": [
+            [
+              1,
+              14,
+              3
+            ],
+            [
+              3,
+              43,
+              7
+            ],
+            [
+              0,
+              11,
+              10
+            ]
+          ],
+          "joint_duration_macro_f1": 0.25957147874956094
+        },
+        "ru_en | Intersentential": {
+          "positions": 1101,
+          "gold_switches": 40,
+          "tp": 30,
+          "fp": 44,
+          "fn": 10,
+          "tn": 1017,
+          "precision": 0.40540540540540543,
+          "recall": 0.75,
+          "switch_f1": 0.5263157894736842,
+          "duration_support": 37,
+          "duration_accuracy_oracle_switch": 0.8378378378378378,
+          "duration_macro_f1_oracle_switch": 0.625496342737722,
+          "duration_confusion_matrix": [
+            [
+              1,
+              1,
+              0
+            ],
+            [
+              1,
+              3,
+              2
+            ],
+            [
+              1,
+              1,
+              27
+            ]
+          ],
+          "joint_duration_macro_f1": 0.2922705314009662
+        },
+        "ru_en | Intrasentential": {
+          "positions": 1571,
+          "gold_switches": 104,
+          "tp": 44,
+          "fp": 75,
+          "fn": 60,
+          "tn": 1392,
+          "precision": 0.3697478991596639,
+          "recall": 0.4230769230769231,
+          "switch_f1": 0.39461883408071746,
+          "duration_support": 102,
+          "duration_accuracy_oracle_switch": 0.35294117647058826,
+          "duration_macro_f1_oracle_switch": 0.3357383357383357,
+          "duration_confusion_matrix": [
+            [
+              4,
+              5,
+              5
+            ],
+            [
+              10,
+              19,
+              11
+            ],
+            [
+              0,
+              35,
+              13
+            ]
+          ],
+          "joint_duration_macro_f1": 0.07503500535375998
+        },
+        "yue_en | Extra-sentential / Tag switching": {
+          "positions": 1288,
+          "gold_switches": 83,
+          "tp": 28,
+          "fp": 18,
+          "fn": 55,
+          "tn": 1187,
+          "precision": 0.6086956521739131,
+          "recall": 0.3373493975903614,
+          "switch_f1": 0.43410852713178294,
+          "duration_support": 77,
+          "duration_accuracy_oracle_switch": 0.5064935064935064,
+          "duration_macro_f1_oracle_switch": 0.44387365720699057,
+          "duration_confusion_matrix": [
+            [
+              4,
+              4,
+              5
+            ],
+            [
+              9,
+              9,
+              13
+            ],
+            [
+              1,
+              6,
+              26
+            ]
+          ],
+          "joint_duration_macro_f1": 0.17029239766081872
+        },
+        "yue_en | Intersentential": {
+          "positions": 2017,
+          "gold_switches": 99,
+          "tp": 36,
+          "fp": 33,
+          "fn": 63,
+          "tn": 1885,
+          "precision": 0.5217391304347826,
+          "recall": 0.36363636363636365,
+          "switch_f1": 0.42857142857142855,
+          "duration_support": 82,
+          "duration_accuracy_oracle_switch": 0.6097560975609756,
+          "duration_macro_f1_oracle_switch": 0.4833946581883566,
+          "duration_confusion_matrix": [
+            [
+              11,
+              2,
+              7
+            ],
+            [
+              11,
+              2,
+              7
+            ],
+            [
+              1,
+              4,
+              37
+            ]
+          ],
+          "joint_duration_macro_f1": 0.15555555555555556
+        },
+        "yue_en | Intrasentential": {
+          "positions": 1722,
+          "gold_switches": 75,
+          "tp": 23,
+          "fp": 26,
+          "fn": 52,
+          "tn": 1621,
+          "precision": 0.46938775510204084,
+          "recall": 0.30666666666666664,
+          "switch_f1": 0.3709677419354839,
+          "duration_support": 66,
+          "duration_accuracy_oracle_switch": 0.45454545454545453,
+          "duration_macro_f1_oracle_switch": 0.4392686697586879,
+          "duration_confusion_matrix": [
+            [
+              10,
+              3,
+              3
+            ],
+            [
+              7,
+              4,
+              13
+            ],
+            [
+              3,
+              7,
+              16
+            ]
+          ],
+          "joint_duration_macro_f1": 0.17424242424242423
+        }
+      },
+      "macro_pair_type_switch_f1": 0.5462572214838134,
+      "by_pair": {
+        "ko_en": {
+          "positions": 3966,
+          "gold_switches": 209,
+          "tp": 147,
+          "fp": 59,
+          "fn": 62,
+          "tn": 3698,
+          "precision": 0.7135922330097088,
+          "recall": 0.7033492822966507,
+          "switch_f1": 0.708433734939759,
+          "duration_support": 204,
+          "duration_accuracy_oracle_switch": 0.6323529411764706,
+          "duration_macro_f1_oracle_switch": 0.5767109214477636,
+          "duration_confusion_matrix": [
+            [
+              14,
+              25,
+              8
+            ],
+            [
+              6,
+              42,
+              10
+            ],
+            [
+              7,
+              19,
+              73
+            ]
+          ],
+          "joint_duration_macro_f1": 0.3748395798957597
+        },
+        "ms_en": {
+          "positions": 3535,
+          "gold_switches": 333,
+          "tp": 143,
+          "fp": 115,
+          "fn": 190,
+          "tn": 3087,
+          "precision": 0.5542635658914729,
+          "recall": 0.4294294294294294,
+          "switch_f1": 0.48392554991539766,
+          "duration_support": 312,
+          "duration_accuracy_oracle_switch": 0.3782051282051282,
+          "duration_macro_f1_oracle_switch": 0.3775144534926193,
+          "duration_confusion_matrix": [
+            [
+              31,
+              51,
+              26
+            ],
+            [
+              27,
+              42,
+              43
+            ],
+            [
+              19,
+              28,
+              45
+            ]
+          ],
+          "joint_duration_macro_f1": 0.20720354913903302
+        },
+        "ru_en": {
+          "positions": 4037,
+          "gold_switches": 237,
+          "tp": 142,
+          "fp": 154,
+          "fn": 95,
+          "tn": 3646,
+          "precision": 0.4797297297297297,
+          "recall": 0.5991561181434599,
+          "switch_f1": 0.5328330206378987,
+          "duration_support": 231,
+          "duration_accuracy_oracle_switch": 0.5238095238095238,
+          "duration_macro_f1_oracle_switch": 0.44971139971139973,
+          "duration_confusion_matrix": [
+            [
+              6,
+              20,
+              8
+            ],
+            [
+              14,
+              65,
+              20
+            ],
+            [
+              1,
+              47,
+              50
+            ]
+          ],
+          "joint_duration_macro_f1": 0.24365255502980054
+        },
+        "yue_en": {
+          "positions": 5027,
+          "gold_switches": 257,
+          "tp": 87,
+          "fp": 77,
+          "fn": 170,
+          "tn": 4693,
+          "precision": 0.5304878048780488,
+          "recall": 0.33852140077821014,
+          "switch_f1": 0.41330166270783847,
+          "duration_support": 225,
+          "duration_accuracy_oracle_switch": 0.5288888888888889,
+          "duration_macro_f1_oracle_switch": 0.4744337530010235,
+          "duration_confusion_matrix": [
+            [
+              25,
+              9,
+              15
+            ],
+            [
+              27,
+              15,
+              33
+            ],
+            [
+              5,
+              17,
+              79
+            ]
+          ],
+          "joint_duration_macro_f1": 0.17299229922992299
+        }
+      },
+      "by_cs_type": {
+        "Extra-sentential / Tag switching": {
+          "positions": 4693,
+          "gold_switches": 334,
+          "tp": 212,
+          "fp": 92,
+          "fn": 122,
+          "tn": 4267,
+          "precision": 0.6973684210526315,
+          "recall": 0.6347305389221557,
+          "switch_f1": 0.664576802507837,
+          "duration_support": 319,
+          "duration_accuracy_oracle_switch": 0.542319749216301,
+          "duration_macro_f1_oracle_switch": 0.4776382573250646,
+          "duration_confusion_matrix": [
+            [
+              13,
+              59,
+              11
+            ],
+            [
+              16,
+              111,
+              33
+            ],
+            [
+              4,
+              23,
+              49
+            ]
+          ],
+          "joint_duration_macro_f1": 0.2779646262810114
+        },
+        "Intersentential": {
+          "positions": 5489,
+          "gold_switches": 236,
+          "tp": 142,
+          "fp": 136,
+          "fn": 94,
+          "tn": 5117,
+          "precision": 0.5107913669064749,
+          "recall": 0.6016949152542372,
+          "switch_f1": 0.5525291828793775,
+          "duration_support": 209,
+          "duration_accuracy_oracle_switch": 0.7320574162679426,
+          "duration_macro_f1_oracle_switch": 0.5420533700576812,
+          "duration_confusion_matrix": [
+            [
+              17,
+              6,
+              7
+            ],
+            [
+              15,
+              7,
+              16
+            ],
+            [
+              6,
+              6,
+              129
+            ]
+          ],
+          "joint_duration_macro_f1": 0.25298257874507063
+        },
+        "Intrasentential": {
+          "positions": 6383,
+          "gold_switches": 466,
+          "tp": 165,
+          "fp": 177,
+          "fn": 301,
+          "tn": 5740,
+          "precision": 0.4824561403508772,
+          "recall": 0.3540772532188841,
+          "switch_f1": 0.4084158415841584,
+          "duration_support": 444,
+          "duration_accuracy_oracle_switch": 0.36261261261261263,
+          "duration_macro_f1_oracle_switch": 0.3637027209054879,
+          "duration_confusion_matrix": [
+            [
+              46,
+              40,
+              39
+            ],
+            [
+              43,
+              46,
+              57
+            ],
+            [
+              22,
+              82,
+              69
+            ]
+          ],
+          "joint_duration_macro_f1": 0.13687934863064397
+        }
+      }
+    },
+    "test": {
+      "pooled": {
+        "positions": 16387,
+        "gold_switches": 944,
+        "tp": 486,
+        "fp": 445,
+        "fn": 458,
+        "tn": 14998,
+        "precision": 0.5220193340494093,
+        "recall": 0.5148305084745762,
+        "switch_f1": 0.5184,
+        "duration_support": 881,
+        "duration_accuracy_oracle_switch": 0.5244040862656073,
+        "duration_macro_f1_oracle_switch": 0.4848877278786043,
+        "duration_confusion_matrix": [
+          [
+            65,
+            97,
+            77
+          ],
+          [
+            41,
+            126,
+            70
+          ],
+          [
+            16,
+            118,
+            271
+          ]
+        ],
+        "joint_duration_macro_f1": 0.2443187597109422
+      },
+      "by_pair_type": {
+        "ko_en | Extra-sentential / Tag switching": {
+          "positions": 1431,
+          "gold_switches": 81,
+          "tp": 69,
+          "fp": 17,
+          "fn": 12,
+          "tn": 1333,
+          "precision": 0.8023255813953488,
+          "recall": 0.8518518518518519,
+          "switch_f1": 0.8263473053892215,
+          "duration_support": 79,
+          "duration_accuracy_oracle_switch": 0.6075949367088608,
+          "duration_macro_f1_oracle_switch": 0.49333333333333335,
+          "duration_confusion_matrix": [
+            [
+              1,
+              19,
+              2
+            ],
+            [
+              0,
+              34,
+              0
+            ],
+            [
+              2,
+              8,
+              13
+            ]
+          ],
+          "joint_duration_macro_f1": 0.38730158730158726
+        },
+        "ko_en | Intersentential": {
+          "positions": 1200,
+          "gold_switches": 50,
+          "tp": 37,
+          "fp": 18,
+          "fn": 13,
+          "tn": 1132,
+          "precision": 0.6727272727272727,
+          "recall": 0.74,
+          "switch_f1": 0.7047619047619048,
+          "duration_support": 49,
+          "duration_accuracy_oracle_switch": 0.8367346938775511,
+          "duration_macro_f1_oracle_switch": 0.4870390653523183,
+          "duration_confusion_matrix": [
+            [
+              3,
+              0,
+              3
+            ],
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              3,
+              38
+            ]
+          ],
+          "joint_duration_macro_f1": 0.2716049382716049
+        },
+        "ko_en | Intrasentential": {
+          "positions": 1253,
+          "gold_switches": 88,
+          "tp": 38,
+          "fp": 14,
+          "fn": 50,
+          "tn": 1151,
+          "precision": 0.7307692307692307,
+          "recall": 0.4318181818181818,
+          "switch_f1": 0.5428571428571428,
+          "duration_support": 87,
+          "duration_accuracy_oracle_switch": 0.2988505747126437,
+          "duration_macro_f1_oracle_switch": 0.283030303030303,
+          "duration_confusion_matrix": [
+            [
+              9,
+              9,
+              13
+            ],
+            [
+              4,
+              1,
+              6
+            ],
+            [
+              0,
+              29,
+              16
+            ]
+          ],
+          "joint_duration_macro_f1": 0.04842105263157895
+        },
+        "ms_en | Extra-sentential / Tag switching": {
+          "positions": 571,
+          "gold_switches": 44,
+          "tp": 29,
+          "fp": 14,
+          "fn": 15,
+          "tn": 513,
+          "precision": 0.6744186046511628,
+          "recall": 0.6590909090909091,
+          "switch_f1": 0.6666666666666666,
+          "duration_support": 43,
+          "duration_accuracy_oracle_switch": 0.46511627906976744,
+          "duration_macro_f1_oracle_switch": 0.42399476953252696,
+          "duration_confusion_matrix": [
+            [
+              3,
+              11,
+              3
+            ],
+            [
+              1,
+              13,
+              5
+            ],
+            [
+              0,
+              3,
+              4
+            ]
+          ],
+          "joint_duration_macro_f1": 0.25071225071225073
+        },
+        "ms_en | Intersentential": {
+          "positions": 1567,
+          "gold_switches": 72,
+          "tp": 50,
+          "fp": 57,
+          "fn": 22,
+          "tn": 1438,
+          "precision": 0.4672897196261682,
+          "recall": 0.6944444444444444,
+          "switch_f1": 0.5586592178770949,
+          "duration_support": 63,
+          "duration_accuracy_oracle_switch": 0.7301587301587301,
+          "duration_macro_f1_oracle_switch": 0.5478867852361828,
+          "duration_confusion_matrix": [
+            [
+              9,
+              4,
+              0
+            ],
+            [
+              2,
+              1,
+              5
+            ],
+            [
+              4,
+              2,
+              36
+            ]
+          ],
+          "joint_duration_macro_f1": 0.24816972956820557
+        },
+        "ms_en | Intrasentential": {
+          "positions": 1346,
+          "gold_switches": 144,
+          "tp": 43,
+          "fp": 54,
+          "fn": 101,
+          "tn": 1148,
+          "precision": 0.44329896907216493,
+          "recall": 0.2986111111111111,
+          "switch_f1": 0.35684647302904565,
+          "duration_support": 135,
+          "duration_accuracy_oracle_switch": 0.3925925925925926,
+          "duration_macro_f1_oracle_switch": 0.3933286571584444,
+          "duration_confusion_matrix": [
+            [
+              17,
+              16,
+              15
+            ],
+            [
+              15,
+              16,
+              15
+            ],
+            [
+              5,
+              16,
+              20
+            ]
+          ],
+          "joint_duration_macro_f1": 0.13581780538302277
+        },
+        "ru_en | Extra-sentential / Tag switching": {
+          "positions": 1255,
+          "gold_switches": 70,
+          "tp": 64,
+          "fp": 44,
+          "fn": 6,
+          "tn": 1141,
+          "precision": 0.5925925925925926,
+          "recall": 0.9142857142857143,
+          "switch_f1": 0.7191011235955056,
+          "duration_support": 69,
+          "duration_accuracy_oracle_switch": 0.6086956521739131,
+          "duration_macro_f1_oracle_switch": 0.46112956810631234,
+          "duration_confusion_matrix": [
+            [
+              0,
+              16,
+              1
+            ],
+            [
+              0,
+              30,
+              4
+            ],
+            [
+              0,
+              6,
+              12
+            ]
+          ],
+          "joint_duration_macro_f1": 0.3490838958534233
+        },
+        "ru_en | Intersentential": {
+          "positions": 1152,
+          "gold_switches": 45,
+          "tp": 32,
+          "fp": 49,
+          "fn": 13,
+          "tn": 1058,
+          "precision": 0.3950617283950617,
+          "recall": 0.7111111111111111,
+          "switch_f1": 0.5079365079365079,
+          "duration_support": 43,
+          "duration_accuracy_oracle_switch": 0.8372093023255814,
+          "duration_macro_f1_oracle_switch": 0.5691184141888367,
+          "duration_confusion_matrix": [
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              1,
+              33
+            ]
+          ],
+          "joint_duration_macro_f1": 0.2802721088435374
+        },
+        "ru_en | Intrasentential": {
+          "positions": 1494,
+          "gold_switches": 81,
+          "tp": 24,
+          "fp": 69,
+          "fn": 57,
+          "tn": 1344,
+          "precision": 0.25806451612903225,
+          "recall": 0.2962962962962963,
+          "switch_f1": 0.27586206896551724,
+          "duration_support": 77,
+          "duration_accuracy_oracle_switch": 0.4155844155844156,
+          "duration_macro_f1_oracle_switch": 0.40380160503019774,
+          "duration_confusion_matrix": [
+            [
+              5,
+              3,
+              9
+            ],
+            [
+              1,
+              8,
+              7
+            ],
+            [
+              1,
+              24,
+              19
+            ]
+          ],
+          "joint_duration_macro_f1": 0.04110671936758893
+        },
+        "yue_en | Extra-sentential / Tag switching": {
+          "positions": 1682,
+          "gold_switches": 95,
+          "tp": 34,
+          "fp": 37,
+          "fn": 61,
+          "tn": 1550,
+          "precision": 0.4788732394366197,
+          "recall": 0.35789473684210527,
+          "switch_f1": 0.40963855421686746,
+          "duration_support": 76,
+          "duration_accuracy_oracle_switch": 0.3684210526315789,
+          "duration_macro_f1_oracle_switch": 0.33568627450980393,
+          "duration_confusion_matrix": [
+            [
+              3,
+              7,
+              16
+            ],
+            [
+              5,
+              9,
+              8
+            ],
+            [
+              0,
+              12,
+              16
+            ]
+          ],
+          "joint_duration_macro_f1": 0.12212692967409948
+        },
+        "yue_en | Intersentential": {
+          "positions": 2203,
+          "gold_switches": 100,
+          "tp": 52,
+          "fp": 55,
+          "fn": 48,
+          "tn": 2048,
+          "precision": 0.48598130841121495,
+          "recall": 0.52,
+          "switch_f1": 0.5024154589371981,
+          "duration_support": 94,
+          "duration_accuracy_oracle_switch": 0.5957446808510638,
+          "duration_macro_f1_oracle_switch": 0.4960441856993581,
+          "duration_confusion_matrix": [
+            [
+              6,
+              4,
+              8
+            ],
+            [
+              4,
+              7,
+              11
+            ],
+            [
+              0,
+              11,
+              43
+            ]
+          ],
+          "joint_duration_macro_f1": 0.23536174755686948
+        },
+        "yue_en | Intrasentential": {
+          "positions": 1233,
+          "gold_switches": 74,
+          "tp": 14,
+          "fp": 17,
+          "fn": 60,
+          "tn": 1142,
+          "precision": 0.45161290322580644,
+          "recall": 0.1891891891891892,
+          "switch_f1": 0.26666666666666666,
+          "duration_support": 66,
+          "duration_accuracy_oracle_switch": 0.5151515151515151,
+          "duration_macro_f1_oracle_switch": 0.4717234262125903,
+          "duration_confusion_matrix": [
+            [
+              8,
+              6,
+              6
+            ],
+            [
+              8,
+              5,
+              7
+            ],
+            [
+              2,
+              3,
+              21
+            ]
+          ],
+          "joint_duration_macro_f1": 0.1388888888888889
+        }
+      },
+      "macro_pair_type_switch_f1": 0.5281465909082782,
+      "by_pair": {
+        "ko_en": {
+          "positions": 3884,
+          "gold_switches": 219,
+          "tp": 144,
+          "fp": 49,
+          "fn": 75,
+          "tn": 3616,
+          "precision": 0.7461139896373057,
+          "recall": 0.6575342465753424,
+          "switch_f1": 0.6990291262135923,
+          "duration_support": 215,
+          "duration_accuracy_oracle_switch": 0.5348837209302325,
+          "duration_macro_f1_oracle_switch": 0.4871551081282625,
+          "duration_confusion_matrix": [
+            [
+              13,
+              28,
+              18
+            ],
+            [
+              5,
+              35,
+              6
+            ],
+            [
+              3,
+              40,
+              67
+            ]
+          ],
+          "joint_duration_macro_f1": 0.3114774657682617
+        },
+        "ms_en": {
+          "positions": 3484,
+          "gold_switches": 260,
+          "tp": 122,
+          "fp": 125,
+          "fn": 138,
+          "tn": 3099,
+          "precision": 0.4939271255060729,
+          "recall": 0.46923076923076923,
+          "switch_f1": 0.4812623274161736,
+          "duration_support": 241,
+          "duration_accuracy_oracle_switch": 0.49377593360995853,
+          "duration_macro_f1_oracle_switch": 0.480564751040053,
+          "duration_confusion_matrix": [
+            [
+              29,
+              31,
+              18
+            ],
+            [
+              18,
+              30,
+              25
+            ],
+            [
+              9,
+              21,
+              60
+            ]
+          ],
+          "joint_duration_macro_f1": 0.23542590850024644
+        },
+        "ru_en": {
+          "positions": 3901,
+          "gold_switches": 196,
+          "tp": 120,
+          "fp": 162,
+          "fn": 76,
+          "tn": 3543,
+          "precision": 0.425531914893617,
+          "recall": 0.6122448979591837,
+          "switch_f1": 0.502092050209205,
+          "duration_support": 189,
+          "duration_accuracy_oracle_switch": 0.582010582010582,
+          "duration_macro_f1_oracle_switch": 0.49838541543583803,
+          "duration_confusion_matrix": [
+            [
+              6,
+              21,
+              11
+            ],
+            [
+              1,
+              40,
+              13
+            ],
+            [
+              2,
+              31,
+              64
+            ]
+          ],
+          "joint_duration_macro_f1": 0.2471722026926848
+        },
+        "yue_en": {
+          "positions": 5118,
+          "gold_switches": 269,
+          "tp": 100,
+          "fp": 109,
+          "fn": 169,
+          "tn": 4740,
+          "precision": 0.4784688995215311,
+          "recall": 0.37174721189591076,
+          "switch_f1": 0.41841004184100417,
+          "duration_support": 236,
+          "duration_accuracy_oracle_switch": 0.5,
+          "duration_macro_f1_oracle_switch": 0.44128756830601096,
+          "duration_confusion_matrix": [
+            [
+              17,
+              17,
+              30
+            ],
+            [
+              17,
+              21,
+              26
+            ],
+            [
+              2,
+              26,
+              80
+            ]
+          ],
+          "joint_duration_macro_f1": 0.17873784959428515
+        }
+      },
+      "by_cs_type": {
+        "Extra-sentential / Tag switching": {
+          "positions": 4939,
+          "gold_switches": 290,
+          "tp": 196,
+          "fp": 112,
+          "fn": 94,
+          "tn": 4537,
+          "precision": 0.6363636363636364,
+          "recall": 0.6758620689655173,
+          "switch_f1": 0.6555183946488294,
+          "duration_support": 267,
+          "duration_accuracy_oracle_switch": 0.5168539325842697,
+          "duration_macro_f1_oracle_switch": 0.44258950835535377,
+          "duration_confusion_matrix": [
+            [
+              7,
+              53,
+              22
+            ],
+            [
+              6,
+              86,
+              17
+            ],
+            [
+              2,
+              29,
+              45
+            ]
+          ],
+          "joint_duration_macro_f1": 0.29281582819761937
+        },
+        "Intersentential": {
+          "positions": 6122,
+          "gold_switches": 267,
+          "tp": 171,
+          "fp": 179,
+          "fn": 96,
+          "tn": 5676,
+          "precision": 0.48857142857142855,
+          "recall": 0.6404494382022472,
+          "switch_f1": 0.5542949756888168,
+          "duration_support": 249,
+          "duration_accuracy_oracle_switch": 0.7188755020080321,
+          "duration_macro_f1_oracle_switch": 0.5493946933079225,
+          "duration_confusion_matrix": [
+            [
+              19,
+              10,
+              12
+            ],
+            [
+              7,
+              10,
+              18
+            ],
+            [
+              6,
+              17,
+              150
+            ]
+          ],
+          "joint_duration_macro_f1": 0.25968550491064674
+        },
+        "Intrasentential": {
+          "positions": 5326,
+          "gold_switches": 387,
+          "tp": 119,
+          "fp": 154,
+          "fn": 268,
+          "tn": 4785,
+          "precision": 0.4358974358974359,
+          "recall": 0.30749354005167956,
+          "switch_f1": 0.3606060606060606,
+          "duration_support": 365,
+          "duration_accuracy_oracle_switch": 0.3972602739726027,
+          "duration_macro_f1_oracle_switch": 0.38690275920680023,
+          "duration_confusion_matrix": [
+            [
+              39,
+              34,
+              43
+            ],
+            [
+              28,
+              30,
+              35
+            ],
+            [
+              8,
+              72,
+              76
+            ]
+          ],
+          "joint_duration_macro_f1": 0.09702789353869233
+        }
+      }
+    }
+  },
+  "causal_prefix": {
+    "config": {
+      "order": 5,
+      "min_count": 5,
+      "threshold": 0.35,
+      "validation_macro_pair_type_switch_f1": 0.5768180031613619
+    },
+    "validation": {
+      "pooled": {
+        "positions": 16565,
+        "gold_switches": 1036,
+        "tp": 514,
+        "fp": 302,
+        "fn": 522,
+        "tn": 15227,
+        "precision": 0.6299019607843137,
+        "recall": 0.49613899613899615,
+        "switch_f1": 0.5550755939524838,
+        "duration_support": 972,
+        "duration_accuracy_oracle_switch": 0.4845679012345679,
+        "duration_macro_f1_oracle_switch": 0.4393573986486299,
+        "duration_confusion_matrix": [
+          [
+            53,
+            81,
+            104
+          ],
+          [
+            55,
+            139,
+            150
+          ],
+          [
+            24,
+            87,
+            279
+          ]
+        ],
+        "joint_duration_macro_f1": 0.2879121605223554
+      },
+      "by_pair_type": {
+        "ko_en | Extra-sentential / Tag switching": {
+          "positions": 1211,
+          "gold_switches": 73,
+          "tp": 65,
+          "fp": 8,
+          "fn": 8,
+          "tn": 1130,
+          "precision": 0.8904109589041096,
+          "recall": 0.8904109589041096,
+          "switch_f1": 0.8904109589041096,
+          "duration_support": 71,
+          "duration_accuracy_oracle_switch": 0.6338028169014085,
+          "duration_macro_f1_oracle_switch": 0.5926683716965047,
+          "duration_confusion_matrix": [
+            [
+              6,
+              15,
+              1
+            ],
+            [
+              4,
+              31,
+              2
+            ],
+            [
+              2,
+              2,
+              8
+            ]
+          ],
+          "joint_duration_macro_f1": 0.45959595959595956
+        },
+        "ko_en | Intersentential": {
+          "positions": 1342,
+          "gold_switches": 50,
+          "tp": 43,
+          "fp": 19,
+          "fn": 7,
+          "tn": 1273,
+          "precision": 0.6935483870967742,
+          "recall": 0.86,
+          "switch_f1": 0.7678571428571429,
+          "duration_support": 47,
+          "duration_accuracy_oracle_switch": 0.9148936170212766,
+          "duration_macro_f1_oracle_switch": 0.5197934595524957,
+          "duration_confusion_matrix": [
+            [
+              2,
+              1,
+              0
+            ],
+            [
+              2,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              41
+            ]
+          ],
+          "joint_duration_macro_f1": 0.4245210727969349
+        },
+        "ko_en | Intrasentential": {
+          "positions": 1413,
+          "gold_switches": 86,
+          "tp": 36,
+          "fp": 18,
+          "fn": 50,
+          "tn": 1309,
+          "precision": 0.6666666666666666,
+          "recall": 0.4186046511627907,
+          "switch_f1": 0.5142857142857142,
+          "duration_support": 86,
+          "duration_accuracy_oracle_switch": 0.4186046511627907,
+          "duration_macro_f1_oracle_switch": 0.32390456851726507,
+          "duration_confusion_matrix": [
+            [
+              4,
+              3,
+              15
+            ],
+            [
+              4,
+              3,
+              11
+            ],
+            [
+              4,
+              13,
+              29
+            ]
+          ],
+          "joint_duration_macro_f1": 0.1778898422734039
+        },
+        "ms_en | Extra-sentential / Tag switching": {
+          "positions": 829,
+          "gold_switches": 85,
+          "tp": 49,
+          "fp": 24,
+          "fn": 36,
+          "tn": 720,
+          "precision": 0.6712328767123288,
+          "recall": 0.5764705882352941,
+          "switch_f1": 0.620253164556962,
+          "duration_support": 79,
+          "duration_accuracy_oracle_switch": 0.4177215189873418,
+          "duration_macro_f1_oracle_switch": 0.3801045955268722,
+          "duration_confusion_matrix": [
+            [
+              6,
+              15,
+              9
+            ],
+            [
+              5,
+              21,
+              13
+            ],
+            [
+              2,
+              2,
+              6
+            ]
+          ],
+          "joint_duration_macro_f1": 0.26560846560846557
+        },
+        "ms_en | Intersentential": {
+          "positions": 1029,
+          "gold_switches": 47,
+          "tp": 32,
+          "fp": 21,
+          "fn": 15,
+          "tn": 961,
+          "precision": 0.6037735849056604,
+          "recall": 0.6808510638297872,
+          "switch_f1": 0.64,
+          "duration_support": 43,
+          "duration_accuracy_oracle_switch": 0.6976744186046512,
+          "duration_macro_f1_oracle_switch": 0.4217171717171717,
+          "duration_confusion_matrix": [
+            [
+              1,
+              2,
+              2
+            ],
+            [
+              1,
+              1,
+              7
+            ],
+            [
+              1,
+              0,
+              28
+            ]
+          ],
+          "joint_duration_macro_f1": 0.29203980099502486
+        },
+        "ms_en | Intrasentential": {
+          "positions": 1677,
+          "gold_switches": 201,
+          "tp": 57,
+          "fp": 46,
+          "fn": 144,
+          "tn": 1430,
+          "precision": 0.5533980582524272,
+          "recall": 0.2835820895522388,
+          "switch_f1": 0.375,
+          "duration_support": 190,
+          "duration_accuracy_oracle_switch": 0.2789473684210526,
+          "duration_macro_f1_oracle_switch": 0.276050721493597,
+          "duration_confusion_matrix": [
+            [
+              21,
+              18,
+              34
+            ],
+            [
+              18,
+              11,
+              35
+            ],
+            [
+              11,
+              21,
+              21
+            ]
+          ],
+          "joint_duration_macro_f1": 0.11721464848970864
+        },
+        "ru_en | Extra-sentential / Tag switching": {
+          "positions": 1365,
+          "gold_switches": 93,
+          "tp": 61,
+          "fp": 18,
+          "fn": 32,
+          "tn": 1254,
+          "precision": 0.7721518987341772,
+          "recall": 0.6559139784946236,
+          "switch_f1": 0.7093023255813954,
+          "duration_support": 92,
+          "duration_accuracy_oracle_switch": 0.5543478260869565,
+          "duration_macro_f1_oracle_switch": 0.3893522626441881,
+          "duration_confusion_matrix": [
+            [
+              0,
+              14,
+              4
+            ],
+            [
+              2,
+              39,
+              12
+            ],
+            [
+              0,
+              9,
+              12
+            ]
+          ],
+          "joint_duration_macro_f1": 0.26921675774134796
+        },
+        "ru_en | Intersentential": {
+          "positions": 1101,
+          "gold_switches": 40,
+          "tp": 30,
+          "fp": 30,
+          "fn": 10,
+          "tn": 1031,
+          "precision": 0.5,
+          "recall": 0.75,
+          "switch_f1": 0.6,
+          "duration_support": 37,
+          "duration_accuracy_oracle_switch": 0.7837837837837838,
+          "duration_macro_f1_oracle_switch": 0.43333333333333335,
+          "duration_confusion_matrix": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              3
+            ],
+            [
+              1,
+              1,
+              27
+            ]
+          ],
+          "joint_duration_macro_f1": 0.30696416497633533
+        },
+        "ru_en | Intrasentential": {
+          "positions": 1571,
+          "gold_switches": 104,
+          "tp": 49,
+          "fp": 49,
+          "fn": 55,
+          "tn": 1418,
+          "precision": 0.5,
+          "recall": 0.47115384615384615,
+          "switch_f1": 0.48514851485148514,
+          "duration_support": 102,
+          "duration_accuracy_oracle_switch": 0.3627450980392157,
+          "duration_macro_f1_oracle_switch": 0.26264486913807655,
+          "duration_confusion_matrix": [
+            [
+              0,
+              3,
+              11
+            ],
+            [
+              3,
+              16,
+              21
+            ],
+            [
+              0,
+              27,
+              21
+            ]
+          ],
+          "joint_duration_macro_f1": 0.10826210826210826
+        },
+        "yue_en | Extra-sentential / Tag switching": {
+          "positions": 1288,
+          "gold_switches": 83,
+          "tp": 27,
+          "fp": 15,
+          "fn": 56,
+          "tn": 1190,
+          "precision": 0.6428571428571429,
+          "recall": 0.3253012048192771,
+          "switch_f1": 0.432,
+          "duration_support": 77,
+          "duration_accuracy_oracle_switch": 0.5194805194805194,
+          "duration_macro_f1_oracle_switch": 0.4454388984509466,
+          "duration_confusion_matrix": [
+            [
+              3,
+              4,
+              6
+            ],
+            [
+              4,
+              10,
+              17
+            ],
+            [
+              1,
+              5,
+              27
+            ]
+          ],
+          "joint_duration_macro_f1": 0.1884920634920635
+        },
+        "yue_en | Intersentential": {
+          "positions": 2017,
+          "gold_switches": 99,
+          "tp": 37,
+          "fp": 31,
+          "fn": 62,
+          "tn": 1887,
+          "precision": 0.5441176470588235,
+          "recall": 0.37373737373737376,
+          "switch_f1": 0.4431137724550898,
+          "duration_support": 82,
+          "duration_accuracy_oracle_switch": 0.5487804878048781,
+          "duration_macro_f1_oracle_switch": 0.35960175228992436,
+          "duration_confusion_matrix": [
+            [
+              4,
+              3,
+              13
+            ],
+            [
+              6,
+              1,
+              13
+            ],
+            [
+              1,
+              1,
+              40
+            ]
+          ],
+          "joint_duration_macro_f1": 0.17424242424242423
+        },
+        "yue_en | Intrasentential": {
+          "positions": 1722,
+          "gold_switches": 75,
+          "tp": 28,
+          "fp": 23,
+          "fn": 47,
+          "tn": 1624,
+          "precision": 0.5490196078431373,
+          "recall": 0.37333333333333335,
+          "switch_f1": 0.4444444444444444,
+          "duration_support": 66,
+          "duration_accuracy_oracle_switch": 0.4393939393939394,
+          "duration_macro_f1_oracle_switch": 0.4032057267351385,
+          "duration_confusion_matrix": [
+            [
+              6,
+              2,
+              8
+            ],
+            [
+              5,
+              4,
+              15
+            ],
+            [
+              1,
+              6,
+              19
+            ]
+          ],
+          "joint_duration_macro_f1": 0.21994408201304752
+        }
+      },
+      "macro_pair_type_switch_f1": 0.5768180031613619,
+      "by_pair": {
+        "ko_en": {
+          "positions": 3966,
+          "gold_switches": 209,
+          "tp": 144,
+          "fp": 45,
+          "fn": 65,
+          "tn": 3712,
+          "precision": 0.7619047619047619,
+          "recall": 0.6889952153110048,
+          "switch_f1": 0.7236180904522613,
+          "duration_support": 204,
+          "duration_accuracy_oracle_switch": 0.6078431372549019,
+          "duration_macro_f1_oracle_switch": 0.5377685760294456,
+          "duration_confusion_matrix": [
+            [
+              12,
+              19,
+              16
+            ],
+            [
+              10,
+              34,
+              14
+            ],
+            [
+              6,
+              15,
+              78
+            ]
+          ],
+          "joint_duration_macro_f1": 0.4196323770791856
+        },
+        "ms_en": {
+          "positions": 3535,
+          "gold_switches": 333,
+          "tp": 138,
+          "fp": 91,
+          "fn": 195,
+          "tn": 3111,
+          "precision": 0.6026200873362445,
+          "recall": 0.4144144144144144,
+          "switch_f1": 0.49110320284697506,
+          "duration_support": 312,
+          "duration_accuracy_oracle_switch": 0.3717948717948718,
+          "duration_macro_f1_oracle_switch": 0.3641021209079285,
+          "duration_confusion_matrix": [
+            [
+              28,
+              35,
+              45
+            ],
+            [
+              24,
+              33,
+              55
+            ],
+            [
+              14,
+              23,
+              55
+            ]
+          ],
+          "joint_duration_macro_f1": 0.24285787399559855
+        },
+        "ru_en": {
+          "positions": 4037,
+          "gold_switches": 237,
+          "tp": 140,
+          "fp": 97,
+          "fn": 97,
+          "tn": 3703,
+          "precision": 0.5907172995780591,
+          "recall": 0.5907172995780591,
+          "switch_f1": 0.5907172995780591,
+          "duration_support": 231,
+          "duration_accuracy_oracle_switch": 0.5064935064935064,
+          "duration_macro_f1_oracle_switch": 0.3705709772060483,
+          "duration_confusion_matrix": [
+            [
+              0,
+              18,
+              16
+            ],
+            [
+              6,
+              57,
+              36
+            ],
+            [
+              1,
+              37,
+              60
+            ]
+          ],
+          "joint_duration_macro_f1": 0.2555962555962556
+        },
+        "yue_en": {
+          "positions": 5027,
+          "gold_switches": 257,
+          "tp": 92,
+          "fp": 69,
+          "fn": 165,
+          "tn": 4701,
+          "precision": 0.5714285714285714,
+          "recall": 0.35797665369649806,
+          "switch_f1": 0.44019138755980863,
+          "duration_support": 225,
+          "duration_accuracy_oracle_switch": 0.5066666666666667,
+          "duration_macro_f1_oracle_switch": 0.4197876447876448,
+          "duration_confusion_matrix": [
+            [
+              13,
+              9,
+              27
+            ],
+            [
+              15,
+              15,
+              45
+            ],
+            [
+              3,
+              12,
+              86
+            ]
+          ],
+          "joint_duration_macro_f1": 0.20229588176208924
+        }
+      },
+      "by_cs_type": {
+        "Extra-sentential / Tag switching": {
+          "positions": 4693,
+          "gold_switches": 334,
+          "tp": 202,
+          "fp": 65,
+          "fn": 132,
+          "tn": 4294,
+          "precision": 0.7565543071161048,
+          "recall": 0.6047904191616766,
+          "switch_f1": 0.6722129783693843,
+          "duration_support": 319,
+          "duration_accuracy_oracle_switch": 0.5297805642633229,
+          "duration_macro_f1_oracle_switch": 0.4737323630403861,
+          "duration_confusion_matrix": [
+            [
+              15,
+              48,
+              20
+            ],
+            [
+              15,
+              101,
+              44
+            ],
+            [
+              5,
+              18,
+              53
+            ]
+          ],
+          "joint_duration_macro_f1": 0.3179540387583605
+        },
+        "Intersentential": {
+          "positions": 5489,
+          "gold_switches": 236,
+          "tp": 142,
+          "fp": 101,
+          "fn": 94,
+          "tn": 5152,
+          "precision": 0.5843621399176955,
+          "recall": 0.6016949152542372,
+          "switch_f1": 0.592901878914405,
+          "duration_support": 209,
+          "duration_accuracy_oracle_switch": 0.7033492822966507,
+          "duration_macro_f1_oracle_switch": 0.4316356363786314,
+          "duration_confusion_matrix": [
+            [
+              7,
+              7,
+              16
+            ],
+            [
+              10,
+              4,
+              24
+            ],
+            [
+              3,
+              2,
+              136
+            ]
+          ],
+          "joint_duration_macro_f1": 0.27958834815977673
+        },
+        "Intrasentential": {
+          "positions": 6383,
+          "gold_switches": 466,
+          "tp": 170,
+          "fp": 136,
+          "fn": 296,
+          "tn": 5781,
+          "precision": 0.5555555555555556,
+          "recall": 0.3648068669527897,
+          "switch_f1": 0.44041450777202074,
+          "duration_support": 444,
+          "duration_accuracy_oracle_switch": 0.3490990990990991,
+          "duration_macro_f1_oracle_switch": 0.3306167644143815,
+          "duration_confusion_matrix": [
+            [
+              31,
+              26,
+              68
+            ],
+            [
+              30,
+              34,
+              82
+            ],
+            [
+              16,
+              67,
+              90
+            ]
+          ],
+          "joint_duration_macro_f1": 0.16603730828260355
+        }
+      }
+    },
+    "test": {
+      "pooled": {
+        "positions": 16387,
+        "gold_switches": 944,
+        "tp": 477,
+        "fp": 355,
+        "fn": 467,
+        "tn": 15088,
+        "precision": 0.5733173076923077,
+        "recall": 0.5052966101694916,
+        "switch_f1": 0.5371621621621622,
+        "duration_support": 881,
+        "duration_accuracy_oracle_switch": 0.5073779795686719,
+        "duration_macro_f1_oracle_switch": 0.44112493249763185,
+        "duration_confusion_matrix": [
+          [
+            44,
+            79,
+            116
+          ],
+          [
+            29,
+            104,
+            104
+          ],
+          [
+            14,
+            92,
+            299
+          ]
+        ],
+        "joint_duration_macro_f1": 0.25972995675976907
+      },
+      "by_pair_type": {
+        "ko_en | Extra-sentential / Tag switching": {
+          "positions": 1431,
+          "gold_switches": 81,
+          "tp": 70,
+          "fp": 13,
+          "fn": 11,
+          "tn": 1337,
+          "precision": 0.8433734939759037,
+          "recall": 0.8641975308641975,
+          "switch_f1": 0.8536585365853658,
+          "duration_support": 79,
+          "duration_accuracy_oracle_switch": 0.5822784810126582,
+          "duration_macro_f1_oracle_switch": 0.489337822671156,
+          "duration_confusion_matrix": [
+            [
+              1,
+              19,
+              2
+            ],
+            [
+              2,
+              29,
+              3
+            ],
+            [
+              2,
+              5,
+              16
+            ]
+          ],
+          "joint_duration_macro_f1": 0.4071146245059289
+        },
+        "ko_en | Intersentential": {
+          "positions": 1200,
+          "gold_switches": 50,
+          "tp": 37,
+          "fp": 20,
+          "fn": 13,
+          "tn": 1130,
+          "precision": 0.6491228070175439,
+          "recall": 0.74,
+          "switch_f1": 0.6915887850467289,
+          "duration_support": 49,
+          "duration_accuracy_oracle_switch": 0.8979591836734694,
+          "duration_macro_f1_oracle_switch": 0.517829457364341,
+          "duration_confusion_matrix": [
+            [
+              3,
+              0,
+              3
+            ],
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              41
+            ]
+          ],
+          "joint_duration_macro_f1": 0.27309236947791166
+        },
+        "ko_en | Intrasentential": {
+          "positions": 1253,
+          "gold_switches": 88,
+          "tp": 38,
+          "fp": 15,
+          "fn": 50,
+          "tn": 1150,
+          "precision": 0.7169811320754716,
+          "recall": 0.4318181818181818,
+          "switch_f1": 0.5390070921985816,
+          "duration_support": 87,
+          "duration_accuracy_oracle_switch": 0.3103448275862069,
+          "duration_macro_f1_oracle_switch": 0.22199062011464302,
+          "duration_confusion_matrix": [
+            [
+              4,
+              5,
+              22
+            ],
+            [
+              0,
+              0,
+              11
+            ],
+            [
+              3,
+              19,
+              23
+            ]
+          ],
+          "joint_duration_macro_f1": 0.0942084942084942
+        },
+        "ms_en | Extra-sentential / Tag switching": {
+          "positions": 571,
+          "gold_switches": 44,
+          "tp": 27,
+          "fp": 9,
+          "fn": 17,
+          "tn": 518,
+          "precision": 0.75,
+          "recall": 0.6136363636363636,
+          "switch_f1": 0.675,
+          "duration_support": 43,
+          "duration_accuracy_oracle_switch": 0.4883720930232558,
+          "duration_macro_f1_oracle_switch": 0.46126160866351745,
+          "duration_confusion_matrix": [
+            [
+              5,
+              8,
+              4
+            ],
+            [
+              0,
+              12,
+              7
+            ],
+            [
+              1,
+              2,
+              4
+            ]
+          ],
+          "joint_duration_macro_f1": 0.3327228327228327
+        },
+        "ms_en | Intersentential": {
+          "positions": 1567,
+          "gold_switches": 72,
+          "tp": 49,
+          "fp": 43,
+          "fn": 23,
+          "tn": 1452,
+          "precision": 0.532608695652174,
+          "recall": 0.6805555555555556,
+          "switch_f1": 0.5975609756097561,
+          "duration_support": 63,
+          "duration_accuracy_oracle_switch": 0.6984126984126984,
+          "duration_macro_f1_oracle_switch": 0.4951022760011525,
+          "duration_confusion_matrix": [
+            [
+              6,
+              2,
+              5
+            ],
+            [
+              2,
+              1,
+              5
+            ],
+            [
+              3,
+              2,
+              37
+            ]
+          ],
+          "joint_duration_macro_f1": 0.2551587301587302
+        },
+        "ms_en | Intrasentential": {
+          "positions": 1346,
+          "gold_switches": 144,
+          "tp": 44,
+          "fp": 50,
+          "fn": 100,
+          "tn": 1152,
+          "precision": 0.46808510638297873,
+          "recall": 0.3055555555555556,
+          "switch_f1": 0.3697478991596639,
+          "duration_support": 135,
+          "duration_accuracy_oracle_switch": 0.34814814814814815,
+          "duration_macro_f1_oracle_switch": 0.34035287206018916,
+          "duration_confusion_matrix": [
+            [
+              14,
+              12,
+              22
+            ],
+            [
+              12,
+              10,
+              24
+            ],
+            [
+              4,
+              14,
+              23
+            ]
+          ],
+          "joint_duration_macro_f1": 0.15238095238095237
+        },
+        "ru_en | Extra-sentential / Tag switching": {
+          "positions": 1255,
+          "gold_switches": 70,
+          "tp": 58,
+          "fp": 26,
+          "fn": 12,
+          "tn": 1159,
+          "precision": 0.6904761904761905,
+          "recall": 0.8285714285714286,
+          "switch_f1": 0.7532467532467533,
+          "duration_support": 69,
+          "duration_accuracy_oracle_switch": 0.5652173913043478,
+          "duration_macro_f1_oracle_switch": 0.4273937856689917,
+          "duration_confusion_matrix": [
+            [
+              0,
+              16,
+              1
+            ],
+            [
+              0,
+              27,
+              7
+            ],
+            [
+              0,
+              6,
+              12
+            ]
+          ],
+          "joint_duration_macro_f1": 0.36014851485148514
+        },
+        "ru_en | Intersentential": {
+          "positions": 1152,
+          "gold_switches": 45,
+          "tp": 32,
+          "fp": 37,
+          "fn": 13,
+          "tn": 1070,
+          "precision": 0.463768115942029,
+          "recall": 0.7111111111111111,
+          "switch_f1": 0.5614035087719298,
+          "duration_support": 43,
+          "duration_accuracy_oracle_switch": 0.813953488372093,
+          "duration_macro_f1_oracle_switch": 0.39746031746031746,
+          "duration_confusion_matrix": [
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              1,
+              34
+            ]
+          ],
+          "joint_duration_macro_f1": 0.2851851851851852
+        },
+        "ru_en | Intrasentential": {
+          "positions": 1494,
+          "gold_switches": 81,
+          "tp": 23,
+          "fp": 47,
+          "fn": 58,
+          "tn": 1366,
+          "precision": 0.32857142857142857,
+          "recall": 0.2839506172839506,
+          "switch_f1": 0.304635761589404,
+          "duration_support": 77,
+          "duration_accuracy_oracle_switch": 0.4025974025974026,
+          "duration_macro_f1_oracle_switch": 0.30175010175010175,
+          "duration_confusion_matrix": [
+            [
+              1,
+              3,
+              13
+            ],
+            [
+              0,
+              6,
+              10
+            ],
+            [
+              0,
+              20,
+              24
+            ]
+          ],
+          "joint_duration_macro_f1": 0.04006568144499179
+        },
+        "yue_en | Extra-sentential / Tag switching": {
+          "positions": 1682,
+          "gold_switches": 95,
+          "tp": 34,
+          "fp": 36,
+          "fn": 61,
+          "tn": 1551,
+          "precision": 0.4857142857142857,
+          "recall": 0.35789473684210527,
+          "switch_f1": 0.4121212121212121,
+          "duration_support": 76,
+          "duration_accuracy_oracle_switch": 0.3684210526315789,
+          "duration_macro_f1_oracle_switch": 0.32072963103338326,
+          "duration_confusion_matrix": [
+            [
+              2,
+              6,
+              18
+            ],
+            [
+              5,
+              8,
+              9
+            ],
+            [
+              0,
+              10,
+              18
+            ]
+          ],
+          "joint_duration_macro_f1": 0.13473193473193473
+        },
+        "yue_en | Intersentential": {
+          "positions": 2203,
+          "gold_switches": 100,
+          "tp": 51,
+          "fp": 46,
+          "fn": 49,
+          "tn": 2057,
+          "precision": 0.5257731958762887,
+          "recall": 0.51,
+          "switch_f1": 0.5177664974619289,
+          "duration_support": 94,
+          "duration_accuracy_oracle_switch": 0.5957446808510638,
+          "duration_macro_f1_oracle_switch": 0.47260869565217395,
+          "duration_confusion_matrix": [
+            [
+              4,
+              2,
+              12
+            ],
+            [
+              1,
+              7,
+              14
+            ],
+            [
+              0,
+              9,
+              45
+            ]
+          ],
+          "joint_duration_macro_f1": 0.21425806094795644
+        },
+        "yue_en | Intrasentential": {
+          "positions": 1233,
+          "gold_switches": 74,
+          "tp": 14,
+          "fp": 13,
+          "fn": 60,
+          "tn": 1146,
+          "precision": 0.5185185185185185,
+          "recall": 0.1891891891891892,
+          "switch_f1": 0.27722772277227725,
+          "duration_support": 66,
+          "duration_accuracy_oracle_switch": 0.4393939393939394,
+          "duration_macro_f1_oracle_switch": 0.3600614439324117,
+          "duration_confusion_matrix": [
+            [
+              4,
+              5,
+              11
+            ],
+            [
+              6,
+              3,
+              11
+            ],
+            [
+              1,
+              3,
+              22
+            ]
+          ],
+          "joint_duration_macro_f1": 0.1388888888888889
+        }
+      },
+      "macro_pair_type_switch_f1": 0.5460803953803003,
+      "by_pair": {
+        "ko_en": {
+          "positions": 3884,
+          "gold_switches": 219,
+          "tp": 145,
+          "fp": 48,
+          "fn": 74,
+          "tn": 3617,
+          "precision": 0.7512953367875648,
+          "recall": 0.6621004566210046,
+          "switch_f1": 0.7038834951456311,
+          "duration_support": 215,
+          "duration_accuracy_oracle_switch": 0.5441860465116279,
+          "duration_macro_f1_oracle_switch": 0.4579053204859656,
+          "duration_confusion_matrix": [
+            [
+              8,
+              24,
+              27
+            ],
+            [
+              3,
+              29,
+              14
+            ],
+            [
+              5,
+              25,
+              80
+            ]
+          ],
+          "joint_duration_macro_f1": 0.3367682424409239
+        },
+        "ms_en": {
+          "positions": 3484,
+          "gold_switches": 260,
+          "tp": 120,
+          "fp": 102,
+          "fn": 140,
+          "tn": 3122,
+          "precision": 0.5405405405405406,
+          "recall": 0.46153846153846156,
+          "switch_f1": 0.4979253112033195,
+          "duration_support": 241,
+          "duration_accuracy_oracle_switch": 0.46473029045643155,
+          "duration_macro_f1_oracle_switch": 0.4391402714932127,
+          "duration_confusion_matrix": [
+            [
+              25,
+              22,
+              31
+            ],
+            [
+              14,
+              23,
+              36
+            ],
+            [
+              8,
+              18,
+              64
+            ]
+          ],
+          "joint_duration_macro_f1": 0.2636223787547567
+        },
+        "ru_en": {
+          "positions": 3901,
+          "gold_switches": 196,
+          "tp": 113,
+          "fp": 110,
+          "fn": 83,
+          "tn": 3595,
+          "precision": 0.5067264573991032,
+          "recall": 0.576530612244898,
+          "switch_f1": 0.5393794749403341,
+          "duration_support": 189,
+          "duration_accuracy_oracle_switch": 0.5555555555555556,
+          "duration_macro_f1_oracle_switch": 0.4137534215965588,
+          "duration_confusion_matrix": [
+            [
+              1,
+              20,
+              17
+            ],
+            [
+              0,
+              34,
+              20
+            ],
+            [
+              0,
+              27,
+              70
+            ]
+          ],
+          "joint_duration_macro_f1": 0.24945652173913044
+        },
+        "yue_en": {
+          "positions": 5118,
+          "gold_switches": 269,
+          "tp": 99,
+          "fp": 95,
+          "fn": 170,
+          "tn": 4754,
+          "precision": 0.5103092783505154,
+          "recall": 0.3680297397769517,
+          "switch_f1": 0.42764578833693306,
+          "duration_support": 236,
+          "duration_accuracy_oracle_switch": 0.4788135593220339,
+          "duration_macro_f1_oracle_switch": 0.3906352411241758,
+          "duration_confusion_matrix": [
+            [
+              10,
+              13,
+              41
+            ],
+            [
+              12,
+              18,
+              34
+            ],
+            [
+              1,
+              22,
+              85
+            ]
+          ],
+          "joint_duration_macro_f1": 0.1773241983062137
+        }
+      },
+      "by_cs_type": {
+        "Extra-sentential / Tag switching": {
+          "positions": 4939,
+          "gold_switches": 290,
+          "tp": 189,
+          "fp": 84,
+          "fn": 101,
+          "tn": 4565,
+          "precision": 0.6923076923076923,
+          "recall": 0.6517241379310345,
+          "switch_f1": 0.6714031971580817,
+          "duration_support": 267,
+          "duration_accuracy_oracle_switch": 0.50187265917603,
+          "duration_macro_f1_oracle_switch": 0.43880381337612756,
+          "duration_confusion_matrix": [
+            [
+              8,
+              49,
+              25
+            ],
+            [
+              7,
+              76,
+              26
+            ],
+            [
+              3,
+              23,
+              50
+            ]
+          ],
+          "joint_duration_macro_f1": 0.32168665484325715
+        },
+        "Intersentential": {
+          "positions": 6122,
+          "gold_switches": 267,
+          "tp": 169,
+          "fp": 146,
+          "fn": 98,
+          "tn": 5709,
+          "precision": 0.5365079365079365,
+          "recall": 0.6329588014981273,
+          "switch_f1": 0.5807560137457045,
+          "duration_support": 249,
+          "duration_accuracy_oracle_switch": 0.7188755020080321,
+          "duration_macro_f1_oracle_switch": 0.5179618073917386,
+          "duration_confusion_matrix": [
+            [
+              13,
+              5,
+              23
+            ],
+            [
+              4,
+              9,
+              22
+            ],
+            [
+              3,
+              13,
+              157
+            ]
+          ],
+          "joint_duration_macro_f1": 0.25445333764518824
+        },
+        "Intrasentential": {
+          "positions": 5326,
+          "gold_switches": 387,
+          "tp": 119,
+          "fp": 125,
+          "fn": 268,
+          "tn": 4814,
+          "precision": 0.48770491803278687,
+          "recall": 0.30749354005167956,
+          "switch_f1": 0.37717908082408874,
+          "duration_support": 365,
+          "duration_accuracy_oracle_switch": 0.36712328767123287,
+          "duration_macro_f1_oracle_switch": 0.323434242137234,
+          "duration_confusion_matrix": [
+            [
+              23,
+              25,
+              68
+            ],
+            [
+              18,
+              19,
+              56
+            ],
+            [
+              8,
+              56,
+              92
+            ]
+          ],
+          "joint_duration_macro_f1": 0.11744600476307794
+        }
+      }
+    }
+  },
+  "always_no_switch": {
+    "test": {
+      "pooled": {
+        "positions": 16387,
+        "gold_switches": 944,
+        "tp": 0,
+        "fp": 0,
+        "fn": 944,
+        "tn": 15443,
+        "precision": 0.0,
+        "recall": 0.0,
+        "switch_f1": 0.0,
+        "duration_support": 881,
+        "duration_accuracy_oracle_switch": 0.45970488081725314,
+        "duration_macro_f1_oracle_switch": 0.2099533437013997,
+        "duration_confusion_matrix": [
+          [
+            0,
+            0,
+            239
+          ],
+          [
+            0,
+            0,
+            237
+          ],
+          [
+            0,
+            0,
+            405
+          ]
+        ],
+        "joint_duration_macro_f1": 0.0
+      },
+      "by_pair_type": {
+        "ko_en | Extra-sentential / Tag switching": {
+          "positions": 1431,
+          "gold_switches": 81,
+          "tp": 0,
+          "fp": 0,
+          "fn": 81,
+          "tn": 1350,
+          "precision": 0.0,
+          "recall": 0.0,
+          "switch_f1": 0.0,
+          "duration_support": 79,
+          "duration_accuracy_oracle_switch": 0.2911392405063291,
+          "duration_macro_f1_oracle_switch": 0.1503267973856209,
+          "duration_confusion_matrix": [
+            [
+              0,
+              0,
+              22
+            ],
+            [
+              0,
+              0,
+              34
+            ],
+            [
+              0,
+              0,
+              23
+            ]
+          ],
+          "joint_duration_macro_f1": 0.0
+        },
+        "ko_en | Intersentential": {
+          "positions": 1200,
+          "gold_switches": 50,
+          "tp": 0,
+          "fp": 0,
+          "fn": 50,
+          "tn": 1150,
+          "precision": 0.0,
+          "recall": 0.0,
+          "switch_f1": 0.0,
+          "duration_support": 49,
+          "duration_accuracy_oracle_switch": 0.8571428571428571,
+          "duration_macro_f1_oracle_switch": 0.3076923076923077,
+          "duration_confusion_matrix": [
+            [
+              0,
+              0,
+              6
+            ],
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              42
+            ]
+          ],
+          "joint_duration_macro_f1": 0.0
+        },
+        "ko_en | Intrasentential": {
+          "positions": 1253,
+          "gold_switches": 88,
+          "tp": 0,
+          "fp": 0,
+          "fn": 88,
+          "tn": 1165,
+          "precision": 0.0,
+          "recall": 0.0,
+          "switch_f1": 0.0,
+          "duration_support": 87,
+          "duration_accuracy_oracle_switch": 0.5172413793103449,
+          "duration_macro_f1_oracle_switch": 0.22727272727272727,
+          "duration_confusion_matrix": [
+            [
+              0,
+              0,
+              31
+            ],
+            [
+              0,
+              0,
+              11
+            ],
+            [
+              0,
+              0,
+              45
+            ]
+          ],
+          "joint_duration_macro_f1": 0.0
+        },
+        "ms_en | Extra-sentential / Tag switching": {
+          "positions": 571,
+          "gold_switches": 44,
+          "tp": 0,
+          "fp": 0,
+          "fn": 44,
+          "tn": 527,
+          "precision": 0.0,
+          "recall": 0.0,
+          "switch_f1": 0.0,
+          "duration_support": 43,
+          "duration_accuracy_oracle_switch": 0.16279069767441862,
+          "duration_macro_f1_oracle_switch": 0.09333333333333334,
+          "duration_confusion_matrix": [
+            [
+              0,
+              0,
+              17
+            ],
+            [
+              0,
+              0,
+              19
+            ],
+            [
+              0,
+              0,
+              7
+            ]
+          ],
+          "joint_duration_macro_f1": 0.0
+        },
+        "ms_en | Intersentential": {
+          "positions": 1567,
+          "gold_switches": 72,
+          "tp": 0,
+          "fp": 0,
+          "fn": 72,
+          "tn": 1495,
+          "precision": 0.0,
+          "recall": 0.0,
+          "switch_f1": 0.0,
+          "duration_support": 63,
+          "duration_accuracy_oracle_switch": 0.6666666666666666,
+          "duration_macro_f1_oracle_switch": 0.26666666666666666,
+          "duration_confusion_matrix": [
+            [
+              0,
+              0,
+              13
+            ],
+            [
+              0,
+              0,
+              8
+            ],
+            [
+              0,
+              0,
+              42
+            ]
+          ],
+          "joint_duration_macro_f1": 0.0
+        },
+        "ms_en | Intrasentential": {
+          "positions": 1346,
+          "gold_switches": 144,
+          "tp": 0,
+          "fp": 0,
+          "fn": 144,
+          "tn": 1202,
+          "precision": 0.0,
+          "recall": 0.0,
+          "switch_f1": 0.0,
+          "duration_support": 135,
+          "duration_accuracy_oracle_switch": 0.3037037037037037,
+          "duration_macro_f1_oracle_switch": 0.1553030303030303,
+          "duration_confusion_matrix": [
+            [
+              0,
+              0,
+              48
+            ],
+            [
+              0,
+              0,
+              46
+            ],
+            [
+              0,
+              0,
+              41
+            ]
+          ],
+          "joint_duration_macro_f1": 0.0
+        },
+        "ru_en | Extra-sentential / Tag switching": {
+          "positions": 1255,
+          "gold_switches": 70,
+          "tp": 0,
+          "fp": 0,
+          "fn": 70,
+          "tn": 1185,
+          "precision": 0.0,
+          "recall": 0.0,
+          "switch_f1": 0.0,
+          "duration_support": 69,
+          "duration_accuracy_oracle_switch": 0.2608695652173913,
+          "duration_macro_f1_oracle_switch": 0.13793103448275862,
+          "duration_confusion_matrix": [
+            [
+              0,
+              0,
+              17
+            ],
+            [
+              0,
+              0,
+              34
+            ],
+            [
+              0,
+              0,
+              18
+            ]
+          ],
+          "joint_duration_macro_f1": 0.0
+        },
+        "ru_en | Intersentential": {
+          "positions": 1152,
+          "gold_switches": 45,
+          "tp": 0,
+          "fp": 0,
+          "fn": 45,
+          "tn": 1107,
+          "precision": 0.0,
+          "recall": 0.0,
+          "switch_f1": 0.0,
+          "duration_support": 43,
+          "duration_accuracy_oracle_switch": 0.813953488372093,
+          "duration_macro_f1_oracle_switch": 0.29914529914529914,
+          "duration_confusion_matrix": [
+            [
+              0,
+              0,
+              4
+            ],
+            [
+              0,
+              0,
+              4
+            ],
+            [
+              0,
+              0,
+              35
+            ]
+          ],
+          "joint_duration_macro_f1": 0.0
+        },
+        "ru_en | Intrasentential": {
+          "positions": 1494,
+          "gold_switches": 81,
+          "tp": 0,
+          "fp": 0,
+          "fn": 81,
+          "tn": 1413,
+          "precision": 0.0,
+          "recall": 0.0,
+          "switch_f1": 0.0,
+          "duration_support": 77,
+          "duration_accuracy_oracle_switch": 0.5714285714285714,
+          "duration_macro_f1_oracle_switch": 0.24242424242424243,
+          "duration_confusion_matrix": [
+            [
+              0,
+              0,
+              17
+            ],
+            [
+              0,
+              0,
+              16
+            ],
+            [
+              0,
+              0,
+              44
+            ]
+          ],
+          "joint_duration_macro_f1": 0.0
+        },
+        "yue_en | Extra-sentential / Tag switching": {
+          "positions": 1682,
+          "gold_switches": 95,
+          "tp": 0,
+          "fp": 0,
+          "fn": 95,
+          "tn": 1587,
+          "precision": 0.0,
+          "recall": 0.0,
+          "switch_f1": 0.0,
+          "duration_support": 76,
+          "duration_accuracy_oracle_switch": 0.3684210526315789,
+          "duration_macro_f1_oracle_switch": 0.1794871794871795,
+          "duration_confusion_matrix": [
+            [
+              0,
+              0,
+              26
+            ],
+            [
+              0,
+              0,
+              22
+            ],
+            [
+              0,
+              0,
+              28
+            ]
+          ],
+          "joint_duration_macro_f1": 0.0
+        },
+        "yue_en | Intersentential": {
+          "positions": 2203,
+          "gold_switches": 100,
+          "tp": 0,
+          "fp": 0,
+          "fn": 100,
+          "tn": 2103,
+          "precision": 0.0,
+          "recall": 0.0,
+          "switch_f1": 0.0,
+          "duration_support": 94,
+          "duration_accuracy_oracle_switch": 0.574468085106383,
+          "duration_macro_f1_oracle_switch": 0.24324324324324323,
+          "duration_confusion_matrix": [
+            [
+              0,
+              0,
+              18
+            ],
+            [
+              0,
+              0,
+              22
+            ],
+            [
+              0,
+              0,
+              54
+            ]
+          ],
+          "joint_duration_macro_f1": 0.0
+        },
+        "yue_en | Intrasentential": {
+          "positions": 1233,
+          "gold_switches": 74,
+          "tp": 0,
+          "fp": 0,
+          "fn": 74,
+          "tn": 1159,
+          "precision": 0.0,
+          "recall": 0.0,
+          "switch_f1": 0.0,
+          "duration_support": 66,
+          "duration_accuracy_oracle_switch": 0.3939393939393939,
+          "duration_macro_f1_oracle_switch": 0.18840579710144925,
+          "duration_confusion_matrix": [
+            [
+              0,
+              0,
+              20
+            ],
+            [
+              0,
+              0,
+              20
+            ],
+            [
+              0,
+              0,
+              26
+            ]
+          ],
+          "joint_duration_macro_f1": 0.0
+        }
+      },
+      "macro_pair_type_switch_f1": 0.0,
+      "by_pair": {
+        "ko_en": {
+          "positions": 3884,
+          "gold_switches": 219,
+          "tp": 0,
+          "fp": 0,
+          "fn": 219,
+          "tn": 3665,
+          "precision": 0.0,
+          "recall": 0.0,
+          "switch_f1": 0.0,
+          "duration_support": 215,
+          "duration_accuracy_oracle_switch": 0.5116279069767442,
+          "duration_macro_f1_oracle_switch": 0.22564102564102564,
+          "duration_confusion_matrix": [
+            [
+              0,
+              0,
+              59
+            ],
+            [
+              0,
+              0,
+              46
+            ],
+            [
+              0,
+              0,
+              110
+            ]
+          ],
+          "joint_duration_macro_f1": 0.0
+        },
+        "ms_en": {
+          "positions": 3484,
+          "gold_switches": 260,
+          "tp": 0,
+          "fp": 0,
+          "fn": 260,
+          "tn": 3224,
+          "precision": 0.0,
+          "recall": 0.0,
+          "switch_f1": 0.0,
+          "duration_support": 241,
+          "duration_accuracy_oracle_switch": 0.37344398340248963,
+          "duration_macro_f1_oracle_switch": 0.1812688821752266,
+          "duration_confusion_matrix": [
+            [
+              0,
+              0,
+              78
+            ],
+            [
+              0,
+              0,
+              73
+            ],
+            [
+              0,
+              0,
+              90
+            ]
+          ],
+          "joint_duration_macro_f1": 0.0
+        },
+        "ru_en": {
+          "positions": 3901,
+          "gold_switches": 196,
+          "tp": 0,
+          "fp": 0,
+          "fn": 196,
+          "tn": 3705,
+          "precision": 0.0,
+          "recall": 0.0,
+          "switch_f1": 0.0,
+          "duration_support": 189,
+          "duration_accuracy_oracle_switch": 0.5132275132275133,
+          "duration_macro_f1_oracle_switch": 0.2261072261072261,
+          "duration_confusion_matrix": [
+            [
+              0,
+              0,
+              38
+            ],
+            [
+              0,
+              0,
+              54
+            ],
+            [
+              0,
+              0,
+              97
+            ]
+          ],
+          "joint_duration_macro_f1": 0.0
+        },
+        "yue_en": {
+          "positions": 5118,
+          "gold_switches": 269,
+          "tp": 0,
+          "fp": 0,
+          "fn": 269,
+          "tn": 4849,
+          "precision": 0.0,
+          "recall": 0.0,
+          "switch_f1": 0.0,
+          "duration_support": 236,
+          "duration_accuracy_oracle_switch": 0.4576271186440678,
+          "duration_macro_f1_oracle_switch": 0.20930232558139536,
+          "duration_confusion_matrix": [
+            [
+              0,
+              0,
+              64
+            ],
+            [
+              0,
+              0,
+              64
+            ],
+            [
+              0,
+              0,
+              108
+            ]
+          ],
+          "joint_duration_macro_f1": 0.0
+        }
+      },
+      "by_cs_type": {
+        "Extra-sentential / Tag switching": {
+          "positions": 4939,
+          "gold_switches": 290,
+          "tp": 0,
+          "fp": 0,
+          "fn": 290,
+          "tn": 4649,
+          "precision": 0.0,
+          "recall": 0.0,
+          "switch_f1": 0.0,
+          "duration_support": 267,
+          "duration_accuracy_oracle_switch": 0.2846441947565543,
+          "duration_macro_f1_oracle_switch": 0.14771622934888243,
+          "duration_confusion_matrix": [
+            [
+              0,
+              0,
+              82
+            ],
+            [
+              0,
+              0,
+              109
+            ],
+            [
+              0,
+              0,
+              76
+            ]
+          ],
+          "joint_duration_macro_f1": 0.0
+        },
+        "Intersentential": {
+          "positions": 6122,
+          "gold_switches": 267,
+          "tp": 0,
+          "fp": 0,
+          "fn": 267,
+          "tn": 5855,
+          "precision": 0.0,
+          "recall": 0.0,
+          "switch_f1": 0.0,
+          "duration_support": 249,
+          "duration_accuracy_oracle_switch": 0.6947791164658634,
+          "duration_macro_f1_oracle_switch": 0.27330173775671407,
+          "duration_confusion_matrix": [
+            [
+              0,
+              0,
+              41
+            ],
+            [
+              0,
+              0,
+              35
+            ],
+            [
+              0,
+              0,
+              173
+            ]
+          ],
+          "joint_duration_macro_f1": 0.0
+        },
+        "Intrasentential": {
+          "positions": 5326,
+          "gold_switches": 387,
+          "tp": 0,
+          "fp": 0,
+          "fn": 387,
+          "tn": 4939,
+          "precision": 0.0,
+          "recall": 0.0,
+          "switch_f1": 0.0,
+          "duration_support": 365,
+          "duration_accuracy_oracle_switch": 0.4273972602739726,
+          "duration_macro_f1_oracle_switch": 0.19961612284069097,
+          "duration_confusion_matrix": [
+            [
+              0,
+              0,
+              116
+            ],
+            [
+              0,
+              0,
+              93
+            ],
+            [
+              0,
+              0,
+              156
+            ]
+          ],
+          "joint_duration_macro_f1": 0.0
+        }
+      }
+    }
+  },
+  "always_switch": {
+    "test": {
+      "pooled": {
+        "positions": 16387,
+        "gold_switches": 944,
+        "tp": 944,
+        "fp": 15443,
+        "fn": 0,
+        "tn": 0,
+        "precision": 0.05760663940928785,
+        "recall": 1.0,
+        "switch_f1": 0.10893774161906411,
+        "duration_support": 881,
+        "duration_accuracy_oracle_switch": 0.45970488081725314,
+        "duration_macro_f1_oracle_switch": 0.2099533437013997,
+        "duration_confusion_matrix": [
+          [
+            0,
+            0,
+            239
+          ],
+          [
+            0,
+            0,
+            237
+          ],
+          [
+            0,
+            0,
+            405
+          ]
+        ],
+        "joint_duration_macro_f1": 0.01613963775479706
+      },
+      "by_pair_type": {
+        "ko_en | Extra-sentential / Tag switching": {
+          "positions": 1431,
+          "gold_switches": 81,
+          "tp": 81,
+          "fp": 1350,
+          "fn": 0,
+          "tn": 0,
+          "precision": 0.05660377358490566,
+          "recall": 1.0,
+          "switch_f1": 0.10714285714285714,
+          "duration_support": 79,
+          "duration_accuracy_oracle_switch": 0.2911392405063291,
+          "duration_macro_f1_oracle_switch": 0.1503267973856209,
+          "duration_confusion_matrix": [
+            [
+              0,
+              0,
+              22
+            ],
+            [
+              0,
+              0,
+              34
+            ],
+            [
+              0,
+              0,
+              23
+            ]
+          ],
+          "joint_duration_macro_f1": 0.010560146923783287
+        },
+        "ko_en | Intersentential": {
+          "positions": 1200,
+          "gold_switches": 50,
+          "tp": 50,
+          "fp": 1150,
+          "fn": 0,
+          "tn": 0,
+          "precision": 0.041666666666666664,
+          "recall": 1.0,
+          "switch_f1": 0.08,
+          "duration_support": 49,
+          "duration_accuracy_oracle_switch": 0.8571428571428571,
+          "duration_macro_f1_oracle_switch": 0.3076923076923077,
+          "duration_confusion_matrix": [
+            [
+              0,
+              0,
+              6
+            ],
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              42
+            ]
+          ],
+          "joint_duration_macro_f1": 0.022562449637389206
+        },
+        "ko_en | Intrasentential": {
+          "positions": 1253,
+          "gold_switches": 88,
+          "tp": 88,
+          "fp": 1165,
+          "fn": 0,
+          "tn": 0,
+          "precision": 0.07023144453312051,
+          "recall": 1.0,
+          "switch_f1": 0.13124533929903057,
+          "duration_support": 87,
+          "duration_accuracy_oracle_switch": 0.5172413793103449,
+          "duration_macro_f1_oracle_switch": 0.22727272727272727,
+          "duration_confusion_matrix": [
+            [
+              0,
+              0,
+              31
+            ],
+            [
+              0,
+              0,
+              11
+            ],
+            [
+              0,
+              0,
+              45
+            ]
+          ],
+          "joint_duration_macro_f1": 0.02313030069390902
+        },
+        "ms_en | Extra-sentential / Tag switching": {
+          "positions": 571,
+          "gold_switches": 44,
+          "tp": 44,
+          "fp": 527,
+          "fn": 0,
+          "tn": 0,
+          "precision": 0.07705779334500876,
+          "recall": 1.0,
+          "switch_f1": 0.14308943089430895,
+          "duration_support": 43,
+          "duration_accuracy_oracle_switch": 0.16279069767441862,
+          "duration_macro_f1_oracle_switch": 0.09333333333333334,
+          "duration_confusion_matrix": [
+            [
+              0,
+              0,
+              17
+            ],
+            [
+              0,
+              0,
+              19
+            ],
+            [
+              0,
+              0,
+              7
+            ]
+          ],
+          "joint_duration_macro_f1": 0.008087810514153668
+        },
+        "ms_en | Intersentential": {
+          "positions": 1567,
+          "gold_switches": 72,
+          "tp": 72,
+          "fp": 1495,
+          "fn": 0,
+          "tn": 0,
+          "precision": 0.04594767070835992,
+          "recall": 1.0,
+          "switch_f1": 0.08785845027455766,
+          "duration_support": 63,
+          "duration_accuracy_oracle_switch": 0.6666666666666666,
+          "duration_macro_f1_oracle_switch": 0.26666666666666666,
+          "duration_confusion_matrix": [
+            [
+              0,
+              0,
+              13
+            ],
+            [
+              0,
+              0,
+              8
+            ],
+            [
+              0,
+              0,
+              42
+            ]
+          ],
+          "joint_duration_macro_f1": 0.017499999999999998
+        },
+        "ms_en | Intrasentential": {
+          "positions": 1346,
+          "gold_switches": 144,
+          "tp": 144,
+          "fp": 1202,
+          "fn": 0,
+          "tn": 0,
+          "precision": 0.10698365527488855,
+          "recall": 1.0,
+          "switch_f1": 0.19328859060402684,
+          "duration_support": 135,
+          "duration_accuracy_oracle_switch": 0.3037037037037037,
+          "duration_macro_f1_oracle_switch": 0.1553030303030303,
+          "duration_confusion_matrix": [
+            [
+              0,
+              0,
+              48
+            ],
+            [
+              0,
+              0,
+              46
+            ],
+            [
+              0,
+              0,
+              41
+            ]
+          ],
+          "joint_duration_macro_f1": 0.01983551040154814
+        },
+        "ru_en | Extra-sentential / Tag switching": {
+          "positions": 1255,
+          "gold_switches": 70,
+          "tp": 70,
+          "fp": 1185,
+          "fn": 0,
+          "tn": 0,
+          "precision": 0.055776892430278883,
+          "recall": 1.0,
+          "switch_f1": 0.10566037735849057,
+          "duration_support": 69,
+          "duration_accuracy_oracle_switch": 0.2608695652173913,
+          "duration_macro_f1_oracle_switch": 0.13793103448275862,
+          "duration_confusion_matrix": [
+            [
+              0,
+              0,
+              17
+            ],
+            [
+              0,
+              0,
+              34
+            ],
+            [
+              0,
+              0,
+              18
+            ]
+          ],
+          "joint_duration_macro_f1": 0.009433962264150943
+        },
+        "ru_en | Intersentential": {
+          "positions": 1152,
+          "gold_switches": 45,
+          "tp": 45,
+          "fp": 1107,
+          "fn": 0,
+          "tn": 0,
+          "precision": 0.0390625,
+          "recall": 1.0,
+          "switch_f1": 0.07518796992481203,
+          "duration_support": 43,
+          "duration_accuracy_oracle_switch": 0.813953488372093,
+          "duration_macro_f1_oracle_switch": 0.29914529914529914,
+          "duration_confusion_matrix": [
+            [
+              0,
+              0,
+              4
+            ],
+            [
+              0,
+              0,
+              4
+            ],
+            [
+              0,
+              0,
+              35
+            ]
+          ],
+          "joint_duration_macro_f1": 0.01969057665260197
+        },
+        "ru_en | Intrasentential": {
+          "positions": 1494,
+          "gold_switches": 81,
+          "tp": 81,
+          "fp": 1413,
+          "fn": 0,
+          "tn": 0,
+          "precision": 0.05421686746987952,
+          "recall": 1.0,
+          "switch_f1": 0.10285714285714286,
+          "duration_support": 77,
+          "duration_accuracy_oracle_switch": 0.5714285714285714,
+          "duration_macro_f1_oracle_switch": 0.24242424242424243,
+          "duration_confusion_matrix": [
+            [
+              0,
+              0,
+              17
+            ],
+            [
+              0,
+              0,
+              16
+            ],
+            [
+              0,
+              0,
+              44
+            ]
+          ],
+          "joint_duration_macro_f1": 0.01912212081703607
+        },
+        "yue_en | Extra-sentential / Tag switching": {
+          "positions": 1682,
+          "gold_switches": 95,
+          "tp": 95,
+          "fp": 1587,
+          "fn": 0,
+          "tn": 0,
+          "precision": 0.05648038049940547,
+          "recall": 1.0,
+          "switch_f1": 0.10692177827799662,
+          "duration_support": 76,
+          "duration_accuracy_oracle_switch": 0.3684210526315789,
+          "duration_macro_f1_oracle_switch": 0.1794871794871795,
+          "duration_confusion_matrix": [
+            [
+              0,
+              0,
+              26
+            ],
+            [
+              0,
+              0,
+              22
+            ],
+            [
+              0,
+              0,
+              28
+            ]
+          ],
+          "joint_duration_macro_f1": 0.011038833037650306
+        },
+        "yue_en | Intersentential": {
+          "positions": 2203,
+          "gold_switches": 100,
+          "tp": 100,
+          "fp": 2103,
+          "fn": 0,
+          "tn": 0,
+          "precision": 0.04539264639128461,
+          "recall": 1.0,
+          "switch_f1": 0.08684324793747286,
+          "duration_support": 94,
+          "duration_accuracy_oracle_switch": 0.574468085106383,
+          "duration_macro_f1_oracle_switch": 0.24324324324324323,
+          "duration_confusion_matrix": [
+            [
+              0,
+              0,
+              18
+            ],
+            [
+              0,
+              0,
+              22
+            ],
+            [
+              0,
+              0,
+              54
+            ]
+          ],
+          "joint_duration_macro_f1": 0.015992892047978675
+        },
+        "yue_en | Intrasentential": {
+          "positions": 1233,
+          "gold_switches": 74,
+          "tp": 74,
+          "fp": 1159,
+          "fn": 0,
+          "tn": 0,
+          "precision": 0.06001622060016221,
+          "recall": 1.0,
+          "switch_f1": 0.11323641928079571,
+          "duration_support": 66,
+          "duration_accuracy_oracle_switch": 0.3939393939393939,
+          "duration_macro_f1_oracle_switch": 0.18840579710144925,
+          "duration_confusion_matrix": [
+            [
+              0,
+              0,
+              20
+            ],
+            [
+              0,
+              0,
+              20
+            ],
+            [
+              0,
+              0,
+              26
+            ]
+          ],
+          "joint_duration_macro_f1": 0.013855582200905943
+        }
+      },
+      "macro_pair_type_switch_f1": 0.1111109669876243,
+      "by_pair": {
+        "ko_en": {
+          "positions": 3884,
+          "gold_switches": 219,
+          "tp": 219,
+          "fp": 3665,
+          "fn": 0,
+          "tn": 0,
+          "precision": 0.05638516992790937,
+          "recall": 1.0,
+          "switch_f1": 0.10675115768949549,
+          "duration_support": 215,
+          "duration_accuracy_oracle_switch": 0.5116279069767442,
+          "duration_macro_f1_oracle_switch": 0.22564102564102564,
+          "duration_confusion_matrix": [
+            [
+              0,
+              0,
+              59
+            ],
+            [
+              0,
+              0,
+              46
+            ],
+            [
+              0,
+              0,
+              110
+            ]
+          ],
+          "joint_duration_macro_f1": 0.018379281537176273
+        },
+        "ms_en": {
+          "positions": 3484,
+          "gold_switches": 260,
+          "tp": 260,
+          "fp": 3224,
+          "fn": 0,
+          "tn": 0,
+          "precision": 0.07462686567164178,
+          "recall": 1.0,
+          "switch_f1": 0.1388888888888889,
+          "duration_support": 241,
+          "duration_accuracy_oracle_switch": 0.37344398340248963,
+          "duration_macro_f1_oracle_switch": 0.1812688821752266,
+          "duration_confusion_matrix": [
+            [
+              0,
+              0,
+              78
+            ],
+            [
+              0,
+              0,
+              73
+            ],
+            [
+              0,
+              0,
+              90
+            ]
+          ],
+          "joint_duration_macro_f1": 0.016877637130801686
+        },
+        "ru_en": {
+          "positions": 3901,
+          "gold_switches": 196,
+          "tp": 196,
+          "fp": 3705,
+          "fn": 0,
+          "tn": 0,
+          "precision": 0.05024352730069213,
+          "recall": 1.0,
+          "switch_f1": 0.09567976568220649,
+          "duration_support": 189,
+          "duration_accuracy_oracle_switch": 0.5132275132275133,
+          "duration_macro_f1_oracle_switch": 0.2261072261072261,
+          "duration_confusion_matrix": [
+            [
+              0,
+              0,
+              38
+            ],
+            [
+              0,
+              0,
+              54
+            ],
+            [
+              0,
+              0,
+              97
+            ]
+          ],
+          "joint_duration_macro_f1": 0.01620312369498037
+        },
+        "yue_en": {
+          "positions": 5118,
+          "gold_switches": 269,
+          "tp": 269,
+          "fp": 4849,
+          "fn": 0,
+          "tn": 0,
+          "precision": 0.05255959359124658,
+          "recall": 1.0,
+          "switch_f1": 0.09987005754594394,
+          "duration_support": 236,
+          "duration_accuracy_oracle_switch": 0.4576271186440678,
+          "duration_macro_f1_oracle_switch": 0.20930232558139536,
+          "duration_confusion_matrix": [
+            [
+              0,
+              0,
+              64
+            ],
+            [
+              0,
+              0,
+              64
+            ],
+            [
+              0,
+              0,
+              108
+            ]
+          ],
+          "joint_duration_macro_f1": 0.013864818024263433
+        }
+      },
+      "by_cs_type": {
+        "Extra-sentential / Tag switching": {
+          "positions": 4939,
+          "gold_switches": 290,
+          "tp": 290,
+          "fp": 4649,
+          "fn": 0,
+          "tn": 0,
+          "precision": 0.058716339339947354,
+          "recall": 1.0,
+          "switch_f1": 0.11091986995601454,
+          "duration_support": 267,
+          "duration_accuracy_oracle_switch": 0.2846441947565543,
+          "duration_macro_f1_oracle_switch": 0.14771622934888243,
+          "duration_confusion_matrix": [
+            [
+              0,
+              0,
+              82
+            ],
+            [
+              0,
+              0,
+              109
+            ],
+            [
+              0,
+              0,
+              76
+            ]
+          ],
+          "joint_duration_macro_f1": 0.01014957264957265
+        },
+        "Intersentential": {
+          "positions": 6122,
+          "gold_switches": 267,
+          "tp": 267,
+          "fp": 5855,
+          "fn": 0,
+          "tn": 0,
+          "precision": 0.04361319830120876,
+          "recall": 1.0,
+          "switch_f1": 0.0835811551103459,
+          "duration_support": 249,
+          "duration_accuracy_oracle_switch": 0.6947791164658634,
+          "duration_macro_f1_oracle_switch": 0.27330173775671407,
+          "duration_confusion_matrix": [
+            [
+              0,
+              0,
+              41
+            ],
+            [
+              0,
+              0,
+              35
+            ],
+            [
+              0,
+              0,
+              173
+            ]
+          ],
+          "joint_duration_macro_f1": 0.018373957835484043
+        },
+        "Intrasentential": {
+          "positions": 5326,
+          "gold_switches": 387,
+          "tp": 387,
+          "fp": 4939,
+          "fn": 0,
+          "tn": 0,
+          "precision": 0.07266241081487045,
+          "recall": 1.0,
+          "switch_f1": 0.13548048310869945,
+          "duration_support": 365,
+          "duration_accuracy_oracle_switch": 0.4273972602739726,
+          "duration_macro_f1_oracle_switch": 0.19961612284069097,
+          "duration_confusion_matrix": [
+            [
+              0,
+              0,
+              116
+            ],
+            [
+              0,
+              0,
+              93
+            ],
+            [
+              0,
+              0,
+              156
+            ]
+          ],
+          "joint_duration_macro_f1": 0.019047619047619046
+        }
+      }
+    }
+  }
+}

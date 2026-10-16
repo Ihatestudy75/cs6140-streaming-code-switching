@@ -1,0 +1,62 @@
+[
+  {
+    "order": 1,
+    "min_count": 1,
+    "threshold": 0.35,
+    "validation_macro_pair_type_switch_f1": 0.5462572214838134
+  },
+  {
+    "order": 2,
+    "min_count": 1,
+    "threshold": 0.34177215189873417,
+    "validation_macro_pair_type_switch_f1": 0.5506889151117117
+  },
+  {
+    "order": 2,
+    "min_count": 5,
+    "threshold": 0.325,
+    "validation_macro_pair_type_switch_f1": 0.5766858398818578
+  },
+  {
+    "order": 2,
+    "min_count": 20,
+    "threshold": 0.19649495485926713,
+    "validation_macro_pair_type_switch_f1": 0.5605745709572595
+  },
+  {
+    "order": 3,
+    "min_count": 1,
+    "threshold": 0.35,
+    "validation_macro_pair_type_switch_f1": 0.5474731991285152
+  },
+  {
+    "order": 3,
+    "min_count": 5,
+    "threshold": 0.35,
+    "validation_macro_pair_type_switch_f1": 0.5762939222823625
+  },
+  {
+    "order": 3,
+    "min_count": 20,
+    "threshold": 0.325,
+    "validation_macro_pair_type_switch_f1": 0.5576400600791402
+  },
+  {
+    "order": 5,
+    "min_count": 1,
+    "threshold": 0.35,
+    "validation_macro_pair_type_switch_f1": 0.5474094210998476
+  },
+  {
+    "order": 5,
+    "min_count": 5,
+    "threshold": 0.35,
+    "validation_macro_pair_type_switch_f1": 0.5768180031613619
+  },
+  {
+    "order": 5,
+    "min_count": 20,
+    "threshold": 0.325,
+    "validation_macro_pair_type_switch_f1": 0.5576400600791402
+  }
+]

@@ -1,0 +1,486 @@
+{
+  "current_token": [
+    {
+      "sequence_id": "yue_en:cb9f144e3464:004875:001",
+      "position": 25,
+      "language_pair": "yue_en",
+      "probability": 0.480828040461068,
+      "predicted_switch": 1,
+      "predicted_duration": 1,
+      "gold_switch": 0,
+      "gold_duration": -1,
+      "error_type": "false_positive",
+      "text": "近日中國 AI 初創公司 DeepSeek 引起咗全球嘅關注。The model they released, DeepSeek-R1, is causing quite a stir.",
+      "current_token": ",",
+      "next_token_for_error_analysis_only": "Deep",
+      "history_tokens": [
+        "The",
+        "model",
+        "they",
+        "released",
+        ","
+      ]
+    },
+    {
+      "sequence_id": "yue_en:cb9f144e3464:001651:002",
+      "position": 19,
+      "language_pair": "yue_en",
+      "probability": 0.19649495485926713,
+      "predicted_switch": 0,
+      "predicted_duration": 2,
+      "gold_switch": 1,
+      "gold_duration": 0,
+      "error_type": "false_negative",
+      "text": "有呀，真係好消息，因為之前800元好似唔夠，right?",
+      "current_token": "，",
+      "next_token_for_error_analysis_only": "right",
+      "history_tokens": [
+        "好",
+        "似",
+        "唔",
+        "夠",
+        "，"
+      ]
+    },
+    {
+      "sequence_id": "yue_en:cb9f144e3464:001651:002",
+      "position": 19,
+      "language_pair": "yue_en",
+      "probability": 0.19649495485926713,
+      "predicted_switch": 0,
+      "predicted_duration": 2,
+      "gold_switch": 1,
+      "gold_duration": 0,
+      "error_type": "duration_wrong",
+      "text": "有呀，真係好消息，因為之前800元好似唔夠，right?",
+      "current_token": "，",
+      "next_token_for_error_analysis_only": "right",
+      "history_tokens": [
+        "好",
+        "似",
+        "唔",
+        "夠",
+        "，"
+      ]
+    },
+    {
+      "sequence_id": "ko_en:3c6ed9650d27:000545:001",
+      "position": 23,
+      "language_pair": "ko_en",
+      "probability": 0.480828040461068,
+      "predicted_switch": 1,
+      "predicted_duration": 1,
+      "gold_switch": 0,
+      "gold_duration": -1,
+      "error_type": "false_positive",
+      "text": "그 고래가 카약을 삼키는 걸 상상해 보세요. It sounds almost unbelievable, like something straight out of a movie!",
+      "current_token": ",",
+      "next_token_for_error_analysis_only": "like",
+      "history_tokens": [
+        "un",
+        "##beli",
+        "##eva",
+        "##ble",
+        ","
+      ]
+    },
+    {
+      "sequence_id": "ko_en:3c6ed9650d27:000090:001",
+      "position": 0,
+      "language_pair": "ko_en",
+      "probability": 0.06172839506172839,
+      "predicted_switch": 0,
+      "predicted_duration": 1,
+      "gold_switch": 1,
+      "gold_duration": 0,
+      "error_type": "false_negative",
+      "text": "그녀는 FBI의 뉴스를 봤을 때, forced retirement이 얼마나 sudden한 결정이었는지 생각했다.",
+      "current_token": "그녀는",
+      "next_token_for_error_analysis_only": "FBI",
+      "history_tokens": [
+        "그녀는"
+      ]
+    },
+    {
+      "sequence_id": "ko_en:3c6ed9650d27:000090:001",
+      "position": 0,
+      "language_pair": "ko_en",
+      "probability": 0.06172839506172839,
+      "predicted_switch": 0,
+      "predicted_duration": 1,
+      "gold_switch": 1,
+      "gold_duration": 0,
+      "error_type": "duration_wrong",
+      "text": "그녀는 FBI의 뉴스를 봤을 때, forced retirement이 얼마나 sudden한 결정이었는지 생각했다.",
+      "current_token": "그녀는",
+      "next_token_for_error_analysis_only": "FBI",
+      "history_tokens": [
+        "그녀는"
+      ]
+    },
+    {
+      "sequence_id": "ru_en:c45212da3a46:000133:002",
+      "position": 25,
+      "language_pair": "ru_en",
+      "probability": 0.5555555555555556,
+      "predicted_switch": 1,
+      "predicted_duration": 1,
+      "gold_switch": 0,
+      "gold_duration": -1,
+      "error_type": "false_positive",
+      "text": "Хороший менеджер всегда следит за эффективностью работы команды, making sure that deadlines are met and quality standards are maintained.",
+      "current_token": "quality",
+      "next_token_for_error_analysis_only": "standards",
+      "history_tokens": [
+        "##lines",
+        "are",
+        "met",
+        "and",
+        "quality"
+      ]
+    },
+    {
+      "sequence_id": "ru_en:c45212da3a46:001138:001",
+      "position": 20,
+      "language_pair": "ru_en",
+      "probability": 0.12814070351758794,
+      "predicted_switch": 0,
+      "predicted_duration": 1,
+      "gold_switch": 1,
+      "gold_duration": 1,
+      "error_type": "false_negative",
+      "text": "В деловой среде принято заключать сделки максимально быстро, потому что time is money.",
+      "current_token": "что",
+      "next_token_for_error_analysis_only": "time",
+      "history_tokens": [
+        "##льно",
+        "быстро",
+        ",",
+        "потому",
+        "что"
+      ]
+    },
+    {
+      "sequence_id": "ru_en:c45212da3a46:000133:001",
+      "position": 22,
+      "language_pair": "ru_en",
+      "probability": 0.480828040461068,
+      "predicted_switch": 1,
+      "predicted_duration": 1,
+      "gold_switch": 1,
+      "gold_duration": 2,
+      "error_type": "duration_wrong",
+      "text": "В современном бизнесе коммуникация между разными отделами играет ключевую роль, especially when projects require cross-functional teams.",
+      "current_token": ",",
+      "next_token_for_error_analysis_only": "especially",
+      "history_tokens": [
+        "##люч",
+        "##ев",
+        "##ую",
+        "роль",
+        ","
+      ]
+    },
+    {
+      "sequence_id": "ms_en:e7c9e2acc79a:000065:001",
+      "position": 1,
+      "language_pair": "ms_en",
+      "probability": 0.5,
+      "predicted_switch": 1,
+      "predicted_duration": 0,
+      "gold_switch": 0,
+      "gold_duration": -1,
+      "error_type": "false_positive",
+      "text": "Aku tengah fikir nak start bisnes baru, but the market sekarang sangat competitive. Kadang-kadang rasa macam nak give up, tapi kalau tak try, kita takkan tahu, right?",
+      "current_token": "tengah",
+      "next_token_for_error_analysis_only": "fik",
+      "history_tokens": [
+        "Aku",
+        "tengah"
+      ]
+    },
+    {
+      "sequence_id": "ms_en:e7c9e2acc79a:000065:001",
+      "position": 4,
+      "language_pair": "ms_en",
+      "probability": 0.18461538461538463,
+      "predicted_switch": 0,
+      "predicted_duration": 0,
+      "gold_switch": 1,
+      "gold_duration": 0,
+      "error_type": "false_negative",
+      "text": "Aku tengah fikir nak start bisnes baru, but the market sekarang sangat competitive. Kadang-kadang rasa macam nak give up, tapi kalau tak try, kita takkan tahu, right?",
+      "current_token": "nak",
+      "next_token_for_error_analysis_only": "start",
+      "history_tokens": [
+        "Aku",
+        "tengah",
+        "fik",
+        "##ir",
+        "nak"
+      ]
+    },
+    {
+      "sequence_id": "ms_en:e7c9e2acc79a:000065:001",
+      "position": 5,
+      "language_pair": "ms_en",
+      "probability": 0.0,
+      "predicted_switch": 0,
+      "predicted_duration": 2,
+      "gold_switch": 1,
+      "gold_duration": 1,
+      "error_type": "duration_wrong",
+      "text": "Aku tengah fikir nak start bisnes baru, but the market sekarang sangat competitive. Kadang-kadang rasa macam nak give up, tapi kalau tak try, kita takkan tahu, right?",
+      "current_token": "start",
+      "next_token_for_error_analysis_only": "bis",
+      "history_tokens": [
+        "tengah",
+        "fik",
+        "##ir",
+        "nak",
+        "start"
+      ]
+    }
+  ],
+  "causal_prefix": [
+    {
+      "sequence_id": "yue_en:cb9f144e3464:002925:002",
+      "position": 6,
+      "language_pair": "yue_en",
+      "probability": 0.5,
+      "predicted_switch": 1,
+      "predicted_duration": 1,
+      "gold_switch": 0,
+      "gold_duration": -1,
+      "error_type": "false_positive",
+      "text": "係呀，我聽講過，呢個研究真係好重要。",
+      "current_token": "過",
+      "next_token_for_error_analysis_only": "，",
+      "history_tokens": [
+        "，",
+        "我",
+        "聽",
+        "講",
+        "過"
+      ]
+    },
+    {
+      "sequence_id": "yue_en:cb9f144e3464:001651:002",
+      "position": 19,
+      "language_pair": "yue_en",
+      "probability": 0.19649495485926713,
+      "predicted_switch": 0,
+      "predicted_duration": 2,
+      "gold_switch": 1,
+      "gold_duration": 0,
+      "error_type": "false_negative",
+      "text": "有呀，真係好消息，因為之前800元好似唔夠，right?",
+      "current_token": "，",
+      "next_token_for_error_analysis_only": "right",
+      "history_tokens": [
+        "好",
+        "似",
+        "唔",
+        "夠",
+        "，"
+      ]
+    },
+    {
+      "sequence_id": "yue_en:cb9f144e3464:001651:002",
+      "position": 19,
+      "language_pair": "yue_en",
+      "probability": 0.19649495485926713,
+      "predicted_switch": 0,
+      "predicted_duration": 2,
+      "gold_switch": 1,
+      "gold_duration": 0,
+      "error_type": "duration_wrong",
+      "text": "有呀，真係好消息，因為之前800元好似唔夠，right?",
+      "current_token": "，",
+      "next_token_for_error_analysis_only": "right",
+      "history_tokens": [
+        "好",
+        "似",
+        "唔",
+        "夠",
+        "，"
+      ]
+    },
+    {
+      "sequence_id": "ko_en:3c6ed9650d27:000508:001",
+      "position": 2,
+      "language_pair": "ko_en",
+      "probability": 0.4,
+      "predicted_switch": 1,
+      "predicted_duration": 2,
+      "gold_switch": 0,
+      "gold_duration": -1,
+      "error_type": "false_positive",
+      "text": "오늘 밤에 UFC 307 경기를 꼭 볼 거야. The octagon will be on fire with Alex Pereira and Khalil Rountree!",
+      "current_token": "밤",
+      "next_token_for_error_analysis_only": "##에",
+      "history_tokens": [
+        "오",
+        "##늘",
+        "밤"
+      ]
+    },
+    {
+      "sequence_id": "ko_en:3c6ed9650d27:000090:001",
+      "position": 0,
+      "language_pair": "ko_en",
+      "probability": 0.06172839506172839,
+      "predicted_switch": 0,
+      "predicted_duration": 1,
+      "gold_switch": 1,
+      "gold_duration": 0,
+      "error_type": "false_negative",
+      "text": "그녀는 FBI의 뉴스를 봤을 때, forced retirement이 얼마나 sudden한 결정이었는지 생각했다.",
+      "current_token": "그녀는",
+      "next_token_for_error_analysis_only": "FBI",
+      "history_tokens": [
+        "그녀는"
+      ]
+    },
+    {
+      "sequence_id": "ko_en:3c6ed9650d27:000090:001",
+      "position": 0,
+      "language_pair": "ko_en",
+      "probability": 0.06172839506172839,
+      "predicted_switch": 0,
+      "predicted_duration": 1,
+      "gold_switch": 1,
+      "gold_duration": 0,
+      "error_type": "duration_wrong",
+      "text": "그녀는 FBI의 뉴스를 봤을 때, forced retirement이 얼마나 sudden한 결정이었는지 생각했다.",
+      "current_token": "그녀는",
+      "next_token_for_error_analysis_only": "FBI",
+      "history_tokens": [
+        "그녀는"
+      ]
+    },
+    {
+      "sequence_id": "ru_en:c45212da3a46:000133:002",
+      "position": 25,
+      "language_pair": "ru_en",
+      "probability": 0.5555555555555556,
+      "predicted_switch": 1,
+      "predicted_duration": 1,
+      "gold_switch": 0,
+      "gold_duration": -1,
+      "error_type": "false_positive",
+      "text": "Хороший менеджер всегда следит за эффективностью работы команды, making sure that deadlines are met and quality standards are maintained.",
+      "current_token": "quality",
+      "next_token_for_error_analysis_only": "standards",
+      "history_tokens": [
+        "##lines",
+        "are",
+        "met",
+        "and",
+        "quality"
+      ]
+    },
+    {
+      "sequence_id": "ru_en:c45212da3a46:001138:003",
+      "position": 29,
+      "language_pair": "ru_en",
+      "probability": 0.058860247698222415,
+      "predicted_switch": 0,
+      "predicted_duration": 2,
+      "gold_switch": 1,
+      "gold_duration": -1,
+      "error_type": "false_negative",
+      "text": "Успешные предприниматели всегда следят за изменениями на рынке и быстро адаптируются, ведь flexibility — ключ к успеху.",
+      "current_token": "##едь",
+      "next_token_for_error_analysis_only": "fl",
+      "history_tokens": [
+        "##руют",
+        "##ся",
+        ",",
+        "в",
+        "##едь"
+      ]
+    },
+    {
+      "sequence_id": "ru_en:c45212da3a46:000133:001",
+      "position": 22,
+      "language_pair": "ru_en",
+      "probability": 0.480828040461068,
+      "predicted_switch": 1,
+      "predicted_duration": 1,
+      "gold_switch": 1,
+      "gold_duration": 2,
+      "error_type": "duration_wrong",
+      "text": "В современном бизнесе коммуникация между разными отделами играет ключевую роль, especially when projects require cross-functional teams.",
+      "current_token": ",",
+      "next_token_for_error_analysis_only": "especially",
+      "history_tokens": [
+        "##люч",
+        "##ев",
+        "##ую",
+        "роль",
+        ","
+      ]
+    },
+    {
+      "sequence_id": "ms_en:e7c9e2acc79a:000065:001",
+      "position": 1,
+      "language_pair": "ms_en",
+      "probability": 0.5,
+      "predicted_switch": 1,
+      "predicted_duration": 2,
+      "gold_switch": 0,
+      "gold_duration": -1,
+      "error_type": "false_positive",
+      "text": "Aku tengah fikir nak start bisnes baru, but the market sekarang sangat competitive. Kadang-kadang rasa macam nak give up, tapi kalau tak try, kita takkan tahu, right?",
+      "current_token": "tengah",
+      "next_token_for_error_analysis_only": "fik",
+      "history_tokens": [
+        "Aku",
+        "tengah"
+      ]
+    },
+    {
+      "sequence_id": "ms_en:e7c9e2acc79a:000065:001",
+      "position": 4,
+      "language_pair": "ms_en",
+      "probability": 0.18461538461538463,
+      "predicted_switch": 0,
+      "predicted_duration": 0,
+      "gold_switch": 1,
+      "gold_duration": 0,
+      "error_type": "false_negative",
+      "text": "Aku tengah fikir nak start bisnes baru, but the market sekarang sangat competitive. Kadang-kadang rasa macam nak give up, tapi kalau tak try, kita takkan tahu, right?",
+      "current_token": "nak",
+      "next_token_for_error_analysis_only": "start",
+      "history_tokens": [
+        "Aku",
+        "tengah",
+        "fik",
+        "##ir",
+        "nak"
+      ]
+    },
+    {
+      "sequence_id": "ms_en:e7c9e2acc79a:000065:001",
+      "position": 5,
+      "language_pair": "ms_en",
+      "probability": 0.0,
+      "predicted_switch": 0,
+      "predicted_duration": 2,
+      "gold_switch": 1,
+      "gold_duration": 1,
+      "error_type": "duration_wrong",
+      "text": "Aku tengah fikir nak start bisnes baru, but the market sekarang sangat competitive. Kadang-kadang rasa macam nak give up, tapi kalau tak try, kita takkan tahu, right?",
+      "current_token": "start",
+      "next_token_for_error_analysis_only": "bis",
+      "history_tokens": [
+        "tengah",
+        "fik",
+        "##ir",
+        "nak",
+        "start"
+      ]
+    }
+  ]
+}
