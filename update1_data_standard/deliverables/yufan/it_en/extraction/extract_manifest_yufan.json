@@ -1,0 +1,27 @@
+{
+  "operation": "sample existing records without editing text or labels",
+  "source_manifest": {
+    "operation": "select final retained sequences from existing full extraction",
+    "source_file": "Italian_eng.csv",
+    "source_sha256": "d76eac6442a157187b57069eeba2553205af7d82473da821f58ae54d393a1767",
+    "full_extraction": {
+      "schema_version": "1.0",
+      "source_file": "Italian_eng.csv",
+      "source_sha256": "d76eac6442a157187b57069eeba2553205af7d82473da821f58ae54d393a1767",
+      "language_pair": "it_en",
+      "input_records": 7979,
+      "output_items": 24165,
+      "limit": 0,
+      "issues": 55,
+      "sequence_policy": "one_extracted_item_no_concatenation"
+    },
+    "delivered_items": 18124,
+    "all_delivered_texts_verified_against_raw_csv": true,
+    "text_modified": false,
+    "selection": "See annotation/screening_manifest_yufan.json",
+    "extraction_issues_scope": "Full source extraction, not only delivered sequences"
+  },
+  "sampled_records": 500,
+  "delivered_sequences": 1299,
+  "sampling_manifest": "../extraction/sampling_manifest_yufan.json"
+}

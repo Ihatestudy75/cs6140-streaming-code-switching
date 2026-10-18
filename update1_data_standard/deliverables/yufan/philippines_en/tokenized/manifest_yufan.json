@@ -1,0 +1,63 @@
+{
+  "operation": "sample existing records without editing text or labels",
+  "source_manifest": {
+    "operation": "select existing tokenized rows; no retokenization or label modification",
+    "source_tokenization_run": {
+      "schema_version": "1.0",
+      "tokenizer": {
+        "model": "google-bert/bert-base-multilingual-cased",
+        "revision": "3f076fdb1ab68d5b2880cb87a0886f315b8146f8",
+        "tokenizer_sha256": "78b44c32238e3b5e83d1deaa63c3fa1466ddf73547ce641a36f75180079ab45f"
+      },
+      "neutral_policy": "inherit_previous",
+      "end_policy": "observed",
+      "texts_sha256": "3bed83376e2db04c4495e92234e95fe0147c7485272b7e97588ac5b15660446f",
+      "lid_sha256": "ccaea37ff04f3883505584dedeca02742c36b1f2533c60f3e0adbaad061b887a",
+      "pipeline_sha256": "8806da9d7ecf818d64a5b1af57f55800f88b0eca990349c383fbe6c25b4a7098",
+      "allow_unreviewed": true,
+      "versions": {
+        "transformers": "4.57.6",
+        "tokenizers": "0.22.2"
+      }
+    },
+    "selection": {
+      "input_current_subword_sequences": 25577,
+      "retained": 20684,
+      "quarantined_current": 4893,
+      "quarantined_previous_lid_only": 0,
+      "quarantined_total": 4893,
+      "reason_counts": {
+        "unknown_or_ambiguous_subword": 1362,
+        "english_labeled_at_requires_context_review": 1624,
+        "switch_without_duration": 1105,
+        "short_english_phrase_not_labeled_en": 2084
+      },
+      "review_status": "unreviewed",
+      "linguistically_verified": false,
+      "entire_language_pair_quarantined_for_mapping": false
+    },
+    "delivered_sequences": 20684,
+    "labeled_tokens_sha256": "2401e5bedc8806c86072799a20747f5e9fb00637ab00eacc3a7034e8666b6d0f",
+    "texts_sha256": "3420f76bd1bb2dfa4881c7a6df464d4b78b1b517a9a9c9f650e24b19ed90dc3f",
+    "lid_sha256": "00adf47744294671e38771e245193d0e14f2047a83261975fc2fe09259e55f15",
+    "cs_type_sha256": "12d006e4ef153bf4a5615f2232cdab9f16b711019230d8a4ec6735d23170c94e",
+    "tokenizer": {
+      "model": "google-bert/bert-base-multilingual-cased",
+      "revision": "3f076fdb1ab68d5b2880cb87a0886f315b8146f8",
+      "tokenizer_sha256": "78b44c32238e3b5e83d1deaa63c3fa1466ddf73547ce641a36f75180079ab45f"
+    },
+    "neutral_policy": "inherit_previous",
+    "end_policy": "observed",
+    "review_status": "unreviewed",
+    "independent_linguistic_verification": false
+  },
+  "sampled_records": 500,
+  "delivered_sequences": 1321,
+  "sampling_manifest": "../extraction/sampling_manifest_yufan.json",
+  "output_sha256": {
+    "texts_yufan.jsonl": "2156e26ba0a3790d5efb17c76b4972c78f4146f9fb1efc7c405e1b90ad78968f",
+    "lid_yufan.jsonl": "0260f298920ec906b7e83f6dc97117d418650c890b9dcaf5926538ecda9a17c8",
+    "labeled_tokens_yufan.jsonl": "7f777a8a951008edb4aa276c7d3b2951c4caa6ecb7852bccef98af8afbad510d",
+    "cs_type_yufan.jsonl": "e21a9c73a7f28a67ff903d5fcdbde6104b28df6d339fdac71f0aea7b0f45eb02"
+  }
+}

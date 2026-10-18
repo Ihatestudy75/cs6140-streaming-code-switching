@@ -1,0 +1,36 @@
+{
+  "original_text": {
+    "schema_version": "1.0",
+    "sequence_id": "fr_en:62970a8adc63:000001:001",
+    "record_id": "fr_en:62970a8adc63:000001",
+    "item_id": 1,
+    "language_pair": "fr_en",
+    "languages": [
+      "fr",
+      "en"
+    ],
+    "source_file": "French_eng.csv",
+    "source_row": 1,
+    "source_path": [
+      0
+    ],
+    "text": "Après la victoire du LOSC contre le Real Madrid, je vais sûrement lire tous les articles sur le match. I'm eager to see the expert analyses tomorrow.",
+    "text_sha256": "a016f923455671bf7be11b54b5536a14f173f1b6d2629e8e0a883199198ea41f"
+  },
+  "screening_result": {
+    "sequence_id": "fr_en:62970a8adc63:000001:001",
+    "record_id": "fr_en:62970a8adc63:000001",
+    "reasons": [
+      "disagreement_with_existing_french_preannotation"
+    ],
+    "details": {
+      "disagreement_character_positions": [
+        103,
+        105
+      ]
+    },
+    "has_subword_labels": true
+  },
+  "action": "Quarantined whole sequence; no language label corrected",
+  "remaining_uncertainty": "Flag is an automatic review candidate, not an adjudicated linguistic error"
+}
