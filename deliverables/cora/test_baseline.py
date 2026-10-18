@@ -47,6 +47,15 @@ class BaselineTests(unittest.TestCase):
         ss[0]['provenance'] = {'sequence_id': 'changed'}
         self.assertEqual(m.predict(ss[0]['inputs']['input_ids']), before)
 
+    def test_sampling_cohorts_are_reported_separately(self):
+        ss = [sample([1], 1, sid='a', pair='fr_en'),
+              sample([2], 1, sid='b', pair='hi_en')]
+        ev = evaluate(ss, [(0.9, 0), (0.1, 0)], 0.5, {'a': 'A', 'b': 'A'})
+        cohorts = ev['by_sampling_cohort']
+        self.assertEqual(cohorts['screened_retained_sample']['macro_pair_type_switch_f1'], 1.0)
+        self.assertEqual(cohorts['full_record_sample']['macro_pair_type_switch_f1'], 0.0)
+        self.assertEqual(sum(c['pooled']['positions'] for c in cohorts.values()), ev['pooled']['positions'])
+
 
 if __name__ == '__main__':
     unittest.main()

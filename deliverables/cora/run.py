@@ -1,7 +1,7 @@
-"""Local, standard-library-only CS6140 baseline and causal prefix experiment.
+"""Run the token baseline and prefix model locally.
 
-Run: python3 run.py --out runs/v1
-The downloaded PR snapshot is read-only. No network or GitHub writes.
+Use a new output folder: python3 run.py --out runs/reproduction
+Source data is read-only. No network access is used.
 """
 import argparse
 import csv
@@ -21,8 +21,11 @@ sys.path.insert(0, str(SOURCE / 'update1_data_standard'))
 import pipeline as p
 from loader import iter_samples
 
-PAIRS = ['yue_en', 'ko_en', 'ru_en', 'ms_en']
-HEAD = '440cbb032b57b010f909ac30d6deb223f7e642dc'
+DELIVERIES = [(pair, 'shaoyu') for pair in ('yue_en', 'ko_en', 'ru_en', 'ms_en')] + [(pair, 'yulun') for pair in ('ar_en', 'hi_en', 'zh_en', 'ja_en', 'es_en', 'vi_en')]
+DELIVERIES += [(pair, 'yufan') for pair in ('fr_en', 'de_en', 'it_en', 'philippines_en')]
+PAIRS = [pair for pair, owner in DELIVERIES]
+SCREENED_PAIRS = {'fr_en', 'de_en', 'it_en', 'philippines_en'}
+SOURCE_COMMITS = {'shaoyu': '440cbb032b57b010f909ac30d6deb223f7e642dc', 'yulun': '76a524ddb25ee21ca09a1c07928fbb1ec8c22543', 'yufan': 'c4061b60567a5aa6544874a8e471912da87e934e'}
 
 
 def sha(path):
@@ -31,26 +34,40 @@ def sha(path):
 
 def audit():
     report, types, pilots, all_rows, inputs = {}, {}, set(), [], []
-    for pair in PAIRS:
-        base = SOURCE / 'deliverables' / 'shaoyu' / pair
-        inp = base / 'tokenized/labeled_tokens_shaoyu.jsonl'
+    inventory = json.loads((SOURCE / 'deliverables/yufan/file_inventory_yufan.json').read_text())
+    for item in inventory['files']:
+        path = SOURCE / 'deliverables/yufan' / item['path']
+        assert path.stat().st_size == item['bytes'] and sha(path) == item['sha256']
+    for pair, owner in DELIVERIES:
+        base = SOURCE / 'deliverables' / owner / pair
+        inp = base / ('tokenized/labeled_tokens_' + owner + '.jsonl')
         inputs.append(str(inp))
         rows = p.read_jsonl(inp)
-        texts_path = base / 'extraction/texts_shaoyu.jsonl'
-        lid_path = base / 'annotation/lid_shaoyu.jsonl'
+        texts_path = base / ('extraction/texts_' + owner + '.jsonl')
+        lid_path = base / ('annotation/lid_' + owner + '.jsonl')
         texts = p.unique(p.read_jsonl(texts_path), 'sequence_id')
         lids = p.unique(p.read_jsonl(lid_path), 'sequence_id')
-        cs = p.unique(p.read_jsonl(base / 'cs_type_shaoyu.jsonl'), 'sequence_id')
+        cs = p.unique(p.read_jsonl(base / ('cs_type_' + owner + '.jsonl')), 'sequence_id')
         assert set(texts) == set(lids) == set(cs) == set(p.unique(rows, 'sequence_id'))
-        manifest = json.loads((base / 'tokenized/manifest_shaoyu.json').read_text())
-        assert sha(texts_path) == manifest['texts_sha256']
-        assert sha(lid_path) == manifest['lid_sha256']
-        # GitHub archive is LF; manifests were produced on Windows. Report both hashes.
+        manifest = json.loads((base / ('tokenized/manifest_' + owner + '.json')).read_text())
+        if owner == 'yufan':
+            outputs = manifest['output_sha256']
+            for path in [texts_path, lid_path, inp, base / 'cs_type_yufan.jsonl']:
+                assert sha(path) == outputs[path.name]
+            generation = manifest['source_manifest']['source_tokenization_run']
+        else:
+            assert sha(texts_path) == manifest['texts_sha256']
+            assert sha(lid_path) == manifest['lid_sha256']
+            generation = manifest
+        # Accept LF and CRLF line endings in the script hash.
         script_path = SOURCE / 'update1_data_standard/pipeline.py'
         script_hashes = {sha(script_path), hashlib.sha256(script_path.read_bytes().replace(b'\r\n', b'\n').replace(b'\n', b'\r\n')).hexdigest()}
-        assert manifest['pipeline_sha256'] in script_hashes
-        pilot = set((base / 'annotation/pilot_record_ids_shaoyu.txt').read_text().split())
-        assert len(pilot) == 20
+        assert generation['pipeline_sha256'] in script_hashes
+        pilot = set((base / ('annotation/pilot_record_ids_' + owner + '.txt')).read_text().split())
+        if owner != 'yufan':
+            assert len(pilot) == 20
+        else:
+            assert pilot == set(json.loads((base / 'annotation/development_record_manifest_yufan.json').read_text())['present_in_delivery'])
         pilots.update(pilot)
         for row in rows:
             p.validate_row(row)
@@ -62,14 +79,33 @@ def audit():
             assert langs == row['language_ids'] and notes == row['alignment_notes']
             assert spans == row['language_spans']
             assert row['review_status'] == lids[sid]['review_status']
-            assert (row['review_status'] == 'reviewed') == (row['record_id'] in pilot)
-            assert cs[sid]['record_id'] == row['record_id'] and cs[sid]['language_pair'] == pair
+            if owner == 'yufan':
+                assert row['review_status'] == 'unreviewed'
+            else:
+                assert (row['review_status'] == 'reviewed') == (row['record_id'] in pilot)
+            assert cs[sid]['record_id'] == row['record_id']
+            # Yufan's type map uses IDs without a language_pair field.
+            if 'language_pair' in cs[sid]:
+                assert cs[sid]['language_pair'] == pair
             assert cs[sid]['cs_type'] in ('Intersentential', 'Intrasentential', 'Extra-sentential / Tag switching')
             types[sid] = cs[sid]['cs_type']
+        records = {r['record_id'] for r in rows}
+        assert pilot <= records
+        if owner == 'yufan':
+            sample = json.loads((base / 'extraction/sampling_manifest_yufan.json').read_text())
+            assert len(records) == sample['sampled_records'] == 500
+            assert records == set(sample['selected_record_ids'])
+            assert len(rows) == sample['sampled_sequences']
+            templates = p.unique(p.read_jsonl(base / 'extraction/lid.template_yufan.jsonl'), 'sequence_id')
+            assert set(templates) == set(texts)
+            assert all(templates[k]['text_sha256'] == texts[k]['text_sha256'] for k in templates)
         stats = p.summary(rows)
-        assert stats == json.loads((base / 'tokenized/stats_shaoyu.json').read_text())
-        issues = p.read_jsonl(base / 'extraction/extract_issues_shaoyu.jsonl')
-        report[pair] = dict(stats, records=len({r['record_id'] for r in rows}),
+        assert stats == json.loads((base / ('tokenized/stats_' + owner + '.json')).read_text())
+        issues = p.read_jsonl(base / ('extraction/extract_issues_' + owner + '.jsonl'))
+        report[pair] = dict(stats, owner=owner,
+                            sampling_population=('screened_retained_set' if owner == 'yufan' else 'full_raw_records'),
+                            extraction_issue_scope=('full_extraction_not_sample' if owner == 'yufan' else 'sample'),
+                            records=len({r['record_id'] for r in rows}),
                             pilot_records=len(pilot), extraction_issues=dict(Counter(r['severity'] for r in issues)),
                             extraction_errors=[r for r in issues if r['severity'] == 'error'],
                             tokenized_sha256=sha(inp), manifest=manifest,
@@ -85,7 +121,7 @@ def features(prefix, order):
 
 
 class Counts:
-    """Only token IDs enter inference; group metadata is used by scoring only."""
+    """Predict from token IDs. Use metadata only for scoring."""
     def __init__(self, samples, order=1, min_count=1):
         self.order, self.min_count = order, min_count
         self.tables = [defaultdict(lambda: [0, 0, [0, 0, 0]]) for _ in range(order)]
@@ -129,9 +165,9 @@ def f1(tp, fp, fn):
 
 
 def choose_threshold(samples, scores, types):
-    """Exact validation sweep; maximize equal-weight pair x CS-type positive F1.
+    """Choose the threshold with the best validation macro F1.
 
-    At tied objective choose the larger threshold. Equal scores move together.
+    On a tie, keep the higher threshold. Group equal scores together.
     """
     totals = Counter(group(s, types) for s in samples if s['targets']['switch'])
     groups = sorted({group(s, types) for s in samples})
@@ -159,8 +195,8 @@ def choose_threshold(samples, scores, types):
 def score_group(items, threshold):
     tp = fp = fn = tn = correct_duration = duration_n = 0
     cm = [[0] * 3 for _ in range(3)]
-    # Joint duration F1 penalizes missed switch and wrong duration; false switch
-    # predictions are FP. Gold switches with unknown duration are excluded.
+    # Joint scoring counts missed and false switches and wrong length classes.
+    # Skip gold switches whose duration is unknown.
     joint_tp, joint_fp, joint_fn = [0]*3, [0]*3, [0]*3
     for s, score, pred_d in items:
         y, d = s['targets']['switch'], s['targets']['duration']
@@ -203,7 +239,13 @@ def evaluate(samples, predictions, threshold, types):
         pairs[pair].append(item)
         cstypes[typ].append(item)
     by_cell = {k: score_group(v, threshold) for k, v in sorted(cells.items())}
-    return {'pooled': score_group(items, threshold), 'by_pair_type': by_cell,
+    cohorts = {}
+    for name, screened in [('full_record_sample', False), ('screened_retained_sample', True)]:
+        chosen = [item for item in items if (item[0]['provenance']['language_pair'] in SCREENED_PAIRS) == screened]
+        chosen_cells = [v for k, v in by_cell.items() if (k.split(' | ')[0] in SCREENED_PAIRS) == screened]
+        if chosen:
+            cohorts[name] = {'pooled': score_group(chosen, threshold), 'macro_pair_type_switch_f1': sum(v['switch_f1'] for v in chosen_cells)/len(chosen_cells)}
+    return {'pooled': score_group(items, threshold), 'by_pair_type': by_cell, 'by_sampling_cohort': cohorts,
             'macro_pair_type_switch_f1': sum(v['switch_f1'] for v in by_cell.values()) / len(by_cell),
             'by_pair': {k: score_group(v, threshold) for k, v in sorted(pairs.items())},
             'by_cs_type': {k: score_group(v, threshold) for k, v in sorted(cstypes.items())}}
@@ -218,7 +260,7 @@ def main():
     p.write_json(out / 'audit.json', audit_report)
     (out / 'all_pilot_record_ids.txt').write_text('\n'.join(sorted(pilots)) + '\n')
     p.split(SimpleNamespace(inputs=inputs, seed=6140, train_records=str(out / 'all_pilot_record_ids.txt'), out=str(out / 'combined')))
-    # Portable provenance: retain input checksums without machine-specific paths.
+    # Save input hashes with relative paths.
     split_manifest_path = out / 'combined/split_manifest.json'
     split_manifest = json.loads(split_manifest_path.read_text())
     split_manifest['inputs'] = {Path(k).relative_to(ROOT).as_posix(): v
@@ -235,22 +277,29 @@ def main():
     assert all(len(v) == 1 for v in exact.values())
     samples = {s: list(iter_samples(data, splits, s, context='prefix', max_context=5)) for s in sets}
     print('Audit and split passed.', flush=True)
-    # Test labels do not enter fitting, threshold choice, or prefix selection.
-    candidates, fitted = [], []
+    # Use validation data to choose settings. Keep test data out.
+    candidates = []
+    baseline_model = best_prefix_model = None
+    best_prefix_index = None
     for order, min_count in [(1, 1)] + [(n, c) for n in (2, 3, 5) for c in (1, 5, 20)]:
         model = Counts(samples['train'], order, min_count)
         preds = [model.predict(s['inputs']['input_ids']) for s in samples['validation']]
         choice = choose_threshold(samples['validation'], [v[0] for v in preds], types)
         candidate = dict(order=order, min_count=min_count, **choice)
         candidates.append(candidate)
-        fitted.append(model)
+        index = len(candidates) - 1
+        if order == 1:
+            baseline_model = model
+        elif best_prefix_index is None or choice['validation_macro_pair_type_switch_f1'] > candidates[best_prefix_index]['validation_macro_pair_type_switch_f1']:
+            best_prefix_index, best_prefix_model = index, model
         print(candidate, flush=True)
-    # Stable ties prefer shorter history, then earlier listed min_count.
-    best_prefix = max(range(1, len(candidates)), key=lambda i: candidates[i]['validation_macro_pair_type_switch_f1'])
+    # On a tie, keep the shorter history, then the earlier setting.
+    best_prefix = best_prefix_index
     selected = {'current_token': 0, 'causal_prefix': best_prefix}
     results = {}
     for name, index in selected.items():
-        config, model = candidates[index], fitted[index]
+        config = candidates[index]
+        model = baseline_model if name == 'current_token' else best_prefix_model
         results[name] = {'config': config}
         for split in ('validation', 'test'):
             preds = [model.predict(s['inputs']['input_ids']) for s in samples[split]]
@@ -260,18 +309,18 @@ def main():
                               [dict(s['provenance'], probability=prob, predicted_switch=int(prob >= config['threshold']), predicted_duration=d,
                                     gold_switch=s['targets']['switch'], gold_duration=s['targets']['duration'])
                                for s, (prob, d) in zip(samples[split], preds)])
-        # Persist fitted counts so predictions can be reproduced without refitting.
+        # Save counts for later predictions.
         p.write_json(out / (name + '_model.json'), {'config': config, 'prior': model.prior, 'duration_prior': model.duration_prior,
                      'tables': [[[list(k), v] for k, v in sorted(tab.items())] for tab in model.tables]})
     for name, prob in [('always_no_switch', 0.0), ('always_switch', 1.0)]:
-        results[name] = {'test': evaluate(samples['test'], [(prob, fitted[0].duration_prior)] * len(samples['test']), 0.5, types)}
+        results[name] = {'test': evaluate(samples['test'], [(prob, baseline_model.duration_prior)] * len(samples['test']), 0.5, types)}
     p.write_json(out / 'results.json', results)
     p.write_json(out / 'validation_search.json', candidates)
-    p.write_json(out / 'run_manifest.json', {'source_pr': 'https://github.com/Ihatestudy75/cs6140-streaming-code-switching/pull/1',
-                 'source_commit': HEAD, 'python': platform.python_version(), 'runner_sha256': sha(__file__),
+    p.write_json(out / 'run_manifest.json', {'source_branches': ['data/shaoyu', 'data/yulun', 'data/yufan'],
+                 'source_commits': SOURCE_COMMITS, 'python': platform.python_version(), 'runner_sha256': sha(__file__),
                  'split_sha256': sha(splits), 'data_sha256': sha(data), 'seed': 6140,
                  'evaluation': 'Pseudo-label agreement. Reviewed pilot records are model-assisted and training-only.',
-                 'selection_metric': 'Validation positive switch F1 averaged equally over 12 language-pair x CS-type cells.',
+                 'selection_metric': 'Validation positive switch F1 averaged equally over 42 language-pair x CS-type cells; mixed sampling cohorts, exploratory.',
                  'input_contract': 'Token IDs at positions <=t only. No language IDs, cs_type, labels, text or future token at inference.',
                  'checks': {'pilot_train_only': True, 'no_record_overlap': True, 'no_normalized_exact_text_overlap': True},
                  'not_verified': ['Raw CSV absent', 'Independent human LID quality', 'Near duplicates/template leakage', 'Retokenization from frozen tokenizer assets (assets absent)']})

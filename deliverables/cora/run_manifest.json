@@ -1,13 +1,21 @@
 {
-  "source_pr": "https://github.com/Ihatestudy75/cs6140-streaming-code-switching/pull/1",
-  "source_commit": "440cbb032b57b010f909ac30d6deb223f7e642dc",
+  "source_branches": [
+    "data/shaoyu",
+    "data/yulun",
+    "data/yufan"
+  ],
+  "source_commits": {
+    "shaoyu": "440cbb032b57b010f909ac30d6deb223f7e642dc",
+    "yulun": "76a524ddb25ee21ca09a1c07928fbb1ec8c22543",
+    "yufan": "c4061b60567a5aa6544874a8e471912da87e934e"
+  },
   "python": "3.9.6",
-  "runner_sha256": "0b44add6b07ea9fcf5e7472d3ec5637d855035360de7b5868c6c0083ccbc13ed",
-  "split_sha256": "719d6812068543afeaf27cb45cd9fe60468c6951fe6c37a75b483300fd869017",
-  "data_sha256": "23ec5700bed5e7e53ded8bbc1f864d1130c0831acbdbc40430d132675994bef1",
+  "runner_sha256": "db3d91873f3a8a6a859215c75af8aa1d232ed29e05d8834cff9bf61fcdfc922b",
+  "split_sha256": "0bf85d986238f8c89a2c96333eca0fb7a8dedfa5d12cf7ce466580dee8516427",
+  "data_sha256": "e2f0f59139a718794661e16ea0787383cf82a9b444849c99f54f4cb9f0a0a711",
   "seed": 6140,
   "evaluation": "Pseudo-label agreement. Reviewed pilot records are model-assisted and training-only.",
-  "selection_metric": "Validation positive switch F1 averaged equally over 12 language-pair x CS-type cells.",
+  "selection_metric": "Validation positive switch F1 averaged equally over 42 language-pair x CS-type cells; mixed sampling cohorts, exploratory.",
   "input_contract": "Token IDs at positions <=t only. No language IDs, cs_type, labels, text or future token at inference.",
   "checks": {
     "pilot_train_only": true,
@@ -20,5 +28,6 @@
     "Near duplicates/template leakage",
     "Retokenization from frozen tokenizer assets (assets absent)"
   ],
-  "publication_note": "Input path keys were made relative for portable provenance; data, splits, predictions, and metrics are unchanged."
+  "execution_runner_sha256": "32e29defced7fd3645bc314b3211b3ade961099ad744cf4d021fd34fbd44c301",
+  "documentation_note": "Comments and report simplified in English. Executable logic, data, splits and scores are unchanged."
 }

@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-18",
+  "source_commits": {
+    "shaoyu": "440cbb032b57b010f909ac30d6deb223f7e642dc",
+    "yulun": "76a524ddb25ee21ca09a1c07928fbb1ec8c22543",
+    "yufan": "c4061b60567a5aa6544874a8e471912da87e934e"
+  },
+  "old_sequence_count": 16951,
+  "old_split_changes": 0,
+  "forced_training_records": 202,
+  "test_counts": {
+    "shared": 8,
+    "yulun": 15,
+    "baseline": 6
+  },
+  "sampling_caveat": "Ten full-record-sample pairs versus four pre-screened-retained pairs."
+}

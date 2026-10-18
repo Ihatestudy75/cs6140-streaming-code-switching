@@ -20,6 +20,9 @@
       "reviewed": 96
     },
     "unknown_subwords": 1950,
+    "owner": "shaoyu",
+    "sampling_population": "full_raw_records",
+    "extraction_issue_scope": "sample",
     "records": 499,
     "pilot_records": 20,
     "extraction_issues": {
@@ -76,6 +79,9 @@
       "reviewed": 66
     },
     "unknown_subwords": 172,
+    "owner": "shaoyu",
+    "sampling_population": "full_raw_records",
+    "extraction_issue_scope": "sample",
     "records": 500,
     "pilot_records": 20,
     "extraction_issues": {
@@ -125,6 +131,9 @@
       "reviewed": 58
     },
     "unknown_subwords": 109,
+    "owner": "shaoyu",
+    "sampling_population": "full_raw_records",
+    "extraction_issue_scope": "sample",
     "records": 500,
     "pilot_records": 20,
     "extraction_issues": {},
@@ -172,6 +181,9 @@
       "reviewed": 50
     },
     "unknown_subwords": 1512,
+    "owner": "shaoyu",
+    "sampling_population": "full_raw_records",
+    "extraction_issue_scope": "sample",
     "records": 500,
     "pilot_records": 20,
     "extraction_issues": {
@@ -199,5 +211,691 @@
     },
     "total_tokens": 40205,
     "unk_token_count": 81
+  },
+  "ar_en": {
+    "sequences": 1594,
+    "valid_positions": 40784,
+    "switches": 1936,
+    "switch_rate": 0.04746959591996862,
+    "duration_class_counts": {
+      "0": 351,
+      "1": 605,
+      "2": 935
+    },
+    "duration_class_proportions": {
+      "0": 0.18561607615018508,
+      "1": 0.3199365415124273,
+      "2": 0.4944473823373876
+    },
+    "switches_without_duration": 45,
+    "review_status_counts": {
+      "unreviewed": 1522,
+      "reviewed": 72
+    },
+    "unknown_subwords": 64,
+    "owner": "yulun",
+    "sampling_population": "full_raw_records",
+    "extraction_issue_scope": "sample",
+    "records": 500,
+    "pilot_records": 20,
+    "extraction_issues": {},
+    "extraction_errors": [],
+    "tokenized_sha256": "fac052cf5414452ec391aa5a075986b450d226c4d4b0781cb1ec71c65c6829d8",
+    "manifest": {
+      "schema_version": "1.0",
+      "tokenizer": {
+        "model": "google-bert/bert-base-multilingual-cased",
+        "revision": "3f076fdb1ab68d5b2880cb87a0886f315b8146f8",
+        "tokenizer_sha256": "78b44c32238e3b5e83d1deaa63c3fa1466ddf73547ce641a36f75180079ab45f"
+      },
+      "neutral_policy": "inherit_previous",
+      "end_policy": "observed",
+      "texts_sha256": "85c3b198711e693408ec4cba9071d42f3138bcf571889d924ba47696e433e3d8",
+      "lid_sha256": "44a1af5e60ec68f69c0a6eabda43e3c7a2d6aeacdeed56fb53cd678e609f9c06",
+      "pipeline_sha256": "1fd93f7bf15ab3970d7211f11c9938acddc222c5e7dafee7d150f5c8832c9a0c",
+      "allow_unreviewed": true,
+      "versions": {
+        "transformers": "4.57.6",
+        "tokenizers": "0.22.2"
+      }
+    },
+    "total_tokens": 42505,
+    "unk_token_count": 64
+  },
+  "hi_en": {
+    "sequences": 1571,
+    "valid_positions": 42575,
+    "switches": 6198,
+    "switch_rate": 0.1455783910745743,
+    "duration_class_counts": {
+      "0": 2661,
+      "1": 2031,
+      "2": 1325
+    },
+    "duration_class_proportions": {
+      "0": 0.4422469669270401,
+      "1": 0.3375436263918897,
+      "2": 0.2202094066810703
+    },
+    "switches_without_duration": 181,
+    "review_status_counts": {
+      "unreviewed": 1501,
+      "reviewed": 70
+    },
+    "unknown_subwords": 676,
+    "owner": "yulun",
+    "sampling_population": "full_raw_records",
+    "extraction_issue_scope": "sample",
+    "records": 500,
+    "pilot_records": 20,
+    "extraction_issues": {
+      "warning": 3
+    },
+    "extraction_errors": [],
+    "tokenized_sha256": "0002924622f5dd3c39598748e8bfa242fa010a2cc647bb83d5239e613cc05d3e",
+    "manifest": {
+      "schema_version": "1.0",
+      "tokenizer": {
+        "model": "google-bert/bert-base-multilingual-cased",
+        "revision": "3f076fdb1ab68d5b2880cb87a0886f315b8146f8",
+        "tokenizer_sha256": "78b44c32238e3b5e83d1deaa63c3fa1466ddf73547ce641a36f75180079ab45f"
+      },
+      "neutral_policy": "inherit_previous",
+      "end_policy": "observed",
+      "texts_sha256": "6a4a1bed7ff6298e2d2d17431dfae49587dbc5d9a9d3ede121a390c54e11bb2c",
+      "lid_sha256": "5463f3b749d470c6ad439c051ed01ac8858508f99ff9d62d58d357ceaac5124c",
+      "pipeline_sha256": "1fd93f7bf15ab3970d7211f11c9938acddc222c5e7dafee7d150f5c8832c9a0c",
+      "allow_unreviewed": true,
+      "versions": {
+        "transformers": "4.57.6",
+        "tokenizers": "0.22.2"
+      }
+    },
+    "total_tokens": 45108,
+    "unk_token_count": 90
+  },
+  "zh_en": {
+    "sequences": 1747,
+    "valid_positions": 54032,
+    "switches": 2402,
+    "switch_rate": 0.04445513769618004,
+    "duration_class_counts": {
+      "0": 379,
+      "1": 668,
+      "2": 1283
+    },
+    "duration_class_proportions": {
+      "0": 0.16266094420600857,
+      "1": 0.28669527896995706,
+      "2": 0.5506437768240343
+    },
+    "switches_without_duration": 72,
+    "review_status_counts": {
+      "unreviewed": 1666,
+      "reviewed": 81
+    },
+    "unknown_subwords": 163,
+    "owner": "yulun",
+    "sampling_population": "full_raw_records",
+    "extraction_issue_scope": "sample",
+    "records": 500,
+    "pilot_records": 20,
+    "extraction_issues": {
+      "warning": 1
+    },
+    "extraction_errors": [],
+    "tokenized_sha256": "d96d8a1caae703b5f00a628787d9555344152e73cdba0356754242505b412ab1",
+    "manifest": {
+      "schema_version": "1.0",
+      "tokenizer": {
+        "model": "google-bert/bert-base-multilingual-cased",
+        "revision": "3f076fdb1ab68d5b2880cb87a0886f315b8146f8",
+        "tokenizer_sha256": "78b44c32238e3b5e83d1deaa63c3fa1466ddf73547ce641a36f75180079ab45f"
+      },
+      "neutral_policy": "inherit_previous",
+      "end_policy": "observed",
+      "texts_sha256": "3502fa5e8217cf36479cfad88f918fc5d5e20ca3a434fa58157522c4a30032d6",
+      "lid_sha256": "a5e47b9f8e22543468e1745d5cb26afd4b74ddd648cd7226133b3cd6a97d19e3",
+      "pipeline_sha256": "1fd93f7bf15ab3970d7211f11c9938acddc222c5e7dafee7d150f5c8832c9a0c",
+      "allow_unreviewed": true,
+      "versions": {
+        "transformers": "4.57.6",
+        "tokenizers": "0.22.2"
+      }
+    },
+    "total_tokens": 56078,
+    "unk_token_count": 137
+  },
+  "ja_en": {
+    "sequences": 1662,
+    "valid_positions": 52918,
+    "switches": 2300,
+    "switch_rate": 0.043463471786537665,
+    "duration_class_counts": {
+      "0": 374,
+      "1": 567,
+      "2": 1254
+    },
+    "duration_class_proportions": {
+      "0": 0.1703872437357631,
+      "1": 0.2583143507972665,
+      "2": 0.5712984054669704
+    },
+    "switches_without_duration": 105,
+    "review_status_counts": {
+      "unreviewed": 1594,
+      "reviewed": 68
+    },
+    "unknown_subwords": 194,
+    "owner": "yulun",
+    "sampling_population": "full_raw_records",
+    "extraction_issue_scope": "sample",
+    "records": 500,
+    "pilot_records": 20,
+    "extraction_issues": {},
+    "extraction_errors": [],
+    "tokenized_sha256": "7dc202fc1ac4a686bd8156594d1ab96614101c865944cd9936944b3ea7afc09b",
+    "manifest": {
+      "schema_version": "1.0",
+      "tokenizer": {
+        "model": "google-bert/bert-base-multilingual-cased",
+        "revision": "3f076fdb1ab68d5b2880cb87a0886f315b8146f8",
+        "tokenizer_sha256": "78b44c32238e3b5e83d1deaa63c3fa1466ddf73547ce641a36f75180079ab45f"
+      },
+      "neutral_policy": "inherit_previous",
+      "end_policy": "observed",
+      "texts_sha256": "a6b21db7d1a71442fb7baffd1f714e8c8614340fb78e351526b6426c1dafcf54",
+      "lid_sha256": "482c8a43f2f8189d5710230fba3044dab2aa8d43ef860044624c7d9594f2ff15",
+      "pipeline_sha256": "1fd93f7bf15ab3970d7211f11c9938acddc222c5e7dafee7d150f5c8832c9a0c",
+      "allow_unreviewed": true,
+      "versions": {
+        "transformers": "4.57.6",
+        "tokenizers": "0.22.2"
+      }
+    },
+    "total_tokens": 54911,
+    "unk_token_count": 141
+  },
+  "es_en": {
+    "sequences": 1561,
+    "valid_positions": 37355,
+    "switches": 2319,
+    "switch_rate": 0.06208004283228483,
+    "duration_class_counts": {
+      "0": 417,
+      "1": 748,
+      "2": 1016
+    },
+    "duration_class_proportions": {
+      "0": 0.19119669876203577,
+      "1": 0.3429619440623567,
+      "2": 0.46584135717560754
+    },
+    "switches_without_duration": 138,
+    "review_status_counts": {
+      "unreviewed": 1497,
+      "reviewed": 64
+    },
+    "unknown_subwords": 642,
+    "owner": "yulun",
+    "sampling_population": "full_raw_records",
+    "extraction_issue_scope": "sample",
+    "records": 500,
+    "pilot_records": 20,
+    "extraction_issues": {},
+    "extraction_errors": [],
+    "tokenized_sha256": "0ba5d79c27f35c3cac474cb28b6cf582e8cb5a073562dd6213ff3333c4b73b36",
+    "manifest": {
+      "schema_version": "1.0",
+      "tokenizer": {
+        "model": "google-bert/bert-base-multilingual-cased",
+        "revision": "3f076fdb1ab68d5b2880cb87a0886f315b8146f8",
+        "tokenizer_sha256": "78b44c32238e3b5e83d1deaa63c3fa1466ddf73547ce641a36f75180079ab45f"
+      },
+      "neutral_policy": "inherit_previous",
+      "end_policy": "observed",
+      "texts_sha256": "0228557ce3686d7b2c2eac826317fee61009f4beb4311072b1d71731f67c4e0d",
+      "lid_sha256": "1ffa54a28f1b37c9a69f48a418c6e792d5780ac1bab8d1f5d227b4ed1a271673",
+      "pipeline_sha256": "1fd93f7bf15ab3970d7211f11c9938acddc222c5e7dafee7d150f5c8832c9a0c",
+      "allow_unreviewed": true,
+      "versions": {
+        "transformers": "4.57.6",
+        "tokenizers": "0.22.2"
+      }
+    },
+    "total_tokens": 39831,
+    "unk_token_count": 76
+  },
+  "vi_en": {
+    "sequences": 1595,
+    "valid_positions": 39495,
+    "switches": 2701,
+    "switch_rate": 0.06838840359539182,
+    "duration_class_counts": {
+      "0": 640,
+      "1": 935,
+      "2": 932
+    },
+    "duration_class_proportions": {
+      "0": 0.25528520143597927,
+      "1": 0.37295572397287596,
+      "2": 0.37175907459114477
+    },
+    "switches_without_duration": 194,
+    "review_status_counts": {
+      "unreviewed": 1534,
+      "reviewed": 61
+    },
+    "unknown_subwords": 819,
+    "owner": "yulun",
+    "sampling_population": "full_raw_records",
+    "extraction_issue_scope": "sample",
+    "records": 500,
+    "pilot_records": 20,
+    "extraction_issues": {},
+    "extraction_errors": [],
+    "tokenized_sha256": "1fd0f97dce82b1000741a73f9be82d10c0a66ecfc5fe9600c03bbc3a25e1a8f0",
+    "manifest": {
+      "schema_version": "1.0",
+      "tokenizer": {
+        "model": "google-bert/bert-base-multilingual-cased",
+        "revision": "3f076fdb1ab68d5b2880cb87a0886f315b8146f8",
+        "tokenizer_sha256": "78b44c32238e3b5e83d1deaa63c3fa1466ddf73547ce641a36f75180079ab45f"
+      },
+      "neutral_policy": "inherit_previous",
+      "end_policy": "observed",
+      "texts_sha256": "ddbc4583d572c5edad296340a7a404584db959d8e432644ca84a9e1fdc9f40dd",
+      "lid_sha256": "cb03e207140e3b9ece18a3577273d3a12d9d39eb34fe3a44ed9e13e633d235a2",
+      "pipeline_sha256": "1fd93f7bf15ab3970d7211f11c9938acddc222c5e7dafee7d150f5c8832c9a0c",
+      "allow_unreviewed": true,
+      "versions": {
+        "transformers": "4.57.6",
+        "tokenizers": "0.22.2"
+      }
+    },
+    "total_tokens": 42300,
+    "unk_token_count": 89
+  },
+  "fr_en": {
+    "sequences": 1143,
+    "valid_positions": 31968,
+    "switches": 1321,
+    "switch_rate": 0.041322572572572575,
+    "duration_class_counts": {
+      "0": 39,
+      "1": 335,
+      "2": 947
+    },
+    "duration_class_proportions": {
+      "0": 0.029523088569265707,
+      "1": 0.25359576078728235,
+      "2": 0.7168811506434519
+    },
+    "switches_without_duration": 0,
+    "review_status_counts": {
+      "unreviewed": 1143
+    },
+    "unknown_subwords": 0,
+    "owner": "yufan",
+    "sampling_population": "screened_retained_set",
+    "extraction_issue_scope": "full_extraction_not_sample",
+    "records": 500,
+    "pilot_records": 2,
+    "extraction_issues": {
+      "warning": 44
+    },
+    "extraction_errors": [],
+    "tokenized_sha256": "e126723504031c4a09100049a615592f0b3643c66110795e783f16d663d18a8b",
+    "manifest": {
+      "operation": "sample existing records without editing text or labels",
+      "source_manifest": {
+        "operation": "select existing tokenized rows; no retokenization or label modification",
+        "source_tokenization_run": {
+          "schema_version": "1.0",
+          "tokenizer": {
+            "model": "google-bert/bert-base-multilingual-cased",
+            "revision": "3f076fdb1ab68d5b2880cb87a0886f315b8146f8",
+            "tokenizer_sha256": "78b44c32238e3b5e83d1deaa63c3fa1466ddf73547ce641a36f75180079ab45f"
+          },
+          "neutral_policy": "inherit_previous",
+          "end_policy": "observed",
+          "texts_sha256": "55d8deed1ab851f4ec8cd95a39faccc8ef00663d632a201162b8e7fb7ce81b42",
+          "lid_sha256": "2b25d826c11f798af769f3d8ed3fc8a1c33e15b03c626f8c10ca20873e2d91d4",
+          "pipeline_sha256": "8806da9d7ecf818d64a5b1af57f55800f88b0eca990349c383fbe6c25b4a7098",
+          "allow_unreviewed": true,
+          "versions": {
+            "transformers": "4.57.6",
+            "tokenizers": "0.22.2"
+          }
+        },
+        "selection": {
+          "input_current_subword_sequences": 23474,
+          "retained": 15619,
+          "quarantined_current": 7855,
+          "quarantined_previous_lid_only": 0,
+          "quarantined_total": 7855,
+          "reason_counts": {
+            "disagreement_with_existing_french_preannotation": 58,
+            "unknown_or_ambiguous_subword": 2797,
+            "switch_without_duration": 767,
+            "short_english_phrase_not_labeled_en": 5455
+          }
+        },
+        "delivered_sequences": 15619,
+        "labeled_tokens_sha256": "88d1bf29d2a4a6c5d5f0f65ea54e35c14b6e414a1df33b54dc27e6583ee83ac7",
+        "texts_sha256": "6be17ad7dcf17abe7fc15183df281ef285e5cbad4a08787243c5d4d3dd82fb1e",
+        "lid_sha256": "41533cde5d7bcfac75fc93e89e10d041361483ab68d277cb59bad17e722ba4e3",
+        "cs_type_sha256": "f5a9c9edd02e6ef6410c5964bcea00f93d0c396be290bb411591e99258f2d66e",
+        "tokenizer": {
+          "model": "google-bert/bert-base-multilingual-cased",
+          "revision": "3f076fdb1ab68d5b2880cb87a0886f315b8146f8",
+          "tokenizer_sha256": "78b44c32238e3b5e83d1deaa63c3fa1466ddf73547ce641a36f75180079ab45f"
+        },
+        "neutral_policy": "inherit_previous",
+        "end_policy": "observed",
+        "review_status": "unreviewed",
+        "independent_linguistic_verification": false
+      },
+      "sampled_records": 500,
+      "delivered_sequences": 1143,
+      "sampling_manifest": "../extraction/sampling_manifest_yufan.json",
+      "output_sha256": {
+        "texts_yufan.jsonl": "fc8b27782befda93dff537e2b2088e68c179a21a72561520c3cafc3148e35fc3",
+        "lid_yufan.jsonl": "c9f7f3a8932ba1fe72bb4f52316a3d4b260bd99a273763288291a6385d130a04",
+        "labeled_tokens_yufan.jsonl": "e126723504031c4a09100049a615592f0b3643c66110795e783f16d663d18a8b",
+        "cs_type_yufan.jsonl": "5e052c1b81277ad8c84d69f1e7e66e11222d042034ffd9de30603a64e315d655"
+      }
+    },
+    "total_tokens": 33111,
+    "unk_token_count": 0
+  },
+  "de_en": {
+    "sequences": 1145,
+    "valid_positions": 30494,
+    "switches": 1232,
+    "switch_rate": 0.04040139043746311,
+    "duration_class_counts": {
+      "0": 40,
+      "1": 294,
+      "2": 898
+    },
+    "duration_class_proportions": {
+      "0": 0.032467532467532464,
+      "1": 0.23863636363636365,
+      "2": 0.7288961038961039
+    },
+    "switches_without_duration": 0,
+    "review_status_counts": {
+      "unreviewed": 1145
+    },
+    "unknown_subwords": 0,
+    "owner": "yufan",
+    "sampling_population": "screened_retained_set",
+    "extraction_issue_scope": "full_extraction_not_sample",
+    "records": 500,
+    "pilot_records": 0,
+    "extraction_issues": {
+      "warning": 43
+    },
+    "extraction_errors": [],
+    "tokenized_sha256": "860c22ec26f5de70f59b8bd2712ee10e72b5d8e35ad295c2928193d306a2b884",
+    "manifest": {
+      "operation": "sample existing records without editing text or labels",
+      "source_manifest": {
+        "operation": "select existing tokenized rows; no retokenization or label modification",
+        "source_tokenization_run": {
+          "schema_version": "1.0",
+          "tokenizer": {
+            "model": "google-bert/bert-base-multilingual-cased",
+            "revision": "3f076fdb1ab68d5b2880cb87a0886f315b8146f8",
+            "tokenizer_sha256": "78b44c32238e3b5e83d1deaa63c3fa1466ddf73547ce641a36f75180079ab45f"
+          },
+          "neutral_policy": "inherit_previous",
+          "end_policy": "observed",
+          "texts_sha256": "e5b7fbb8ba8081ed51c4d6e77b8b95a911d58c2db89a3ae25561a850a5030b77",
+          "lid_sha256": "e9d32802507e26c58442ae190ed1bf5015935c581b1f979775d8d9088c3589b5",
+          "pipeline_sha256": "8806da9d7ecf818d64a5b1af57f55800f88b0eca990349c383fbe6c25b4a7098",
+          "allow_unreviewed": true,
+          "versions": {
+            "transformers": "4.57.6",
+            "tokenizers": "0.22.2"
+          }
+        },
+        "selection": {
+          "input_current_subword_sequences": 16348,
+          "retained": 13969,
+          "quarantined_current": 2379,
+          "quarantined_previous_lid_only": 3152,
+          "quarantined_total": 5531,
+          "reason_counts": {
+            "unknown_or_ambiguous_subword": 1158,
+            "short_english_phrase_not_labeled_en": 1261,
+            "switch_without_duration": 734,
+            "previously_flagged": 3152
+          }
+        },
+        "delivered_sequences": 13969,
+        "labeled_tokens_sha256": "0f8cabd6b103daab8305a8f73faaf60b70f61685e738331446e63a640512f512",
+        "texts_sha256": "0b5d5923f62fe396253a45b6eaac4191336f031f1fda232af3a72a286f4e11d6",
+        "lid_sha256": "04e3f10d271c5e41a87bc006401d3e2f439227faa1eae0d800ae0354391f8b09",
+        "cs_type_sha256": "1d4f923317a873b3210fac6e7cdcb01c9d8754cda55696ef58ea489eed7908d3",
+        "tokenizer": {
+          "model": "google-bert/bert-base-multilingual-cased",
+          "revision": "3f076fdb1ab68d5b2880cb87a0886f315b8146f8",
+          "tokenizer_sha256": "78b44c32238e3b5e83d1deaa63c3fa1466ddf73547ce641a36f75180079ab45f"
+        },
+        "neutral_policy": "inherit_previous",
+        "end_policy": "observed",
+        "review_status": "unreviewed",
+        "independent_linguistic_verification": false
+      },
+      "sampled_records": 500,
+      "delivered_sequences": 1145,
+      "sampling_manifest": "../extraction/sampling_manifest_yufan.json",
+      "output_sha256": {
+        "texts_yufan.jsonl": "32616d6b2f89ec418f6aaad4e2390f5da32afcf9a37d7d272aaf816187276d73",
+        "lid_yufan.jsonl": "8c78861a2fc0f23be91cb834c9280efedabbc8152c7f48983646a954199c4608",
+        "labeled_tokens_yufan.jsonl": "860c22ec26f5de70f59b8bd2712ee10e72b5d8e35ad295c2928193d306a2b884",
+        "cs_type_yufan.jsonl": "c8c3d338b115fdd2dd6d8b7a4a103e5920336c4cd0ada0aa867bc7d8e4742a4e"
+      }
+    },
+    "total_tokens": 31639,
+    "unk_token_count": 0
+  },
+  "it_en": {
+    "sequences": 1299,
+    "valid_positions": 34998,
+    "switches": 1498,
+    "switch_rate": 0.042802445854048805,
+    "duration_class_counts": {
+      "0": 83,
+      "1": 450,
+      "2": 965
+    },
+    "duration_class_proportions": {
+      "0": 0.05540720961281709,
+      "1": 0.30040053404539385,
+      "2": 0.644192256341789
+    },
+    "switches_without_duration": 0,
+    "review_status_counts": {
+      "unreviewed": 1299
+    },
+    "unknown_subwords": 0,
+    "owner": "yufan",
+    "sampling_population": "screened_retained_set",
+    "extraction_issue_scope": "full_extraction_not_sample",
+    "records": 500,
+    "pilot_records": 0,
+    "extraction_issues": {
+      "warning": 55
+    },
+    "extraction_errors": [],
+    "tokenized_sha256": "368ba299107f6b8537dc7ca7c245cb54991636e67a460dc5223f70b06e84034f",
+    "manifest": {
+      "operation": "sample existing records without editing text or labels",
+      "source_manifest": {
+        "operation": "select existing tokenized rows; no retokenization or label modification",
+        "source_tokenization_run": {
+          "schema_version": "1.0",
+          "tokenizer": {
+            "model": "google-bert/bert-base-multilingual-cased",
+            "revision": "3f076fdb1ab68d5b2880cb87a0886f315b8146f8",
+            "tokenizer_sha256": "78b44c32238e3b5e83d1deaa63c3fa1466ddf73547ce641a36f75180079ab45f"
+          },
+          "neutral_policy": "inherit_previous",
+          "end_policy": "observed",
+          "texts_sha256": "745c60e2b8111274ca95df89309cedcbd85f41f90d36984b705d19c58905300c",
+          "lid_sha256": "7b2a681ae8db72a1e34d02e9ac8ed3863897a31a7973915e31e5a9cc5109b512",
+          "pipeline_sha256": "8806da9d7ecf818d64a5b1af57f55800f88b0eca990349c383fbe6c25b4a7098",
+          "allow_unreviewed": true,
+          "versions": {
+            "transformers": "4.57.6",
+            "tokenizers": "0.22.2"
+          }
+        },
+        "selection": {
+          "input_current_subword_sequences": 20428,
+          "retained": 18124,
+          "quarantined_current": 2304,
+          "quarantined_previous_lid_only": 3669,
+          "quarantined_total": 5973,
+          "reason_counts": {
+            "unknown_or_ambiguous_subword": 1309,
+            "short_english_phrase_not_labeled_en": 1035,
+            "switch_without_duration": 678,
+            "previously_flagged": 3669
+          }
+        },
+        "delivered_sequences": 18124,
+        "labeled_tokens_sha256": "0e1e0e3cd4b3c3d85d0baacca773eff8fcba089b6e4ca1255d74dfe745af3ef1",
+        "texts_sha256": "2cd45f6274b65b07ae9a46d70c1315b0c3b4a0ef2d87480158ce8a23bc90312d",
+        "lid_sha256": "66af33bc02d59c48615ee8de58987dfe54828502add8678e7d6c07632e1fc2c7",
+        "cs_type_sha256": "4041ce89858689a9bf2c69f3a40f6981ba20dafacfdedfca12ec52f30b707c1f",
+        "tokenizer": {
+          "model": "google-bert/bert-base-multilingual-cased",
+          "revision": "3f076fdb1ab68d5b2880cb87a0886f315b8146f8",
+          "tokenizer_sha256": "78b44c32238e3b5e83d1deaa63c3fa1466ddf73547ce641a36f75180079ab45f"
+        },
+        "neutral_policy": "inherit_previous",
+        "end_policy": "observed",
+        "review_status": "unreviewed",
+        "independent_linguistic_verification": false
+      },
+      "sampled_records": 500,
+      "delivered_sequences": 1299,
+      "sampling_manifest": "../extraction/sampling_manifest_yufan.json",
+      "output_sha256": {
+        "texts_yufan.jsonl": "829b9f7d78515dcc4b921910a58f144ad148b5fbfb45ed4ce73d75207762bff7",
+        "lid_yufan.jsonl": "d58f063e78db7891e4a2fa07095adb0d0e3aa71d989b67210b9c6dec84d23761",
+        "labeled_tokens_yufan.jsonl": "368ba299107f6b8537dc7ca7c245cb54991636e67a460dc5223f70b06e84034f",
+        "cs_type_yufan.jsonl": "e0d4a091adc3086b13f2aab62352e6b1f4740804af0a60590b6175d6063aa798"
+      }
+    },
+    "total_tokens": 36297,
+    "unk_token_count": 0
+  },
+  "philippines_en": {
+    "sequences": 1321,
+    "valid_positions": 37059,
+    "switches": 1970,
+    "switch_rate": 0.05315847702312529,
+    "duration_class_counts": {
+      "0": 143,
+      "1": 694,
+      "2": 1133
+    },
+    "duration_class_proportions": {
+      "0": 0.07258883248730964,
+      "1": 0.3522842639593909,
+      "2": 0.5751269035532995
+    },
+    "switches_without_duration": 0,
+    "review_status_counts": {
+      "unreviewed": 1321
+    },
+    "unknown_subwords": 0,
+    "owner": "yufan",
+    "sampling_population": "screened_retained_set",
+    "extraction_issue_scope": "full_extraction_not_sample",
+    "records": 500,
+    "pilot_records": 0,
+    "extraction_issues": {
+      "warning": 230,
+      "error": 1
+    },
+    "extraction_errors": [
+      {
+        "id": "philippines_en:b111cae514ec:001789",
+        "severity": "error",
+        "reason": "Unsupported text container at (0,)"
+      }
+    ],
+    "tokenized_sha256": "7f777a8a951008edb4aa276c7d3b2951c4caa6ecb7852bccef98af8afbad510d",
+    "manifest": {
+      "operation": "sample existing records without editing text or labels",
+      "source_manifest": {
+        "operation": "select existing tokenized rows; no retokenization or label modification",
+        "source_tokenization_run": {
+          "schema_version": "1.0",
+          "tokenizer": {
+            "model": "google-bert/bert-base-multilingual-cased",
+            "revision": "3f076fdb1ab68d5b2880cb87a0886f315b8146f8",
+            "tokenizer_sha256": "78b44c32238e3b5e83d1deaa63c3fa1466ddf73547ce641a36f75180079ab45f"
+          },
+          "neutral_policy": "inherit_previous",
+          "end_policy": "observed",
+          "texts_sha256": "3bed83376e2db04c4495e92234e95fe0147c7485272b7e97588ac5b15660446f",
+          "lid_sha256": "ccaea37ff04f3883505584dedeca02742c36b1f2533c60f3e0adbaad061b887a",
+          "pipeline_sha256": "8806da9d7ecf818d64a5b1af57f55800f88b0eca990349c383fbe6c25b4a7098",
+          "allow_unreviewed": true,
+          "versions": {
+            "transformers": "4.57.6",
+            "tokenizers": "0.22.2"
+          }
+        },
+        "selection": {
+          "input_current_subword_sequences": 25577,
+          "retained": 20684,
+          "quarantined_current": 4893,
+          "quarantined_previous_lid_only": 0,
+          "quarantined_total": 4893,
+          "reason_counts": {
+            "unknown_or_ambiguous_subword": 1362,
+            "english_labeled_at_requires_context_review": 1624,
+            "switch_without_duration": 1105,
+            "short_english_phrase_not_labeled_en": 2084
+          },
+          "review_status": "unreviewed",
+          "linguistically_verified": false,
+          "entire_language_pair_quarantined_for_mapping": false
+        },
+        "delivered_sequences": 20684,
+        "labeled_tokens_sha256": "2401e5bedc8806c86072799a20747f5e9fb00637ab00eacc3a7034e8666b6d0f",
+        "texts_sha256": "3420f76bd1bb2dfa4881c7a6df464d4b78b1b517a9a9c9f650e24b19ed90dc3f",
+        "lid_sha256": "00adf47744294671e38771e245193d0e14f2047a83261975fc2fe09259e55f15",
+        "cs_type_sha256": "12d006e4ef153bf4a5615f2232cdab9f16b711019230d8a4ec6735d23170c94e",
+        "tokenizer": {
+          "model": "google-bert/bert-base-multilingual-cased",
+          "revision": "3f076fdb1ab68d5b2880cb87a0886f315b8146f8",
+          "tokenizer_sha256": "78b44c32238e3b5e83d1deaa63c3fa1466ddf73547ce641a36f75180079ab45f"
+        },
+        "neutral_policy": "inherit_previous",
+        "end_policy": "observed",
+        "review_status": "unreviewed",
+        "independent_linguistic_verification": false
+      },
+      "sampled_records": 500,
+      "delivered_sequences": 1321,
+      "sampling_manifest": "../extraction/sampling_manifest_yufan.json",
+      "output_sha256": {
+        "texts_yufan.jsonl": "2156e26ba0a3790d5efb17c76b4972c78f4146f9fb1efc7c405e1b90ad78968f",
+        "lid_yufan.jsonl": "0260f298920ec906b7e83f6dc97117d418650c890b9dcaf5926538ecda9a17c8",
+        "labeled_tokens_yufan.jsonl": "7f777a8a951008edb4aa276c7d3b2951c4caa6ecb7852bccef98af8afbad510d",
+        "cs_type_yufan.jsonl": "e21a9c73a7f28a67ff903d5fcdbde6104b28df6d339fdac71f0aea7b0f45eb02"
+      }
+    },
+    "total_tokens": 38380,
+    "unk_token_count": 0
   }
 }

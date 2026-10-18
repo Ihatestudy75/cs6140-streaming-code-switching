@@ -2,61 +2,61 @@
   {
     "order": 1,
     "min_count": 1,
-    "threshold": 0.35,
-    "validation_macro_pair_type_switch_f1": 0.5462572214838134
+    "threshold": 0.29047907822922986,
+    "validation_macro_pair_type_switch_f1": 0.5187950177677492
   },
   {
     "order": 2,
     "min_count": 1,
-    "threshold": 0.34177215189873417,
-    "validation_macro_pair_type_switch_f1": 0.5506889151117117
+    "threshold": 0.34146341463414637,
+    "validation_macro_pair_type_switch_f1": 0.5333492474230231
   },
   {
     "order": 2,
     "min_count": 5,
-    "threshold": 0.325,
-    "validation_macro_pair_type_switch_f1": 0.5766858398818578
+    "threshold": 0.29047907822922986,
+    "validation_macro_pair_type_switch_f1": 0.5481347395710484
   },
   {
     "order": 2,
     "min_count": 20,
-    "threshold": 0.19649495485926713,
-    "validation_macro_pair_type_switch_f1": 0.5605745709572595
+    "threshold": 0.27586206896551724,
+    "validation_macro_pair_type_switch_f1": 0.5391300025182857
   },
   {
     "order": 3,
     "min_count": 1,
-    "threshold": 0.35,
-    "validation_macro_pair_type_switch_f1": 0.5474731991285152
+    "threshold": 0.34146341463414637,
+    "validation_macro_pair_type_switch_f1": 0.5318399400563821
   },
   {
     "order": 3,
     "min_count": 5,
-    "threshold": 0.35,
-    "validation_macro_pair_type_switch_f1": 0.5762939222823625
+    "threshold": 0.29047907822922986,
+    "validation_macro_pair_type_switch_f1": 0.5504589945151919
   },
   {
     "order": 3,
     "min_count": 20,
-    "threshold": 0.325,
-    "validation_macro_pair_type_switch_f1": 0.5576400600791402
+    "threshold": 0.2826086956521739,
+    "validation_macro_pair_type_switch_f1": 0.5391952204260194
   },
   {
     "order": 5,
     "min_count": 1,
-    "threshold": 0.35,
-    "validation_macro_pair_type_switch_f1": 0.5474094210998476
+    "threshold": 0.34146341463414637,
+    "validation_macro_pair_type_switch_f1": 0.531075358910631
   },
   {
     "order": 5,
     "min_count": 5,
-    "threshold": 0.35,
-    "validation_macro_pair_type_switch_f1": 0.5768180031613619
+    "threshold": 0.29047907822922986,
+    "validation_macro_pair_type_switch_f1": 0.5514955558410899
   },
   {
     "order": 5,
     "min_count": 20,
-    "threshold": 0.325,
-    "validation_macro_pair_type_switch_f1": 0.5576400600791402
+    "threshold": 0.2826086956521739,
+    "validation_macro_pair_type_switch_f1": 0.5399025775834244
   }
 ]
