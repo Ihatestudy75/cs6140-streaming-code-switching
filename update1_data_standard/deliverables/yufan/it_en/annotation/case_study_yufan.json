@@ -1,0 +1,31 @@
+{
+  "original_text": {
+    "schema_version": "1.0",
+    "sequence_id": "it_en:d76eac6442a1:000003:002",
+    "record_id": "it_en:d76eac6442a1:000003",
+    "item_id": 2,
+    "language_pair": "it_en",
+    "languages": [
+      "it",
+      "en"
+    ],
+    "source_file": "Italian_eng.csv",
+    "source_row": 3,
+    "source_path": [
+      1
+    ],
+    "text": "Ho sempre pensato che in momenti così delicati, il silenzio sia d’oro, because sometimes too much attention can really make things worse.",
+    "text_sha256": "62ad8c369d3e5de1cd835db7a0a114d3ed0e105a4a3511dd03ba3dc3f8368cbe"
+  },
+  "screening_result": {
+    "sequence_id": "it_en:d76eac6442a1:000003:002",
+    "record_id": "it_en:d76eac6442a1:000003",
+    "reasons": [
+      "unknown_or_ambiguous_subword"
+    ],
+    "details": {},
+    "has_subword_labels": true
+  },
+  "action": "Quarantined whole sequence; no language label corrected",
+  "remaining_uncertainty": "Flag is an automatic review candidate, not an adjudicated linguistic error"
+}

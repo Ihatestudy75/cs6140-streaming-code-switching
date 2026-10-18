@@ -1,0 +1,51 @@
+{
+  "summary": {
+    "input_current_subword_sequences": 25577,
+    "retained": 20684,
+    "quarantined_current": 4893,
+    "quarantined_previous_lid_only": 0,
+    "quarantined_total": 4893,
+    "reason_counts": {
+      "unknown_or_ambiguous_subword": 1362,
+      "english_labeled_at_requires_context_review": 1624,
+      "switch_without_duration": 1105,
+      "short_english_phrase_not_labeled_en": 2084
+    },
+    "review_status": "unreviewed",
+    "linguistically_verified": false,
+    "entire_language_pair_quarantined_for_mapping": false
+  },
+  "rules": {
+    "english_phrase_patterns": {
+      "you know": "\\byou know\\b",
+      "right?": "\\bright\\?",
+      "for sure": "\\bfor sure\\b",
+      "don't you think": "\\bdon[’\\x27]t you think\\b",
+      "honestly": "\\bhonestly\\b",
+      "trust me": "\\btrust me\\b",
+      "you see": "\\byou see\\b",
+      "anyway": "\\banyway\\b"
+    },
+    "at_rule": "Flag any standalone at tagged en for context review; legitimate English at is possible, so this is not an automatic error judgment.",
+    "other_rules": [
+      "UNKNOWN LID/subwords or alignment ambiguity",
+      "switch with ignored duration",
+      "no valid prediction position",
+      "extraction issues",
+      "alphabetic content marked NEUTRAL"
+    ],
+    "limitations": [
+      "Unflagged samples can still contain LID errors.",
+      "Conservative whole-sequence filtering may bias distributions.",
+      "Original text and tags are unchanged; no automatic at correction."
+    ],
+    "input_sha256": {
+      "data/philippines_en/lingua_lid/texts.jsonl": "3bed83376e2db04c4495e92234e95fe0147c7485272b7e97588ac5b15660446f",
+      "data/philippines_en/lingua_lid/lid.jsonl": "ccaea37ff04f3883505584dedeca02742c36b1f2533c60f3e0adbaad061b887a",
+      "data/philippines_en/lingua_tokenized/labeled_tokens.jsonl": "ddd7f027e1022928b0e904ae3a34faf532de0976d372451406428a64fd93a0ce",
+      "data/philippines_en/lingua_tokenized/token_issues.jsonl": "772371b96a70a9a35d0ac4be2562aee2b551689df0ff6c0fff126aae8295b5d9"
+    }
+  },
+  "retained_status": "not flagged by these rules, NOT independently verified",
+  "prior_full_and_quarantined_data": "Kept locally; not part of this submission payload"
+}

@@ -1,0 +1,1145 @@
+{"sequence_id": "de_en:8e3f9a07c453:000037:001", "record_id": "de_en:8e3f9a07c453:000037", "source_row": 37, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000037:002", "record_id": "de_en:8e3f9a07c453:000037", "source_row": 37, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000037:003", "record_id": "de_en:8e3f9a07c453:000037", "source_row": 37, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000046:001", "record_id": "de_en:8e3f9a07c453:000046", "source_row": 46, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000059:001", "record_id": "de_en:8e3f9a07c453:000059", "source_row": 59, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:000059:002", "record_id": "de_en:8e3f9a07c453:000059", "source_row": 59, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:000059:003", "record_id": "de_en:8e3f9a07c453:000059", "source_row": 59, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:000062:001", "record_id": "de_en:8e3f9a07c453:000062", "source_row": 62, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000062:002", "record_id": "de_en:8e3f9a07c453:000062", "source_row": 62, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000062:003", "record_id": "de_en:8e3f9a07c453:000062", "source_row": 62, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000063:003", "record_id": "de_en:8e3f9a07c453:000063", "source_row": 63, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:000073:001", "record_id": "de_en:8e3f9a07c453:000073", "source_row": 73, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000073:002", "record_id": "de_en:8e3f9a07c453:000073", "source_row": 73, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000073:003", "record_id": "de_en:8e3f9a07c453:000073", "source_row": 73, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000073:004", "record_id": "de_en:8e3f9a07c453:000073", "source_row": 73, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000074:001", "record_id": "de_en:8e3f9a07c453:000074", "source_row": 74, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000074:003", "record_id": "de_en:8e3f9a07c453:000074", "source_row": 74, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000074:004", "record_id": "de_en:8e3f9a07c453:000074", "source_row": 74, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000077:001", "record_id": "de_en:8e3f9a07c453:000077", "source_row": 77, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000077:002", "record_id": "de_en:8e3f9a07c453:000077", "source_row": 77, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000077:003", "record_id": "de_en:8e3f9a07c453:000077", "source_row": 77, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000077:004", "record_id": "de_en:8e3f9a07c453:000077", "source_row": 77, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000095:001", "record_id": "de_en:8e3f9a07c453:000095", "source_row": 95, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000103:001", "record_id": "de_en:8e3f9a07c453:000103", "source_row": 103, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000112:002", "record_id": "de_en:8e3f9a07c453:000112", "source_row": 112, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:000112:003", "record_id": "de_en:8e3f9a07c453:000112", "source_row": 112, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:000141:001", "record_id": "de_en:8e3f9a07c453:000141", "source_row": 141, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000141:002", "record_id": "de_en:8e3f9a07c453:000141", "source_row": 141, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000141:003", "record_id": "de_en:8e3f9a07c453:000141", "source_row": 141, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000141:004", "record_id": "de_en:8e3f9a07c453:000141", "source_row": 141, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000148:001", "record_id": "de_en:8e3f9a07c453:000148", "source_row": 148, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:000148:002", "record_id": "de_en:8e3f9a07c453:000148", "source_row": 148, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:000158:001", "record_id": "de_en:8e3f9a07c453:000158", "source_row": 158, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000159:001", "record_id": "de_en:8e3f9a07c453:000159", "source_row": 159, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000164:002", "record_id": "de_en:8e3f9a07c453:000164", "source_row": 164, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000164:003", "record_id": "de_en:8e3f9a07c453:000164", "source_row": 164, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000164:004", "record_id": "de_en:8e3f9a07c453:000164", "source_row": 164, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000182:001", "record_id": "de_en:8e3f9a07c453:000182", "source_row": 182, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000182:002", "record_id": "de_en:8e3f9a07c453:000182", "source_row": 182, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000182:003", "record_id": "de_en:8e3f9a07c453:000182", "source_row": 182, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000182:004", "record_id": "de_en:8e3f9a07c453:000182", "source_row": 182, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000208:001", "record_id": "de_en:8e3f9a07c453:000208", "source_row": 208, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000208:002", "record_id": "de_en:8e3f9a07c453:000208", "source_row": 208, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000208:003", "record_id": "de_en:8e3f9a07c453:000208", "source_row": 208, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000208:004", "record_id": "de_en:8e3f9a07c453:000208", "source_row": 208, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000209:002", "record_id": "de_en:8e3f9a07c453:000209", "source_row": 209, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000216:003", "record_id": "de_en:8e3f9a07c453:000216", "source_row": 216, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:000216:004", "record_id": "de_en:8e3f9a07c453:000216", "source_row": 216, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:000230:001", "record_id": "de_en:8e3f9a07c453:000230", "source_row": 230, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:000230:002", "record_id": "de_en:8e3f9a07c453:000230", "source_row": 230, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:000230:004", "record_id": "de_en:8e3f9a07c453:000230", "source_row": 230, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:000240:001", "record_id": "de_en:8e3f9a07c453:000240", "source_row": 240, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000249:002", "record_id": "de_en:8e3f9a07c453:000249", "source_row": 249, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:000249:004", "record_id": "de_en:8e3f9a07c453:000249", "source_row": 249, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:000265:002", "record_id": "de_en:8e3f9a07c453:000265", "source_row": 265, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:000265:004", "record_id": "de_en:8e3f9a07c453:000265", "source_row": 265, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:000267:001", "record_id": "de_en:8e3f9a07c453:000267", "source_row": 267, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000270:001", "record_id": "de_en:8e3f9a07c453:000270", "source_row": 270, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000270:002", "record_id": "de_en:8e3f9a07c453:000270", "source_row": 270, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000270:003", "record_id": "de_en:8e3f9a07c453:000270", "source_row": 270, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000270:004", "record_id": "de_en:8e3f9a07c453:000270", "source_row": 270, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000270:005", "record_id": "de_en:8e3f9a07c453:000270", "source_row": 270, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000287:001", "record_id": "de_en:8e3f9a07c453:000287", "source_row": 287, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000287:002", "record_id": "de_en:8e3f9a07c453:000287", "source_row": 287, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000330:003", "record_id": "de_en:8e3f9a07c453:000330", "source_row": 330, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:000342:001", "record_id": "de_en:8e3f9a07c453:000342", "source_row": 342, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000355:001", "record_id": "de_en:8e3f9a07c453:000355", "source_row": 355, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000367:002", "record_id": "de_en:8e3f9a07c453:000367", "source_row": 367, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:000367:003", "record_id": "de_en:8e3f9a07c453:000367", "source_row": 367, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:000367:004", "record_id": "de_en:8e3f9a07c453:000367", "source_row": 367, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:000444:001", "record_id": "de_en:8e3f9a07c453:000444", "source_row": 444, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:000452:001", "record_id": "de_en:8e3f9a07c453:000452", "source_row": 452, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000452:002", "record_id": "de_en:8e3f9a07c453:000452", "source_row": 452, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000452:003", "record_id": "de_en:8e3f9a07c453:000452", "source_row": 452, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000452:004", "record_id": "de_en:8e3f9a07c453:000452", "source_row": 452, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000455:001", "record_id": "de_en:8e3f9a07c453:000455", "source_row": 455, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000470:001", "record_id": "de_en:8e3f9a07c453:000470", "source_row": 470, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000470:002", "record_id": "de_en:8e3f9a07c453:000470", "source_row": 470, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000470:003", "record_id": "de_en:8e3f9a07c453:000470", "source_row": 470, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000470:004", "record_id": "de_en:8e3f9a07c453:000470", "source_row": 470, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000478:001", "record_id": "de_en:8e3f9a07c453:000478", "source_row": 478, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000492:001", "record_id": "de_en:8e3f9a07c453:000492", "source_row": 492, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000535:001", "record_id": "de_en:8e3f9a07c453:000535", "source_row": 535, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000538:001", "record_id": "de_en:8e3f9a07c453:000538", "source_row": 538, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000538:002", "record_id": "de_en:8e3f9a07c453:000538", "source_row": 538, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000538:003", "record_id": "de_en:8e3f9a07c453:000538", "source_row": 538, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000538:004", "record_id": "de_en:8e3f9a07c453:000538", "source_row": 538, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000551:001", "record_id": "de_en:8e3f9a07c453:000551", "source_row": 551, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000551:003", "record_id": "de_en:8e3f9a07c453:000551", "source_row": 551, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000551:004", "record_id": "de_en:8e3f9a07c453:000551", "source_row": 551, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000552:001", "record_id": "de_en:8e3f9a07c453:000552", "source_row": 552, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000552:002", "record_id": "de_en:8e3f9a07c453:000552", "source_row": 552, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000552:003", "record_id": "de_en:8e3f9a07c453:000552", "source_row": 552, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000552:004", "record_id": "de_en:8e3f9a07c453:000552", "source_row": 552, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000555:001", "record_id": "de_en:8e3f9a07c453:000555", "source_row": 555, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000564:001", "record_id": "de_en:8e3f9a07c453:000564", "source_row": 564, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:000564:002", "record_id": "de_en:8e3f9a07c453:000564", "source_row": 564, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:000564:003", "record_id": "de_en:8e3f9a07c453:000564", "source_row": 564, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:000564:004", "record_id": "de_en:8e3f9a07c453:000564", "source_row": 564, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:000564:005", "record_id": "de_en:8e3f9a07c453:000564", "source_row": 564, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:000564:006", "record_id": "de_en:8e3f9a07c453:000564", "source_row": 564, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:000564:007", "record_id": "de_en:8e3f9a07c453:000564", "source_row": 564, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:000564:008", "record_id": "de_en:8e3f9a07c453:000564", "source_row": 564, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:000583:001", "record_id": "de_en:8e3f9a07c453:000583", "source_row": 583, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000589:001", "record_id": "de_en:8e3f9a07c453:000589", "source_row": 589, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000589:002", "record_id": "de_en:8e3f9a07c453:000589", "source_row": 589, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000589:003", "record_id": "de_en:8e3f9a07c453:000589", "source_row": 589, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000589:004", "record_id": "de_en:8e3f9a07c453:000589", "source_row": 589, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000604:001", "record_id": "de_en:8e3f9a07c453:000604", "source_row": 604, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000604:002", "record_id": "de_en:8e3f9a07c453:000604", "source_row": 604, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000604:003", "record_id": "de_en:8e3f9a07c453:000604", "source_row": 604, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000604:004", "record_id": "de_en:8e3f9a07c453:000604", "source_row": 604, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000607:001", "record_id": "de_en:8e3f9a07c453:000607", "source_row": 607, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000662:001", "record_id": "de_en:8e3f9a07c453:000662", "source_row": 662, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000690:001", "record_id": "de_en:8e3f9a07c453:000690", "source_row": 690, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000695:001", "record_id": "de_en:8e3f9a07c453:000695", "source_row": 695, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000707:001", "record_id": "de_en:8e3f9a07c453:000707", "source_row": 707, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000707:002", "record_id": "de_en:8e3f9a07c453:000707", "source_row": 707, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000707:003", "record_id": "de_en:8e3f9a07c453:000707", "source_row": 707, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000707:004", "record_id": "de_en:8e3f9a07c453:000707", "source_row": 707, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000717:001", "record_id": "de_en:8e3f9a07c453:000717", "source_row": 717, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000717:002", "record_id": "de_en:8e3f9a07c453:000717", "source_row": 717, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000734:002", "record_id": "de_en:8e3f9a07c453:000734", "source_row": 734, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:000734:004", "record_id": "de_en:8e3f9a07c453:000734", "source_row": 734, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:000741:004", "record_id": "de_en:8e3f9a07c453:000741", "source_row": 741, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:000750:001", "record_id": "de_en:8e3f9a07c453:000750", "source_row": 750, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:000750:002", "record_id": "de_en:8e3f9a07c453:000750", "source_row": 750, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:000750:004", "record_id": "de_en:8e3f9a07c453:000750", "source_row": 750, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:000754:001", "record_id": "de_en:8e3f9a07c453:000754", "source_row": 754, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000754:002", "record_id": "de_en:8e3f9a07c453:000754", "source_row": 754, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000754:003", "record_id": "de_en:8e3f9a07c453:000754", "source_row": 754, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000754:004", "record_id": "de_en:8e3f9a07c453:000754", "source_row": 754, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000795:001", "record_id": "de_en:8e3f9a07c453:000795", "source_row": 795, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000835:001", "record_id": "de_en:8e3f9a07c453:000835", "source_row": 835, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:000835:003", "record_id": "de_en:8e3f9a07c453:000835", "source_row": 835, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:000835:004", "record_id": "de_en:8e3f9a07c453:000835", "source_row": 835, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:000859:003", "record_id": "de_en:8e3f9a07c453:000859", "source_row": 859, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:000901:001", "record_id": "de_en:8e3f9a07c453:000901", "source_row": 901, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000901:002", "record_id": "de_en:8e3f9a07c453:000901", "source_row": 901, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000906:002", "record_id": "de_en:8e3f9a07c453:000906", "source_row": 906, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000906:003", "record_id": "de_en:8e3f9a07c453:000906", "source_row": 906, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000906:004", "record_id": "de_en:8e3f9a07c453:000906", "source_row": 906, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000921:003", "record_id": "de_en:8e3f9a07c453:000921", "source_row": 921, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:000921:004", "record_id": "de_en:8e3f9a07c453:000921", "source_row": 921, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:000929:001", "record_id": "de_en:8e3f9a07c453:000929", "source_row": 929, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000929:002", "record_id": "de_en:8e3f9a07c453:000929", "source_row": 929, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000929:003", "record_id": "de_en:8e3f9a07c453:000929", "source_row": 929, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000929:004", "record_id": "de_en:8e3f9a07c453:000929", "source_row": 929, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000934:004", "record_id": "de_en:8e3f9a07c453:000934", "source_row": 934, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:000949:001", "record_id": "de_en:8e3f9a07c453:000949", "source_row": 949, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000949:002", "record_id": "de_en:8e3f9a07c453:000949", "source_row": 949, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000949:003", "record_id": "de_en:8e3f9a07c453:000949", "source_row": 949, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000949:004", "record_id": "de_en:8e3f9a07c453:000949", "source_row": 949, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000956:001", "record_id": "de_en:8e3f9a07c453:000956", "source_row": 956, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000959:001", "record_id": "de_en:8e3f9a07c453:000959", "source_row": 959, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000974:001", "record_id": "de_en:8e3f9a07c453:000974", "source_row": 974, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000989:004", "record_id": "de_en:8e3f9a07c453:000989", "source_row": 989, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:000992:001", "record_id": "de_en:8e3f9a07c453:000992", "source_row": 992, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000992:002", "record_id": "de_en:8e3f9a07c453:000992", "source_row": 992, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000992:004", "record_id": "de_en:8e3f9a07c453:000992", "source_row": 992, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000994:001", "record_id": "de_en:8e3f9a07c453:000994", "source_row": 994, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:000994:002", "record_id": "de_en:8e3f9a07c453:000994", "source_row": 994, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001000:001", "record_id": "de_en:8e3f9a07c453:001000", "source_row": 1000, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001000:002", "record_id": "de_en:8e3f9a07c453:001000", "source_row": 1000, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001000:003", "record_id": "de_en:8e3f9a07c453:001000", "source_row": 1000, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001000:004", "record_id": "de_en:8e3f9a07c453:001000", "source_row": 1000, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001004:001", "record_id": "de_en:8e3f9a07c453:001004", "source_row": 1004, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001004:002", "record_id": "de_en:8e3f9a07c453:001004", "source_row": 1004, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001004:003", "record_id": "de_en:8e3f9a07c453:001004", "source_row": 1004, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001004:004", "record_id": "de_en:8e3f9a07c453:001004", "source_row": 1004, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001010:001", "record_id": "de_en:8e3f9a07c453:001010", "source_row": 1010, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001071:001", "record_id": "de_en:8e3f9a07c453:001071", "source_row": 1071, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001091:001", "record_id": "de_en:8e3f9a07c453:001091", "source_row": 1091, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001099:004", "record_id": "de_en:8e3f9a07c453:001099", "source_row": 1099, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:001103:001", "record_id": "de_en:8e3f9a07c453:001103", "source_row": 1103, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001103:002", "record_id": "de_en:8e3f9a07c453:001103", "source_row": 1103, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001103:003", "record_id": "de_en:8e3f9a07c453:001103", "source_row": 1103, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001103:004", "record_id": "de_en:8e3f9a07c453:001103", "source_row": 1103, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001116:001", "record_id": "de_en:8e3f9a07c453:001116", "source_row": 1116, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001139:001", "record_id": "de_en:8e3f9a07c453:001139", "source_row": 1139, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001139:002", "record_id": "de_en:8e3f9a07c453:001139", "source_row": 1139, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001139:003", "record_id": "de_en:8e3f9a07c453:001139", "source_row": 1139, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001139:004", "record_id": "de_en:8e3f9a07c453:001139", "source_row": 1139, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001175:001", "record_id": "de_en:8e3f9a07c453:001175", "source_row": 1175, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001175:002", "record_id": "de_en:8e3f9a07c453:001175", "source_row": 1175, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001175:003", "record_id": "de_en:8e3f9a07c453:001175", "source_row": 1175, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001175:004", "record_id": "de_en:8e3f9a07c453:001175", "source_row": 1175, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001184:001", "record_id": "de_en:8e3f9a07c453:001184", "source_row": 1184, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001197:001", "record_id": "de_en:8e3f9a07c453:001197", "source_row": 1197, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001199:004", "record_id": "de_en:8e3f9a07c453:001199", "source_row": 1199, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:001237:001", "record_id": "de_en:8e3f9a07c453:001237", "source_row": 1237, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001237:002", "record_id": "de_en:8e3f9a07c453:001237", "source_row": 1237, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001237:003", "record_id": "de_en:8e3f9a07c453:001237", "source_row": 1237, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001260:004", "record_id": "de_en:8e3f9a07c453:001260", "source_row": 1260, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:001278:001", "record_id": "de_en:8e3f9a07c453:001278", "source_row": 1278, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001278:002", "record_id": "de_en:8e3f9a07c453:001278", "source_row": 1278, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001278:003", "record_id": "de_en:8e3f9a07c453:001278", "source_row": 1278, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001278:004", "record_id": "de_en:8e3f9a07c453:001278", "source_row": 1278, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001278:005", "record_id": "de_en:8e3f9a07c453:001278", "source_row": 1278, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001278:006", "record_id": "de_en:8e3f9a07c453:001278", "source_row": 1278, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001293:002", "record_id": "de_en:8e3f9a07c453:001293", "source_row": 1293, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:001293:004", "record_id": "de_en:8e3f9a07c453:001293", "source_row": 1293, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:001316:003", "record_id": "de_en:8e3f9a07c453:001316", "source_row": 1316, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:001326:003", "record_id": "de_en:8e3f9a07c453:001326", "source_row": 1326, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:001331:001", "record_id": "de_en:8e3f9a07c453:001331", "source_row": 1331, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001331:002", "record_id": "de_en:8e3f9a07c453:001331", "source_row": 1331, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001331:003", "record_id": "de_en:8e3f9a07c453:001331", "source_row": 1331, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001344:001", "record_id": "de_en:8e3f9a07c453:001344", "source_row": 1344, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001344:002", "record_id": "de_en:8e3f9a07c453:001344", "source_row": 1344, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001344:003", "record_id": "de_en:8e3f9a07c453:001344", "source_row": 1344, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001353:001", "record_id": "de_en:8e3f9a07c453:001353", "source_row": 1353, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001368:001", "record_id": "de_en:8e3f9a07c453:001368", "source_row": 1368, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:001368:002", "record_id": "de_en:8e3f9a07c453:001368", "source_row": 1368, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:001385:001", "record_id": "de_en:8e3f9a07c453:001385", "source_row": 1385, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001385:002", "record_id": "de_en:8e3f9a07c453:001385", "source_row": 1385, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001385:003", "record_id": "de_en:8e3f9a07c453:001385", "source_row": 1385, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001385:004", "record_id": "de_en:8e3f9a07c453:001385", "source_row": 1385, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001428:001", "record_id": "de_en:8e3f9a07c453:001428", "source_row": 1428, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001429:003", "record_id": "de_en:8e3f9a07c453:001429", "source_row": 1429, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:001438:001", "record_id": "de_en:8e3f9a07c453:001438", "source_row": 1438, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:001438:003", "record_id": "de_en:8e3f9a07c453:001438", "source_row": 1438, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:001450:001", "record_id": "de_en:8e3f9a07c453:001450", "source_row": 1450, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001450:002", "record_id": "de_en:8e3f9a07c453:001450", "source_row": 1450, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001450:003", "record_id": "de_en:8e3f9a07c453:001450", "source_row": 1450, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001450:004", "record_id": "de_en:8e3f9a07c453:001450", "source_row": 1450, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001450:005", "record_id": "de_en:8e3f9a07c453:001450", "source_row": 1450, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001495:001", "record_id": "de_en:8e3f9a07c453:001495", "source_row": 1495, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001495:002", "record_id": "de_en:8e3f9a07c453:001495", "source_row": 1495, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001495:003", "record_id": "de_en:8e3f9a07c453:001495", "source_row": 1495, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001495:004", "record_id": "de_en:8e3f9a07c453:001495", "source_row": 1495, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001500:001", "record_id": "de_en:8e3f9a07c453:001500", "source_row": 1500, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001500:002", "record_id": "de_en:8e3f9a07c453:001500", "source_row": 1500, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001500:003", "record_id": "de_en:8e3f9a07c453:001500", "source_row": 1500, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001500:004", "record_id": "de_en:8e3f9a07c453:001500", "source_row": 1500, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001510:001", "record_id": "de_en:8e3f9a07c453:001510", "source_row": 1510, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001517:001", "record_id": "de_en:8e3f9a07c453:001517", "source_row": 1517, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001517:002", "record_id": "de_en:8e3f9a07c453:001517", "source_row": 1517, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001517:003", "record_id": "de_en:8e3f9a07c453:001517", "source_row": 1517, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001517:004", "record_id": "de_en:8e3f9a07c453:001517", "source_row": 1517, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001527:002", "record_id": "de_en:8e3f9a07c453:001527", "source_row": 1527, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:001527:004", "record_id": "de_en:8e3f9a07c453:001527", "source_row": 1527, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:001528:001", "record_id": "de_en:8e3f9a07c453:001528", "source_row": 1528, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001528:002", "record_id": "de_en:8e3f9a07c453:001528", "source_row": 1528, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001528:003", "record_id": "de_en:8e3f9a07c453:001528", "source_row": 1528, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001528:004", "record_id": "de_en:8e3f9a07c453:001528", "source_row": 1528, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001529:001", "record_id": "de_en:8e3f9a07c453:001529", "source_row": 1529, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001529:002", "record_id": "de_en:8e3f9a07c453:001529", "source_row": 1529, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001529:003", "record_id": "de_en:8e3f9a07c453:001529", "source_row": 1529, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001529:004", "record_id": "de_en:8e3f9a07c453:001529", "source_row": 1529, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001533:001", "record_id": "de_en:8e3f9a07c453:001533", "source_row": 1533, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001544:001", "record_id": "de_en:8e3f9a07c453:001544", "source_row": 1544, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001544:002", "record_id": "de_en:8e3f9a07c453:001544", "source_row": 1544, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001544:003", "record_id": "de_en:8e3f9a07c453:001544", "source_row": 1544, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001544:004", "record_id": "de_en:8e3f9a07c453:001544", "source_row": 1544, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001559:003", "record_id": "de_en:8e3f9a07c453:001559", "source_row": 1559, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001563:002", "record_id": "de_en:8e3f9a07c453:001563", "source_row": 1563, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001563:003", "record_id": "de_en:8e3f9a07c453:001563", "source_row": 1563, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001563:004", "record_id": "de_en:8e3f9a07c453:001563", "source_row": 1563, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001585:001", "record_id": "de_en:8e3f9a07c453:001585", "source_row": 1585, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001585:002", "record_id": "de_en:8e3f9a07c453:001585", "source_row": 1585, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001585:003", "record_id": "de_en:8e3f9a07c453:001585", "source_row": 1585, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001585:004", "record_id": "de_en:8e3f9a07c453:001585", "source_row": 1585, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001586:001", "record_id": "de_en:8e3f9a07c453:001586", "source_row": 1586, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001586:002", "record_id": "de_en:8e3f9a07c453:001586", "source_row": 1586, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001586:003", "record_id": "de_en:8e3f9a07c453:001586", "source_row": 1586, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001586:004", "record_id": "de_en:8e3f9a07c453:001586", "source_row": 1586, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001589:001", "record_id": "de_en:8e3f9a07c453:001589", "source_row": 1589, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001616:001", "record_id": "de_en:8e3f9a07c453:001616", "source_row": 1616, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001643:001", "record_id": "de_en:8e3f9a07c453:001643", "source_row": 1643, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001644:001", "record_id": "de_en:8e3f9a07c453:001644", "source_row": 1644, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001644:002", "record_id": "de_en:8e3f9a07c453:001644", "source_row": 1644, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001649:001", "record_id": "de_en:8e3f9a07c453:001649", "source_row": 1649, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001649:003", "record_id": "de_en:8e3f9a07c453:001649", "source_row": 1649, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001649:004", "record_id": "de_en:8e3f9a07c453:001649", "source_row": 1649, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001650:001", "record_id": "de_en:8e3f9a07c453:001650", "source_row": 1650, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001663:001", "record_id": "de_en:8e3f9a07c453:001663", "source_row": 1663, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001673:001", "record_id": "de_en:8e3f9a07c453:001673", "source_row": 1673, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001682:001", "record_id": "de_en:8e3f9a07c453:001682", "source_row": 1682, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001682:002", "record_id": "de_en:8e3f9a07c453:001682", "source_row": 1682, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001682:003", "record_id": "de_en:8e3f9a07c453:001682", "source_row": 1682, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001682:004", "record_id": "de_en:8e3f9a07c453:001682", "source_row": 1682, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001683:001", "record_id": "de_en:8e3f9a07c453:001683", "source_row": 1683, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001729:001", "record_id": "de_en:8e3f9a07c453:001729", "source_row": 1729, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001729:002", "record_id": "de_en:8e3f9a07c453:001729", "source_row": 1729, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001729:003", "record_id": "de_en:8e3f9a07c453:001729", "source_row": 1729, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001729:004", "record_id": "de_en:8e3f9a07c453:001729", "source_row": 1729, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001790:001", "record_id": "de_en:8e3f9a07c453:001790", "source_row": 1790, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001846:001", "record_id": "de_en:8e3f9a07c453:001846", "source_row": 1846, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:001846:002", "record_id": "de_en:8e3f9a07c453:001846", "source_row": 1846, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:001846:004", "record_id": "de_en:8e3f9a07c453:001846", "source_row": 1846, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:001889:001", "record_id": "de_en:8e3f9a07c453:001889", "source_row": 1889, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001892:004", "record_id": "de_en:8e3f9a07c453:001892", "source_row": 1892, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:001898:001", "record_id": "de_en:8e3f9a07c453:001898", "source_row": 1898, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:001898:004", "record_id": "de_en:8e3f9a07c453:001898", "source_row": 1898, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:001909:001", "record_id": "de_en:8e3f9a07c453:001909", "source_row": 1909, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001916:001", "record_id": "de_en:8e3f9a07c453:001916", "source_row": 1916, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001934:001", "record_id": "de_en:8e3f9a07c453:001934", "source_row": 1934, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:001939:001", "record_id": "de_en:8e3f9a07c453:001939", "source_row": 1939, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001948:001", "record_id": "de_en:8e3f9a07c453:001948", "source_row": 1948, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001948:002", "record_id": "de_en:8e3f9a07c453:001948", "source_row": 1948, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001950:001", "record_id": "de_en:8e3f9a07c453:001950", "source_row": 1950, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001950:002", "record_id": "de_en:8e3f9a07c453:001950", "source_row": 1950, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001950:003", "record_id": "de_en:8e3f9a07c453:001950", "source_row": 1950, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001953:003", "record_id": "de_en:8e3f9a07c453:001953", "source_row": 1953, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:001953:004", "record_id": "de_en:8e3f9a07c453:001953", "source_row": 1953, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:001955:002", "record_id": "de_en:8e3f9a07c453:001955", "source_row": 1955, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:001966:001", "record_id": "de_en:8e3f9a07c453:001966", "source_row": 1966, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001966:002", "record_id": "de_en:8e3f9a07c453:001966", "source_row": 1966, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001991:001", "record_id": "de_en:8e3f9a07c453:001991", "source_row": 1991, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:001991:002", "record_id": "de_en:8e3f9a07c453:001991", "source_row": 1991, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002003:001", "record_id": "de_en:8e3f9a07c453:002003", "source_row": 2003, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002008:001", "record_id": "de_en:8e3f9a07c453:002008", "source_row": 2008, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002008:002", "record_id": "de_en:8e3f9a07c453:002008", "source_row": 2008, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002008:003", "record_id": "de_en:8e3f9a07c453:002008", "source_row": 2008, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002008:004", "record_id": "de_en:8e3f9a07c453:002008", "source_row": 2008, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002035:001", "record_id": "de_en:8e3f9a07c453:002035", "source_row": 2035, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:002046:001", "record_id": "de_en:8e3f9a07c453:002046", "source_row": 2046, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002055:002", "record_id": "de_en:8e3f9a07c453:002055", "source_row": 2055, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002055:004", "record_id": "de_en:8e3f9a07c453:002055", "source_row": 2055, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002084:001", "record_id": "de_en:8e3f9a07c453:002084", "source_row": 2084, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002101:001", "record_id": "de_en:8e3f9a07c453:002101", "source_row": 2101, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002101:002", "record_id": "de_en:8e3f9a07c453:002101", "source_row": 2101, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002101:003", "record_id": "de_en:8e3f9a07c453:002101", "source_row": 2101, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002109:001", "record_id": "de_en:8e3f9a07c453:002109", "source_row": 2109, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002133:001", "record_id": "de_en:8e3f9a07c453:002133", "source_row": 2133, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002133:002", "record_id": "de_en:8e3f9a07c453:002133", "source_row": 2133, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002149:001", "record_id": "de_en:8e3f9a07c453:002149", "source_row": 2149, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002154:001", "record_id": "de_en:8e3f9a07c453:002154", "source_row": 2154, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002174:001", "record_id": "de_en:8e3f9a07c453:002174", "source_row": 2174, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002174:002", "record_id": "de_en:8e3f9a07c453:002174", "source_row": 2174, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002174:003", "record_id": "de_en:8e3f9a07c453:002174", "source_row": 2174, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002174:004", "record_id": "de_en:8e3f9a07c453:002174", "source_row": 2174, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002202:001", "record_id": "de_en:8e3f9a07c453:002202", "source_row": 2202, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:002202:002", "record_id": "de_en:8e3f9a07c453:002202", "source_row": 2202, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:002202:003", "record_id": "de_en:8e3f9a07c453:002202", "source_row": 2202, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:002202:004", "record_id": "de_en:8e3f9a07c453:002202", "source_row": 2202, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:002202:005", "record_id": "de_en:8e3f9a07c453:002202", "source_row": 2202, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:002233:001", "record_id": "de_en:8e3f9a07c453:002233", "source_row": 2233, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002233:002", "record_id": "de_en:8e3f9a07c453:002233", "source_row": 2233, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002233:003", "record_id": "de_en:8e3f9a07c453:002233", "source_row": 2233, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002233:004", "record_id": "de_en:8e3f9a07c453:002233", "source_row": 2233, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002234:002", "record_id": "de_en:8e3f9a07c453:002234", "source_row": 2234, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002234:003", "record_id": "de_en:8e3f9a07c453:002234", "source_row": 2234, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002234:005", "record_id": "de_en:8e3f9a07c453:002234", "source_row": 2234, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002240:001", "record_id": "de_en:8e3f9a07c453:002240", "source_row": 2240, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:002240:003", "record_id": "de_en:8e3f9a07c453:002240", "source_row": 2240, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:002243:001", "record_id": "de_en:8e3f9a07c453:002243", "source_row": 2243, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002257:001", "record_id": "de_en:8e3f9a07c453:002257", "source_row": 2257, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:002296:001", "record_id": "de_en:8e3f9a07c453:002296", "source_row": 2296, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002310:003", "record_id": "de_en:8e3f9a07c453:002310", "source_row": 2310, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:002323:001", "record_id": "de_en:8e3f9a07c453:002323", "source_row": 2323, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002327:001", "record_id": "de_en:8e3f9a07c453:002327", "source_row": 2327, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002327:002", "record_id": "de_en:8e3f9a07c453:002327", "source_row": 2327, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002374:001", "record_id": "de_en:8e3f9a07c453:002374", "source_row": 2374, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002374:002", "record_id": "de_en:8e3f9a07c453:002374", "source_row": 2374, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002380:001", "record_id": "de_en:8e3f9a07c453:002380", "source_row": 2380, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:002380:003", "record_id": "de_en:8e3f9a07c453:002380", "source_row": 2380, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:002430:001", "record_id": "de_en:8e3f9a07c453:002430", "source_row": 2430, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002430:002", "record_id": "de_en:8e3f9a07c453:002430", "source_row": 2430, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002430:003", "record_id": "de_en:8e3f9a07c453:002430", "source_row": 2430, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002430:004", "record_id": "de_en:8e3f9a07c453:002430", "source_row": 2430, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002434:002", "record_id": "de_en:8e3f9a07c453:002434", "source_row": 2434, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002434:004", "record_id": "de_en:8e3f9a07c453:002434", "source_row": 2434, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002443:001", "record_id": "de_en:8e3f9a07c453:002443", "source_row": 2443, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002450:001", "record_id": "de_en:8e3f9a07c453:002450", "source_row": 2450, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002471:001", "record_id": "de_en:8e3f9a07c453:002471", "source_row": 2471, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002471:002", "record_id": "de_en:8e3f9a07c453:002471", "source_row": 2471, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002471:003", "record_id": "de_en:8e3f9a07c453:002471", "source_row": 2471, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002471:004", "record_id": "de_en:8e3f9a07c453:002471", "source_row": 2471, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002508:002", "record_id": "de_en:8e3f9a07c453:002508", "source_row": 2508, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:002508:004", "record_id": "de_en:8e3f9a07c453:002508", "source_row": 2508, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:002510:001", "record_id": "de_en:8e3f9a07c453:002510", "source_row": 2510, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002513:001", "record_id": "de_en:8e3f9a07c453:002513", "source_row": 2513, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002513:002", "record_id": "de_en:8e3f9a07c453:002513", "source_row": 2513, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002513:003", "record_id": "de_en:8e3f9a07c453:002513", "source_row": 2513, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002513:004", "record_id": "de_en:8e3f9a07c453:002513", "source_row": 2513, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002513:005", "record_id": "de_en:8e3f9a07c453:002513", "source_row": 2513, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002520:001", "record_id": "de_en:8e3f9a07c453:002520", "source_row": 2520, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002520:002", "record_id": "de_en:8e3f9a07c453:002520", "source_row": 2520, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002520:003", "record_id": "de_en:8e3f9a07c453:002520", "source_row": 2520, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002520:004", "record_id": "de_en:8e3f9a07c453:002520", "source_row": 2520, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002520:005", "record_id": "de_en:8e3f9a07c453:002520", "source_row": 2520, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002538:003", "record_id": "de_en:8e3f9a07c453:002538", "source_row": 2538, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:002538:004", "record_id": "de_en:8e3f9a07c453:002538", "source_row": 2538, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:002545:001", "record_id": "de_en:8e3f9a07c453:002545", "source_row": 2545, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002545:002", "record_id": "de_en:8e3f9a07c453:002545", "source_row": 2545, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002545:003", "record_id": "de_en:8e3f9a07c453:002545", "source_row": 2545, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002546:001", "record_id": "de_en:8e3f9a07c453:002546", "source_row": 2546, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002546:002", "record_id": "de_en:8e3f9a07c453:002546", "source_row": 2546, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002546:003", "record_id": "de_en:8e3f9a07c453:002546", "source_row": 2546, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002546:004", "record_id": "de_en:8e3f9a07c453:002546", "source_row": 2546, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002566:001", "record_id": "de_en:8e3f9a07c453:002566", "source_row": 2566, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002567:001", "record_id": "de_en:8e3f9a07c453:002567", "source_row": 2567, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002567:002", "record_id": "de_en:8e3f9a07c453:002567", "source_row": 2567, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002571:001", "record_id": "de_en:8e3f9a07c453:002571", "source_row": 2571, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002591:001", "record_id": "de_en:8e3f9a07c453:002591", "source_row": 2591, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:002591:003", "record_id": "de_en:8e3f9a07c453:002591", "source_row": 2591, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:002591:004", "record_id": "de_en:8e3f9a07c453:002591", "source_row": 2591, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:002592:003", "record_id": "de_en:8e3f9a07c453:002592", "source_row": 2592, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002592:004", "record_id": "de_en:8e3f9a07c453:002592", "source_row": 2592, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002596:001", "record_id": "de_en:8e3f9a07c453:002596", "source_row": 2596, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002596:002", "record_id": "de_en:8e3f9a07c453:002596", "source_row": 2596, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002613:001", "record_id": "de_en:8e3f9a07c453:002613", "source_row": 2613, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002627:001", "record_id": "de_en:8e3f9a07c453:002627", "source_row": 2627, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002627:002", "record_id": "de_en:8e3f9a07c453:002627", "source_row": 2627, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002627:003", "record_id": "de_en:8e3f9a07c453:002627", "source_row": 2627, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002627:004", "record_id": "de_en:8e3f9a07c453:002627", "source_row": 2627, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002630:001", "record_id": "de_en:8e3f9a07c453:002630", "source_row": 2630, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002630:002", "record_id": "de_en:8e3f9a07c453:002630", "source_row": 2630, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002630:003", "record_id": "de_en:8e3f9a07c453:002630", "source_row": 2630, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002630:004", "record_id": "de_en:8e3f9a07c453:002630", "source_row": 2630, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002676:001", "record_id": "de_en:8e3f9a07c453:002676", "source_row": 2676, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002676:002", "record_id": "de_en:8e3f9a07c453:002676", "source_row": 2676, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002676:004", "record_id": "de_en:8e3f9a07c453:002676", "source_row": 2676, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002681:001", "record_id": "de_en:8e3f9a07c453:002681", "source_row": 2681, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002681:002", "record_id": "de_en:8e3f9a07c453:002681", "source_row": 2681, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002681:003", "record_id": "de_en:8e3f9a07c453:002681", "source_row": 2681, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002684:001", "record_id": "de_en:8e3f9a07c453:002684", "source_row": 2684, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002684:002", "record_id": "de_en:8e3f9a07c453:002684", "source_row": 2684, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002684:003", "record_id": "de_en:8e3f9a07c453:002684", "source_row": 2684, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002684:004", "record_id": "de_en:8e3f9a07c453:002684", "source_row": 2684, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002684:005", "record_id": "de_en:8e3f9a07c453:002684", "source_row": 2684, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002698:001", "record_id": "de_en:8e3f9a07c453:002698", "source_row": 2698, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002704:001", "record_id": "de_en:8e3f9a07c453:002704", "source_row": 2704, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002707:001", "record_id": "de_en:8e3f9a07c453:002707", "source_row": 2707, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:002725:002", "record_id": "de_en:8e3f9a07c453:002725", "source_row": 2725, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002725:003", "record_id": "de_en:8e3f9a07c453:002725", "source_row": 2725, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002726:001", "record_id": "de_en:8e3f9a07c453:002726", "source_row": 2726, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002726:002", "record_id": "de_en:8e3f9a07c453:002726", "source_row": 2726, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002726:003", "record_id": "de_en:8e3f9a07c453:002726", "source_row": 2726, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002726:004", "record_id": "de_en:8e3f9a07c453:002726", "source_row": 2726, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002728:001", "record_id": "de_en:8e3f9a07c453:002728", "source_row": 2728, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002728:002", "record_id": "de_en:8e3f9a07c453:002728", "source_row": 2728, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002728:003", "record_id": "de_en:8e3f9a07c453:002728", "source_row": 2728, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002728:004", "record_id": "de_en:8e3f9a07c453:002728", "source_row": 2728, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002731:001", "record_id": "de_en:8e3f9a07c453:002731", "source_row": 2731, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002731:002", "record_id": "de_en:8e3f9a07c453:002731", "source_row": 2731, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002764:004", "record_id": "de_en:8e3f9a07c453:002764", "source_row": 2764, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:002798:001", "record_id": "de_en:8e3f9a07c453:002798", "source_row": 2798, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002798:002", "record_id": "de_en:8e3f9a07c453:002798", "source_row": 2798, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002811:001", "record_id": "de_en:8e3f9a07c453:002811", "source_row": 2811, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002822:001", "record_id": "de_en:8e3f9a07c453:002822", "source_row": 2822, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002844:001", "record_id": "de_en:8e3f9a07c453:002844", "source_row": 2844, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002846:001", "record_id": "de_en:8e3f9a07c453:002846", "source_row": 2846, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:002846:004", "record_id": "de_en:8e3f9a07c453:002846", "source_row": 2846, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:002859:001", "record_id": "de_en:8e3f9a07c453:002859", "source_row": 2859, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002859:002", "record_id": "de_en:8e3f9a07c453:002859", "source_row": 2859, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002859:003", "record_id": "de_en:8e3f9a07c453:002859", "source_row": 2859, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002859:004", "record_id": "de_en:8e3f9a07c453:002859", "source_row": 2859, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002863:001", "record_id": "de_en:8e3f9a07c453:002863", "source_row": 2863, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002863:002", "record_id": "de_en:8e3f9a07c453:002863", "source_row": 2863, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002863:003", "record_id": "de_en:8e3f9a07c453:002863", "source_row": 2863, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002863:004", "record_id": "de_en:8e3f9a07c453:002863", "source_row": 2863, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002863:005", "record_id": "de_en:8e3f9a07c453:002863", "source_row": 2863, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002875:001", "record_id": "de_en:8e3f9a07c453:002875", "source_row": 2875, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002895:001", "record_id": "de_en:8e3f9a07c453:002895", "source_row": 2895, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002895:002", "record_id": "de_en:8e3f9a07c453:002895", "source_row": 2895, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002895:003", "record_id": "de_en:8e3f9a07c453:002895", "source_row": 2895, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002895:004", "record_id": "de_en:8e3f9a07c453:002895", "source_row": 2895, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002896:001", "record_id": "de_en:8e3f9a07c453:002896", "source_row": 2896, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002896:002", "record_id": "de_en:8e3f9a07c453:002896", "source_row": 2896, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002896:003", "record_id": "de_en:8e3f9a07c453:002896", "source_row": 2896, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002896:004", "record_id": "de_en:8e3f9a07c453:002896", "source_row": 2896, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002923:001", "record_id": "de_en:8e3f9a07c453:002923", "source_row": 2923, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002929:001", "record_id": "de_en:8e3f9a07c453:002929", "source_row": 2929, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002930:001", "record_id": "de_en:8e3f9a07c453:002930", "source_row": 2930, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:002931:001", "record_id": "de_en:8e3f9a07c453:002931", "source_row": 2931, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:002934:002", "record_id": "de_en:8e3f9a07c453:002934", "source_row": 2934, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:002934:004", "record_id": "de_en:8e3f9a07c453:002934", "source_row": 2934, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:003004:001", "record_id": "de_en:8e3f9a07c453:003004", "source_row": 3004, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003011:003", "record_id": "de_en:8e3f9a07c453:003011", "source_row": 3011, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:003074:003", "record_id": "de_en:8e3f9a07c453:003074", "source_row": 3074, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003074:004", "record_id": "de_en:8e3f9a07c453:003074", "source_row": 3074, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003096:001", "record_id": "de_en:8e3f9a07c453:003096", "source_row": 3096, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003106:001", "record_id": "de_en:8e3f9a07c453:003106", "source_row": 3106, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003106:003", "record_id": "de_en:8e3f9a07c453:003106", "source_row": 3106, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003106:004", "record_id": "de_en:8e3f9a07c453:003106", "source_row": 3106, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003114:001", "record_id": "de_en:8e3f9a07c453:003114", "source_row": 3114, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:003114:002", "record_id": "de_en:8e3f9a07c453:003114", "source_row": 3114, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:003114:004", "record_id": "de_en:8e3f9a07c453:003114", "source_row": 3114, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:003121:001", "record_id": "de_en:8e3f9a07c453:003121", "source_row": 3121, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003121:002", "record_id": "de_en:8e3f9a07c453:003121", "source_row": 3121, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003121:003", "record_id": "de_en:8e3f9a07c453:003121", "source_row": 3121, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003121:004", "record_id": "de_en:8e3f9a07c453:003121", "source_row": 3121, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003179:003", "record_id": "de_en:8e3f9a07c453:003179", "source_row": 3179, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:003200:001", "record_id": "de_en:8e3f9a07c453:003200", "source_row": 3200, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003200:002", "record_id": "de_en:8e3f9a07c453:003200", "source_row": 3200, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003200:003", "record_id": "de_en:8e3f9a07c453:003200", "source_row": 3200, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003200:004", "record_id": "de_en:8e3f9a07c453:003200", "source_row": 3200, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003213:003", "record_id": "de_en:8e3f9a07c453:003213", "source_row": 3213, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:003213:004", "record_id": "de_en:8e3f9a07c453:003213", "source_row": 3213, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:003230:002", "record_id": "de_en:8e3f9a07c453:003230", "source_row": 3230, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003230:003", "record_id": "de_en:8e3f9a07c453:003230", "source_row": 3230, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003230:004", "record_id": "de_en:8e3f9a07c453:003230", "source_row": 3230, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003235:001", "record_id": "de_en:8e3f9a07c453:003235", "source_row": 3235, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003266:001", "record_id": "de_en:8e3f9a07c453:003266", "source_row": 3266, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003269:002", "record_id": "de_en:8e3f9a07c453:003269", "source_row": 3269, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003282:001", "record_id": "de_en:8e3f9a07c453:003282", "source_row": 3282, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003282:003", "record_id": "de_en:8e3f9a07c453:003282", "source_row": 3282, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003282:004", "record_id": "de_en:8e3f9a07c453:003282", "source_row": 3282, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003282:005", "record_id": "de_en:8e3f9a07c453:003282", "source_row": 3282, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003283:001", "record_id": "de_en:8e3f9a07c453:003283", "source_row": 3283, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003283:003", "record_id": "de_en:8e3f9a07c453:003283", "source_row": 3283, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003289:001", "record_id": "de_en:8e3f9a07c453:003289", "source_row": 3289, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003295:001", "record_id": "de_en:8e3f9a07c453:003295", "source_row": 3295, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:003295:004", "record_id": "de_en:8e3f9a07c453:003295", "source_row": 3295, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:003322:001", "record_id": "de_en:8e3f9a07c453:003322", "source_row": 3322, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003322:002", "record_id": "de_en:8e3f9a07c453:003322", "source_row": 3322, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003322:003", "record_id": "de_en:8e3f9a07c453:003322", "source_row": 3322, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003322:004", "record_id": "de_en:8e3f9a07c453:003322", "source_row": 3322, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003327:004", "record_id": "de_en:8e3f9a07c453:003327", "source_row": 3327, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:003327:005", "record_id": "de_en:8e3f9a07c453:003327", "source_row": 3327, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:003328:001", "record_id": "de_en:8e3f9a07c453:003328", "source_row": 3328, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:003331:001", "record_id": "de_en:8e3f9a07c453:003331", "source_row": 3331, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003331:002", "record_id": "de_en:8e3f9a07c453:003331", "source_row": 3331, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003331:003", "record_id": "de_en:8e3f9a07c453:003331", "source_row": 3331, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003331:004", "record_id": "de_en:8e3f9a07c453:003331", "source_row": 3331, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003333:001", "record_id": "de_en:8e3f9a07c453:003333", "source_row": 3333, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003387:002", "record_id": "de_en:8e3f9a07c453:003387", "source_row": 3387, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003387:003", "record_id": "de_en:8e3f9a07c453:003387", "source_row": 3387, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003395:002", "record_id": "de_en:8e3f9a07c453:003395", "source_row": 3395, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:003445:001", "record_id": "de_en:8e3f9a07c453:003445", "source_row": 3445, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003445:002", "record_id": "de_en:8e3f9a07c453:003445", "source_row": 3445, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003445:003", "record_id": "de_en:8e3f9a07c453:003445", "source_row": 3445, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003445:004", "record_id": "de_en:8e3f9a07c453:003445", "source_row": 3445, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003450:001", "record_id": "de_en:8e3f9a07c453:003450", "source_row": 3450, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003450:002", "record_id": "de_en:8e3f9a07c453:003450", "source_row": 3450, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003450:003", "record_id": "de_en:8e3f9a07c453:003450", "source_row": 3450, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003450:004", "record_id": "de_en:8e3f9a07c453:003450", "source_row": 3450, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003460:001", "record_id": "de_en:8e3f9a07c453:003460", "source_row": 3460, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003462:001", "record_id": "de_en:8e3f9a07c453:003462", "source_row": 3462, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003462:002", "record_id": "de_en:8e3f9a07c453:003462", "source_row": 3462, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003476:001", "record_id": "de_en:8e3f9a07c453:003476", "source_row": 3476, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:003476:002", "record_id": "de_en:8e3f9a07c453:003476", "source_row": 3476, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:003476:003", "record_id": "de_en:8e3f9a07c453:003476", "source_row": 3476, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:003476:004", "record_id": "de_en:8e3f9a07c453:003476", "source_row": 3476, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:003476:005", "record_id": "de_en:8e3f9a07c453:003476", "source_row": 3476, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:003476:006", "record_id": "de_en:8e3f9a07c453:003476", "source_row": 3476, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:003476:007", "record_id": "de_en:8e3f9a07c453:003476", "source_row": 3476, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:003476:008", "record_id": "de_en:8e3f9a07c453:003476", "source_row": 3476, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:003476:009", "record_id": "de_en:8e3f9a07c453:003476", "source_row": 3476, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:003488:003", "record_id": "de_en:8e3f9a07c453:003488", "source_row": 3488, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:003488:004", "record_id": "de_en:8e3f9a07c453:003488", "source_row": 3488, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:003505:002", "record_id": "de_en:8e3f9a07c453:003505", "source_row": 3505, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003505:003", "record_id": "de_en:8e3f9a07c453:003505", "source_row": 3505, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003505:004", "record_id": "de_en:8e3f9a07c453:003505", "source_row": 3505, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003513:001", "record_id": "de_en:8e3f9a07c453:003513", "source_row": 3513, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003526:001", "record_id": "de_en:8e3f9a07c453:003526", "source_row": 3526, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:003526:004", "record_id": "de_en:8e3f9a07c453:003526", "source_row": 3526, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:003527:004", "record_id": "de_en:8e3f9a07c453:003527", "source_row": 3527, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:003535:001", "record_id": "de_en:8e3f9a07c453:003535", "source_row": 3535, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003546:001", "record_id": "de_en:8e3f9a07c453:003546", "source_row": 3546, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003546:002", "record_id": "de_en:8e3f9a07c453:003546", "source_row": 3546, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003546:003", "record_id": "de_en:8e3f9a07c453:003546", "source_row": 3546, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003546:004", "record_id": "de_en:8e3f9a07c453:003546", "source_row": 3546, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003547:001", "record_id": "de_en:8e3f9a07c453:003547", "source_row": 3547, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003552:002", "record_id": "de_en:8e3f9a07c453:003552", "source_row": 3552, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:003552:004", "record_id": "de_en:8e3f9a07c453:003552", "source_row": 3552, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:003561:001", "record_id": "de_en:8e3f9a07c453:003561", "source_row": 3561, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003561:002", "record_id": "de_en:8e3f9a07c453:003561", "source_row": 3561, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003561:003", "record_id": "de_en:8e3f9a07c453:003561", "source_row": 3561, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003561:004", "record_id": "de_en:8e3f9a07c453:003561", "source_row": 3561, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003563:001", "record_id": "de_en:8e3f9a07c453:003563", "source_row": 3563, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003563:002", "record_id": "de_en:8e3f9a07c453:003563", "source_row": 3563, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003563:003", "record_id": "de_en:8e3f9a07c453:003563", "source_row": 3563, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003563:004", "record_id": "de_en:8e3f9a07c453:003563", "source_row": 3563, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003581:004", "record_id": "de_en:8e3f9a07c453:003581", "source_row": 3581, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:003582:001", "record_id": "de_en:8e3f9a07c453:003582", "source_row": 3582, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003603:001", "record_id": "de_en:8e3f9a07c453:003603", "source_row": 3603, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003603:002", "record_id": "de_en:8e3f9a07c453:003603", "source_row": 3603, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003613:001", "record_id": "de_en:8e3f9a07c453:003613", "source_row": 3613, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003619:001", "record_id": "de_en:8e3f9a07c453:003619", "source_row": 3619, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:003634:001", "record_id": "de_en:8e3f9a07c453:003634", "source_row": 3634, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:003634:004", "record_id": "de_en:8e3f9a07c453:003634", "source_row": 3634, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:003654:001", "record_id": "de_en:8e3f9a07c453:003654", "source_row": 3654, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003654:002", "record_id": "de_en:8e3f9a07c453:003654", "source_row": 3654, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003654:003", "record_id": "de_en:8e3f9a07c453:003654", "source_row": 3654, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003666:001", "record_id": "de_en:8e3f9a07c453:003666", "source_row": 3666, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003666:002", "record_id": "de_en:8e3f9a07c453:003666", "source_row": 3666, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003666:003", "record_id": "de_en:8e3f9a07c453:003666", "source_row": 3666, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003666:004", "record_id": "de_en:8e3f9a07c453:003666", "source_row": 3666, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003684:001", "record_id": "de_en:8e3f9a07c453:003684", "source_row": 3684, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003689:001", "record_id": "de_en:8e3f9a07c453:003689", "source_row": 3689, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003689:002", "record_id": "de_en:8e3f9a07c453:003689", "source_row": 3689, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003692:001", "record_id": "de_en:8e3f9a07c453:003692", "source_row": 3692, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003692:002", "record_id": "de_en:8e3f9a07c453:003692", "source_row": 3692, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003692:003", "record_id": "de_en:8e3f9a07c453:003692", "source_row": 3692, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003715:002", "record_id": "de_en:8e3f9a07c453:003715", "source_row": 3715, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:003715:003", "record_id": "de_en:8e3f9a07c453:003715", "source_row": 3715, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:003715:004", "record_id": "de_en:8e3f9a07c453:003715", "source_row": 3715, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:003722:001", "record_id": "de_en:8e3f9a07c453:003722", "source_row": 3722, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003734:001", "record_id": "de_en:8e3f9a07c453:003734", "source_row": 3734, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003734:002", "record_id": "de_en:8e3f9a07c453:003734", "source_row": 3734, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003734:003", "record_id": "de_en:8e3f9a07c453:003734", "source_row": 3734, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003734:004", "record_id": "de_en:8e3f9a07c453:003734", "source_row": 3734, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003745:001", "record_id": "de_en:8e3f9a07c453:003745", "source_row": 3745, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003745:002", "record_id": "de_en:8e3f9a07c453:003745", "source_row": 3745, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003745:003", "record_id": "de_en:8e3f9a07c453:003745", "source_row": 3745, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003748:001", "record_id": "de_en:8e3f9a07c453:003748", "source_row": 3748, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003748:002", "record_id": "de_en:8e3f9a07c453:003748", "source_row": 3748, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003748:003", "record_id": "de_en:8e3f9a07c453:003748", "source_row": 3748, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003748:004", "record_id": "de_en:8e3f9a07c453:003748", "source_row": 3748, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003760:001", "record_id": "de_en:8e3f9a07c453:003760", "source_row": 3760, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003760:002", "record_id": "de_en:8e3f9a07c453:003760", "source_row": 3760, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003760:003", "record_id": "de_en:8e3f9a07c453:003760", "source_row": 3760, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003760:004", "record_id": "de_en:8e3f9a07c453:003760", "source_row": 3760, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003780:001", "record_id": "de_en:8e3f9a07c453:003780", "source_row": 3780, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003807:001", "record_id": "de_en:8e3f9a07c453:003807", "source_row": 3807, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:003807:004", "record_id": "de_en:8e3f9a07c453:003807", "source_row": 3807, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:003811:001", "record_id": "de_en:8e3f9a07c453:003811", "source_row": 3811, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003821:002", "record_id": "de_en:8e3f9a07c453:003821", "source_row": 3821, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003823:001", "record_id": "de_en:8e3f9a07c453:003823", "source_row": 3823, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003823:002", "record_id": "de_en:8e3f9a07c453:003823", "source_row": 3823, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003839:001", "record_id": "de_en:8e3f9a07c453:003839", "source_row": 3839, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003851:001", "record_id": "de_en:8e3f9a07c453:003851", "source_row": 3851, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:003852:001", "record_id": "de_en:8e3f9a07c453:003852", "source_row": 3852, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003852:002", "record_id": "de_en:8e3f9a07c453:003852", "source_row": 3852, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003864:004", "record_id": "de_en:8e3f9a07c453:003864", "source_row": 3864, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:003874:001", "record_id": "de_en:8e3f9a07c453:003874", "source_row": 3874, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003878:001", "record_id": "de_en:8e3f9a07c453:003878", "source_row": 3878, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003878:002", "record_id": "de_en:8e3f9a07c453:003878", "source_row": 3878, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003878:003", "record_id": "de_en:8e3f9a07c453:003878", "source_row": 3878, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003882:001", "record_id": "de_en:8e3f9a07c453:003882", "source_row": 3882, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003882:002", "record_id": "de_en:8e3f9a07c453:003882", "source_row": 3882, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003882:003", "record_id": "de_en:8e3f9a07c453:003882", "source_row": 3882, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003882:004", "record_id": "de_en:8e3f9a07c453:003882", "source_row": 3882, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003892:001", "record_id": "de_en:8e3f9a07c453:003892", "source_row": 3892, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003903:001", "record_id": "de_en:8e3f9a07c453:003903", "source_row": 3903, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003905:001", "record_id": "de_en:8e3f9a07c453:003905", "source_row": 3905, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003905:002", "record_id": "de_en:8e3f9a07c453:003905", "source_row": 3905, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003905:003", "record_id": "de_en:8e3f9a07c453:003905", "source_row": 3905, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003905:004", "record_id": "de_en:8e3f9a07c453:003905", "source_row": 3905, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003926:001", "record_id": "de_en:8e3f9a07c453:003926", "source_row": 3926, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003931:001", "record_id": "de_en:8e3f9a07c453:003931", "source_row": 3931, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003936:001", "record_id": "de_en:8e3f9a07c453:003936", "source_row": 3936, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003936:002", "record_id": "de_en:8e3f9a07c453:003936", "source_row": 3936, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003936:003", "record_id": "de_en:8e3f9a07c453:003936", "source_row": 3936, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003936:004", "record_id": "de_en:8e3f9a07c453:003936", "source_row": 3936, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003991:001", "record_id": "de_en:8e3f9a07c453:003991", "source_row": 3991, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003998:001", "record_id": "de_en:8e3f9a07c453:003998", "source_row": 3998, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:003998:002", "record_id": "de_en:8e3f9a07c453:003998", "source_row": 3998, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:003998:004", "record_id": "de_en:8e3f9a07c453:003998", "source_row": 3998, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:003999:001", "record_id": "de_en:8e3f9a07c453:003999", "source_row": 3999, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003999:002", "record_id": "de_en:8e3f9a07c453:003999", "source_row": 3999, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003999:003", "record_id": "de_en:8e3f9a07c453:003999", "source_row": 3999, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:003999:004", "record_id": "de_en:8e3f9a07c453:003999", "source_row": 3999, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004038:001", "record_id": "de_en:8e3f9a07c453:004038", "source_row": 4038, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004038:002", "record_id": "de_en:8e3f9a07c453:004038", "source_row": 4038, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004047:002", "record_id": "de_en:8e3f9a07c453:004047", "source_row": 4047, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004047:003", "record_id": "de_en:8e3f9a07c453:004047", "source_row": 4047, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004047:004", "record_id": "de_en:8e3f9a07c453:004047", "source_row": 4047, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004049:001", "record_id": "de_en:8e3f9a07c453:004049", "source_row": 4049, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004049:002", "record_id": "de_en:8e3f9a07c453:004049", "source_row": 4049, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004063:001", "record_id": "de_en:8e3f9a07c453:004063", "source_row": 4063, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004063:002", "record_id": "de_en:8e3f9a07c453:004063", "source_row": 4063, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004063:003", "record_id": "de_en:8e3f9a07c453:004063", "source_row": 4063, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004063:004", "record_id": "de_en:8e3f9a07c453:004063", "source_row": 4063, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004075:001", "record_id": "de_en:8e3f9a07c453:004075", "source_row": 4075, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:004075:004", "record_id": "de_en:8e3f9a07c453:004075", "source_row": 4075, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:004078:001", "record_id": "de_en:8e3f9a07c453:004078", "source_row": 4078, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004088:001", "record_id": "de_en:8e3f9a07c453:004088", "source_row": 4088, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004088:002", "record_id": "de_en:8e3f9a07c453:004088", "source_row": 4088, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004088:003", "record_id": "de_en:8e3f9a07c453:004088", "source_row": 4088, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004088:004", "record_id": "de_en:8e3f9a07c453:004088", "source_row": 4088, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004096:004", "record_id": "de_en:8e3f9a07c453:004096", "source_row": 4096, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:004105:002", "record_id": "de_en:8e3f9a07c453:004105", "source_row": 4105, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:004105:003", "record_id": "de_en:8e3f9a07c453:004105", "source_row": 4105, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:004105:004", "record_id": "de_en:8e3f9a07c453:004105", "source_row": 4105, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:004138:003", "record_id": "de_en:8e3f9a07c453:004138", "source_row": 4138, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:004145:004", "record_id": "de_en:8e3f9a07c453:004145", "source_row": 4145, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:004155:004", "record_id": "de_en:8e3f9a07c453:004155", "source_row": 4155, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:004156:001", "record_id": "de_en:8e3f9a07c453:004156", "source_row": 4156, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004165:001", "record_id": "de_en:8e3f9a07c453:004165", "source_row": 4165, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004165:002", "record_id": "de_en:8e3f9a07c453:004165", "source_row": 4165, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004165:003", "record_id": "de_en:8e3f9a07c453:004165", "source_row": 4165, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004165:004", "record_id": "de_en:8e3f9a07c453:004165", "source_row": 4165, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004181:001", "record_id": "de_en:8e3f9a07c453:004181", "source_row": 4181, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004188:001", "record_id": "de_en:8e3f9a07c453:004188", "source_row": 4188, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004188:002", "record_id": "de_en:8e3f9a07c453:004188", "source_row": 4188, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004191:004", "record_id": "de_en:8e3f9a07c453:004191", "source_row": 4191, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:004192:001", "record_id": "de_en:8e3f9a07c453:004192", "source_row": 4192, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004192:002", "record_id": "de_en:8e3f9a07c453:004192", "source_row": 4192, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004200:001", "record_id": "de_en:8e3f9a07c453:004200", "source_row": 4200, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004220:001", "record_id": "de_en:8e3f9a07c453:004220", "source_row": 4220, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004220:002", "record_id": "de_en:8e3f9a07c453:004220", "source_row": 4220, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004220:003", "record_id": "de_en:8e3f9a07c453:004220", "source_row": 4220, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004220:004", "record_id": "de_en:8e3f9a07c453:004220", "source_row": 4220, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004220:005", "record_id": "de_en:8e3f9a07c453:004220", "source_row": 4220, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004220:006", "record_id": "de_en:8e3f9a07c453:004220", "source_row": 4220, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004220:007", "record_id": "de_en:8e3f9a07c453:004220", "source_row": 4220, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004220:008", "record_id": "de_en:8e3f9a07c453:004220", "source_row": 4220, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004220:009", "record_id": "de_en:8e3f9a07c453:004220", "source_row": 4220, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004220:010", "record_id": "de_en:8e3f9a07c453:004220", "source_row": 4220, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004220:011", "record_id": "de_en:8e3f9a07c453:004220", "source_row": 4220, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004234:001", "record_id": "de_en:8e3f9a07c453:004234", "source_row": 4234, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004238:001", "record_id": "de_en:8e3f9a07c453:004238", "source_row": 4238, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004238:002", "record_id": "de_en:8e3f9a07c453:004238", "source_row": 4238, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004238:003", "record_id": "de_en:8e3f9a07c453:004238", "source_row": 4238, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004238:004", "record_id": "de_en:8e3f9a07c453:004238", "source_row": 4238, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004252:001", "record_id": "de_en:8e3f9a07c453:004252", "source_row": 4252, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004252:002", "record_id": "de_en:8e3f9a07c453:004252", "source_row": 4252, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004252:003", "record_id": "de_en:8e3f9a07c453:004252", "source_row": 4252, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004252:004", "record_id": "de_en:8e3f9a07c453:004252", "source_row": 4252, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004266:001", "record_id": "de_en:8e3f9a07c453:004266", "source_row": 4266, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004266:003", "record_id": "de_en:8e3f9a07c453:004266", "source_row": 4266, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004266:004", "record_id": "de_en:8e3f9a07c453:004266", "source_row": 4266, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004271:001", "record_id": "de_en:8e3f9a07c453:004271", "source_row": 4271, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004271:002", "record_id": "de_en:8e3f9a07c453:004271", "source_row": 4271, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004271:003", "record_id": "de_en:8e3f9a07c453:004271", "source_row": 4271, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004271:004", "record_id": "de_en:8e3f9a07c453:004271", "source_row": 4271, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004274:004", "record_id": "de_en:8e3f9a07c453:004274", "source_row": 4274, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:004291:001", "record_id": "de_en:8e3f9a07c453:004291", "source_row": 4291, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004293:001", "record_id": "de_en:8e3f9a07c453:004293", "source_row": 4293, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004306:003", "record_id": "de_en:8e3f9a07c453:004306", "source_row": 4306, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:004319:001", "record_id": "de_en:8e3f9a07c453:004319", "source_row": 4319, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004319:002", "record_id": "de_en:8e3f9a07c453:004319", "source_row": 4319, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004334:001", "record_id": "de_en:8e3f9a07c453:004334", "source_row": 4334, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004334:002", "record_id": "de_en:8e3f9a07c453:004334", "source_row": 4334, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004334:003", "record_id": "de_en:8e3f9a07c453:004334", "source_row": 4334, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004334:004", "record_id": "de_en:8e3f9a07c453:004334", "source_row": 4334, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004358:001", "record_id": "de_en:8e3f9a07c453:004358", "source_row": 4358, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004358:002", "record_id": "de_en:8e3f9a07c453:004358", "source_row": 4358, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004358:003", "record_id": "de_en:8e3f9a07c453:004358", "source_row": 4358, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004358:004", "record_id": "de_en:8e3f9a07c453:004358", "source_row": 4358, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004368:001", "record_id": "de_en:8e3f9a07c453:004368", "source_row": 4368, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004368:002", "record_id": "de_en:8e3f9a07c453:004368", "source_row": 4368, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004368:004", "record_id": "de_en:8e3f9a07c453:004368", "source_row": 4368, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004375:001", "record_id": "de_en:8e3f9a07c453:004375", "source_row": 4375, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004375:002", "record_id": "de_en:8e3f9a07c453:004375", "source_row": 4375, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004375:003", "record_id": "de_en:8e3f9a07c453:004375", "source_row": 4375, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004375:004", "record_id": "de_en:8e3f9a07c453:004375", "source_row": 4375, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004378:001", "record_id": "de_en:8e3f9a07c453:004378", "source_row": 4378, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004380:001", "record_id": "de_en:8e3f9a07c453:004380", "source_row": 4380, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004380:002", "record_id": "de_en:8e3f9a07c453:004380", "source_row": 4380, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004396:001", "record_id": "de_en:8e3f9a07c453:004396", "source_row": 4396, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004396:002", "record_id": "de_en:8e3f9a07c453:004396", "source_row": 4396, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004396:003", "record_id": "de_en:8e3f9a07c453:004396", "source_row": 4396, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004396:004", "record_id": "de_en:8e3f9a07c453:004396", "source_row": 4396, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004404:001", "record_id": "de_en:8e3f9a07c453:004404", "source_row": 4404, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004448:001", "record_id": "de_en:8e3f9a07c453:004448", "source_row": 4448, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004448:002", "record_id": "de_en:8e3f9a07c453:004448", "source_row": 4448, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004459:001", "record_id": "de_en:8e3f9a07c453:004459", "source_row": 4459, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:004459:002", "record_id": "de_en:8e3f9a07c453:004459", "source_row": 4459, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:004459:003", "record_id": "de_en:8e3f9a07c453:004459", "source_row": 4459, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:004517:001", "record_id": "de_en:8e3f9a07c453:004517", "source_row": 4517, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004517:002", "record_id": "de_en:8e3f9a07c453:004517", "source_row": 4517, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004517:004", "record_id": "de_en:8e3f9a07c453:004517", "source_row": 4517, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004547:001", "record_id": "de_en:8e3f9a07c453:004547", "source_row": 4547, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004551:001", "record_id": "de_en:8e3f9a07c453:004551", "source_row": 4551, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004551:002", "record_id": "de_en:8e3f9a07c453:004551", "source_row": 4551, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004570:001", "record_id": "de_en:8e3f9a07c453:004570", "source_row": 4570, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004570:003", "record_id": "de_en:8e3f9a07c453:004570", "source_row": 4570, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004570:004", "record_id": "de_en:8e3f9a07c453:004570", "source_row": 4570, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004582:001", "record_id": "de_en:8e3f9a07c453:004582", "source_row": 4582, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004629:001", "record_id": "de_en:8e3f9a07c453:004629", "source_row": 4629, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:004629:003", "record_id": "de_en:8e3f9a07c453:004629", "source_row": 4629, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:004640:001", "record_id": "de_en:8e3f9a07c453:004640", "source_row": 4640, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004652:001", "record_id": "de_en:8e3f9a07c453:004652", "source_row": 4652, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004662:002", "record_id": "de_en:8e3f9a07c453:004662", "source_row": 4662, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004662:003", "record_id": "de_en:8e3f9a07c453:004662", "source_row": 4662, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004671:001", "record_id": "de_en:8e3f9a07c453:004671", "source_row": 4671, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004672:002", "record_id": "de_en:8e3f9a07c453:004672", "source_row": 4672, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:004672:003", "record_id": "de_en:8e3f9a07c453:004672", "source_row": 4672, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:004679:004", "record_id": "de_en:8e3f9a07c453:004679", "source_row": 4679, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:004688:001", "record_id": "de_en:8e3f9a07c453:004688", "source_row": 4688, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004688:002", "record_id": "de_en:8e3f9a07c453:004688", "source_row": 4688, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004688:003", "record_id": "de_en:8e3f9a07c453:004688", "source_row": 4688, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004688:004", "record_id": "de_en:8e3f9a07c453:004688", "source_row": 4688, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004695:001", "record_id": "de_en:8e3f9a07c453:004695", "source_row": 4695, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004695:002", "record_id": "de_en:8e3f9a07c453:004695", "source_row": 4695, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004695:003", "record_id": "de_en:8e3f9a07c453:004695", "source_row": 4695, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004695:004", "record_id": "de_en:8e3f9a07c453:004695", "source_row": 4695, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004697:001", "record_id": "de_en:8e3f9a07c453:004697", "source_row": 4697, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004709:001", "record_id": "de_en:8e3f9a07c453:004709", "source_row": 4709, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:004712:004", "record_id": "de_en:8e3f9a07c453:004712", "source_row": 4712, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:004755:001", "record_id": "de_en:8e3f9a07c453:004755", "source_row": 4755, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004757:003", "record_id": "de_en:8e3f9a07c453:004757", "source_row": 4757, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:004762:001", "record_id": "de_en:8e3f9a07c453:004762", "source_row": 4762, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004762:002", "record_id": "de_en:8e3f9a07c453:004762", "source_row": 4762, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004762:003", "record_id": "de_en:8e3f9a07c453:004762", "source_row": 4762, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004762:004", "record_id": "de_en:8e3f9a07c453:004762", "source_row": 4762, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004766:001", "record_id": "de_en:8e3f9a07c453:004766", "source_row": 4766, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004766:002", "record_id": "de_en:8e3f9a07c453:004766", "source_row": 4766, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004766:003", "record_id": "de_en:8e3f9a07c453:004766", "source_row": 4766, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004766:004", "record_id": "de_en:8e3f9a07c453:004766", "source_row": 4766, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004769:001", "record_id": "de_en:8e3f9a07c453:004769", "source_row": 4769, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004792:001", "record_id": "de_en:8e3f9a07c453:004792", "source_row": 4792, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:004802:001", "record_id": "de_en:8e3f9a07c453:004802", "source_row": 4802, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004804:004", "record_id": "de_en:8e3f9a07c453:004804", "source_row": 4804, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:004811:001", "record_id": "de_en:8e3f9a07c453:004811", "source_row": 4811, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:004826:001", "record_id": "de_en:8e3f9a07c453:004826", "source_row": 4826, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004831:001", "record_id": "de_en:8e3f9a07c453:004831", "source_row": 4831, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004831:002", "record_id": "de_en:8e3f9a07c453:004831", "source_row": 4831, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004831:003", "record_id": "de_en:8e3f9a07c453:004831", "source_row": 4831, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004831:004", "record_id": "de_en:8e3f9a07c453:004831", "source_row": 4831, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004850:001", "record_id": "de_en:8e3f9a07c453:004850", "source_row": 4850, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004855:001", "record_id": "de_en:8e3f9a07c453:004855", "source_row": 4855, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004908:001", "record_id": "de_en:8e3f9a07c453:004908", "source_row": 4908, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004909:001", "record_id": "de_en:8e3f9a07c453:004909", "source_row": 4909, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004909:002", "record_id": "de_en:8e3f9a07c453:004909", "source_row": 4909, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004909:003", "record_id": "de_en:8e3f9a07c453:004909", "source_row": 4909, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004909:004", "record_id": "de_en:8e3f9a07c453:004909", "source_row": 4909, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004918:004", "record_id": "de_en:8e3f9a07c453:004918", "source_row": 4918, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:004919:004", "record_id": "de_en:8e3f9a07c453:004919", "source_row": 4919, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:004920:002", "record_id": "de_en:8e3f9a07c453:004920", "source_row": 4920, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:004920:003", "record_id": "de_en:8e3f9a07c453:004920", "source_row": 4920, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:004920:004", "record_id": "de_en:8e3f9a07c453:004920", "source_row": 4920, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:004935:001", "record_id": "de_en:8e3f9a07c453:004935", "source_row": 4935, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004935:002", "record_id": "de_en:8e3f9a07c453:004935", "source_row": 4935, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004944:001", "record_id": "de_en:8e3f9a07c453:004944", "source_row": 4944, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004944:002", "record_id": "de_en:8e3f9a07c453:004944", "source_row": 4944, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004944:003", "record_id": "de_en:8e3f9a07c453:004944", "source_row": 4944, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004944:004", "record_id": "de_en:8e3f9a07c453:004944", "source_row": 4944, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:004947:001", "record_id": "de_en:8e3f9a07c453:004947", "source_row": 4947, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:004947:003", "record_id": "de_en:8e3f9a07c453:004947", "source_row": 4947, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:004947:004", "record_id": "de_en:8e3f9a07c453:004947", "source_row": 4947, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:004949:001", "record_id": "de_en:8e3f9a07c453:004949", "source_row": 4949, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:004949:004", "record_id": "de_en:8e3f9a07c453:004949", "source_row": 4949, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:004976:003", "record_id": "de_en:8e3f9a07c453:004976", "source_row": 4976, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:005013:001", "record_id": "de_en:8e3f9a07c453:005013", "source_row": 5013, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005013:002", "record_id": "de_en:8e3f9a07c453:005013", "source_row": 5013, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005013:003", "record_id": "de_en:8e3f9a07c453:005013", "source_row": 5013, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005013:004", "record_id": "de_en:8e3f9a07c453:005013", "source_row": 5013, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005018:001", "record_id": "de_en:8e3f9a07c453:005018", "source_row": 5018, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005032:001", "record_id": "de_en:8e3f9a07c453:005032", "source_row": 5032, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005032:002", "record_id": "de_en:8e3f9a07c453:005032", "source_row": 5032, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005032:003", "record_id": "de_en:8e3f9a07c453:005032", "source_row": 5032, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005032:004", "record_id": "de_en:8e3f9a07c453:005032", "source_row": 5032, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005055:001", "record_id": "de_en:8e3f9a07c453:005055", "source_row": 5055, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005055:002", "record_id": "de_en:8e3f9a07c453:005055", "source_row": 5055, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005055:003", "record_id": "de_en:8e3f9a07c453:005055", "source_row": 5055, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005058:001", "record_id": "de_en:8e3f9a07c453:005058", "source_row": 5058, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005088:001", "record_id": "de_en:8e3f9a07c453:005088", "source_row": 5088, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005092:001", "record_id": "de_en:8e3f9a07c453:005092", "source_row": 5092, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005092:002", "record_id": "de_en:8e3f9a07c453:005092", "source_row": 5092, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005092:003", "record_id": "de_en:8e3f9a07c453:005092", "source_row": 5092, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005092:004", "record_id": "de_en:8e3f9a07c453:005092", "source_row": 5092, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005104:001", "record_id": "de_en:8e3f9a07c453:005104", "source_row": 5104, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005104:002", "record_id": "de_en:8e3f9a07c453:005104", "source_row": 5104, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005104:003", "record_id": "de_en:8e3f9a07c453:005104", "source_row": 5104, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005104:004", "record_id": "de_en:8e3f9a07c453:005104", "source_row": 5104, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005106:002", "record_id": "de_en:8e3f9a07c453:005106", "source_row": 5106, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:005106:003", "record_id": "de_en:8e3f9a07c453:005106", "source_row": 5106, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:005132:001", "record_id": "de_en:8e3f9a07c453:005132", "source_row": 5132, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005132:002", "record_id": "de_en:8e3f9a07c453:005132", "source_row": 5132, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005132:004", "record_id": "de_en:8e3f9a07c453:005132", "source_row": 5132, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005135:001", "record_id": "de_en:8e3f9a07c453:005135", "source_row": 5135, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005135:002", "record_id": "de_en:8e3f9a07c453:005135", "source_row": 5135, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005135:003", "record_id": "de_en:8e3f9a07c453:005135", "source_row": 5135, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005143:001", "record_id": "de_en:8e3f9a07c453:005143", "source_row": 5143, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:005143:002", "record_id": "de_en:8e3f9a07c453:005143", "source_row": 5143, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:005143:003", "record_id": "de_en:8e3f9a07c453:005143", "source_row": 5143, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:005143:005", "record_id": "de_en:8e3f9a07c453:005143", "source_row": 5143, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:005143:007", "record_id": "de_en:8e3f9a07c453:005143", "source_row": 5143, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:005150:001", "record_id": "de_en:8e3f9a07c453:005150", "source_row": 5150, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005153:001", "record_id": "de_en:8e3f9a07c453:005153", "source_row": 5153, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005157:001", "record_id": "de_en:8e3f9a07c453:005157", "source_row": 5157, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005167:002", "record_id": "de_en:8e3f9a07c453:005167", "source_row": 5167, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005167:003", "record_id": "de_en:8e3f9a07c453:005167", "source_row": 5167, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005167:004", "record_id": "de_en:8e3f9a07c453:005167", "source_row": 5167, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005189:001", "record_id": "de_en:8e3f9a07c453:005189", "source_row": 5189, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:005205:001", "record_id": "de_en:8e3f9a07c453:005205", "source_row": 5205, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005214:001", "record_id": "de_en:8e3f9a07c453:005214", "source_row": 5214, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005214:002", "record_id": "de_en:8e3f9a07c453:005214", "source_row": 5214, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005214:003", "record_id": "de_en:8e3f9a07c453:005214", "source_row": 5214, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005214:004", "record_id": "de_en:8e3f9a07c453:005214", "source_row": 5214, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005227:001", "record_id": "de_en:8e3f9a07c453:005227", "source_row": 5227, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005227:003", "record_id": "de_en:8e3f9a07c453:005227", "source_row": 5227, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005227:004", "record_id": "de_en:8e3f9a07c453:005227", "source_row": 5227, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005233:001", "record_id": "de_en:8e3f9a07c453:005233", "source_row": 5233, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:005233:003", "record_id": "de_en:8e3f9a07c453:005233", "source_row": 5233, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:005233:004", "record_id": "de_en:8e3f9a07c453:005233", "source_row": 5233, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:005234:002", "record_id": "de_en:8e3f9a07c453:005234", "source_row": 5234, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:005234:003", "record_id": "de_en:8e3f9a07c453:005234", "source_row": 5234, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:005234:004", "record_id": "de_en:8e3f9a07c453:005234", "source_row": 5234, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:005244:001", "record_id": "de_en:8e3f9a07c453:005244", "source_row": 5244, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:005244:002", "record_id": "de_en:8e3f9a07c453:005244", "source_row": 5244, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:005244:003", "record_id": "de_en:8e3f9a07c453:005244", "source_row": 5244, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:005244:004", "record_id": "de_en:8e3f9a07c453:005244", "source_row": 5244, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:005247:001", "record_id": "de_en:8e3f9a07c453:005247", "source_row": 5247, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005263:001", "record_id": "de_en:8e3f9a07c453:005263", "source_row": 5263, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:005263:004", "record_id": "de_en:8e3f9a07c453:005263", "source_row": 5263, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:005265:002", "record_id": "de_en:8e3f9a07c453:005265", "source_row": 5265, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005265:003", "record_id": "de_en:8e3f9a07c453:005265", "source_row": 5265, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005265:004", "record_id": "de_en:8e3f9a07c453:005265", "source_row": 5265, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005267:001", "record_id": "de_en:8e3f9a07c453:005267", "source_row": 5267, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005271:001", "record_id": "de_en:8e3f9a07c453:005271", "source_row": 5271, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005271:002", "record_id": "de_en:8e3f9a07c453:005271", "source_row": 5271, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005271:003", "record_id": "de_en:8e3f9a07c453:005271", "source_row": 5271, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005271:004", "record_id": "de_en:8e3f9a07c453:005271", "source_row": 5271, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005271:005", "record_id": "de_en:8e3f9a07c453:005271", "source_row": 5271, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005281:001", "record_id": "de_en:8e3f9a07c453:005281", "source_row": 5281, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005281:002", "record_id": "de_en:8e3f9a07c453:005281", "source_row": 5281, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005281:003", "record_id": "de_en:8e3f9a07c453:005281", "source_row": 5281, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005281:004", "record_id": "de_en:8e3f9a07c453:005281", "source_row": 5281, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005303:003", "record_id": "de_en:8e3f9a07c453:005303", "source_row": 5303, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:005303:004", "record_id": "de_en:8e3f9a07c453:005303", "source_row": 5303, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:005331:001", "record_id": "de_en:8e3f9a07c453:005331", "source_row": 5331, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005331:002", "record_id": "de_en:8e3f9a07c453:005331", "source_row": 5331, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005331:003", "record_id": "de_en:8e3f9a07c453:005331", "source_row": 5331, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005331:004", "record_id": "de_en:8e3f9a07c453:005331", "source_row": 5331, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005363:002", "record_id": "de_en:8e3f9a07c453:005363", "source_row": 5363, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005363:004", "record_id": "de_en:8e3f9a07c453:005363", "source_row": 5363, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005402:001", "record_id": "de_en:8e3f9a07c453:005402", "source_row": 5402, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005402:002", "record_id": "de_en:8e3f9a07c453:005402", "source_row": 5402, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005402:003", "record_id": "de_en:8e3f9a07c453:005402", "source_row": 5402, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005402:004", "record_id": "de_en:8e3f9a07c453:005402", "source_row": 5402, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005409:001", "record_id": "de_en:8e3f9a07c453:005409", "source_row": 5409, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005411:003", "record_id": "de_en:8e3f9a07c453:005411", "source_row": 5411, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:005411:004", "record_id": "de_en:8e3f9a07c453:005411", "source_row": 5411, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:005412:004", "record_id": "de_en:8e3f9a07c453:005412", "source_row": 5412, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:005434:001", "record_id": "de_en:8e3f9a07c453:005434", "source_row": 5434, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005440:001", "record_id": "de_en:8e3f9a07c453:005440", "source_row": 5440, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005440:002", "record_id": "de_en:8e3f9a07c453:005440", "source_row": 5440, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005440:003", "record_id": "de_en:8e3f9a07c453:005440", "source_row": 5440, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005440:004", "record_id": "de_en:8e3f9a07c453:005440", "source_row": 5440, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005440:005", "record_id": "de_en:8e3f9a07c453:005440", "source_row": 5440, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005470:002", "record_id": "de_en:8e3f9a07c453:005470", "source_row": 5470, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005470:003", "record_id": "de_en:8e3f9a07c453:005470", "source_row": 5470, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005470:004", "record_id": "de_en:8e3f9a07c453:005470", "source_row": 5470, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005490:001", "record_id": "de_en:8e3f9a07c453:005490", "source_row": 5490, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005490:002", "record_id": "de_en:8e3f9a07c453:005490", "source_row": 5490, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005490:003", "record_id": "de_en:8e3f9a07c453:005490", "source_row": 5490, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005490:004", "record_id": "de_en:8e3f9a07c453:005490", "source_row": 5490, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005495:001", "record_id": "de_en:8e3f9a07c453:005495", "source_row": 5495, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005495:002", "record_id": "de_en:8e3f9a07c453:005495", "source_row": 5495, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005495:003", "record_id": "de_en:8e3f9a07c453:005495", "source_row": 5495, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005495:004", "record_id": "de_en:8e3f9a07c453:005495", "source_row": 5495, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005510:001", "record_id": "de_en:8e3f9a07c453:005510", "source_row": 5510, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:005510:002", "record_id": "de_en:8e3f9a07c453:005510", "source_row": 5510, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:005510:003", "record_id": "de_en:8e3f9a07c453:005510", "source_row": 5510, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:005515:001", "record_id": "de_en:8e3f9a07c453:005515", "source_row": 5515, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005515:002", "record_id": "de_en:8e3f9a07c453:005515", "source_row": 5515, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005515:003", "record_id": "de_en:8e3f9a07c453:005515", "source_row": 5515, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005515:004", "record_id": "de_en:8e3f9a07c453:005515", "source_row": 5515, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005515:005", "record_id": "de_en:8e3f9a07c453:005515", "source_row": 5515, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005515:006", "record_id": "de_en:8e3f9a07c453:005515", "source_row": 5515, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005515:007", "record_id": "de_en:8e3f9a07c453:005515", "source_row": 5515, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005515:008", "record_id": "de_en:8e3f9a07c453:005515", "source_row": 5515, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005535:001", "record_id": "de_en:8e3f9a07c453:005535", "source_row": 5535, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:005554:001", "record_id": "de_en:8e3f9a07c453:005554", "source_row": 5554, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:005579:003", "record_id": "de_en:8e3f9a07c453:005579", "source_row": 5579, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:005579:004", "record_id": "de_en:8e3f9a07c453:005579", "source_row": 5579, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:005598:003", "record_id": "de_en:8e3f9a07c453:005598", "source_row": 5598, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:005598:004", "record_id": "de_en:8e3f9a07c453:005598", "source_row": 5598, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:005602:001", "record_id": "de_en:8e3f9a07c453:005602", "source_row": 5602, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005608:001", "record_id": "de_en:8e3f9a07c453:005608", "source_row": 5608, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:005608:003", "record_id": "de_en:8e3f9a07c453:005608", "source_row": 5608, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:005664:001", "record_id": "de_en:8e3f9a07c453:005664", "source_row": 5664, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005664:002", "record_id": "de_en:8e3f9a07c453:005664", "source_row": 5664, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005664:003", "record_id": "de_en:8e3f9a07c453:005664", "source_row": 5664, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005664:004", "record_id": "de_en:8e3f9a07c453:005664", "source_row": 5664, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005694:001", "record_id": "de_en:8e3f9a07c453:005694", "source_row": 5694, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005734:003", "record_id": "de_en:8e3f9a07c453:005734", "source_row": 5734, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:005756:001", "record_id": "de_en:8e3f9a07c453:005756", "source_row": 5756, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005781:001", "record_id": "de_en:8e3f9a07c453:005781", "source_row": 5781, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005781:002", "record_id": "de_en:8e3f9a07c453:005781", "source_row": 5781, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005781:003", "record_id": "de_en:8e3f9a07c453:005781", "source_row": 5781, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005817:001", "record_id": "de_en:8e3f9a07c453:005817", "source_row": 5817, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005817:002", "record_id": "de_en:8e3f9a07c453:005817", "source_row": 5817, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005821:001", "record_id": "de_en:8e3f9a07c453:005821", "source_row": 5821, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005821:002", "record_id": "de_en:8e3f9a07c453:005821", "source_row": 5821, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005821:003", "record_id": "de_en:8e3f9a07c453:005821", "source_row": 5821, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005821:004", "record_id": "de_en:8e3f9a07c453:005821", "source_row": 5821, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005838:003", "record_id": "de_en:8e3f9a07c453:005838", "source_row": 5838, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005845:001", "record_id": "de_en:8e3f9a07c453:005845", "source_row": 5845, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005845:002", "record_id": "de_en:8e3f9a07c453:005845", "source_row": 5845, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005845:003", "record_id": "de_en:8e3f9a07c453:005845", "source_row": 5845, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005845:004", "record_id": "de_en:8e3f9a07c453:005845", "source_row": 5845, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005846:001", "record_id": "de_en:8e3f9a07c453:005846", "source_row": 5846, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005862:001", "record_id": "de_en:8e3f9a07c453:005862", "source_row": 5862, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005862:002", "record_id": "de_en:8e3f9a07c453:005862", "source_row": 5862, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005862:003", "record_id": "de_en:8e3f9a07c453:005862", "source_row": 5862, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005862:004", "record_id": "de_en:8e3f9a07c453:005862", "source_row": 5862, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005862:005", "record_id": "de_en:8e3f9a07c453:005862", "source_row": 5862, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005865:001", "record_id": "de_en:8e3f9a07c453:005865", "source_row": 5865, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005865:002", "record_id": "de_en:8e3f9a07c453:005865", "source_row": 5865, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005865:003", "record_id": "de_en:8e3f9a07c453:005865", "source_row": 5865, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005865:004", "record_id": "de_en:8e3f9a07c453:005865", "source_row": 5865, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005872:001", "record_id": "de_en:8e3f9a07c453:005872", "source_row": 5872, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005880:001", "record_id": "de_en:8e3f9a07c453:005880", "source_row": 5880, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005905:001", "record_id": "de_en:8e3f9a07c453:005905", "source_row": 5905, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005919:001", "record_id": "de_en:8e3f9a07c453:005919", "source_row": 5919, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005919:002", "record_id": "de_en:8e3f9a07c453:005919", "source_row": 5919, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005925:001", "record_id": "de_en:8e3f9a07c453:005925", "source_row": 5925, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005933:001", "record_id": "de_en:8e3f9a07c453:005933", "source_row": 5933, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005933:002", "record_id": "de_en:8e3f9a07c453:005933", "source_row": 5933, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005933:004", "record_id": "de_en:8e3f9a07c453:005933", "source_row": 5933, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:005939:002", "record_id": "de_en:8e3f9a07c453:005939", "source_row": 5939, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:005939:003", "record_id": "de_en:8e3f9a07c453:005939", "source_row": 5939, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:005943:001", "record_id": "de_en:8e3f9a07c453:005943", "source_row": 5943, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:005943:002", "record_id": "de_en:8e3f9a07c453:005943", "source_row": 5943, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:005943:003", "record_id": "de_en:8e3f9a07c453:005943", "source_row": 5943, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:005943:004", "record_id": "de_en:8e3f9a07c453:005943", "source_row": 5943, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:005943:005", "record_id": "de_en:8e3f9a07c453:005943", "source_row": 5943, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:005981:001", "record_id": "de_en:8e3f9a07c453:005981", "source_row": 5981, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006014:003", "record_id": "de_en:8e3f9a07c453:006014", "source_row": 6014, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:006019:001", "record_id": "de_en:8e3f9a07c453:006019", "source_row": 6019, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006024:001", "record_id": "de_en:8e3f9a07c453:006024", "source_row": 6024, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006024:003", "record_id": "de_en:8e3f9a07c453:006024", "source_row": 6024, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006024:004", "record_id": "de_en:8e3f9a07c453:006024", "source_row": 6024, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006032:001", "record_id": "de_en:8e3f9a07c453:006032", "source_row": 6032, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006032:002", "record_id": "de_en:8e3f9a07c453:006032", "source_row": 6032, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006032:003", "record_id": "de_en:8e3f9a07c453:006032", "source_row": 6032, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006032:004", "record_id": "de_en:8e3f9a07c453:006032", "source_row": 6032, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006039:002", "record_id": "de_en:8e3f9a07c453:006039", "source_row": 6039, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006052:001", "record_id": "de_en:8e3f9a07c453:006052", "source_row": 6052, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:006052:004", "record_id": "de_en:8e3f9a07c453:006052", "source_row": 6052, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:006065:004", "record_id": "de_en:8e3f9a07c453:006065", "source_row": 6065, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:006070:001", "record_id": "de_en:8e3f9a07c453:006070", "source_row": 6070, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006070:002", "record_id": "de_en:8e3f9a07c453:006070", "source_row": 6070, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006098:001", "record_id": "de_en:8e3f9a07c453:006098", "source_row": 6098, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006098:002", "record_id": "de_en:8e3f9a07c453:006098", "source_row": 6098, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006098:003", "record_id": "de_en:8e3f9a07c453:006098", "source_row": 6098, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006098:004", "record_id": "de_en:8e3f9a07c453:006098", "source_row": 6098, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006104:001", "record_id": "de_en:8e3f9a07c453:006104", "source_row": 6104, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006104:002", "record_id": "de_en:8e3f9a07c453:006104", "source_row": 6104, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006133:001", "record_id": "de_en:8e3f9a07c453:006133", "source_row": 6133, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:006151:001", "record_id": "de_en:8e3f9a07c453:006151", "source_row": 6151, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:006156:001", "record_id": "de_en:8e3f9a07c453:006156", "source_row": 6156, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006156:002", "record_id": "de_en:8e3f9a07c453:006156", "source_row": 6156, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006156:003", "record_id": "de_en:8e3f9a07c453:006156", "source_row": 6156, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006161:001", "record_id": "de_en:8e3f9a07c453:006161", "source_row": 6161, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:006161:002", "record_id": "de_en:8e3f9a07c453:006161", "source_row": 6161, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:006161:003", "record_id": "de_en:8e3f9a07c453:006161", "source_row": 6161, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:006171:001", "record_id": "de_en:8e3f9a07c453:006171", "source_row": 6171, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006172:001", "record_id": "de_en:8e3f9a07c453:006172", "source_row": 6172, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006175:001", "record_id": "de_en:8e3f9a07c453:006175", "source_row": 6175, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006177:001", "record_id": "de_en:8e3f9a07c453:006177", "source_row": 6177, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006186:001", "record_id": "de_en:8e3f9a07c453:006186", "source_row": 6186, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006186:002", "record_id": "de_en:8e3f9a07c453:006186", "source_row": 6186, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006186:003", "record_id": "de_en:8e3f9a07c453:006186", "source_row": 6186, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006186:004", "record_id": "de_en:8e3f9a07c453:006186", "source_row": 6186, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006187:001", "record_id": "de_en:8e3f9a07c453:006187", "source_row": 6187, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006187:002", "record_id": "de_en:8e3f9a07c453:006187", "source_row": 6187, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006187:003", "record_id": "de_en:8e3f9a07c453:006187", "source_row": 6187, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006187:004", "record_id": "de_en:8e3f9a07c453:006187", "source_row": 6187, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006192:001", "record_id": "de_en:8e3f9a07c453:006192", "source_row": 6192, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006196:001", "record_id": "de_en:8e3f9a07c453:006196", "source_row": 6196, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006196:002", "record_id": "de_en:8e3f9a07c453:006196", "source_row": 6196, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006196:003", "record_id": "de_en:8e3f9a07c453:006196", "source_row": 6196, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006196:004", "record_id": "de_en:8e3f9a07c453:006196", "source_row": 6196, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006199:001", "record_id": "de_en:8e3f9a07c453:006199", "source_row": 6199, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:006207:001", "record_id": "de_en:8e3f9a07c453:006207", "source_row": 6207, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:006207:004", "record_id": "de_en:8e3f9a07c453:006207", "source_row": 6207, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:006210:001", "record_id": "de_en:8e3f9a07c453:006210", "source_row": 6210, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006210:002", "record_id": "de_en:8e3f9a07c453:006210", "source_row": 6210, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006223:001", "record_id": "de_en:8e3f9a07c453:006223", "source_row": 6223, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006223:002", "record_id": "de_en:8e3f9a07c453:006223", "source_row": 6223, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006237:001", "record_id": "de_en:8e3f9a07c453:006237", "source_row": 6237, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006237:002", "record_id": "de_en:8e3f9a07c453:006237", "source_row": 6237, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006237:003", "record_id": "de_en:8e3f9a07c453:006237", "source_row": 6237, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006246:001", "record_id": "de_en:8e3f9a07c453:006246", "source_row": 6246, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006246:002", "record_id": "de_en:8e3f9a07c453:006246", "source_row": 6246, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006246:003", "record_id": "de_en:8e3f9a07c453:006246", "source_row": 6246, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006246:004", "record_id": "de_en:8e3f9a07c453:006246", "source_row": 6246, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006257:001", "record_id": "de_en:8e3f9a07c453:006257", "source_row": 6257, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:006257:004", "record_id": "de_en:8e3f9a07c453:006257", "source_row": 6257, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:006258:001", "record_id": "de_en:8e3f9a07c453:006258", "source_row": 6258, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:006258:003", "record_id": "de_en:8e3f9a07c453:006258", "source_row": 6258, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:006258:004", "record_id": "de_en:8e3f9a07c453:006258", "source_row": 6258, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:006272:001", "record_id": "de_en:8e3f9a07c453:006272", "source_row": 6272, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006272:002", "record_id": "de_en:8e3f9a07c453:006272", "source_row": 6272, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006272:003", "record_id": "de_en:8e3f9a07c453:006272", "source_row": 6272, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006272:004", "record_id": "de_en:8e3f9a07c453:006272", "source_row": 6272, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006292:003", "record_id": "de_en:8e3f9a07c453:006292", "source_row": 6292, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:006316:001", "record_id": "de_en:8e3f9a07c453:006316", "source_row": 6316, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006316:002", "record_id": "de_en:8e3f9a07c453:006316", "source_row": 6316, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006316:003", "record_id": "de_en:8e3f9a07c453:006316", "source_row": 6316, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006316:004", "record_id": "de_en:8e3f9a07c453:006316", "source_row": 6316, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006321:001", "record_id": "de_en:8e3f9a07c453:006321", "source_row": 6321, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006351:001", "record_id": "de_en:8e3f9a07c453:006351", "source_row": 6351, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006351:002", "record_id": "de_en:8e3f9a07c453:006351", "source_row": 6351, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006366:001", "record_id": "de_en:8e3f9a07c453:006366", "source_row": 6366, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006366:002", "record_id": "de_en:8e3f9a07c453:006366", "source_row": 6366, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006366:003", "record_id": "de_en:8e3f9a07c453:006366", "source_row": 6366, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006371:001", "record_id": "de_en:8e3f9a07c453:006371", "source_row": 6371, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006371:002", "record_id": "de_en:8e3f9a07c453:006371", "source_row": 6371, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006371:003", "record_id": "de_en:8e3f9a07c453:006371", "source_row": 6371, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006371:004", "record_id": "de_en:8e3f9a07c453:006371", "source_row": 6371, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006386:001", "record_id": "de_en:8e3f9a07c453:006386", "source_row": 6386, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006386:002", "record_id": "de_en:8e3f9a07c453:006386", "source_row": 6386, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006386:003", "record_id": "de_en:8e3f9a07c453:006386", "source_row": 6386, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006386:004", "record_id": "de_en:8e3f9a07c453:006386", "source_row": 6386, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006396:002", "record_id": "de_en:8e3f9a07c453:006396", "source_row": 6396, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006396:003", "record_id": "de_en:8e3f9a07c453:006396", "source_row": 6396, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006396:004", "record_id": "de_en:8e3f9a07c453:006396", "source_row": 6396, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006396:005", "record_id": "de_en:8e3f9a07c453:006396", "source_row": 6396, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006396:006", "record_id": "de_en:8e3f9a07c453:006396", "source_row": 6396, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006396:007", "record_id": "de_en:8e3f9a07c453:006396", "source_row": 6396, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006396:008", "record_id": "de_en:8e3f9a07c453:006396", "source_row": 6396, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006413:001", "record_id": "de_en:8e3f9a07c453:006413", "source_row": 6413, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006413:002", "record_id": "de_en:8e3f9a07c453:006413", "source_row": 6413, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006413:003", "record_id": "de_en:8e3f9a07c453:006413", "source_row": 6413, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006413:004", "record_id": "de_en:8e3f9a07c453:006413", "source_row": 6413, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006413:005", "record_id": "de_en:8e3f9a07c453:006413", "source_row": 6413, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006417:001", "record_id": "de_en:8e3f9a07c453:006417", "source_row": 6417, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006417:003", "record_id": "de_en:8e3f9a07c453:006417", "source_row": 6417, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006417:004", "record_id": "de_en:8e3f9a07c453:006417", "source_row": 6417, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006429:003", "record_id": "de_en:8e3f9a07c453:006429", "source_row": 6429, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:006433:001", "record_id": "de_en:8e3f9a07c453:006433", "source_row": 6433, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006444:002", "record_id": "de_en:8e3f9a07c453:006444", "source_row": 6444, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:006445:001", "record_id": "de_en:8e3f9a07c453:006445", "source_row": 6445, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006445:002", "record_id": "de_en:8e3f9a07c453:006445", "source_row": 6445, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006445:003", "record_id": "de_en:8e3f9a07c453:006445", "source_row": 6445, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006445:004", "record_id": "de_en:8e3f9a07c453:006445", "source_row": 6445, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006448:001", "record_id": "de_en:8e3f9a07c453:006448", "source_row": 6448, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006505:002", "record_id": "de_en:8e3f9a07c453:006505", "source_row": 6505, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006505:004", "record_id": "de_en:8e3f9a07c453:006505", "source_row": 6505, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006549:001", "record_id": "de_en:8e3f9a07c453:006549", "source_row": 6549, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006556:002", "record_id": "de_en:8e3f9a07c453:006556", "source_row": 6556, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006588:002", "record_id": "de_en:8e3f9a07c453:006588", "source_row": 6588, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:006588:004", "record_id": "de_en:8e3f9a07c453:006588", "source_row": 6588, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:006639:001", "record_id": "de_en:8e3f9a07c453:006639", "source_row": 6639, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006639:002", "record_id": "de_en:8e3f9a07c453:006639", "source_row": 6639, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006639:003", "record_id": "de_en:8e3f9a07c453:006639", "source_row": 6639, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006639:004", "record_id": "de_en:8e3f9a07c453:006639", "source_row": 6639, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006653:001", "record_id": "de_en:8e3f9a07c453:006653", "source_row": 6653, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:006666:003", "record_id": "de_en:8e3f9a07c453:006666", "source_row": 6666, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:006666:004", "record_id": "de_en:8e3f9a07c453:006666", "source_row": 6666, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:006709:002", "record_id": "de_en:8e3f9a07c453:006709", "source_row": 6709, "cs_type": "Extra-sentential / Tag switching"}
+{"sequence_id": "de_en:8e3f9a07c453:006722:001", "record_id": "de_en:8e3f9a07c453:006722", "source_row": 6722, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006722:002", "record_id": "de_en:8e3f9a07c453:006722", "source_row": 6722, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006730:001", "record_id": "de_en:8e3f9a07c453:006730", "source_row": 6730, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006735:001", "record_id": "de_en:8e3f9a07c453:006735", "source_row": 6735, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006735:002", "record_id": "de_en:8e3f9a07c453:006735", "source_row": 6735, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006735:003", "record_id": "de_en:8e3f9a07c453:006735", "source_row": 6735, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006735:004", "record_id": "de_en:8e3f9a07c453:006735", "source_row": 6735, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006756:001", "record_id": "de_en:8e3f9a07c453:006756", "source_row": 6756, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006769:001", "record_id": "de_en:8e3f9a07c453:006769", "source_row": 6769, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006769:002", "record_id": "de_en:8e3f9a07c453:006769", "source_row": 6769, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006769:003", "record_id": "de_en:8e3f9a07c453:006769", "source_row": 6769, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006769:004", "record_id": "de_en:8e3f9a07c453:006769", "source_row": 6769, "cs_type": "Intrasentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006783:001", "record_id": "de_en:8e3f9a07c453:006783", "source_row": 6783, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006783:002", "record_id": "de_en:8e3f9a07c453:006783", "source_row": 6783, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006783:003", "record_id": "de_en:8e3f9a07c453:006783", "source_row": 6783, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006783:004", "record_id": "de_en:8e3f9a07c453:006783", "source_row": 6783, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006790:001", "record_id": "de_en:8e3f9a07c453:006790", "source_row": 6790, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006790:002", "record_id": "de_en:8e3f9a07c453:006790", "source_row": 6790, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006790:003", "record_id": "de_en:8e3f9a07c453:006790", "source_row": 6790, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006790:004", "record_id": "de_en:8e3f9a07c453:006790", "source_row": 6790, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006818:001", "record_id": "de_en:8e3f9a07c453:006818", "source_row": 6818, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006818:002", "record_id": "de_en:8e3f9a07c453:006818", "source_row": 6818, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006818:003", "record_id": "de_en:8e3f9a07c453:006818", "source_row": 6818, "cs_type": "Intersentential"}
+{"sequence_id": "de_en:8e3f9a07c453:006818:004", "record_id": "de_en:8e3f9a07c453:006818", "source_row": 6818, "cs_type": "Intersentential"}

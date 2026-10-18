@@ -1,0 +1,574 @@
+{
+  "files": [
+    {
+      "path": "DECISIONS_yufan.md",
+      "bytes": 3800,
+      "sha256": "c81fc269f86875b9cae280235c8efb297996c9ff39f5dce3a0768d9fdefd8847",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "README.md",
+      "bytes": 3812,
+      "sha256": "3e4b7d7874daf5456d48508ed4bfbcac006edeba38a04101011af49ddbdf27ef",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "de_en/annotation/case_study_yufan.json",
+      "bytes": 1187,
+      "sha256": "022c67fc841c1b5f883c38ac668d9f15f74467d9bd79565deddb0192b7316185",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "de_en/annotation/development_record_manifest_yufan.json",
+      "bytes": 549,
+      "sha256": "efda9fe97dbf2bd74540e4cb0db6c1c862d6d742287712df2ab3d5942c2cd425",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "de_en/annotation/lid_manifest_yufan.json",
+      "bytes": 1633,
+      "sha256": "9a18ededd6bb7cb5f83cca839f29b3dde4ea966d61c59960847f2ef46a937ca4",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "de_en/annotation/lid_yufan.jsonl",
+      "bytes": 1763599,
+      "sha256": "8c78861a2fc0f23be91cb834c9280efedabbc8152c7f48983646a954199c4608",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "de_en/annotation/pilot_record_ids_yufan.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "de_en/annotation/quarantine_reasons_yufan.jsonl",
+      "bytes": 111664,
+      "sha256": "df802b3f712ffd6dd078c6c569fb53097653393f366b9236ae5e520109be96b0",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "de_en/annotation/review_yufan.csv",
+      "bytes": 73782,
+      "sha256": "5ec4655d5e23313c0c9321b9497092c7149ef98b5f8a54693a9ac82bbdcd3e4a",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "de_en/annotation/screening_manifest_yufan.json",
+      "bytes": 2121,
+      "sha256": "6d22843d513948d058ddd89fa68f4341ad75cc8bcff4c14ec4814450ab948b81",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "de_en/cs_type_yufan.jsonl",
+      "bytes": 165408,
+      "sha256": "c8c3d338b115fdd2dd6d8b7a4a103e5920336c4cd0ada0aa867bc7d8e4742a4e",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "de_en/extraction/extract_issues_yufan.jsonl",
+      "bytes": 5418,
+      "sha256": "010f529788c0f7e35dbb426e1cb697cd0c5b386533ad49ba8e8d3193c943c50c",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "de_en/extraction/extract_manifest_yufan.json",
+      "bytes": 1089,
+      "sha256": "02576691819ee97352b500fd884ee925f366e2b864f8e1f63cd8ef3be340f20d",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "de_en/extraction/lid.template_yufan.jsonl",
+      "bytes": 434351,
+      "sha256": "837091f6743afbd02612a3e1c4487ccf909f079eb5652c01fe96f56a880e8cca",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "de_en/extraction/sampling_manifest_yufan.json",
+      "bytes": 17096,
+      "sha256": "f351a7fe48965d4e417e2872d85bee3e51243453f837a88ceb20ad92b51af6fa",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "de_en/extraction/texts_yufan.jsonl",
+      "bytes": 543008,
+      "sha256": "32616d6b2f89ec418f6aaad4e2390f5da32afcf9a37d7d272aaf816187276d73",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "de_en/tokenized/labeled_tokens_yufan.jsonl",
+      "bytes": 5385344,
+      "sha256": "860c22ec26f5de70f59b8bd2712ee10e72b5d8e35ad295c2928193d306a2b884",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "de_en/tokenized/manifest_yufan.json",
+      "bytes": 2731,
+      "sha256": "ef89403c56226b46c5ab07604a9e2dd9afdf8a96f942eee941f6fc7d1a5bd293",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "de_en/tokenized/stats_yufan.json",
+      "bytes": 427,
+      "sha256": "80dcb08823f9905603a3d4bce2d24dd4f910bcd3d24cc49df13d931aa944d13d",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "de_en/tokenized/token_issues_yufan.jsonl",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "fr_en/annotation/case_study_yufan.json",
+      "bytes": 1115,
+      "sha256": "69735ea130bdae46c30a797ca31e93b30b7add7978df66979ab8181d24a525d2",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "fr_en/annotation/development_record_manifest_yufan.json",
+      "bytes": 1442,
+      "sha256": "5748bcc75ef83367ebba208968825813c56154ae0181a15610e36fd5e44b68e4",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "fr_en/annotation/lid_manifest_yufan.json",
+      "bytes": 1633,
+      "sha256": "f9c6a53ff551d24054d07add9989399846254acaca93a169e9bd5dc4b326ea88",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "fr_en/annotation/lid_yufan.jsonl",
+      "bytes": 1834080,
+      "sha256": "c9f7f3a8932ba1fe72bb4f52316a3d4b260bd99a273763288291a6385d130a04",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "fr_en/annotation/pilot_record_ids_yufan.txt",
+      "bytes": 52,
+      "sha256": "663c7423a216da4fccb2a585da2ebf822b823cf022e3d70b721506d0985cf997",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "fr_en/annotation/quarantine_reasons_yufan.jsonl",
+      "bytes": 96302,
+      "sha256": "2e5e14bbfaa2fdcec1a0686573fd6a7f2724d2d6689fa10815fffc4abe62e4ff",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "fr_en/annotation/review_yufan.csv",
+      "bytes": 88448,
+      "sha256": "e560e3f0e145ffcb831552335b69754fd2dedb187392cf991118e59106bda4e7",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "fr_en/annotation/screening_manifest_yufan.json",
+      "bytes": 2145,
+      "sha256": "c8e97dd3fbbb0e32e41da87081b820b3b53eee0b8f23666875471ac880280c53",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "fr_en/cs_type_yufan.jsonl",
+      "bytes": 165637,
+      "sha256": "5e052c1b81277ad8c84d69f1e7e66e11222d042034ffd9de30603a64e315d655",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "fr_en/extraction/extract_issues_yufan.jsonl",
+      "bytes": 5544,
+      "sha256": "e2d1474d081265c3d4ac3c978534dd60720c05ba5b1389948274739a6ffa4554",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "fr_en/extraction/extract_manifest_yufan.json",
+      "bytes": 1089,
+      "sha256": "4eb819dec1343c7533a299a9e0cbcae901fc26cf043c19d66a110ce634feffea",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "fr_en/extraction/lid.template_yufan.jsonl",
+      "bytes": 434299,
+      "sha256": "97e9b6c1484d1e7e4091c458984ce0190b58a96fefbb411f7882b2724708317f",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "fr_en/extraction/sampling_manifest_yufan.json",
+      "bytes": 17096,
+      "sha256": "bc31230af1ea471c00ab87f92b81f8033103fbfb31ea3f36dec83cc246ddaa96",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "fr_en/extraction/texts_yufan.jsonl",
+      "bytes": 542668,
+      "sha256": "fc8b27782befda93dff537e2b2088e68c179a21a72561520c3cafc3148e35fc3",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "fr_en/tokenized/labeled_tokens_yufan.jsonl",
+      "bytes": 5573045,
+      "sha256": "e126723504031c4a09100049a615592f0b3643c66110795e783f16d663d18a8b",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "fr_en/tokenized/manifest_yufan.json",
+      "bytes": 2755,
+      "sha256": "a550af3f312c283745a9ef9327ec9489efbdc02c1f9904f58d268b085a4ec129",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "fr_en/tokenized/stats_yufan.json",
+      "bytes": 428,
+      "sha256": "ac7b0a81585684ad3ac32cd9915a0091839e53e86faeb7856ba12c6185914f23",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "fr_en/tokenized/token_issues_yufan.jsonl",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "it_en/annotation/case_study_yufan.json",
+      "bytes": 1004,
+      "sha256": "ec7f4562613552027b16d4d22414d447eff90c01a969235fd0b9b14f368b0500",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "it_en/annotation/development_record_manifest_yufan.json",
+      "bytes": 481,
+      "sha256": "fbc3c32094282742cdee803aac9a4a9f9940ea69b0b1b0f387af3aad985360de",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "it_en/annotation/lid_manifest_yufan.json",
+      "bytes": 1634,
+      "sha256": "b27de9d37e4022fcbc3ef72948dc89cc5f397fc053dace0ddbd1a9b68784007d",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "it_en/annotation/lid_yufan.jsonl",
+      "bytes": 2033454,
+      "sha256": "d58f063e78db7891e4a2fa07095adb0d0e3aa71d989b67210b9c6dec84d23761",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "it_en/annotation/pilot_record_ids_yufan.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "it_en/annotation/quarantine_reasons_yufan.jsonl",
+      "bytes": 111703,
+      "sha256": "4db708b7a183e54cef7c8e6a7ad1b2e192d2cec2efcd3ef7e52a7b3d90143a0b",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "it_en/annotation/review_yufan.csv",
+      "bytes": 70774,
+      "sha256": "8c820a3c7919fb134af106d6de8861caa86c47be4111e26c1a0267e03b5fad00",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "it_en/annotation/screening_manifest_yufan.json",
+      "bytes": 2121,
+      "sha256": "d1df8a6b7c3f0f5f454faf37c6a655e7b40e3ae999b966cf90dac95c6b28986c",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "it_en/cs_type_yufan.jsonl",
+      "bytes": 188160,
+      "sha256": "e0d4a091adc3086b13f2aab62352e6b1f4740804af0a60590b6175d6063aa798",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "it_en/extraction/extract_issues_yufan.jsonl",
+      "bytes": 6930,
+      "sha256": "652ea57a859c3fd1224d2de765623c843b5a47f2455f0779200f91443ab1a768",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "it_en/extraction/extract_manifest_yufan.json",
+      "bytes": 1091,
+      "sha256": "030825f6f3c94d4642afcb8f9a6d182e7d8e80f7523c06bb16d72c8bfd7dcff0",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "it_en/extraction/lid.template_yufan.jsonl",
+      "bytes": 489331,
+      "sha256": "15ff49e55b47c020cce5b70334706d6dc22fe37f6dce88126e61acf5370611a2",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "it_en/extraction/sampling_manifest_yufan.json",
+      "bytes": 17096,
+      "sha256": "7cebdf370702e1648330b6426095a4bd08ed3e4bc78483fc2d61f5e9a97a5af2",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "it_en/extraction/texts_yufan.jsonl",
+      "bytes": 613787,
+      "sha256": "829b9f7d78515dcc4b921910a58f144ad148b5fbfb45ed4ce73d75207762bff7",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "it_en/tokenized/labeled_tokens_yufan.jsonl",
+      "bytes": 6169319,
+      "sha256": "368ba299107f6b8537dc7ca7c245cb54991636e67a460dc5223f70b06e84034f",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "it_en/tokenized/manifest_yufan.json",
+      "bytes": 2731,
+      "sha256": "16e22934f3438c88e18d5689192d5b69cc63100393a0a88ed013925ff22c173e",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "it_en/tokenized/stats_yufan.json",
+      "bytes": 426,
+      "sha256": "0ab9d25a3441884b2d861b5d08a40c820de551f357a4ff29767609c652aa7c27",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "it_en/tokenized/token_issues_yufan.jsonl",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "philippines_en/annotation/case_study_yufan.json",
+      "bytes": 1263,
+      "sha256": "5f750bed5fa5bda7ccf47cbcc9b63e7f98d1277179ad44d18ad8b571b417f651",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "philippines_en/annotation/development_record_manifest_yufan.json",
+      "bytes": 259,
+      "sha256": "ae3ac5f48471cb638ea05b79e0708a63ece02f5aee4ec927864548a6ddc1d0ec",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "philippines_en/annotation/lid_manifest_yufan.json",
+      "bytes": 1885,
+      "sha256": "f07506a0f30c652a438b63caeddb598ae8ec5bf530da17230396deb69daa20b4",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "philippines_en/annotation/lid_yufan.jsonl",
+      "bytes": 2222117,
+      "sha256": "0260f298920ec906b7e83f6dc97117d418650c890b9dcaf5926538ecda9a17c8",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "philippines_en/annotation/pilot_record_ids_yufan.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "philippines_en/annotation/quarantine_reasons_yufan.jsonl",
+      "bytes": 80639,
+      "sha256": "1a1d912edfcdec28cd788b5e5c343c08cd7563402d3e95ec23ee29195bd1fed8",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "philippines_en/annotation/review_yufan.csv",
+      "bytes": 70577,
+      "sha256": "933d70f0078e9fccb0f2ef55117a2ce1a660b737eb1b5105a4c538890f0a935b",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "philippines_en/annotation/screening_manifest_yufan.json",
+      "bytes": 2213,
+      "sha256": "179b2bea8aecc0feef2cc170f63d48e9c1b9dbba3fe32828def9477eaed918fa",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "philippines_en/cs_type_yufan.jsonl",
+      "bytes": 218368,
+      "sha256": "e21a9c73a7f28a67ff903d5fcdbde6104b28df6d339fdac71f0aea7b0f45eb02",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "philippines_en/extraction/extract_issues_yufan.jsonl",
+      "bytes": 31164,
+      "sha256": "2bebdcb896d5b1a14725444ee8249c8e8f53d72dcb858fe470bd4d17aef1176a",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "philippines_en/extraction/extract_manifest_yufan.json",
+      "bytes": 1109,
+      "sha256": "4b03a905559d08c6b074047d050b7e65c61bc69cfd10b5bd66075f7e45b4a4e7",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "philippines_en/extraction/lid.template_yufan.jsonl",
+      "bytes": 497908,
+      "sha256": "9f368996559331fbf7f1706835c737e5dbefdcdc59905a0beafb063ee27aa5c7",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "philippines_en/extraction/sampling_manifest_yufan.json",
+      "bytes": 21605,
+      "sha256": "f7d3b66dec60812ce94411f7e84e23d144d629bf72734f7497bfdb285e5ef941",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "philippines_en/extraction/texts_yufan.jsonl",
+      "bytes": 665540,
+      "sha256": "2156e26ba0a3790d5efb17c76b4972c78f4146f9fb1efc7c405e1b90ad78968f",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "philippines_en/tokenized/labeled_tokens_yufan.jsonl",
+      "bytes": 6737508,
+      "sha256": "7f777a8a951008edb4aa276c7d3b2951c4caa6ecb7852bccef98af8afbad510d",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "philippines_en/tokenized/manifest_yufan.json",
+      "bytes": 2891,
+      "sha256": "9537b05889836a22ff5dd7d5fdb4060f213062b56f6a4156885493fb73d9b580",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "philippines_en/tokenized/stats_yufan.json",
+      "bytes": 427,
+      "sha256": "c43292544d6166b8cc4bb322a67bf8f18c16ca12cf10330c3123e2fa219fde50",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "philippines_en/tokenized/token_issues_yufan.jsonl",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "requirements_yufan.txt",
+      "bytes": 371,
+      "sha256": "005e70a38153658b1e417c03019bb86d7bfde151d2a183559c604a44f88c2b78",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "runtime_yufan.json",
+      "bytes": 1559,
+      "sha256": "c95ca54cb89d73d583a60a51dfd6281c90d01fdde3d5951ead417768071bcbe5",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "scripts/annotate_lingua.py",
+      "bytes": 7297,
+      "sha256": "2206bd317298f7c6825ef61b9b7eb89878b0690968ac911fcad3bb1c8ad00f63",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "scripts/prepare_submission.py",
+      "bytes": 12579,
+      "sha256": "ee0de32d46ffeb9033cb3430f6e210e60d265d1d7689a7d5c1d15f758da049a0",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "scripts/sample_records.py",
+      "bytes": 7795,
+      "sha256": "47947a159695a9f7a946c282a30ceac2ebff62345a19efedd9d24644b36ce26f",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "scripts/verify_delivery.py",
+      "bytes": 3064,
+      "sha256": "b382a4a2ddbca636850a9b9190970456a557ee6838d9a05f562ab4677670d31b",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    },
+    {
+      "path": "summary_yufan.json",
+      "bytes": 3360,
+      "sha256": "129da9af5206d015ad7863dac90d1ddc3c9c3f4fea54de454cece00cbb43077c",
+      "requires_large_file_handling": false,
+      "over_50_MiB": false
+    }
+  ],
+  "total_bytes": 37586337,
+  "git_operations_performed": false,
+  "sampling_records_per_pair": 500
+}

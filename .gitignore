@@ -216,3 +216,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local raw datasets and macOS metadata
+/SwitchLingua/
+.DS_Store

@@ -1,0 +1,38 @@
+{
+  "operation": "sample existing records without editing text or labels",
+  "source_manifest": {
+    "operation": "select existing unreviewed Lingua preannotations; no relabeling",
+    "source_annotation_run": {
+      "created_at_utc": "2026-10-17T23:45:07.806323+00:00",
+      "tool": "lingua-language-detector",
+      "version": "2.2.0",
+      "detector_languages": [
+        "ITALIAN",
+        "ENGLISH"
+      ],
+      "source_language": "it",
+      "provisional_language_mapping": false,
+      "sequences": 24097,
+      "limit": 0,
+      "selection": "input order; skip extraction issues; deduplicate by ID and text hash",
+      "skipped_issues_in_scanned_prefix": 55,
+      "skipped_duplicates_in_scanned_prefix": 13,
+      "inputs": {
+        "data/it_en/full_extraction/texts.jsonl": "b80d491123c43acb1518d860ef533015d4c1bc57d50f5e24876e904061b8b07a",
+        "data/it_en/full_extraction/extract_issues.jsonl": "652ea57a859c3fd1224d2de765623c843b5a47f2455f0779200f91443ab1a768"
+      },
+      "script_sha256": "40db6ec879c263c2bb129f2b89f92d78cf5df1d0f280c020e84246dc515a7dc2",
+      "linguistically_verified": false,
+      "limitations": [
+        "Unreviewed heuristic pseudolabels; short switches and boundaries may be wrong.",
+        "No subword tokenization, predictive labels, split, or model evaluation performed."
+      ]
+    },
+    "delivered_sequences": 18124,
+    "lid_sha256": "66af33bc02d59c48615ee8de58987dfe54828502add8678e7d6c07632e1fc2c7",
+    "independently_verified": false
+  },
+  "sampled_records": 500,
+  "delivered_sequences": 1299,
+  "sampling_manifest": "../extraction/sampling_manifest_yufan.json"
+}

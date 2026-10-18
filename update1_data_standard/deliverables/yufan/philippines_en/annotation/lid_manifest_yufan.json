@@ -1,0 +1,39 @@
+{
+  "operation": "sample existing records without editing text or labels",
+  "source_manifest": {
+    "operation": "select existing unreviewed Lingua preannotations; no relabeling",
+    "source_annotation_run": {
+      "created_at_utc": "2026-10-18T00:42:40.886901+00:00",
+      "tool": "lingua-language-detector",
+      "version": "2.2.0",
+      "detector_languages": [
+        "TAGALOG",
+        "ENGLISH"
+      ],
+      "source_language": "philippines",
+      "language_mapping_note": "Lingua TAGALOG maps to the preserved philippines source label. SwitchLingua core/prompt.py explicitly names Filipino (Tagalog). This documents the detector choice, not annotation accuracy.",
+      "provisional_language_mapping": false,
+      "sequences": 25577,
+      "limit": 0,
+      "selection": "input order; skip extraction issues; deduplicate by ID and text hash",
+      "skipped_issues_in_scanned_prefix": 230,
+      "skipped_duplicates_in_scanned_prefix": 18,
+      "inputs": {
+        "data/philippines_en/full_extraction/texts.jsonl": "2c562bd2dee34c8c5d84251114d7b073a9aa618fbf1ba37ec303652db45b5af5",
+        "data/philippines_en/full_extraction/extract_issues.jsonl": "2bebdcb896d5b1a14725444ee8249c8e8f53d72dcb858fe470bd4d17aef1176a"
+      },
+      "script_sha256": "2206bd317298f7c6825ef61b9b7eb89878b0690968ac911fcad3bb1c8ad00f63",
+      "linguistically_verified": false,
+      "limitations": [
+        "Unreviewed heuristic pseudolabels; short switches and boundaries may be wrong.",
+        "No subword tokenization, predictive labels, split, or model evaluation performed."
+      ]
+    },
+    "delivered_sequences": 20684,
+    "lid_sha256": "00adf47744294671e38771e245193d0e14f2047a83261975fc2fe09259e55f15",
+    "independently_verified": false
+  },
+  "sampled_records": 500,
+  "delivered_sequences": 1321,
+  "sampling_manifest": "../extraction/sampling_manifest_yufan.json"
+}

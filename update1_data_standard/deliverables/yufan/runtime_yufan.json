@@ -1,0 +1,47 @@
+{
+  "shared_code_commit": "a7d56cd208ec5fcf9dc9a03965e90cf6786713a3",
+  "branch": "data/yufan",
+  "shared_code_sha256": {
+    "pipeline.py": "8806da9d7ecf818d64a5b1af57f55800f88b0eca990349c383fbe6c25b4a7098",
+    "loader.py": "01195643441b6c122018937b5e925eac7ced0c454e0318823f941fcc5bf92ca1",
+    "LID_PROMPT.md": "b51e00417d26c70fd1e3d3c14fa0be791c2221717ae87c989134d4bf939dc2de"
+  },
+  "python": "3.13.5",
+  "versions": {
+    "certifi": "2026.7.22",
+    "charset-normalizer": "3.5.2",
+    "filelock": "4.0.12",
+    "fsspec": "2026.9.0",
+    "hf-xet": "1.7.0",
+    "huggingface_hub": "0.36.2",
+    "idna": "3.20",
+    "numpy": "2.5.3",
+    "packaging": "26.3",
+    "PyYAML": "6.0.3",
+    "regex": "2026.9.29",
+    "requests": "2.34.2",
+    "safetensors": "0.8.0",
+    "sentencepiece": "0.2.2",
+    "tokenizers": "0.22.2",
+    "tqdm": "4.70.1",
+    "transformers": "4.57.6",
+    "typing_extensions": "4.16.0",
+    "urllib3": "2.8.0",
+    "lingua-language-detector": "2.2.0"
+  },
+  "tokenizer": {
+    "model": "google-bert/bert-base-multilingual-cased",
+    "revision": "3f076fdb1ab68d5b2880cb87a0886f315b8146f8",
+    "tokenizer_sha256": "78b44c32238e3b5e83d1deaa63c3fa1466ddf73547ce641a36f75180079ab45f"
+  },
+  "neutral_policy": "inherit_previous",
+  "end_policy": "observed",
+  "sequence_policy": "one extracted item per sequence",
+  "independent_linguistic_verification": false,
+  "sampling": {
+    "unit": "original record_id from screened retained set",
+    "records_per_pair": 500,
+    "seed_template": "6140:{pair}",
+    "labels_modified": false
+  }
+}
