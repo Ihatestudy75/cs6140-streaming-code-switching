@@ -221,10 +221,7 @@ __marimo__/
 /SwitchLingua/
 .DS_Store
 
-# Raw CSVs for yue/ko/ru/ms-en: download from Hugging Face; do not commit
-datasets/Can_Eng.csv
-datasets/Korean_eng.csv
-datasets/Russian_eng.csv
-datasets/Malay_eng.csv
+# SwitchLingua CSVs: download from Hugging Face; the licence forbids redistribution
+datasets/*.csv
 # Local reproductions of deliverables/shaoyu
 deliverables/shaoyu_*/

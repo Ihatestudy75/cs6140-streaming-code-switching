@@ -36,7 +36,7 @@ An existing delivery is not required for these checks. Optional delivery verific
 
 ```text
 repository/
-  datasets/
+  datasets/                       # CSV files are not in Git; see datasets/README.md
     French_eng.csv
     German_Eng.csv
     Italian_eng.csv
@@ -52,7 +52,7 @@ repository/
 
 Keep these scripts together; `run_lingua.py` is an entry point that reuses the shared implementation, not an isolated replacement for it. The four CSV filenames and their paths relative to the repository root are fixed in the runner. No machine-specific absolute input paths are needed.
 
-Use Python 3.13 when possible; the entry point requires Python 3.11 or newer. You need Python with `venv` and `pip`, internet access for the initial package/tokenizer downloads, and the four CSV files. The processing workflow requires no API key, GPU, PyTorch, or Transformer model weights. Lingua's language models are supplied with its installed package.
+Use Python 3.13 when possible; the entry point requires Python 3.11 or newer. You need Python with `venv` and `pip`, internet access for the initial package/tokenizer downloads, and the four CSV files. The CSV files are not in Git (the SwitchLingua licence forbids redistribution); download them from Hugging Face as described in [`datasets/README.md`](../datasets/README.md). The processing workflow requires no API key, GPU, PyTorch, or Transformer model weights. Lingua's language models are supplied with its installed package.
 
 ### 1. Create the environment and prepare the frozen tokenizer
 
@@ -360,7 +360,7 @@ repository/
     examples/
 ```
 
-The shared code package contains code, documentation, dependencies, and teaching examples. It does not automatically include raw CSV files, full personal outputs, environments, or model caches. `examples/worked_example/` is a fictional worked example that can accompany shared code; it is not a contributor's experimental result. Original CSV files are managed separately under the repository-root `datasets/`.
+The shared code package contains code, documentation, dependencies, and teaching examples. It does not automatically include raw CSV files, full personal outputs, environments, or model caches. `examples/worked_example/` is a fictional worked example that can accompany shared code; it is not a contributor's experimental result. Original CSV files are managed separately under the repository-root `datasets/`. They are not in Git; each member downloads them from Hugging Face.
 
 Suggested initial coordination sequence:
 

@@ -29,7 +29,9 @@ python3 project_update_1/run_lingua.py --skip-install
 ```
 
 The runner reads `French_eng.csv`, `German_Eng.csv`, `Italian_eng.csv`, and
-`Philippines_eng.csv` from [`datasets/`](datasets/). It launches its virtual
+`Philippines_eng.csv` from [`datasets/`](datasets/). These files are not in Git,
+because the SwitchLingua licence forbids redistribution; download them as
+described in [`datasets/README.md`](datasets/README.md). It launches its virtual
 environment automatically and downloads only the frozen tokenizer. No manual
 activation or LLM API key is required. Existing outputs are never overwritten;
 if `deliverables/yufan/` exists, add `--out deliverables/lingua_reproduction`
@@ -104,7 +106,7 @@ commands, and output location. Detailed instructions belong in the
 | [`tests/`](project_update_1/tests/) | Shared processing-rule checks |
 
 ```text
-datasets/               Original CSV inputs
+datasets/               Original CSV inputs (not in Git; see datasets/README.md)
 project_update_1/       Method-specific entry points, shared tools, tests, and instructions
 deliverables/           Generated outputs, when present; not required to inspect the code
 ```
