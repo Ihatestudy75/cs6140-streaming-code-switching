@@ -1,0 +1,21 @@
+{
+  "model": "deepseek-flash",
+  "served_versions": [
+    "deepseek-flash"
+  ],
+  "prompt_version": "v1.0",
+  "date": "2026-10-15",
+  "thinking": "enabled",
+  "reasoning_effort": "high",
+  "temperature": 0,
+  "input_texts": "data/ms_en/extraction_item/texts.jsonl",
+  "records_file": null,
+  "requested": 1568,
+  "annotated": 1568,
+  "failed": 0,
+  "usage": {
+    "prompt_tokens": 514016,
+    "completion_tokens": 2741093,
+    "prompt_cache_hit_tokens": 200832
+  }
+}
