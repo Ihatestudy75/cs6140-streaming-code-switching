@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "source_file": "Russian_eng.csv",
+  "source_sha256": "c45212da3a4633fc6f054159691ca0a59f5b4d9e04c7e79c04440fdc53c7c953",
+  "language_pair": "ru_en",
+  "input_records": 8017,
+  "output_items": 24625,
+  "limit": 0,
+  "issues": 0,
+  "sequence_policy": "one_extracted_item_no_concatenation",
+  "sample": {
+    "n": 500,
+    "seed": 6140,
+    "rule": "random.Random(f'{seed}:{pair}').sample(range(1, total+1), n)",
+    "records_with_items": 500,
+    "items": 1564,
+    "issues": 0,
+    "full_texts_sha256": "8be908d797161258256a337eba7f7f78557e9515a7f05a40f8ceff021525075d"
+  }
+}
