@@ -84,7 +84,7 @@ deliverables/shaoyu_full/  本地重建，含原文，不提交
 
 ## 6. 复现
 
-原始 CSV 不在仓库中。从 Hugging Face 数据集 `Shelton1013/SwitchLingua_text` 下载 `Can_Eng.csv`、`Korean_eng.csv`、`Russian_eng.csv`、`Malay_eng.csv`，放到仓库根目录的 `datasets/`。然后在仓库根目录运行：
+原始 CSV 不在仓库中。从 Hugging Face 数据集 `Shelton1013/SwitchLingua_text` 下载 `Can_Eng.csv`、`Korean_eng.csv`、`Russian_eng.csv`、`Malay_eng.csv`，放到仓库根目录的 `datasets/`（要自己新建这个文件夹，Git 会忽略它）。然后在仓库根目录运行：
 
 ```bash
 python project_update_1/run_unicode_deepseek.py --setup-only
