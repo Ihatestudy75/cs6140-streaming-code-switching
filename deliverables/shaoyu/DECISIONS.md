@@ -14,7 +14,7 @@
 | 标签规则 | `--neutral-policy inherit_previous`，`--end-policy observed` |
 | 未核查数据 | `--allow-unreviewed` |
 
-**Windows 注意：** 在 Windows 上运行 `prepare-tokenizer` 会用 CRLF 保存部分 tokenizer 文件，哈希值会变成 `28108c3b…`，`split` 会拒绝合并。我把这些文件转成 LF 后，原来的 `tree_hash` 算出 `78b44c32…`，和 README 的值一致。
+**Windows 注意：** 在 Windows 上运行 `prepare-tokenizer` 会用 CRLF 保存部分 tokenizer 文件，哈希值会变成 `28108c3b…`，`split` 会拒绝合并。文件转成 LF 后，`tree_hash` 算出 `78b44c32…`，和 README 的值一致。现在 `run_unicode_deepseek.py --setup-only` 下载 tokenizer 后会自动把 CRLF 转成 LF，并检查哈希值，不需要手动处理。
 
 ## 2. 我的做法
 
