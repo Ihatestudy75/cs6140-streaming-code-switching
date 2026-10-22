@@ -29,9 +29,12 @@ python3 project_update_1/run_lingua.py --skip-install
 ```
 
 The runner reads `French_eng.csv`, `German_Eng.csv`, `Italian_eng.csv`, and
-`Philippines_eng.csv` from [`datasets/`](datasets/). These files are not in Git,
-because the SwitchLingua licence forbids redistribution; download them as
-described in [`datasets/README.md`](datasets/README.md). It launches its virtual
+`Philippines_eng.csv` from `datasets/` at the repository root. These files are
+not in Git, because the SwitchLingua licence forbids redistribution. Download
+them from the Hugging Face dataset
+[`Shelton1013/SwitchLingua_text`](https://huggingface.co/datasets/Shelton1013/SwitchLingua_text)
+(log in and accept the access conditions first), create `datasets/`, and put
+them there. Git ignores `datasets/`. It launches its virtual
 environment automatically and downloads only the frozen tokenizer. No manual
 activation or LLM API key is required. Existing outputs are never overwritten;
 if `deliverables/yufan/` exists, add `--out deliverables/lingua_reproduction`
@@ -73,7 +76,7 @@ redistribution). The runner rebuilds the full data locally in `deliverables/shao
 The CSV files are not in the repository. Download `Can_Eng.csv`,
 `Korean_eng.csv`, `Russian_eng.csv`, and `Malay_eng.csv` from the Hugging Face
 dataset [`Shelton1013/SwitchLingua_text`](https://huggingface.co/datasets/Shelton1013/SwitchLingua_text)
-and put them in [`datasets/`](datasets/). Python 3.11 or newer is required.
+and put them in `datasets/` (create it; Git ignores it). Python 3.11 or newer is required.
 
 ```bash
 # Create/reuse the environment, install dependencies, and prepare the tokenizer.
@@ -106,7 +109,7 @@ commands, and output location. Detailed instructions belong in the
 | [`tests/`](project_update_1/tests/) | Shared processing-rule checks |
 
 ```text
-datasets/               Original CSV inputs (not in Git; see datasets/README.md)
+datasets/               Original CSV inputs; local only, ignored by Git (licence)
 project_update_1/       Method-specific entry points, shared tools, tests, and instructions
 deliverables/           Generated outputs, when present; not required to inspect the code
 ```
