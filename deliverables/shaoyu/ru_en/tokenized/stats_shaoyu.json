@@ -1,0 +1,22 @@
+{
+  "sequences": 1564,
+  "valid_positions": 40585,
+  "switches": 2082,
+  "switch_rate": 0.05129974128372551,
+  "duration_class_counts": {
+    "0": 361,
+    "1": 696,
+    "2": 966
+  },
+  "duration_class_proportions": {
+    "0": 0.17844784972812655,
+    "1": 0.3440434997528423,
+    "2": 0.47750865051903113
+  },
+  "switches_without_duration": 59,
+  "review_status_counts": {
+    "unreviewed": 1506,
+    "reviewed": 58
+  },
+  "unknown_subwords": 109
+}

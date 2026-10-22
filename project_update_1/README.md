@@ -3,7 +3,7 @@
 Choose the section for the language pairs you want to process. Each contributor's entry point, method, dependencies, and run commands belong in that section. Common tools and conventions appear under the shared standard below.
 
 - [French–English, German–English, Italian–English, and Filipino/Tagalog–English](#fr-de-it-ph-en)
-- [Additional language pairs — Contributor 2](#contributor-2)
+- [Cantonese–English, Korean–English, Russian–English, and Malay–English](#yue-ko-ru-ms-en)
 - [Additional language pairs — Contributor 3](#contributor-3)
 - [Shared data-processing standard](#shared-standard)
 
@@ -36,7 +36,7 @@ An existing delivery is not required for these checks. Optional delivery verific
 
 ```text
 repository/
-  datasets/
+  datasets/                       # CSV files are not in Git; see datasets/README.md
     French_eng.csv
     German_Eng.csv
     Italian_eng.csv
@@ -52,7 +52,7 @@ repository/
 
 Keep these scripts together; `run_lingua.py` is an entry point that reuses the shared implementation, not an isolated replacement for it. The four CSV filenames and their paths relative to the repository root are fixed in the runner. No machine-specific absolute input paths are needed.
 
-Use Python 3.13 when possible; the entry point requires Python 3.11 or newer. You need Python with `venv` and `pip`, internet access for the initial package/tokenizer downloads, and the four CSV files. The processing workflow requires no API key, GPU, PyTorch, or Transformer model weights. Lingua's language models are supplied with its installed package.
+Use Python 3.13 when possible; the entry point requires Python 3.11 or newer. You need Python with `venv` and `pip`, internet access for the initial package/tokenizer downloads, and the four CSV files. The CSV files are not in Git (the SwitchLingua licence forbids redistribution); download them from Hugging Face as described in [`datasets/README.md`](../datasets/README.md). The processing workflow requires no API key, GPU, PyTorch, or Transformer model weights. Lingua's language models are supplied with its installed package.
 
 ### 1. Create the environment and prepare the frozen tokenizer
 
@@ -171,17 +171,144 @@ Completed working stages are reused only when their recorded inputs, configurati
 python3 project_update_1/run_lingua.py --help
 ```
 
-<a id="contributor-2"></a>
-## Additional Language Pairs — Contributor 2
+<a id="yue-ko-ru-ms-en"></a>
+## Cantonese–English, Korean–English, Russian–English, and Malay–English
 
-Reserved for the second data-processing contributor. Replace this heading with the assigned language pairs and add:
+**Method:** Unicode script-rule LID for Cantonese, Korean, and Russian. DeepSeek LLM LID with the shared `LID_PROMPT.md` v1.0 for Malay. Frozen mBERT subword alignment for all four pairs.
+**Run all commands in this section from the repository root**, not from inside `project_update_1/`.
 
-- Language pairs and source CSV paths.
-- Annotation method, entry script, and required dependencies.
-- Setup, processing, and code-check commands, including the working directory.
-- Output location, validation scope, and known limitations.
+| Script | Role for these language pairs |
+|---|---|
+| [`run_unicode_deepseek.py`](run_unicode_deepseek.py) | Complete processing entry point |
+| [`annotate_unicode.py`](annotate_unicode.py) | Script-rule LID for `yue_en`, `ko_en`, `ru_en`. The entry point calls it. |
+| [`annotate_deepseek.py`](annotate_deepseek.py) | DeepSeek LID for `ms_en`. The entry point calls it only with `--ms-lid deepseek`. |
 
-No method or runnable command is specified here yet.
+The entry point reuses the shared `pipeline.py` for extraction, tokenization, and target generation. It does not change `pipeline.py`.
+
+### Inspect the code without generating data
+
+```bash
+python3 project_update_1/run_unicode_deepseek.py --help
+cd project_update_1
+python3 -m unittest discover -s tests -v
+cd ..
+```
+
+### Required repository files
+
+```text
+repository/
+  datasets/
+    Can_Eng.csv                   # Not in Git; download it (see below)
+    Korean_eng.csv                # Not in Git
+    Russian_eng.csv               # Not in Git
+    Malay_eng.csv                 # Not in Git
+  project_update_1/
+    run_unicode_deepseek.py
+    annotate_unicode.py
+    annotate_deepseek.py
+    pipeline.py
+    requirements.lock.txt
+  deliverables/
+    shaoyu/                       # Text-free delivery in Git
+      ms_en/annotation/lid_offsets_shaoyu.jsonl   # Malay labels as offsets, reused by default
+```
+
+**Licence.** SwitchLingua is CC BY-NC 4.0 with an additional licensing agreement. The agreement forbids redistribution of the dataset, in whole or in part. So Git contains no dataset text: no CSV files, no texts, no LID segments, and no tokens. The committed `deliverables/shaoyu/` keeps only statistics, manifests, IDs, `cs_type`, review records, and the Malay labels as character offsets. Each user downloads the CSV files and rebuilds the full delivery locally.
+
+The four CSV files are not in the repository. Download them from the Hugging Face dataset [`Shelton1013/SwitchLingua_text`](https://huggingface.co/datasets/Shelton1013/SwitchLingua_text) and put them in `datasets/`. The runner checks the SHA-256 of each file. A different file version stops the run, because record IDs contain the file checksum.
+
+Use Python 3.11 or newer. You need internet access for the first package and tokenizer download. Cantonese, Korean, and Russian need no API key, GPU, PyTorch, or model weights.
+
+### 1. Create the environment and prepare the frozen tokenizer
+
+```bash
+python3 project_update_1/run_unicode_deepseek.py --setup-only
+```
+
+This command creates `project_update_1/.venv/` if it does not exist and installs `requirements.lock.txt`. It also downloads the frozen mBERT tokenizer to `project_update_1/assets/mbert/` if it is missing. These are the same environment and tokenizer as in the section above. On Windows, the runner changes CRLF line endings in the new tokenizer files to LF, so the checksum is the frozen value `78b44c32…`. Success prints `SETUP COMPLETE: pinned dependencies and frozen tokenizer ready.`
+
+### 2. Rebuild the full delivery from the CSV files
+
+```bash
+python3 project_update_1/run_unicode_deepseek.py --skip-install
+```
+
+The full delivery, with text, goes to `deliverables/shaoyu_full/` (`--out`). Git ignores this folder. **Do not commit it.** After the build, the runner compares the text-free files with the committed `deliverables/shaoyu/` and prints `CHECK PASS`. A difference stops the run with an error that names the files.
+
+The entry point does these steps for each pair:
+
+1. Extract all text items of the full CSV with `pipeline.py extract`.
+2. Sample 500 original records with `random.Random(f"6140:{pair}").sample(range(1, total + 1), 500)`. Keep all items of each sampled record. Each item is one sequence.
+3. Label languages. `yue_en`, `ko_en`, `ru_en`: each character gets the label of its Unicode script. Latin letters are `en`, digits and punctuation are `NEUTRAL`. `ms_en`: rebuild the delivered DeepSeek labels from `lid_offsets_shaoyu.jsonl` and the CSV text (default), or label again with `--ms-lid deepseek`.
+4. Select 20 pilot records with `random.Random(f"6140:{pair}:pilot")`. Mark their items `reviewed` and apply the one review fix (a romanized Cantonese `d`). All other items stay `unreviewed`.
+5. Align labels to mBERT subwords and generate switch and duration targets with `pipeline.py tokenize` (`inherit_previous`, `observed`).
+6. Write `cs_type` from the original CSV, publish the full delivery, and compare it with the committed files.
+
+Intermediate files go to `project_update_1/data/shaoyu_reproduction/` (`--work-dir`). Git ignores this folder. A later run reuses a finished full extraction there. Nothing is staged, committed, deleted, or overwritten.
+
+**Malay with DeepSeek.** LLM output can change between runs, so the default reuses the delivered Malay labels. To label Malay again, put a line `DEEPSEEK_API_KEY=...` in a file outside the repository, then run the command below. New labels can differ from the delivery, so this command skips the comparison.
+
+```bash
+python3 project_update_1/run_unicode_deepseek.py --skip-install --out deliverables/shaoyu_deepseek --check-against "" --ms-lid deepseek --key-file <key file>
+```
+
+The defaults are the delivered settings: `deepseek-flash`, thinking mode on, reasoning effort `high`, temperature 0, prompt v1.0. The full Malay run cost about USD 3.4.
+
+### 3. Optional small end-to-end check
+
+```bash
+python3 project_update_1/run_unicode_deepseek.py --skip-install --pairs ko_en --records 5 --pilot-records 2 --work-dir project_update_1/data/shaoyu_smoke --out project_update_1/data/shaoyu_smoke_delivery --check-against ""
+```
+
+This check uses only `Korean_eng.csv` and needs no API key. It is a workflow check, not the formal delivery.
+
+### Output layout
+
+`[full only]` marks files that contain dataset text. They exist only in the local `deliverables/shaoyu_full/`, never in Git.
+
+```text
+deliverables/shaoyu/              # In Git (text-free)
+deliverables/shaoyu_full/         # Local build with text (ignored by Git)
+  README.md, DECISIONS.md         # deliverables/shaoyu only (Chinese)
+  <pair>/                         # yue_en, ko_en, ru_en, ms_en
+    cs_type_shaoyu.jsonl          # sequence_id -> cs_type; never a model input
+    extraction/
+      texts_shaoyu.jsonl             [full only]
+      lid.template_shaoyu.jsonl      [full only]
+      sequence_index_shaoyu.jsonl    # texts without the text field
+      extract_issues_shaoyu.jsonl
+      extract_manifest_shaoyu.json   # Includes the sampling rule
+      sampled_record_ids_shaoyu.jsonl
+    annotation/
+      lid_shaoyu.jsonl               [full only]
+      lid_offsets_shaoyu.jsonl       # ms_en only: [start, end, lang] spans
+      lid_manifest_shaoyu.json
+      build_manifest_shaoyu.json
+      review_shaoyu.csv
+      pilot_record_ids_shaoyu.txt    # Pass to split --train-records
+      failures_shaoyu.jsonl          # ms_en only
+    tokenized/
+      labeled_tokens_shaoyu.jsonl    [full only] Main file for the baseline
+      token_issues_shaoyu.jsonl
+      stats_shaoyu.json
+      manifest_shaoyu.json
+```
+
+The manifests in `deliverables/shaoyu/` come from the original 2026-10-15/16 run. A new run writes its own dates and checksums, so the comparison skips manifests (except `extract_manifest`).
+
+The delivery contains 2,560 Cantonese–English, 1,529 Korean–English, 1,564 Russian–English, and 1,568 Malay–English sequences. One sampled Cantonese record cannot be parsed, so `yue_en` has 499 records with items.
+
+### Validation scope and known limitations
+
+- All four pairs pass `pipeline.py validate`. This checks structure and target rules, **not linguistic accuracy**.
+- The review of the 20 pilot records per pair is model-assisted (Claude). It is not an independent human review. All other items are pseudo-labels.
+- The script rule labels Latin-script names `en`, for example `NASA` in Korean text. The DeepSeek labels can mark names `UNKNOWN`.
+- mBERT has no vocabulary entry for 55 common Cantonese characters. They become `[UNK]`, so nearby positions have no valid label.
+- Each item is a separate sequence, so a switch between two items of one record gets no label.
+- A rebuild gives the same labels as the original delivery. Only `annotation_source` differs for `yue_en`, `ko_en`, and `ru_en`, because it contains the script name and the run date.
+
+More detail is in [`deliverables/shaoyu/README.md`](../deliverables/shaoyu/README.md) and [`deliverables/shaoyu/DECISIONS.md`](../deliverables/shaoyu/DECISIONS.md).
 
 <a id="contributor-3"></a>
 ## Additional Language Pairs — Contributor 3
@@ -233,7 +360,7 @@ repository/
     examples/
 ```
 
-The shared code package contains code, documentation, dependencies, and teaching examples. It does not automatically include raw CSV files, full personal outputs, environments, or model caches. `examples/worked_example/` is a fictional worked example that can accompany shared code; it is not a contributor's experimental result. Original CSV files are managed separately under the repository-root `datasets/`.
+The shared code package contains code, documentation, dependencies, and teaching examples. It does not automatically include raw CSV files, full personal outputs, environments, or model caches. `examples/worked_example/` is a fictional worked example that can accompany shared code; it is not a contributor's experimental result. Original CSV files are managed separately under the repository-root `datasets/`. They are not in Git; each member downloads them from Hugging Face.
 
 Suggested initial coordination sequence:
 

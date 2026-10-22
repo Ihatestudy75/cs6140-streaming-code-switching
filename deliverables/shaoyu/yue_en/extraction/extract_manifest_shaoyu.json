@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "source_file": "Can_Eng.csv",
+  "source_sha256": "cb9f144e34645e9e52e8db2cd0291291250adfc87cf9d038c0b5372349bffdb8",
+  "language_pair": "yue_en",
+  "input_records": 119248,
+  "output_items": 618048,
+  "limit": 0,
+  "issues": 3616,
+  "sequence_policy": "one_extracted_item_no_concatenation",
+  "sample": {
+    "n": 500,
+    "seed": 6140,
+    "rule": "random.Random(f'{seed}:{pair}').sample(range(1, total+1), n)",
+    "records_with_items": 499,
+    "items": 2560,
+    "issues": 17,
+    "full_texts_sha256": "75d819b8faf3cd396c8397f3ad1b9d3685594dcb838a31ac06819fea448f156d"
+  }
+}

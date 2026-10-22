@@ -1,0 +1,13 @@
+{
+  "method": "unicode-script-rule",
+  "version": "v1.0",
+  "date": "2026-10-15",
+  "input_texts": "data/ko_en/extraction_item/texts.jsonl",
+  "sequences": 1529,
+  "non_space_chars_by_label": {
+    "ko": 43895,
+    "en": 57029,
+    "NEUTRAL": 4159
+  },
+  "script_sha256": "757c3213fbe53457aebfac61ebafb5fd8053928e255ee0cd0f26bbc4959ffad0"
+}
