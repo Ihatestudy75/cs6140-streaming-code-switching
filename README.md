@@ -2,41 +2,47 @@
 
 Group 8's CS6140 project on streaming code-switching prediction.
 
-## Project Update 1: start here
+For Project Update 1, choose the section matching the language pairs you want to process:
 
-**To run the Lingua data-processing workflow, use
-[`project_update_1/run_lingua.py`](project_update_1/run_lingua.py).**
-It currently processes French–English, German–English, Italian–English, and
-Filipino/Tagalog–English. This entry point is for data preparation, not baseline
-training or an implementation of every team member's annotation method.
+- [French–English, German–English, Italian–English, and Filipino/Tagalog–English](#fr-de-it-ph-en)
+- [Additional language pairs — Contributor 2](#contributor-2)
+- [Additional language pairs — Contributor 3](#contributor-3)
+- [Shared tools and repository layout](#shared-tools)
 
-Run these commands from the **repository root** using Python 3.13 if available
-(Python 3.11 or newer is required):
+<a id="fr-de-it-ph-en"></a>
+## French–English, German–English, Italian–English, and Filipino/Tagalog–English
+
+**Method:** Lingua language-span annotation and frozen mBERT subword alignment.
+**Entry point:** [`project_update_1/run_lingua.py`](project_update_1/run_lingua.py).
+This workflow is configured for these four pairs only; it does not train a baseline or implement the other contributors' annotation methods.
+
+### Run from the repository root
+
+Use Python 3.13 if available; Python 3.11 or newer is required.
 
 ```bash
 # Create/reuse the environment, install dependencies, and prepare the tokenizer.
 python3 project_update_1/run_lingua.py --setup-only
 
-# Process the four pairs and generate deliverables/yufan/.
+# Process these four pairs and generate deliverables/yufan/.
 python3 project_update_1/run_lingua.py --skip-install
 ```
 
-The runner reads the four original CSV files in [`datasets/`](datasets/),
-downloads only the frozen mBERT tokenizer, and launches its virtual environment
-automatically. No manual environment activation or LLM API key is required.
-Existing outputs are never overwritten. If `deliverables/yufan/` already exists,
-add `--out deliverables/lingua_reproduction` to the processing command.
+The runner reads `French_eng.csv`, `German_Eng.csv`, `Italian_eng.csv`, and
+`Philippines_eng.csv` from [`datasets/`](datasets/). It launches its virtual
+environment automatically and downloads only the frozen tokenizer. No manual
+activation or LLM API key is required. Existing outputs are never overwritten;
+if `deliverables/yufan/` exists, add `--out deliverables/lingua_reproduction`
+to the processing command.
 
-### Which script should I use?
+### Scripts for these pairs
 
-| Task | Script | How to use it |
-|---|---|---|
-| Run the configured four-pair Lingua workflow | [`run_lingua.py`](project_update_1/run_lingua.py) | Main entry point; use the commands above |
-| Generate language-span annotations only | [`annotate_lingua.py`](project_update_1/annotate_lingua.py) | Called by the entry point; direct use requires text, issues, language, and output arguments |
-| Extract text, align subwords, generate/validate targets, or split groups | [`pipeline.py`](project_update_1/pipeline.py) | Shared tools; see the detailed instructions |
-| Read current-token or prefix samples | [`loader.py`](project_update_1/loader.py) | Requires labeled data and split assignments |
+| Script | Role |
+|---|---|
+| [`run_lingua.py`](project_update_1/run_lingua.py) | Complete workflow entry point |
+| [`annotate_lingua.py`](project_update_1/annotate_lingua.py) | Language-span annotation helper called by the entry point |
 
-### Quick code check without generating datasets
+### Code check without generating data
 
 ```bash
 python3 project_update_1/run_lingua.py --help
@@ -45,20 +51,43 @@ python3 -m unittest discover -s tests -v
 cd ..
 ```
 
-These checks do not require an existing `deliverables/yufan/` directory.
-For a small end-to-end run after setup, full output descriptions, and optional
-verification of generated data, see
-[`project_update_1/README.md`](project_update_1/README.md).
+These checks do not require an existing delivery. Full setup details, a small
+end-to-end run, output definitions, and optional verification of generated data
+are in the [matching language-pair section](project_update_1/README.md#fr-de-it-ph-en).
+All LID for this workflow remains automatically generated and unreviewed.
+Structural validation establishes consistency, not linguistic accuracy.
 
-### Repository layout
+<a id="contributor-2"></a>
+## Additional Language Pairs — Contributor 2
+
+Reserved for the second data-processing contributor. Replace this heading with
+the assigned language pairs, then add the method, entry script, setup/run
+commands, and output location. Detailed instructions belong in the
+[matching section](project_update_1/README.md#contributor-2).
+
+<a id="contributor-3"></a>
+## Additional Language Pairs — Contributor 3
+
+Reserved for the third data-processing contributor. Replace this heading with
+the assigned language pairs, then add the method, entry script, setup/run
+commands, and output location. Detailed instructions belong in the
+[matching section](project_update_1/README.md#contributor-3).
+
+<a id="shared-tools"></a>
+## Shared Tools and Repository Layout
+
+| Shared component | Purpose |
+|---|---|
+| [`pipeline.py`](project_update_1/pipeline.py) | Text extraction, subword alignment, target generation, validation, and grouped splitting |
+| [`loader.py`](project_update_1/loader.py) | Current-token and prefix sample iteration from labeled data and split assignments |
+| [`tests/`](project_update_1/tests/) | Shared processing-rule checks |
 
 ```text
 datasets/               Original CSV inputs
-project_update_1/       Data-processing entry point, shared tools, tests, and instructions
-deliverables/          Generated outputs, when present; not required to inspect the code
+project_update_1/       Method-specific entry points, shared tools, tests, and instructions
+deliverables/           Generated outputs, when present; not required to inspect the code
 ```
 
-Language labels are automatically generated and remain unreviewed. Structural
-validation confirms consistency of the processing outputs, not linguistic
-accuracy. Full text supports label construction; prediction inputs must contain
-only the current token or observed prefix.
+See the [shared data-processing standard](project_update_1/README.md#shared-standard)
+for common formats and labeling rules. Full text supports target construction;
+prediction inputs must contain only the current token or observed prefix.
