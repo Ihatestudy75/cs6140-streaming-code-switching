@@ -46,7 +46,7 @@ class Tests(unittest.TestCase):
         with self.assertRaises(ValueError): p.validate_lid(tr,lid)
 
     def test_alignment_unicode_and_neutral(self):
-        text = 'é!英'
+        text = 'é!\u82f1'
         langs, _ = p.align(text,['fr','NEUTRAL','zh'],[(0,1),(1,2),(2,3)], [1,2,3],0,'inherit_previous')
         self.assertEqual(langs,['fr','fr','zh'])
         self.assertEqual(p.align(text,['fr','NEUTRAL','zh'],[(0,3)], [1],0,'mask')[0],['UNKNOWN'])
