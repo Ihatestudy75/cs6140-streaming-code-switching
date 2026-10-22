@@ -36,7 +36,7 @@ An existing delivery is not required for these checks. Optional delivery verific
 
 ```text
 repository/
-  datasets/                       # CSV files are not in Git; see datasets/README.md
+  datasets/                       # Local only; ignored by Git (licence)
     French_eng.csv
     German_Eng.csv
     Italian_eng.csv
@@ -52,7 +52,7 @@ repository/
 
 Keep these scripts together; `run_lingua.py` is an entry point that reuses the shared implementation, not an isolated replacement for it. The four CSV filenames and their paths relative to the repository root are fixed in the runner. No machine-specific absolute input paths are needed.
 
-Use Python 3.13 when possible; the entry point requires Python 3.11 or newer. You need Python with `venv` and `pip`, internet access for the initial package/tokenizer downloads, and the four CSV files. The CSV files are not in Git (the SwitchLingua licence forbids redistribution); download them from Hugging Face as described in [`datasets/README.md`](../datasets/README.md). The processing workflow requires no API key, GPU, PyTorch, or Transformer model weights. Lingua's language models are supplied with its installed package.
+Use Python 3.13 when possible; the entry point requires Python 3.11 or newer. You need Python with `venv` and `pip`, internet access for the initial package/tokenizer downloads, and the four CSV files. The CSV files are not in Git (the SwitchLingua licence forbids redistribution). Download them from the Hugging Face dataset [`Shelton1013/SwitchLingua_text`](https://huggingface.co/datasets/Shelton1013/SwitchLingua_text) (log in and accept the access conditions first), create `datasets/` at the repository root, and put them there. Git ignores `datasets/`. The processing workflow requires no API key, GPU, PyTorch, or Transformer model weights. Lingua's language models are supplied with its installed package.
 
 ### 1. Create the environment and prepare the frozen tokenizer
 
@@ -216,7 +216,7 @@ repository/
 
 **Licence.** SwitchLingua is CC BY-NC 4.0 with an additional licensing agreement. The agreement forbids redistribution of the dataset, in whole or in part. So Git contains no dataset text: no CSV files, no texts, no LID segments, and no tokens. The committed `deliverables/shaoyu/` keeps only statistics, manifests, IDs, `cs_type`, review records, and the Malay labels as character offsets. Each user downloads the CSV files and rebuilds the full delivery locally.
 
-The four CSV files are not in the repository. Download them from the Hugging Face dataset [`Shelton1013/SwitchLingua_text`](https://huggingface.co/datasets/Shelton1013/SwitchLingua_text) and put them in `datasets/`. The runner checks the SHA-256 of each file. A different file version stops the run, because record IDs contain the file checksum.
+The four CSV files are not in the repository. Download them from the Hugging Face dataset [`Shelton1013/SwitchLingua_text`](https://huggingface.co/datasets/Shelton1013/SwitchLingua_text) and put them in `datasets/` at the repository root (create it; Git ignores it). The runner checks the SHA-256 of each file. A different file version stops the run, because record IDs contain the file checksum.
 
 Use Python 3.11 or newer. You need internet access for the first package and tokenizer download. Cantonese, Korean, and Russian need no API key, GPU, PyTorch, or model weights.
 
