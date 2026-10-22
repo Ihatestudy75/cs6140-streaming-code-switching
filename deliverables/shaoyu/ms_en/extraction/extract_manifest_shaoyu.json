@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "source_file": "Malay_eng.csv",
+  "source_sha256": "e7c9e2acc79a66179f3cfc5b9b0ceb3ee21a7a9891f0a5eadcd8d85587e0ee5d",
+  "language_pair": "ms_en",
+  "input_records": 8386,
+  "output_items": 26122,
+  "limit": 0,
+  "issues": 143,
+  "sequence_policy": "one_extracted_item_no_concatenation",
+  "sample": {
+    "n": 500,
+    "seed": 6140,
+    "rule": "random.Random(f'{seed}:{pair}').sample(range(1, total+1), n)",
+    "records_with_items": 500,
+    "items": 1568,
+    "issues": 7,
+    "full_texts_sha256": "0a8dd31ba8160183b0d41221790283254336ba4a7112bd3763d3afdc715673cb"
+  }
+}

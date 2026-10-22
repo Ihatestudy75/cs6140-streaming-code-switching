@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "source_file": "Korean_eng.csv",
+  "source_sha256": "3c6ed9650d277383504596160924be7b0bd4375a8f33c586aa36a7847f1c718b",
+  "language_pair": "ko_en",
+  "input_records": 8266,
+  "output_items": 25378,
+  "limit": 0,
+  "issues": 99,
+  "sequence_policy": "one_extracted_item_no_concatenation",
+  "sample": {
+    "n": 500,
+    "seed": 6140,
+    "rule": "random.Random(f'{seed}:{pair}').sample(range(1, total+1), n)",
+    "records_with_items": 500,
+    "items": 1529,
+    "issues": 13,
+    "full_texts_sha256": "c773e1a81d88eb5f9bb34760fdb0e5ff50bac0fd037ab8686050d8b00147019d"
+  }
+}

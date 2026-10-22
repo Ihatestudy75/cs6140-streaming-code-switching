@@ -5,7 +5,7 @@ Group 8's CS6140 project on streaming code-switching prediction.
 For Project Update 1, choose the section matching the language pairs you want to process:
 
 - [French–English, German–English, Italian–English, and Filipino/Tagalog–English](#fr-de-it-ph-en)
-- [Additional language pairs — Contributor 2](#contributor-2)
+- [Cantonese–English, Korean–English, Russian–English, and Malay–English](#yue-ko-ru-ms-en)
 - [Additional language pairs — Contributor 3](#contributor-3)
 - [Shared tools and repository layout](#shared-tools)
 
@@ -29,7 +29,9 @@ python3 project_update_1/run_lingua.py --skip-install
 ```
 
 The runner reads `French_eng.csv`, `German_Eng.csv`, `Italian_eng.csv`, and
-`Philippines_eng.csv` from [`datasets/`](datasets/). It launches its virtual
+`Philippines_eng.csv` from [`datasets/`](datasets/). These files are not in Git,
+because the SwitchLingua licence forbids redistribution; download them as
+described in [`datasets/README.md`](datasets/README.md). It launches its virtual
 environment automatically and downloads only the frozen tokenizer. No manual
 activation or LLM API key is required. Existing outputs are never overwritten;
 if `deliverables/yufan/` exists, add `--out deliverables/lingua_reproduction`
@@ -57,13 +59,34 @@ are in the [matching language-pair section](project_update_1/README.md#fr-de-it-
 All LID for this workflow remains automatically generated and unreviewed.
 Structural validation establishes consistency, not linguistic accuracy.
 
-<a id="contributor-2"></a>
-## Additional Language Pairs — Contributor 2
+<a id="yue-ko-ru-ms-en"></a>
+## Cantonese–English, Korean–English, Russian–English, and Malay–English
 
-Reserved for the second data-processing contributor. Replace this heading with
-the assigned language pairs, then add the method, entry script, setup/run
-commands, and output location. Detailed instructions belong in the
-[matching section](project_update_1/README.md#contributor-2).
+**Method:** Unicode script-rule LID for Cantonese, Korean, and Russian; DeepSeek
+LLM LID (shared prompt v1.0) for Malay; frozen mBERT subword alignment.
+**Entry point:** [`project_update_1/run_unicode_deepseek.py`](project_update_1/run_unicode_deepseek.py).
+**Output:** [`deliverables/shaoyu/`](deliverables/shaoyu/) in Git has no dataset text (licence: no
+redistribution). The runner rebuilds the full data locally in `deliverables/shaoyu_full/`.
+
+### Run from the repository root
+
+The CSV files are not in the repository. Download `Can_Eng.csv`,
+`Korean_eng.csv`, `Russian_eng.csv`, and `Malay_eng.csv` from the Hugging Face
+dataset [`Shelton1013/SwitchLingua_text`](https://huggingface.co/datasets/Shelton1013/SwitchLingua_text)
+and put them in [`datasets/`](datasets/). Python 3.11 or newer is required.
+
+```bash
+# Create/reuse the environment, install dependencies, and prepare the tokenizer.
+python3 project_update_1/run_unicode_deepseek.py --setup-only
+
+# Rebuild the full delivery in deliverables/shaoyu_full/ (ignored by Git) and check it.
+python3 project_update_1/run_unicode_deepseek.py --skip-install
+```
+
+No API key is needed. By default, Malay reuses the delivered DeepSeek labels
+(stored as character offsets), because LLM output can change between runs. Setup details, the optional
+DeepSeek run, outputs, and limitations are in the
+[matching language-pair section](project_update_1/README.md#yue-ko-ru-ms-en).
 
 <a id="contributor-3"></a>
 ## Additional Language Pairs — Contributor 3
@@ -83,7 +106,7 @@ commands, and output location. Detailed instructions belong in the
 | [`tests/`](project_update_1/tests/) | Shared processing-rule checks |
 
 ```text
-datasets/               Original CSV inputs
+datasets/               Original CSV inputs (not in Git; see datasets/README.md)
 project_update_1/       Method-specific entry points, shared tools, tests, and instructions
 deliverables/           Generated outputs, when present; not required to inspect the code
 ```

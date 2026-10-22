@@ -1,0 +1,17 @@
+{"id": "yue_en:cb9f144e3464:034476:001", "severity": "warning", "reason": "possible_wrapping_or_escape_review_no_auto_change"}
+{"id": "yue_en:cb9f144e3464:034476:002", "severity": "warning", "reason": "possible_wrapping_or_escape_review_no_auto_change"}
+{"id": "yue_en:cb9f144e3464:034476:003", "severity": "warning", "reason": "possible_wrapping_or_escape_review_no_auto_change"}
+{"id": "yue_en:cb9f144e3464:034476:004", "severity": "warning", "reason": "possible_wrapping_or_escape_review_no_auto_change"}
+{"id": "yue_en:cb9f144e3464:035089:001", "severity": "warning", "reason": "possible_wrapping_or_escape_review_no_auto_change"}
+{"id": "yue_en:cb9f144e3464:035089:002", "severity": "warning", "reason": "possible_wrapping_or_escape_review_no_auto_change"}
+{"id": "yue_en:cb9f144e3464:035089:003", "severity": "warning", "reason": "possible_wrapping_or_escape_review_no_auto_change"}
+{"id": "yue_en:cb9f144e3464:035089:004", "severity": "warning", "reason": "possible_wrapping_or_escape_review_no_auto_change"}
+{"id": "yue_en:cb9f144e3464:035089:005", "severity": "warning", "reason": "possible_wrapping_or_escape_review_no_auto_change"}
+{"id": "yue_en:cb9f144e3464:076717:001", "severity": "warning", "reason": "possible_wrapping_or_escape_review_no_auto_change"}
+{"id": "yue_en:cb9f144e3464:076717:002", "severity": "warning", "reason": "possible_wrapping_or_escape_review_no_auto_change"}
+{"id": "yue_en:cb9f144e3464:076717:003", "severity": "warning", "reason": "possible_wrapping_or_escape_review_no_auto_change"}
+{"id": "yue_en:cb9f144e3464:076717:004", "severity": "warning", "reason": "possible_wrapping_or_escape_review_no_auto_change"}
+{"id": "yue_en:cb9f144e3464:076717:005", "severity": "warning", "reason": "possible_wrapping_or_escape_review_no_auto_change"}
+{"id": "yue_en:cb9f144e3464:086269:004", "severity": "warning", "reason": "possible_wrapping_or_escape_review_no_auto_change"}
+{"id": "yue_en:cb9f144e3464:090389:003", "severity": "warning", "reason": "possible_wrapping_or_escape_review_no_auto_change"}
+{"id": "yue_en:cb9f144e3464:108148", "severity": "error", "reason": "invalid character '《' (U+300A) (<unknown>, line 1)"}

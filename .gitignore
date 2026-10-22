@@ -220,3 +220,8 @@ __marimo__/
 # Local raw datasets and macOS metadata
 /SwitchLingua/
 .DS_Store
+
+# SwitchLingua CSVs: download from Hugging Face; the licence forbids redistribution
+datasets/*.csv
+# Local reproductions of deliverables/shaoyu
+deliverables/shaoyu_*/
