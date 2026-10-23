@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "source_file": "Vietnamese_eng.csv",
+  "source_sha256": "26e5d66e65bb7a04351fa521110378de3aee5a99c6b3dc7d999912c3a0f0c8b7",
+  "language_pair": "vi_en",
+  "input_records": 8457,
+  "output_items": 26803,
+  "limit": 0,
+  "issues": 62,
+  "sequence_policy": "one_extracted_item_no_concatenation",
+  "sample": {
+    "n": 500,
+    "seed": 6140,
+    "rule": "random.Random(f'{seed}:{pair}').sample(range(1, total+1), n)",
+    "records_with_items": 500,
+    "items": 1595,
+    "issues": 0,
+    "full_texts_sha256": "3c018020e23c7a394fcca37a86960305f54c720a90b7b74fbf1a685438b6fb7e"
+  }
+}
