@@ -1,0 +1,14 @@
+# Licensed inputs and generated outputs stay local.
+reference/
+runs/
+analysis-boundaries*/
+__pycache__/
+*.py[cod]
+*.jsonl
+*.joblib
+*.pkl
+*.pickle
+*.zip
+*.tar
+*.gz
+*.log
