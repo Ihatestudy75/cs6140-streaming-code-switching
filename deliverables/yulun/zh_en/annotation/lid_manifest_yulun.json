@@ -1,0 +1,13 @@
+{
+  "method": "unicode-script-rule",
+  "version": "v1.0",
+  "date": "2026-10-18",
+  "input_texts": "data/zh_en/extraction/texts.jsonl",
+  "sequences": 1747,
+  "non_space_chars_by_label": {
+    "zh": 35341,
+    "NEUTRAL": 5708,
+    "en": 74099
+  },
+  "script_sha256": "954def7f04336b8f2aa8735cef2ff8fd89aa360cf953fc21c260d787d2b96ef1"
+}

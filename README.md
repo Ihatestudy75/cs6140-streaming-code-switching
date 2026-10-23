@@ -6,7 +6,7 @@ For Project Update 1, choose the section matching the language pairs you want to
 
 - [French–English, German–English, Italian–English, and Filipino/Tagalog–English](#fr-de-it-ph-en)
 - [Cantonese–English, Korean–English, Russian–English, and Malay–English](#yue-ko-ru-ms-en)
-- [Additional language pairs — Contributor 3](#contributor-3)
+- [Arabic–English, Chinese–English, Japanese–English, Hindi–English, Spanish–English, and Vietnamese–English](#ar-zh-ja-hi-es-vi-en)
 - [Shared tools and repository layout](#shared-tools)
 
 <a id="fr-de-it-ph-en"></a>
@@ -91,13 +91,36 @@ No API key is needed. By default, Malay reuses the delivered DeepSeek labels
 DeepSeek run, outputs, and limitations are in the
 [matching language-pair section](project_update_1/README.md#yue-ko-ru-ms-en).
 
-<a id="contributor-3"></a>
-## Additional Language Pairs — Contributor 3
+<a id="ar-zh-ja-hi-es-vi-en"></a>
+## Arabic–English, Chinese–English, Japanese–English, Hindi–English, Spanish–English, and Vietnamese–English
 
-Reserved for the third data-processing contributor. Replace this heading with
-the assigned language pairs, then add the method, entry script, setup/run
-commands, and output location. Detailed instructions belong in the
-[matching section](project_update_1/README.md#contributor-3).
+**Method:** Unicode script-rule LID for Arabic, Chinese, and Japanese; Claude
+word-level LID for Spanish and Vietnamese; both for Hindi (Devanagari by script,
+Latin-letter words by Claude); frozen mBERT subword alignment.
+**Entry point:** [`project_update_1/run_unicode_claude.py`](project_update_1/run_unicode_claude.py).
+**Output:** [`deliverables/yulun/`](deliverables/yulun/) in Git has no dataset text (licence: no
+redistribution). The runner rebuilds the full data locally in `deliverables/yulun_full/`.
+
+### Run from the repository root
+
+The CSV files are not in the repository. Download `Arabic_eng.csv`,
+`Chinese_eng.csv`, `Japanese_eng.csv`, `Hindi_eng.csv`, `Spanish_eng.csv`, and
+`Vietnamese_eng.csv` from the Hugging Face dataset
+[`Shelton1013/SwitchLingua_text`](https://huggingface.co/datasets/Shelton1013/SwitchLingua_text)
+and put them in `datasets/` (create it; Git ignores it). Python 3.11 or newer is required.
+
+```bash
+# Create/reuse the environment, install dependencies, and prepare the tokenizer.
+python3 project_update_1/run_unicode_claude.py --setup-only
+
+# Rebuild the full delivery in deliverables/yulun_full/ (ignored by Git) and check it.
+python3 project_update_1/run_unicode_claude.py --skip-install
+```
+
+No API key is needed. The Claude labels for Spanish, Vietnamese, and Hindi are
+reused from the delivery (stored as character offsets), because LLM output can
+change between runs. Setup details, outputs, and limitations are in the
+[matching language-pair section](project_update_1/README.md#ar-zh-ja-hi-es-vi-en).
 
 <a id="shared-tools"></a>
 ## Shared Tools and Repository Layout

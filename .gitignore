@@ -225,3 +225,5 @@ __marimo__/
 datasets/
 # Local reproductions of deliverables/shaoyu
 deliverables/shaoyu_*/
+# Local full builds of deliverables/yulun
+deliverables/yulun_*/

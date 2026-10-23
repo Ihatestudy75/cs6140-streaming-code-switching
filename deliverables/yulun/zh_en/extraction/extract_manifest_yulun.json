@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "source_file": "Chinese_eng.csv",
+  "source_sha256": "0501713457739406055dc4b1f41fd16d424e45e8aeadf4dfb21a11939c24e225",
+  "language_pair": "zh_en",
+  "input_records": 8458,
+  "output_items": 29561,
+  "limit": 0,
+  "issues": 29,
+  "sequence_policy": "one_extracted_item_no_concatenation",
+  "sample": {
+    "n": 500,
+    "seed": 6140,
+    "rule": "random.Random(f'{seed}:{pair}').sample(range(1, total+1), n)",
+    "records_with_items": 500,
+    "items": 1747,
+    "issues": 1,
+    "full_texts_sha256": "2be1b049835331fdde4441b2210dce70b75063559aff561f97046450fd6ec54b"
+  }
+}
