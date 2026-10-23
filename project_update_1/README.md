@@ -4,7 +4,7 @@ Choose the section for the language pairs you want to process. Each contributor'
 
 - [French–English, German–English, Italian–English, and Filipino/Tagalog–English](#fr-de-it-ph-en)
 - [Cantonese–English, Korean–English, Russian–English, and Malay–English](#yue-ko-ru-ms-en)
-- [Additional language pairs — Contributor 3](#contributor-3)
+- [Arabic–English, Chinese–English, Japanese–English, Hindi–English, Spanish–English, and Vietnamese–English](#ar-zh-ja-hi-es-vi-en)
 - [Shared data-processing standard](#shared-standard)
 
 <a id="fr-de-it-ph-en"></a>
@@ -310,17 +310,109 @@ The delivery contains 2,560 Cantonese–English, 1,529 Korean–English, 1,564 R
 
 More detail is in [`deliverables/shaoyu/README.md`](../deliverables/shaoyu/README.md) and [`deliverables/shaoyu/DECISIONS.md`](../deliverables/shaoyu/DECISIONS.md).
 
-<a id="contributor-3"></a>
-## Additional Language Pairs — Contributor 3
+<a id="ar-zh-ja-hi-es-vi-en"></a>
+## Arabic–English, Chinese–English, Japanese–English, Hindi–English, Spanish–English, and Vietnamese–English
 
-Reserved for the third data-processing contributor. Replace this heading with the assigned language pairs and add:
+**Method:** Unicode script-rule LID for Arabic, Chinese, and Japanese. Claude word-level LID (shared `LID_PROMPT.md` v1.0, applied per word) for Spanish and Vietnamese. Hindi: Devanagari by the script rule, Latin-letter words by Claude. Frozen mBERT subword alignment for all six pairs.
+**Run all commands in this section from the repository root**, not from inside `project_update_1/`.
 
-- Language pairs and source CSV paths.
-- Annotation method, entry script, and required dependencies.
-- Setup, processing, and code-check commands, including the working directory.
-- Output location, validation scope, and known limitations.
+| Script | Role for these language pairs |
+|---|---|
+| [`run_unicode_claude.py`](run_unicode_claude.py) | Complete processing entry point |
+| [`annotate_script.py`](annotate_script.py) | Script-rule LID for `ar_en`, `zh_en`, `ja_en` and the Devanagari part of `hi_en`. Same rule as `annotate_unicode.py`, with Arabic, Devanagari, and kana ranges. The entry point calls it. |
+| [`annotate_claude.py`](annotate_claude.py) | Claude word-level LID for `es_en`, `vi_en`, `hi_en`: word split, harmonization of names and loanwords, assembly. Documents how the delivered labels were made; the entry point does not call Claude. |
+| [`claude_lid_instructions.md`](claude_lid_instructions.md) | Labeling rules given to Claude |
 
-No method or runnable command is specified here yet.
+The entry point reuses the shared `pipeline.py` for extraction, tokenization, and target generation. It does not change `pipeline.py`.
+
+### Inspect the code without generating data
+
+```bash
+python3 project_update_1/run_unicode_claude.py --help
+cd project_update_1
+python3 -m unittest discover -s tests -v
+cd ..
+```
+
+### Required repository files
+
+```text
+repository/
+  datasets/
+    Arabic_eng.csv                # Not in Git; download it (see below)
+    Chinese_eng.csv               # Not in Git
+    Japanese_eng.csv              # Not in Git
+    Hindi_eng.csv                 # Not in Git
+    Spanish_eng.csv               # Not in Git
+    Vietnamese_eng.csv            # Not in Git
+  project_update_1/
+    run_unicode_claude.py
+    annotate_script.py
+    pipeline.py
+    requirements.lock.txt
+  deliverables/
+    yulun/                        # Text-free delivery in Git
+      <pair>/annotation/lid_offsets_yulun.jsonl   # hi_en, es_en, vi_en: Claude labels as offsets
+```
+
+**Licence.** As for the section above, Git contains no dataset text. The committed `deliverables/yulun/` keeps only statistics, manifests, IDs, `cs_type`, review records, and the Claude labels as character offsets. Each user downloads the CSV files and rebuilds the full delivery locally.
+
+Download the six CSV files from the Hugging Face dataset [`Shelton1013/SwitchLingua_text`](https://huggingface.co/datasets/Shelton1013/SwitchLingua_text) and put them in `datasets/` at the repository root (create it; Git ignores it). The runner checks the SHA-256 of each file. A different file version stops the run, because record IDs contain the file checksum.
+
+Use Python 3.11 or newer. You need internet access for the first package and tokenizer download. No API key, GPU, PyTorch, or model weights are needed.
+
+### 1. Create the environment and prepare the frozen tokenizer
+
+```bash
+python3 project_update_1/run_unicode_claude.py --setup-only
+```
+
+This uses the same `project_update_1/.venv/`, `requirements.lock.txt`, and frozen tokenizer in `project_update_1/assets/mbert/` as the sections above (CRLF line endings are changed to LF on Windows, so the checksum is `78b44c32…`). Success prints `SETUP COMPLETE: pinned dependencies and frozen tokenizer ready.`
+
+### 2. Rebuild the full delivery from the CSV files
+
+```bash
+python3 project_update_1/run_unicode_claude.py --skip-install
+```
+
+The full delivery, with text, goes to `deliverables/yulun_full/` (`--out`). Git ignores this folder. **Do not commit it.** After the build, the runner compares the text-free files with the committed `deliverables/yulun/` and prints `CHECK PASS`. A difference stops the run with an error that names the files.
+
+The entry point does these steps for each pair:
+
+1. Extract all text items of the full CSV with `pipeline.py extract`.
+2. Sample 500 original records with `random.Random(f"6140:{pair}").sample(range(1, total + 1), 500)`. Keep all items of each sampled record. Each item is one sequence.
+3. Label languages. `ar_en`, `zh_en`, `ja_en`: each character gets the label of its Unicode script; Latin letters are `en`; digits and punctuation, including `،` `؟` `।`, are `NEUTRAL`. `hi_en`, `es_en`, `vi_en`: rebuild the delivered Claude labels from `lid_offsets_yulun.jsonl` and the CSV text.
+4. Select 20 pilot records with `random.Random(f"6140:{pair}:pilot")` and mark their items `reviewed` (the review found no errors). All other items stay `unreviewed`.
+5. Align labels to mBERT subwords and generate switch and duration targets with `pipeline.py tokenize` (`inherit_previous`, `observed`).
+6. Write `cs_type` from the original CSV, publish the full delivery, and compare it with the committed files.
+
+Intermediate files go to `project_update_1/data/yulun_reproduction/` (`--work-dir`). Git ignores this folder. Nothing is staged, committed, deleted, or overwritten.
+
+**Claude labeling.** The labels for `es_en`, `vi_en`, and the Latin-letter words of `hi_en` were made in Claude Code (interactive session, subagents) with `annotate_claude.py prepare`, `collect`, `apply`, and `assemble`. These steps cannot run unattended, and a new run can give different labels, so the runner does not repeat them. The commands are in [`deliverables/yulun/README.md`](../deliverables/yulun/README.md#6-reproducing-the-results).
+
+### 3. Optional small end-to-end check
+
+```bash
+python3 project_update_1/run_unicode_claude.py --skip-install --pairs ar_en --records 5 --pilot-records 2 --work-dir project_update_1/data/yulun_smoke --out project_update_1/data/yulun_smoke_delivery --check-against ""
+```
+
+This check uses only `Arabic_eng.csv`. It is a workflow check, not the formal delivery.
+
+### Output layout
+
+The layout and the `[full only]` files are listed in [`deliverables/yulun/README.md`](../deliverables/yulun/README.md#2-layout). They follow the section above: `sequence_index` replaces `texts`, and `lid_offsets` replaces `lid` for the Claude-labeled pairs.
+
+The delivery contains 1,594 Arabic–English, 1,747 Chinese–English, 1,662 Japanese–English, 1,571 Hindi–English, 1,561 Spanish–English, and 1,595 Vietnamese–English sequences.
+
+### Validation scope and known limitations
+
+- All six pairs pass `pipeline.py validate`. This checks structure and target rules, **not linguistic accuracy**.
+- The review of the 20 pilot records per pair is model-assisted (Claude). It is not an independent human review; for `es_en`, `vi_en`, and `hi_en` it is not independent of the labeler either. All other items are pseudo-labels.
+- The script rule labels Latin-script names `en`. The Claude labels judge names by written form, so names that are the same in both languages are `UNKNOWN`.
+- Each item is a separate sequence, so a switch between two items of one record gets no label.
+- A rebuild gives the same labels as the original delivery. Only `annotation_source` differs for `ar_en`, `zh_en`, and `ja_en`, because it contains the script name and the run date.
+
+More detail is in [`deliverables/yulun/README.md`](../deliverables/yulun/README.md) and [`deliverables/yulun/DECISIONS.md`](../deliverables/yulun/DECISIONS.md).
 
 <a id="shared-standard"></a>
 ## Shared Data-Processing Standard

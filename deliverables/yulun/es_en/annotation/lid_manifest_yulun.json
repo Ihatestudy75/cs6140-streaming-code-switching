@@ -1,0 +1,35 @@
+{
+  "method": "claude-word-level-lid",
+  "model": "claude-opus-5-5",
+  "interface": "Claude Code (interactive session, subagents)",
+  "prompt": "LID_PROMPT.md v1.0, applied per word",
+  "script_native": false,
+  "date": "2026-10-18",
+  "input_texts": "data/es_en/extraction/texts.jsonl",
+  "sequences": 1561,
+  "non_space_chars_by_label": {
+    "es": 91197,
+    "NEUTRAL": 4235,
+    "en": 48636,
+    "UNKNOWN": 1402
+  },
+  "labels_sha256": {
+    "batch_001.labels.jsonl": "1c36d8f12cd19505a7b0c4a561cb12d275f0f87c198383b09b68e0e12eb8dd0b",
+    "batch_002.labels.jsonl": "cfc5c564f3d5d1192ef9dba30c2cac1af8d91d98a7c14e13ff7266033a11d04c",
+    "batch_003.labels.jsonl": "89759568a2b873b9f785bd6aee91a46b132306982b604fb36dbf7d4911f98da8",
+    "batch_004.labels.jsonl": "810eac141717358baa1c40c3b9c0f069e69a8a91ff2ef45f76159d3263fa30eb",
+    "batch_005.labels.jsonl": "dff9d5b4a0c4d5cc496e471fa1fe1bf39228713d19dad0ae4acb29d799300fbb",
+    "batch_006.labels.jsonl": "81fccae47153530246538a17004a9b4ee0fa96ce721059b374c27d693e9e80b9",
+    "batch_007.labels.jsonl": "43bdb4be5004e2da47cdd5e2fbb6d0f03367d8a71d97403018f23ba98aac98b2",
+    "batch_008.labels.jsonl": "9f7886c638730ebf582cd2b47212e3aa5dbd9895fcabad9e8d670d6ff7db060d",
+    "batch_009.labels.jsonl": "ee3429ba42c608b893b64c03bd1ff1e2e41bf9c87ba3be9b6c960e7ad8aec758",
+    "batch_010.labels.jsonl": "1e0c7223878fa0341fea2f4efe2e4d763683f3c7dbf309b0272a1da35710aa24",
+    "batch_011.labels.jsonl": "1d9ea88b424874c7053baa05d03bba7322397d3a27209c0ed1234a2f1c0efb71",
+    "batch_012.labels.jsonl": "8509e9875d714af80a1185432b46f30149c1f9f7e7aac43413b789bd291df24d",
+    "batch_013.labels.jsonl": "dc1567113eab8ba4550cd70f75a09db62f4a7ce2ec37cff02ecf83a2cf3b5013",
+    "batch_014.labels.jsonl": "5df44e28181587883e94ad036c1c2c7f9ee642a21f2a56a269872f1cc5365e65",
+    "batch_015.labels.jsonl": "b86e3258c2acd52abacc25785c222f69c9dd7e7f135b0f697ccba97e170272ce",
+    "batch_016.labels.jsonl": "d9f145eac56093a5c00a53f3ee77b78e2aa41d266510a053d0e94850420d034e"
+  },
+  "script_sha256": "457f60b4e1cfb8b2318f3ec21749fe2cbb2f548b48b99489d02b8b0072cc426d"
+}

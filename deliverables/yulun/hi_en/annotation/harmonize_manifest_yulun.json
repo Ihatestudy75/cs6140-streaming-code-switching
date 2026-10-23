@@ -1,0 +1,8 @@
+{
+  "source_work": "data\\hi_en\\claude_work",
+  "candidates": 2604,
+  "changes": 70,
+  "candidates_sha256": "0d9988a8c88cca8361c8cbecfcd4d80dec1103e22335aa1c7d82852a0cade01b",
+  "decisions_sha256": "ad5831531756002af2c8d6115b6aaa6fb5613d2355efafa298b777deca0e9f1c",
+  "script_sha256": "21809baf296ed80d0ef3766b0aab3c5e499d3916f4378cfda15477bfa6af1fe9"
+}

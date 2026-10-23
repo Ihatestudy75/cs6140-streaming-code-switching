@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-18",
+  "source": "annotation",
+  "items": 1594,
+  "reviewed_items": 72,
+  "review_rows": 72,
+  "fixes": 0,
+  "inputs": {
+    "extraction/texts.jsonl": "85c3b198711e693408ec4cba9071d42f3138bcf571889d924ba47696e433e3d8",
+    "annotation/lid.jsonl": "4a1cec59c0ab9e6f06d3551f5d27111ee01bc9b4e695060719bd93bdeeeb7425",
+    "pilot_record_ids.txt": "fbb7d449c723b8c15edd24914dbe7500978a1361ab7f4b71414024ac80bed1fb"
+  },
+  "builder_sha256": "93ba689e2682c9109ed397e8abe23fb74bc24c7456371ef7e47448e61fd9e4e7"
+}
