@@ -1,0 +1,35 @@
+{
+  "method": "claude-word-level-lid",
+  "model": "claude-opus-5-5",
+  "interface": "Claude Code (interactive session, subagents)",
+  "prompt": "LID_PROMPT.md v1.0, applied per word",
+  "script_native": false,
+  "date": "2026-10-18",
+  "input_texts": "data/vi_en/extraction/texts.jsonl",
+  "sequences": 1595,
+  "non_space_chars_by_label": {
+    "vi": 78809,
+    "NEUTRAL": 4106,
+    "en": 46412,
+    "UNKNOWN": 2233
+  },
+  "labels_sha256": {
+    "batch_001.labels.jsonl": "41a173c1f4ee83b06a10cb53185ecba25bf51fc5cc822dbbeca387a4a008d761",
+    "batch_002.labels.jsonl": "eab72dfb3cd7f8ff5e359d5e4e29efb516e90a0a63d5ed4e3584ac783b3cf103",
+    "batch_003.labels.jsonl": "03adfe0c5b59a5c23ac7e6f298a373781d6f6bfc0f2fade1b27e943c667ce910",
+    "batch_004.labels.jsonl": "8b5074277f1985ca0db92d27c3c9926def0c1d939a59495e0624132ec99b89ff",
+    "batch_005.labels.jsonl": "e935720fa41961497d9c837d7c5a763a96b31414cb97c828465cf1e5eb086d0e",
+    "batch_006.labels.jsonl": "65807451452ad2c272161f01255d0d0f8c113452169ed8ad862b8eeb2b4cea80",
+    "batch_007.labels.jsonl": "523de1ac1020d78bf6e1c6422d338912c22881bf3d1d2185b6eee1bc9b0b5338",
+    "batch_008.labels.jsonl": "8575b3a90f46a7b6618572fbcd7a150a5f573b022e3b44c6937bc451da3155a3",
+    "batch_009.labels.jsonl": "e23d01c743fd221884a34bcbf6167fd43429e0fa18d136f186f10bda816e0f27",
+    "batch_010.labels.jsonl": "5fcdd2727f9bd36c49cee51e05a34b3ccb19ecf7e22022ee2d2726880916127c",
+    "batch_011.labels.jsonl": "d7b0cc9eae36f73d642c1b2f156c539f4f627bae0bdd520ba8765ccaf44ce79d",
+    "batch_012.labels.jsonl": "c794789318b8d173d29f8ba4f99ad7363abc6e539ce21a94974af8b43cb8f02e",
+    "batch_013.labels.jsonl": "5725ef5da23fe1a16f16d27779fdf8bb364ec9610b163b03290e4a1337efde8d",
+    "batch_014.labels.jsonl": "908407a9435fc64171e2e506d279a7c0331578e02ef99c7252d296308b9a2a20",
+    "batch_015.labels.jsonl": "56a680208621e51a9e0bc67a6ab91c143612f189a47df4b4121e133b438565d8",
+    "batch_016.labels.jsonl": "fc23d4043f5286400edcb3e41a7eec9e10634625e1e693830d4498e51b446a56"
+  },
+  "script_sha256": "457f60b4e1cfb8b2318f3ec21749fe2cbb2f548b48b99489d02b8b0072cc426d"
+}

@@ -1,0 +1,13 @@
+{
+  "method": "unicode-script-rule",
+  "version": "v1.0",
+  "date": "2026-10-18",
+  "input_texts": "data/ja_en/extraction/texts.jsonl",
+  "sequences": 1662,
+  "non_space_chars_by_label": {
+    "ja": 43867,
+    "NEUTRAL": 5622,
+    "en": 71337
+  },
+  "script_sha256": "954def7f04336b8f2aa8735cef2ff8fd89aa360cf953fc21c260d787d2b96ef1"
+}

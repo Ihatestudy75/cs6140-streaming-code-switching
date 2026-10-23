@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "source_file": "Japanese_eng.csv",
+  "source_sha256": "cbed91aed45810bc637e5f82f4db4acde4db8c0deec67098855983320cdb1cd0",
+  "language_pair": "ja_en",
+  "input_records": 8385,
+  "output_items": 27885,
+  "limit": 0,
+  "issues": 21,
+  "sequence_policy": "one_extracted_item_no_concatenation",
+  "sample": {
+    "n": 500,
+    "seed": 6140,
+    "rule": "random.Random(f'{seed}:{pair}').sample(range(1, total+1), n)",
+    "records_with_items": 500,
+    "items": 1662,
+    "issues": 0,
+    "full_texts_sha256": "1126a8f233978fe21b0ee0df048bca173093d0686fa55a91ec2f3066278f7f1a"
+  }
+}

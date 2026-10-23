@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "source_file": "Hindi_eng.csv",
+  "source_sha256": "c9491f7b14b09e8b72d971b3bb85cfcdf47856f90d5fb0cb5a9ef72b07984c7c",
+  "language_pair": "hi_en",
+  "input_records": 8381,
+  "output_items": 26691,
+  "limit": 0,
+  "issues": 73,
+  "sequence_policy": "one_extracted_item_no_concatenation",
+  "sample": {
+    "n": 500,
+    "seed": 6140,
+    "rule": "random.Random(f'{seed}:{pair}').sample(range(1, total+1), n)",
+    "records_with_items": 500,
+    "items": 1571,
+    "issues": 3,
+    "full_texts_sha256": "8fbeb8d895fa52aa6e0485308f6159a9f80c8a23fdcb17d2d92ba2d06913bf4c"
+  }
+}

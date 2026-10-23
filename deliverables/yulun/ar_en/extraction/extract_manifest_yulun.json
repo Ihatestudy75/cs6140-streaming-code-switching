@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "source_file": "Arabic_eng.csv",
+  "source_sha256": "608a99e61cd320a2c5689158f5da1bb681d38d42c7cd29a5b7bf1cc0e833c8bd",
+  "language_pair": "ar_en",
+  "input_records": 8548,
+  "output_items": 26791,
+  "limit": 0,
+  "issues": 0,
+  "sequence_policy": "one_extracted_item_no_concatenation",
+  "sample": {
+    "n": 500,
+    "seed": 6140,
+    "rule": "random.Random(f'{seed}:{pair}').sample(range(1, total+1), n)",
+    "records_with_items": 500,
+    "items": 1594,
+    "issues": 0,
+    "full_texts_sha256": "9faa1e05f82414d18b5057df5cba085167a2f41092894715eb90602374185103"
+  }
+}
