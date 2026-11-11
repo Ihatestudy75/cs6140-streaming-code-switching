@@ -240,3 +240,5 @@ labeled_tokens*.jsonl
 texts*.jsonl
 lid.jsonl
 lid.template.jsonl
+# Local training runs (until the IO standard defines the shared results folder)
+project_update_2/runs/
