@@ -1,0 +1,7 @@
+# Install: py -3.13 -m venv .venv-train && .venv-train/Scripts/python.exe -m pip install -r project_update_2/requirements_train.txt --extra-index-url https://download.pytorch.org/whl/cu134
+torch==2.15.0+cu134
+transformers==4.57.6
+tokenizers==0.22.2
+scikit-learn==1.9.1
+numpy==2.5.4
+tqdm==4.70.1
