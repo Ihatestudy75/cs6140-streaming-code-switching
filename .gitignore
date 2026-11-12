@@ -227,3 +227,18 @@ datasets/
 deliverables/shaoyu_*/
 # Local full builds of deliverables/yulun
 deliverables/yulun_*/
+
+# Project Update 2 training environment and model artifacts
+.venv-train/
+project_update_2/checkpoints/
+*.pt
+*.bin
+*.safetensors
+
+# Raw-text data files anywhere (public repo: never commit original sentences)
+labeled_tokens*.jsonl
+texts*.jsonl
+lid.jsonl
+lid.template.jsonl
+# Local training runs (until the IO standard defines the shared results folder)
+project_update_2/runs/
