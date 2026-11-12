@@ -18,8 +18,10 @@ Truncation
   Each kept label is still correct: the label at t only depends on the true
   sentence, and the model input at t only uses x_1..x_t.
 
-This is a temporary collator for development. The team collator (Yufan) must
-produce the same batch keys and the same alignment.
+This is the team collator. It was reviewed against the alignment checklist in
+IO_STANDARD.md (special token IDs from the tokenizer, -1 at CLS/SEP/PAD, labels
+shifted right by one, truncation applied to inputs and labels together).
+tests/check_collator.py checks the alignment and the padding behaviour.
 """
 import argparse
 import os
