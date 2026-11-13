@@ -1,4 +1,4 @@
-# Experiment IO Standard (v0.2)
+# Experiment IO Standard (v0.3)
 
 Owner: Yufan · Applies to: `project_update_2/` and the Final deliverables (Performance JSONs)
 Status: **DRAFT for group review.** Items marked `[CONFIRM]` need a group decision; items marked
@@ -77,7 +77,7 @@ Allowed characters: letters, digits, `.`, `-`, `_`.
 | `overfit`, `log_every` | args | |
 | `device`, `torch`, `total_steps`, `epochs_run`, `n_train`, `n_validation` | computed | |
 
-`[GAP]` (owner: Yufan, one small PR to `train.py`) — add:
+Added by PR #11 (Yufan):
 
 | Field | Why |
 |---|---|
@@ -88,7 +88,7 @@ Allowed characters: letters, digits, `.`, `-`, `_`.
 | `git_commit` | code version |
 | `transformers` | library version (torch is already recorded) |
 
-The same PR adds a **tokenizer/backbone guard** (see §7).
+The same PR adds the **tokenizer/backbone guard** (see §7). `--data-tag` is now required.
 
 ---
 
@@ -153,7 +153,7 @@ The logistic regression baseline writes the same file (`backbone = "logreg"`).
 
 ```json
 {
-  "io_version": "0.2",
+  "io_version": "0.3",
   "run_id": "xlmr_v1.1_s6140_20261113-1430",
   "split": "validation",
   "threshold": 0.31,
@@ -184,6 +184,7 @@ The logistic regression baseline writes the same file (`backbone = "logreg"`).
     "metric": "per_pair.switch.f1",
     "ddof": 0,
     "sigma_all": {"value": 0.0, "n_pairs": 14, "mean": 0.0},
+    "sigma_core10": {"value": 0.0, "n_pairs": 10, "mean": 0.0},
     "sigma_by_lid_method": {
       "script_rule": {"value": 0.0, "n_pairs": 6, "mean": 0.0},
       "llm":         {"value": 0.0, "n_pairs": 4, "mean": 0.0},
@@ -200,12 +201,21 @@ The logistic regression baseline writes the same file (`backbone = "logreg"`).
 - **Duration accuracy / macro F1** — over rows with `y_duration != -1` (gold switches), using
   `duration_pred`. This measures the duration head alone. Both are required: ~65% of bursts are
   Large, so accuracy alone flatters a model that always says "long".
-- **joint_macro_f1** — same definition as the Update 1 baseline. `[CONFIRM]` Yulun / Qianfu paste it here.
+- **joint_macro_f1** — same definition as the Update 1 baseline: `joint_duration_macro_f1` from
+  `score_group()` in `deliverables/cora/logistic_regression/metrics.py` (frozen for comparability).
+  Per duration class k: TP = predicted switch, gold switch, and correct duration; FP = predicted
+  switch but no gold switch or a wrong duration (counted in the predicted class); FN = a gold switch
+  with a known duration that was missed or given the wrong duration (counted in the gold class).
+  Gold switches without a duration label are skipped. Score = mean F1 over the 3 classes.
+  The evaluation code calls `score_group()` directly instead of re-implementing it.
 - **by_boundary** — `after_punct`: subword x_t is punctuation; `non_punct`: all other positions.
   Same rule as the Update 1 baseline evaluation.
 - **σ (universality)** — population std (`ddof = 0`) of per-pair switch F1 at the run's
-  threshold; over all 14 pairs and within each LID group.
-  `[CONFIRM]` that "three versions of σ" means the three LID groups.
+  threshold; over all 14 pairs, within each LID group, and over the core 10 pairs.
+- **core 10 pairs** — all pairs except fr_en, de_en, it_en, philippines_en (`SCREENED_PAIRS` in the
+  baseline's `metrics.py`). After the Update 1 screening these four keep only the retained part of
+  their data, so they are not a comparable sample. The core 10 are exactly the `script_rule` and
+  `llm` groups.
 - **by_cs_type** — optional for Update 2; needed for the Final (intra- vs inter-sentential).
 
 ### LID method groups
@@ -217,7 +227,7 @@ The logistic regression baseline writes the same file (`backbone = "logreg"`).
 | `lingua` | fr_en, de_en, it_en, philippines_en |
 
 \* hi_en is Rule + Claude; grouped as `llm` because most of its text is romanized.
-`[CONFIRM]` pair names match `language_pair` values in the data.
+Pair names are the `language_pair` values in the data (confirmed by Yulun; DATA_V1.1.md §4 uses the same names).
 
 ---
 
@@ -234,16 +244,19 @@ The logistic regression baseline writes the same file (`backbone = "logreg"`).
 
 ---
 
-## 7. Tokenizer/backbone guard `[GAP]` (owner: Yufan)
+## 7. Tokenizer/backbone guard (PR #11)
 
 `train.py` stops when a token id is ≥ the backbone's vocabulary size. That catches XLM-R data
 fed to mBERT (XLM-R ids reach ~250k, mBERT has ~120k), but **not** mBERT data fed to XLM-R:
 every mBERT id is a valid XLM-R id, so training would run on meaningless inputs without any error.
 
-Fix: `train.py` and `predict.py` take `--tokenizer-dir` (the frozen tokenizer folder from
-`pipeline.py prepare-tokenizer`), read its `tokenizer_manifest.json`, and stop unless
-(a) `manifest["model"]` equals `BACKBONES[backbone]` and (b) every data row's
-`tokenizer_sha256` equals `manifest["tokenizer_sha256"]`. Both values go into `config.json`.
+Fix (`provenance.check_tokenizer`): every data row stores `tokens`, written by `pipeline.py` as
+`tokenizer.convert_ids_to_tokens(input_ids)`. Before training (and in `predict.py`, before the
+model weights are loaded), the data file is read once more and each row's `input_ids` are converted
+with the backbone's tokenizer; the run stops unless the result equals the stored `tokens`.
+`load_rows` keeps dropping `tokens` (no raw text reaches the model code). The row's
+`tokenizer_sha256` is recorded in `config.json`. No hash is hard-coded, so the check keeps working
+when a tokenizer is re-frozen (e.g. data-v1.1).
 
 ---
 
@@ -261,3 +274,5 @@ Fix: `train.py` and `predict.py` take `--tokenizer-dir` (the frozen tokenizer fo
 - v0.1.1 (2026-11-10) — context mode fixed to whole sequence + causal mask
 - v0.2 (2026-11-12) — rewritten to match PR #9 outputs: `runs/` vs `results/`, real field names,
   split name `validation`, threshold criterion, gaps with owners, tokenizer guard
+- v0.3 (2026-11-13) — Yulun's review: joint_macro_f1 definition (reuse `score_group()`),
+  pair names confirmed, σ adds `sigma_core10`
