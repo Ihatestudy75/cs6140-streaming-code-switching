@@ -9,10 +9,11 @@ Examples (from repo root):
   # Sanity check: overfit 32 training sequences
   .venv-train/Scripts/python.exe project_update_2/train.py --backbone mbert \
       --data D/labeled_tokens.jsonl --splits D/splits.jsonl --out project_update_2/runs/overfit_mbert \
-      --overfit 32 --lr 5e-5 --max-steps 300
+      --data-tag data-v1.0 --overfit 32 --lr 5e-5 --max-steps 300
   # Normal training
   .venv-train/Scripts/python.exe project_update_2/train.py --backbone mbert \
-      --data D/labeled_tokens.jsonl --splits D/splits.jsonl --out project_update_2/runs/mbert
+      --data D/labeled_tokens.jsonl --splits D/splits.jsonl --out project_update_2/runs/mbert \
+      --data-tag data-v1.0
 """
 import argparse
 import json
@@ -24,6 +25,7 @@ import time
 
 import numpy as np
 import torch
+import transformers
 from sklearn.metrics import f1_score, precision_score, recall_score
 from torch.utils.data import DataLoader
 from transformers import AutoTokenizer, get_linear_schedule_with_warmup
@@ -32,6 +34,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from data import Collator, SequenceDataset, load_rows  # noqa: E402
 from losses import multitask_loss  # noqa: E402
 from model import BACKBONES, DualHeadModel  # noqa: E402
+from provenance import check_tokenizer, file_sha256, git_commit  # noqa: E402
 
 
 def set_seed(seed):
@@ -102,6 +105,7 @@ def main():
     p.add_argument('--overfit', type=int, default=0,
                    help='sanity check: train AND evaluate on the first N training sequences, dropout 0')
     p.add_argument('--log-every', type=int, default=1)
+    p.add_argument('--data-tag', required=True, help='e.g. data-v1.1')
     args = p.parse_args()
 
     if args.amp == 'fp16':
@@ -118,6 +122,7 @@ def main():
         val_rows = train_rows
         args.dropout = 0.0
     tokenizer = AutoTokenizer.from_pretrained(BACKBONES[args.backbone])
+    tokenizer_sha256 = check_tokenizer(args.data, tokenizer, args.backbone)
     max_id = max(max(r['input_ids']) for r in train_rows + val_rows)
     if max_id >= len(tokenizer):
         raise SystemExit(f'Data has token ID {max_id} but the {args.backbone} vocabulary has {len(tokenizer)} entries: '
@@ -143,7 +148,9 @@ def main():
 
     config = dict(vars(args), device=device, total_steps=total_steps, epochs_run=epochs,
                   n_train=len(train_rows), n_validation=len(val_rows),
-                  model_id=BACKBONES[args.backbone], torch=torch.__version__)
+                  model_id=BACKBONES[args.backbone], torch=torch.__version__,
+                  tokenizer_sha256=tokenizer_sha256, data_sha256=file_sha256(args.data),
+                  git_commit=git_commit(), transformers=transformers.__version__)
     with open(os.path.join(args.out, 'config.json'), 'w', encoding='utf-8') as f:
         json.dump(config, f, indent=2)
     print(f'{args.backbone}: {len(train_rows)} train / {len(val_rows)} val sequences, '

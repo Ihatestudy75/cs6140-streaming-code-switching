@@ -34,6 +34,7 @@ from transformers import AutoTokenizer
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from data import Collator, SequenceDataset, load_rows  # noqa: E402
 from model import BACKBONES, DualHeadModel  # noqa: E402
+from provenance import check_tokenizer  # noqa: E402
 
 THRESHOLDS = np.round(np.arange(0.05, 0.951, 0.01), 2)
 
@@ -87,10 +88,12 @@ def main():
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
     ckpt = torch.load(os.path.join(a.run, 'best.pt'), map_location='cpu', weights_only=False)
     cfg = ckpt['config']
+    tokenizer = AutoTokenizer.from_pretrained(BACKBONES[cfg['backbone']])
+    check_tokenizer(a.data, tokenizer, cfg['backbone'])    # stop before loading the model weights
+    collate = Collator.from_tokenizer(tokenizer, cfg['max_len'])
     model = DualHeadModel(cfg['backbone'], dropout=0.0)
     model.load_state_dict(ckpt['model'])
     model.to(device)
-    collate = Collator.from_tokenizer(AutoTokenizer.from_pretrained(BACKBONES[cfg['backbone']]), cfg['max_len'])
     rows = load_rows(a.data, a.splits, a.split)
     preds = predict(model, DataLoader(SequenceDataset(rows), batch_size=a.batch_size, collate_fn=collate), device)
 
