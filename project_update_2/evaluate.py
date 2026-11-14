@@ -25,12 +25,13 @@ from collections import defaultdict
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(REPO, 'deliverables', 'cora', 'logistic_regression'))
 from boundary_rules import boundary_group, boundary_kind  # noqa: E402
-from metrics import SCREENED_PAIRS, score_group  # noqa: E402
+from metrics import score_group  # noqa: E402
 
+# data-v1.1: fr/de/it/philippines were resampled from the raw CSV with the same rule as the
+# other pairs and relabeled with the LLM method, so there is no Lingua group and no screened subset.
 LID_GROUPS = {
     'script_rule': ['ar_en', 'zh_en', 'ja_en', 'yue_en', 'ko_en', 'ru_en'],
-    'llm': ['es_en', 'vi_en', 'ms_en', 'hi_en'],
-    'lingua': ['fr_en', 'de_en', 'it_en', 'philippines_en'],
+    'llm': ['es_en', 'vi_en', 'ms_en', 'hi_en', 'fr_en', 'de_en', 'it_en', 'philippines_en'],
 }
 
 
@@ -126,11 +127,9 @@ def main():
 
     # 4. Universality: spread of per-pair switch F1.
     all_pairs = sorted(per_pair)
-    core10 = [pair for pair in all_pairs if pair not in SCREENED_PAIRS]
     universality = {
         'metric': 'per_pair.switch_f1', 'ddof': 0,
         'sigma_all': sigma(per_pair, all_pairs),
-        'sigma_core10': sigma(per_pair, core10),
         'sigma_by_lid_method': {g: sigma(per_pair, pairs) for g, pairs in LID_GROUPS.items()},
     }
 
@@ -142,7 +141,7 @@ def main():
     absent = sorted(known - set(all_pairs))
     if absent:
         print(f'WARNING: {len(absent)} of 14 pairs have no {a.split} positions: {absent}')
-    out = {'io_version': '0.3', 'run': meta.get('run', a.run), 'backbone': meta.get('backbone'),
+    out = {'io_version': '0.5', 'run': meta.get('run', a.run), 'backbone': meta.get('backbone'),
            'split': a.split, 'threshold': threshold, 'n_positions': len(rows),
            'pooled': pooled, 'per_pair': per_pair, 'by_lid_method': by_lid_method, 'by_boundary': by_boundary,
            'universality': universality}
