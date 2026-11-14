@@ -1,0 +1,12 @@
+{
+  "run": "logreg_v1.1_s6140_20261113_mac",
+  "backbone": "logreg",
+  "model_id": "causal-hashed-logistic-regression",
+  "split": "validation",
+  "threshold": 0.27,
+  "n_sequences": 2180,
+  "n_valid_labels_total": 55912,
+  "n_dropped_by_truncation": 0,
+  "n_positions": 55912,
+  "n_true_switches": 3865
+}
