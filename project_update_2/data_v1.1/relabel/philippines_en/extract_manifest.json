@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "source_file": "Philippines_eng.csv",
+  "source_sha256": "b111cae514ec95ba29df66f9cae9df341e8e855830753ec3b51f8bb6d328cca2",
+  "language_pair": "philippines_en",
+  "input_records": 8537,
+  "output_items": 25825,
+  "limit": 0,
+  "issues": 231,
+  "sequence_policy": "one_extracted_item_no_concatenation",
+  "sample": {
+    "n": 500,
+    "seed": 6140,
+    "rule": "random.Random(f'{seed}:{pair}').sample(range(1, total+1), n)",
+    "records_with_items": 500,
+    "items": 1525,
+    "issues": 32,
+    "full_texts_sha256": "2c562bd2dee34c8c5d84251114d7b073a9aa618fbf1ba37ec303652db45b5af5"
+  }
+}
