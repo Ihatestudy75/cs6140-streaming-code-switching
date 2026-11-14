@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "source_file": "French_eng.csv",
+  "source_sha256": "62970a8adc631380774045bf13478bb7b059508f73caef218da50ee060f238d0",
+  "language_pair": "fr_en",
+  "input_records": 8070,
+  "output_items": 23563,
+  "limit": 0,
+  "issues": 44,
+  "sequence_policy": "one_extracted_item_no_concatenation",
+  "sample": {
+    "n": 500,
+    "seed": 6140,
+    "rule": "random.Random(f'{seed}:{pair}').sample(range(1, total+1), n)",
+    "records_with_items": 500,
+    "items": 1524,
+    "issues": 4,
+    "full_texts_sha256": "892608bc788e2549ba580368346fa098d7d8676034309c6f3fa878ed5219457c"
+  }
+}
