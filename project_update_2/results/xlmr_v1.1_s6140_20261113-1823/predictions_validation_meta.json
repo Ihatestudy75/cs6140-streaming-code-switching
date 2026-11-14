@@ -1,0 +1,15 @@
+{
+  "run": "project_update_2/runs/xlmr_v1.1_s6140_20261113-1823",
+  "backbone": "xlmr",
+  "model_id": "FacebookAI/xlm-roberta-base",
+  "split": "validation",
+  "threshold": 0.35,
+  "n_sequences": 2180,
+  "n_positions": 49590,
+  "n_true_switches": 3893,
+  "checkpoint_epoch": 4,
+  "max_len": 128,
+  "n_valid_labels_total": 49590,
+  "n_dropped_by_truncation": 0,
+  "n_switches_dropped_by_truncation": 0
+}
