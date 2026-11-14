@@ -1,4 +1,4 @@
-# Experiment IO Standard (v0.4)
+# Experiment IO Standard (v0.5)
 
 Owner: Yufan · Applies to: `project_update_2/` and the Final deliverables (Performance JSONs)
 Status: **DRAFT for group review.** Items marked `[CONFIRM]` need a group decision; items marked
@@ -160,7 +160,6 @@ and local only: it supplies `text` and `offsets` for the punctuation groups; not
 Scoring code is **not re-implemented**. `evaluate.py` imports from the frozen baseline folder
 `deliverables/cora/logistic_regression/`:
 - `metrics.score_group()` for every switch / duration number,
-- `metrics.SCREENED_PAIRS` for `sigma_core10`,
 - `boundary_rules.boundary_kind()` / `boundary_group()` for `by_boundary`.
 
 The logistic regression baseline is scored with the same script (`backbone = "logreg"`), so every
@@ -170,7 +169,7 @@ number in the comparison table comes from the same code.
 
 ```json
 {
-  "io_version": "0.4",
+  "io_version": "0.5",
   "run": "xlmr_v1.1_s6140_20261113-1430",
   "backbone": "xlmr",
   "split": "validation",
@@ -178,17 +177,15 @@ number in the comparison table comes from the same code.
   "n_positions": 98123,
   "pooled":        { "...": "score_group output, see below" },
   "per_pair":      { "fr_en": { "...": "score_group output" } },
-  "by_lid_method": { "script_rule": { "...": "score_group output" }, "llm": {}, "lingua": {} },
+  "by_lid_method": { "script_rule": { "...": "score_group output" }, "llm": {} },
   "by_boundary":   { "punctuation": {}, "within_clause_proxy": {}, "unclassified": {} },
   "universality": {
     "metric": "per_pair.switch_f1",
     "ddof": 0,
     "sigma_all":    {"value": 0.0, "mean": 0.0, "n_pairs": 14},
-    "sigma_core10": {"value": 0.0, "mean": 0.0, "n_pairs": 10},
     "sigma_by_lid_method": {
       "script_rule": {"value": 0.0, "mean": 0.0, "n_pairs": 6},
-      "llm":         {"value": 0.0, "mean": 0.0, "n_pairs": 4},
-      "lingua":      {"value": 0.0, "mean": 0.0, "n_pairs": 4}
+      "llm":         {"value": 0.0, "mean": 0.0, "n_pairs": 8}
     }
   }
 }
@@ -220,13 +217,14 @@ how long is it?"). Accuracy and macro F1 are both reported because ~65% of burst
   → `punctuation`; otherwise → `within_clause_proxy`; nothing observed → `unclassified`.
   `within_clause_proxy` is a proxy, not a syntactic clause label.
 - **σ (universality)** — population std (`ddof = 0`) of per-pair `switch_f1` at the run's single
-  threshold: over all pairs present (`sigma_all`), over the core 10 pairs (`sigma_core10`), and within
-  each LID group. **With fewer than 2 pairs, `value` is `null`** (`mean` and `n_pairs` are still given):
+  threshold: over all pairs present (`sigma_all`) and within each LID group. **With fewer than 2 pairs, `value` is `null`** (`mean` and `n_pairs` are still given):
   the std of one number is 0, which would wrongly read as "perfectly universal".
   A whole entry is `null` when none of its pairs is present.
-- **core 10 pairs** — all pairs except `SCREENED_PAIRS` (fr_en, de_en, it_en, philippines_en). After
-  the Update 1 screening these four keep only the retained part of their data, so they are not a
-  comparable sample. The core 10 are exactly the `script_rule` and `llm` groups.
+- **No `sigma_core10` in data-v1.1.** It excluded fr_en, de_en, it_en and philippines_en because after
+  the Update 1 screening they kept only part of their data. In data-v1.1 these four are resampled from
+  the raw CSV (500 records, seed `6140:<pair>`, the same rule as the other pairs) without screening, so
+  all 14 pairs are comparable samples and the exclusion has no basis. (The frozen baseline `metrics.py`
+  still defines `SCREENED_PAIRS` for Update 1; `evaluate.py` does not use it.)
 - **by_cs_type** — deferred to the Final (intra- vs inter-sentential analysis).
 - `evaluate.py` prints a warning when a pair is missing from the split or is not in any LID group.
 
@@ -235,10 +233,11 @@ how long is it?"). Accuracy and macro F1 are both reported because ~65% of burst
 | Group | Pairs |
 |---|---|
 | `script_rule` | ar_en, zh_en, ja_en, yue_en, ko_en, ru_en |
-| `llm` | es_en, vi_en, ms_en, hi_en* |
-| `lingua` | fr_en, de_en, it_en, philippines_en |
+| `llm` | es_en, vi_en, ms_en, hi_en*, fr_en, de_en, it_en, philippines_en |
 
 \* hi_en is Rule + Claude; grouped as `llm` because most of its text is romanized.
+fr_en, de_en, it_en and philippines_en used Lingua in Update 1; in data-v1.1 they are relabeled with
+the LLM method (Yulun), so there is no Lingua group.
 Pair names are the `language_pair` values in the data (confirmed by Yulun; DATA_V1.1.md §4 uses the same names).
 
 ---
@@ -291,3 +290,5 @@ when a tokenizer is re-frozen (e.g. data-v1.1).
 - v0.4 (2026-11-13) — §5 rewritten to match `evaluate.py`: `score_group()` field names, `by_lid_method`,
   `by_boundary` from the baseline's `boundary_rules.py`, σ is `null` with fewer than 2 pairs,
   `by_cs_type` deferred to the Final
+- v0.5 (2026-11-13) — data-v1.1 relabels fr/de/it/philippines with the LLM method on a fresh
+  unscreened sample: LID groups become `script_rule` (6) and `llm` (8); `sigma_core10` removed
