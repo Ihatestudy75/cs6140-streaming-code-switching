@@ -1,0 +1,32 @@
+{
+  "switch_f1": {
+    "original": 0.5804799137233756,
+    "enhanced": 0.5954692556634305,
+    "delta_percentage_points": 1.4989341940054857
+  },
+  "precision": {
+    "original": 0.6059667886293273,
+    "enhanced": 0.5958549222797928,
+    "delta_percentage_points": -1.0111866349534537
+  },
+  "recall": {
+    "original": 0.5570504527813713,
+    "enhanced": 0.5950840879689522,
+    "delta_percentage_points": 3.803363518758085
+  },
+  "duration_accuracy_oracle_switch": {
+    "original": 0.553984226271417,
+    "enhanced": 0.5760130541202066,
+    "delta_percentage_points": 2.202882784878968
+  },
+  "duration_macro_f1_oracle_switch": {
+    "original": 0.5514033940016757,
+    "enhanced": 0.5715526903706813,
+    "delta_percentage_points": 2.0149296369005643
+  },
+  "joint_duration_macro_f1": {
+    "original": 0.34960886796838314,
+    "enhanced": 0.348975361249104,
+    "delta_percentage_points": -0.06335067192791421
+  }
+}

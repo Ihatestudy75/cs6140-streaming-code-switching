@@ -1,0 +1,7 @@
+comparison,mode,candidates,best_switch_f1,best_duration_macro_f1
+matched_original_grid_window5,base,4,0.5804799137233756,0.5514033940016757
+matched_original_grid_window5,morph,4,0.5836898395721926,0.5615215434712653
+matched_original_grid_window5,script,4,0.5860391744445905,0.5660673621857119
+matched_original_grid_window5,all,4,0.5878619595398651,0.5714487389318945
+matched_expanded_grid,base,40,0.5815038419319429,0.5530482100790581
+matched_expanded_grid,all,40,0.5954692556634305,0.5715526903706813
