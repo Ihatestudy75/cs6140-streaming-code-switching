@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "source_file": "Italian_eng.csv",
+  "source_sha256": "d76eac6442a157187b57069eeba2553205af7d82473da821f58ae54d393a1767",
+  "language_pair": "it_en",
+  "input_records": 7979,
+  "output_items": 24165,
+  "limit": 0,
+  "issues": 55,
+  "sequence_policy": "one_extracted_item_no_concatenation",
+  "sample": {
+    "n": 500,
+    "seed": 6140,
+    "rule": "random.Random(f'{seed}:{pair}').sample(range(1, total+1), n)",
+    "records_with_items": 500,
+    "items": 1492,
+    "issues": 0,
+    "full_texts_sha256": "b80d491123c43acb1518d860ef533015d4c1bc57d50f5e24876e904061b8b07a"
+  }
+}

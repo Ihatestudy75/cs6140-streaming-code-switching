@@ -3,8 +3,11 @@
 Owner: Yulun · Applies to: all 14 language pairs for Update 2 and the Final
 
 data-v1.1 is the Update 1 data, re-tokenized with two frozen tokenizers (mBERT and XLM-R)
-and split once for all 14 pairs together. The LID labels are **not** redone: every pair
-keeps its Update 1 method. The Update 1 processing standard
+and split once for all 14 pairs together. The LID labels are **not** redone for 10 pairs:
+they keep their Update 1 method. The exception is the four Update 1 Lingua pairs (`fr_en`,
+`de_en`, `it_en`, `philippines_en`), which were re-sampled and relabeled with Claude for v1.1
+because Lingua missed most short switches; see [`RELABEL_V1_1.md`](RELABEL_V1_1.md).
+The Update 1 processing standard
 ([`project_update_1/README.md`](../project_update_1/README.md#shared-standard)) still applies;
 this file lists only what is new or fixed for v1.1.
 
@@ -83,17 +86,34 @@ non-empty `--out` folder, so delete the pair's folder before a rerun.
 `labeled_tokens.jsonl` contains the original sentences. **Never commit it, and never put
 it anywhere public** (SwitchLingua licence). Yulun commits the text-free files
 (`stats.json`, `manifest.json`, `token_issues.jsonl`, `splits.jsonl`, `split_manifest.json`)
-together with the split.
+together with the split, in [`data_v1.1/`](data_v1.1/) (§4).
 
-## 4. Pairs and LID groups
+## 4. Pairs, LID groups and where to find them
 
 `language_pair` values in the data:
 
-| LID group | Pairs | Owner |
-|---|---|---|
-| `script_rule` | `ar_en`, `zh_en`, `ja_en` · `yue_en`, `ko_en`, `ru_en` | Yulun · Shaoyu |
-| `llm` | `es_en`, `vi_en`, `hi_en` (script rule + Claude) · `ms_en` (DeepSeek) | Yulun · Shaoyu |
-| `lingua` | `fr_en`, `de_en`, `it_en`, `philippines_en` | Yufan |
+| LID group | Pairs | Update 1 owner | v1.1 LID |
+|---|---|---|---|
+| `script_rule` | `ar_en`, `zh_en`, `ja_en` · `yue_en`, `ko_en`, `ru_en` | Yulun · Shaoyu | Update 1 labels |
+| `llm` | `es_en`, `vi_en`, `hi_en` (script rule + Claude) · `ms_en` (DeepSeek) | Yulun · Shaoyu | Update 1 labels |
+| `llm` | `fr_en`, `de_en`, `it_en`, `philippines_en` (Claude) | Yufan (Lingua) | relabeled by Yulun ([`RELABEL_V1_1.md`](RELABEL_V1_1.md)) |
+
+The `lingua` group of Update 1 no longer exists in v1.1.
+
+Text-free files (in this repository):
+
+| What | Where |
+|---|---|
+| Per pair and backbone: `stats.json`, `manifest.json`, `token_issues.jsonl` (all 14 pairs) | [`data_v1.1/{mbert,xlmr}/<pair>/`](data_v1.1/) |
+| The split: `splits.jsonl`, `split_manifest.json` | [`data_v1.1/{mbert,xlmr}/combined/`](data_v1.1/) |
+| Statistics table (14 pairs × 2 backbones) | [`data_v1.1_stats.md`](data_v1.1_stats.md) · [`.csv`](data_v1.1_stats.csv) |
+| fr/de/it/philippines: labels as character offsets, sample and pilot ids, `cs_type`, review and harmonization records | [`data_v1.1/relabel/<pair>/`](data_v1.1/relabel/) |
+| ar/zh/ja/es/vi/hi: Update 1 records (labels, ids, `cs_type`, review) | [`deliverables/yulun/<pair>/`](../deliverables/yulun/) |
+| yue/ko/ru/ms: Update 1 records | [`deliverables/shaoyu/<pair>/`](../deliverables/shaoyu/) |
+| fr/de/it/philippines, Update 1 Lingua version (superseded, not used in v1.1) | branch `data/yufan`, `deliverables/yufan/` |
+
+Files with text (private Drive only): `data-v1.1_combined.zip` holds
+`{mbert,xlmr}/combined/{labeled_tokens,splits,split_manifest}`, the inputs of `train.py`.
 
 ## 5. Split (Yulun)
 
@@ -101,14 +121,23 @@ One split run per backbone over all 14 pairs, with the pilot records forced into
 They were inspected during LID development and must not reach validation or test:
 
 ```bash
-cat <all 14 pilot_record_ids files> > all_pilot_record_ids.txt
-$PY project_update_1/pipeline.py split --seed 6140 --train-records all_pilot_record_ids.txt \
-  --inputs project_update_1/data/v1.1/$BB/*/labeled_tokens.jsonl --out project_update_1/data/v1.1/$BB/combined
+# <pilot-dir> holds every pair's pilot_record_ids .txt file
+$PY project_update_2/data_v1_1.py split --pilot-dir <pilot-dir>
+$PY project_update_2/data_v1_1.py stats-table --out project_update_2/data_v1.1_stats
+$PY project_update_2/data_v1_1.py export --out project_update_2/data_v1.1
 ```
 
+`split` refuses to run unless all 14 pairs exist for both backbones and every pair has pilot
+ids. It writes `project_update_1/data/v1.1/{mbert,xlmr}/combined/` (`labeled_tokens.jsonl`,
+`splits.jsonl`, `split_manifest.json`): the inputs of `train.py --data` / `--splits`.
 The assignment depends only on `record_id`, the text and `language_pair`, not on the
-tokenizer. The mBERT and XLM-R `splits.jsonl` must therefore give every `sequence_id` the
-same split. This is checked before the `data-v1.1` tag is pushed.
+tokenizer, so the mBERT and XLM-R `splits.jsonl` must give every `sequence_id` the same split;
+`split` checks this at the end (`compare-splits`) and fails otherwise. `export` copies the
+text-free files into the repository; it refuses any row with a text field and rewrites local
+absolute paths as repository paths.
+
+Result (seed 6140): 22,929 sequences, train 18,601 / validation 2,180 / test 2,148, identical
+for both backbones; 280 pilot records (20 per pair) in train.
 
 ## 6. Fixed rules (v1.1)
 
@@ -117,10 +146,12 @@ same split. This is checked before the `data-v1.1` tag is pushed.
 | Duration unit | subwords of the backbone's own tokenizer, so mBERT and XLM-R labels differ |
 | Neutral tokens (punctuation, digits) | `inherit_previous` |
 | End of sequence | `observed` |
-| LID | Update 1 labels, not redone; unreviewed, so `--allow-unreviewed` |
+| LID | Update 1 labels, not redone, except fr/de/it/philippines (relabeled with Claude); unreviewed except the pilot records, so `--allow-unreviewed` |
 | Split seed | 6140; pilot records forced into train |
 | Deferred to the Final | merging entries per record; ambiguous words such as "at" |
 
 ## Changelog
 
 - v1.1 (2026-11-12): XLM-R tokenizer frozen; one split for all 14 pairs (Yulun)
+- v1.1 (2026-11-13): fr/de/it/philippines re-sampled from the full CSVs and relabeled with
+  Claude (LID group `lingua` → `llm`); 14-pair split done; text-free files in `data_v1.1/` (Yulun)
