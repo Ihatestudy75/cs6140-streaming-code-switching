@@ -1,0 +1,15 @@
+{
+  "run": "project_update_2/runs/mbert_v1.1_s6140_20261113-1805",
+  "backbone": "mbert",
+  "model_id": "google-bert/bert-base-multilingual-cased",
+  "split": "validation",
+  "threshold": 0.34,
+  "n_sequences": 2180,
+  "n_positions": 55912,
+  "n_true_switches": 3865,
+  "checkpoint_epoch": 4,
+  "max_len": 128,
+  "n_valid_labels_total": 55912,
+  "n_dropped_by_truncation": 0,
+  "n_switches_dropped_by_truncation": 0
+}
