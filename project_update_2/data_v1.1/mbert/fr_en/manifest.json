@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "tokenizer": {
+    "model": "google-bert/bert-base-multilingual-cased",
+    "revision": "3f076fdb1ab68d5b2880cb87a0886f315b8146f8",
+    "tokenizer_sha256": "78b44c32238e3b5e83d1deaa63c3fa1466ddf73547ce641a36f75180079ab45f"
+  },
+  "neutral_policy": "inherit_previous",
+  "end_policy": "observed",
+  "texts_sha256": "82a27618bc81f67d56f0d5cd97449908b751af3bbccd8eeaecf69e209dc76ba6",
+  "lid_sha256": "5181d5c1a1d8698b55ea3514a439dc67fb128d9818a419b95d82a3e9c8dd25a0",
+  "pipeline_sha256": "1fd93f7bf15ab3970d7211f11c9938acddc222c5e7dafee7d150f5c8832c9a0c",
+  "allow_unreviewed": true,
+  "versions": {
+    "transformers": "4.57.6",
+    "tokenizers": "0.22.2"
+  }
+}

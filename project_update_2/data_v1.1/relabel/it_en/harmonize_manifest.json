@@ -1,0 +1,8 @@
+{
+  "source_work": "project_update_1/data/v1.1_relabel/it_en/claude_work",
+  "candidates": 3604,
+  "changes": 146,
+  "candidates_sha256": "ac6b3d215096b74439c4c45e6d0223c072ef4f520b6238eb9884dc17b7becdf7",
+  "decisions_sha256": "108545a9e75ae88324d68cc42ab7e1b200d40b24d803015c0bc4da0f681f139c",
+  "script_sha256": "3ef33b726b907e89f7d97cfdd2e11f45f1e0f925e0ca8f1ff5fe70c69158336a"
+}
