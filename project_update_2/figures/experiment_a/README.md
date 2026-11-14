@@ -11,6 +11,14 @@ mBERT and XLM-R training/validation curves from the committed Experiment A runs.
 
 [PDF version](experiment_a_convergence.pdf)
 
+## Per-pair switch F1
+
+Enhanced LR baseline, mBERT and XLM-R on the 14 data-v1.1 validation language pairs. Each model uses its validation-tuned threshold (0.25 / 0.34 / 0.35). Values come from the verified [comparison table](comparison/README.md). XLM-R uses different subword positions from LR and mBERT.
+
+![Per-pair switch F1](experiment_a_per_pair_f1.png)
+
+[PDF](experiment_a_per_pair_f1.pdf) · [SVG](experiment_a_per_pair_f1.svg)
+
 ## Reproduce
 
 Requires Python, NumPy and Matplotlib. From the repository root:
