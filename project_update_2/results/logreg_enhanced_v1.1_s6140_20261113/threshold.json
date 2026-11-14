@@ -1,0 +1,10 @@
+{
+  "threshold": 0.25,
+  "validation_switch_f1": 0.5954692556634305,
+  "validation_switch_f1_at_0_5": 0.5260529382387215,
+  "grid": [
+    0.05,
+    0.95,
+    0.01
+  ]
+}
