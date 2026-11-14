@@ -1,0 +1,9 @@
+{
+  "lid_source": "Claude word-level LID (annotate_claude.py + claude_lid_instructions_v1_1.md), harmonized",
+  "items": 1492,
+  "reviewed_items": 57,
+  "review_rows": 57,
+  "fixes": 1,
+  "pilot_rule": "random.Random(f'{seed}:{pair}:pilot').sample(sorted record_ids with items, 20)",
+  "relabel_script_sha256": "1a5591d569c64003deddb8042d9619751f4eb9a45f8f0eabeafebb3ad34aa822"
+}

@@ -1,0 +1,9 @@
+{
+  "texts": "project_update_1/data/v1.1_relabel/de_en/extraction/texts.jsonl",
+  "texts_sha256": "cb12002440c92b8f04379bc2b8f36da6de181a8b15aadfc37728a4a29a0e7baf",
+  "items": 1437,
+  "batch_size": 100,
+  "script_native": false,
+  "batches": 15,
+  "script_sha256": "3ef33b726b907e89f7d97cfdd2e11f45f1e0f925e0ca8f1ff5fe70c69158336a"
+}

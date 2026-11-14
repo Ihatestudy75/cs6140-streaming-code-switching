@@ -1,0 +1,45 @@
+{
+  "method": "claude-word-level-lid",
+  "model": "claude-opus-5-5",
+  "interface": "Claude Code (interactive session, subagents: 2 labelers + 1 harmonizer per pair)",
+  "prompt": "claude_lid_instructions.md (LID_PROMPT.md v1.0, applied per word)",
+  "script_native": false,
+  "date": "2026-11-13",
+  "input_texts": "project_update_1/data/v1.1_relabel/philippines_en/extraction/texts.jsonl",
+  "sequences": 1525,
+  "non_space_chars_by_label": {
+    "philippines": 66966,
+    "NEUTRAL": 4580,
+    "en": 71386,
+    "UNKNOWN": 2204
+  },
+  "labels_sha256": {
+    "batch_001.labels.jsonl": "0227c19a61298fea9c193b3c1eafc4cd6c145d9f97fe55c7268f11bc2a213c19",
+    "batch_002.labels.jsonl": "ff1461b93e170ad0a7099617c1169b60844fcbc90024c32954214f9a0be79432",
+    "batch_003.labels.jsonl": "2105a9b6be798409e6fe3d5d79f2ba089ce020c9ac410bb0a0f550dc7ab6c014",
+    "batch_004.labels.jsonl": "962270807045cd1feca0cf19fe86d0c6f647d190618c45b8afaad76f735a989b",
+    "batch_005.labels.jsonl": "6ee113ca0c5dc64ffef5710a683cb2b5820e35e44217093936e27203b95e794a",
+    "batch_006.labels.jsonl": "fba2fbdf80c33925edb55eba19c5ed42053e0ece68797642c46b79439b3130f7",
+    "batch_007.labels.jsonl": "83701330156ed886023225965fdc79ac77e38938006250951ae03896bce0b857",
+    "batch_008.labels.jsonl": "97395ea71e7141b3e288eb91adc3ac7bd72cc68ca858f7146b90eb4d1260d52b",
+    "batch_009.labels.jsonl": "d83f0739ad14eee94cf7dcde61bb392c08c7cc1f4af90c2d095ad2dd7cb1a52c",
+    "batch_010.labels.jsonl": "e332cd6627cf426028c779b76870057a6def9f5963fb59102194be11adec748f",
+    "batch_011.labels.jsonl": "75638c7497a1b834db3c9159670f71e84d4acb6d729f3ae8ac9c2bbeda221ea4",
+    "batch_012.labels.jsonl": "b904869c6e93b6f080b5be5cd0cc703b5262618d250f62aa4276ba4282dacb8d",
+    "batch_013.labels.jsonl": "ef699120060caf8545ed39658f7d17114ba61a6b247feba46e3dd0967e66bed4",
+    "batch_014.labels.jsonl": "44223f4ab95fe2337eb62c23f6bfa1fab256785f269a1e1aeca63217a777cade",
+    "batch_015.labels.jsonl": "c8a77f8cdd81d15cf197552de369f8146f4ea480d4c440288d78c853dc617780",
+    "batch_016.labels.jsonl": "5945e07b277c27288a322ac5571267b89d25d4d86819331a72e3777cc70c0cad"
+  },
+  "script_sha256": "3ef33b726b907e89f7d97cfdd2e11f45f1e0f925e0ca8f1ff5fe70c69158336a",
+  "prompt_addendum": "project_update_2/claude_lid_instructions_v1_1.md",
+  "prompt_addendum_sha256": "02219c50dae2a84f82a7cec9c7bb0d8dabfbe7c004ac822bb8788eaab96b3876",
+  "harmonize": {
+    "candidates": 5423,
+    "extra_fixes": 3,
+    "fixes_overriding_decisions": 0,
+    "fixes_appended": 3,
+    "changes": 146
+  },
+  "relabel_script_sha256": "961d2751ddd59d521a07ae6ebaf94bc50d72eb68686e0c795c7504ba18055551"
+}
