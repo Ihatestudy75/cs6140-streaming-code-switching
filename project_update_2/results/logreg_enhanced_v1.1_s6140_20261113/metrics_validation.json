@@ -1,10 +1,16 @@
 {
-  "io_version": "0.5",
+  "io_version": "0.6",
   "run": "logreg_enhanced_v1.1_s6140_20261113",
   "backbone": "logreg",
   "split": "validation",
   "threshold": 0.25,
   "n_positions": 55912,
+  "coverage": {
+    "max_len": null,
+    "n_valid_labels_total": 55912,
+    "n_dropped_by_truncation": 0,
+    "n_switches_dropped_by_truncation": null
+  },
   "pooled": {
     "positions": 55912,
     "gold_switches": 3865,
@@ -146,7 +152,7 @@
       "switch_f1": 0.7368421052631579,
       "duration_support": 169,
       "duration_accuracy_oracle_switch": 0.650887573964497,
-      "duration_macro_f1_oracle_switch": 0.603186354092257,
+      "duration_macro_f1_oracle_switch": 0.6031863540922571,
       "duration_confusion_matrix": [
         [
           11,
@@ -178,7 +184,7 @@
       "switch_f1": 0.632,
       "duration_support": 632,
       "duration_accuracy_oracle_switch": 0.5965189873417721,
-      "duration_macro_f1_oracle_switch": 0.564121977401849,
+      "duration_macro_f1_oracle_switch": 0.5641219774018491,
       "duration_confusion_matrix": [
         [
           209,
@@ -228,7 +234,7 @@
           46
         ]
       ],
-      "joint_duration_macro_f1": 0.2942629769503154
+      "joint_duration_macro_f1": 0.29426297695031545
     },
     "ja_en": {
       "positions": 4603,
@@ -274,7 +280,7 @@
       "switch_f1": 0.7423167848699763,
       "duration_support": 204,
       "duration_accuracy_oracle_switch": 0.7107843137254902,
-      "duration_macro_f1_oracle_switch": 0.6705898268398269,
+      "duration_macro_f1_oracle_switch": 0.6705898268398268,
       "duration_confusion_matrix": [
         [
           24,
@@ -388,7 +394,7 @@
           62
         ]
       ],
-      "joint_duration_macro_f1": 0.28631561996779387
+      "joint_duration_macro_f1": 0.2863156199677939
     },
     "vi_en": {
       "positions": 3686,
@@ -500,7 +506,7 @@
       "switch_f1": 0.6162584309549166,
       "duration_support": 1315,
       "duration_accuracy_oracle_switch": 0.6250950570342205,
-      "duration_macro_f1_oracle_switch": 0.5662824832886493,
+      "duration_macro_f1_oracle_switch": 0.5662824832886494,
       "duration_confusion_matrix": [
         [
           107,
@@ -550,7 +556,7 @@
           390
         ]
       ],
-      "joint_duration_macro_f1": 0.34470403348368106
+      "joint_duration_macro_f1": 0.344704033483681
     }
   },
   "by_boundary": {
@@ -566,7 +572,7 @@
       "switch_f1": 0.7711060948081264,
       "duration_support": 1703,
       "duration_accuracy_oracle_switch": 0.6594245449207281,
-      "duration_macro_f1_oracle_switch": 0.47055977968283474,
+      "duration_macro_f1_oracle_switch": 0.47055977968283486,
       "duration_confusion_matrix": [
         [
           3,

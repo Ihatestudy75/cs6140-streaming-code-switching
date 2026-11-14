@@ -1,10 +1,16 @@
 {
-  "io_version": "0.5",
+  "io_version": "0.6",
   "run": "logreg_v1.1_s6140_20261113_mac",
   "backbone": "logreg",
   "split": "validation",
   "threshold": 0.27,
   "n_positions": 55912,
+  "coverage": {
+    "max_len": null,
+    "n_valid_labels_total": 55912,
+    "n_dropped_by_truncation": 0,
+    "n_switches_dropped_by_truncation": null
+  },
   "pooled": {
     "positions": 55912,
     "gold_switches": 3865,
@@ -274,7 +280,7 @@
       "switch_f1": 0.7253886010362695,
       "duration_support": 204,
       "duration_accuracy_oracle_switch": 0.5931372549019608,
-      "duration_macro_f1_oracle_switch": 0.5500059000459964,
+      "duration_macro_f1_oracle_switch": 0.5500059000459963,
       "duration_confusion_matrix": [
         [
           15,
@@ -370,7 +376,7 @@
       "switch_f1": 0.5981735159817352,
       "duration_support": 231,
       "duration_accuracy_oracle_switch": 0.5108225108225108,
-      "duration_macro_f1_oracle_switch": 0.44140951474541845,
+      "duration_macro_f1_oracle_switch": 0.4414095147454185,
       "duration_confusion_matrix": [
         [
           7,
@@ -500,7 +506,7 @@
       "switch_f1": 0.6101694915254238,
       "duration_support": 1315,
       "duration_accuracy_oracle_switch": 0.5855513307984791,
-      "duration_macro_f1_oracle_switch": 0.5333978046178683,
+      "duration_macro_f1_oracle_switch": 0.5333978046178685,
       "duration_confusion_matrix": [
         [
           85,
@@ -629,7 +635,7 @@
     },
     "sigma_by_lid_method": {
       "script_rule": {
-        "value": 0.09020271745021195,
+        "value": 0.09020271745021197,
         "mean": 0.618423164312663,
         "n_pairs": 6
       },
