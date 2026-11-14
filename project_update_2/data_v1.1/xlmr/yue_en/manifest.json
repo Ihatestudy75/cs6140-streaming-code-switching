@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "tokenizer": {
+    "model": "FacebookAI/xlm-roberta-base",
+    "revision": "e73636d4f797dec63c3081bb6ed5c7b0bb3f2089",
+    "tokenizer_sha256": "088aef1538504d68661da8cf24bc0f98581c0e356cc7060ad724232d5f7545f2"
+  },
+  "neutral_policy": "inherit_previous",
+  "end_policy": "observed",
+  "texts_sha256": "01c8b5542f001512c0bc2db921e4e645d156730648b2467bd90721ffaf221f06",
+  "lid_sha256": "f92ff3980ca950e955370918de98f2706f117ec65043e2b73662c27077a934fc",
+  "pipeline_sha256": "8806da9d7ecf818d64a5b1af57f55800f88b0eca990349c383fbe6c25b4a7098",
+  "allow_unreviewed": true,
+  "versions": {
+    "transformers": "4.57.6",
+    "tokenizers": "0.22.2"
+  }
+}

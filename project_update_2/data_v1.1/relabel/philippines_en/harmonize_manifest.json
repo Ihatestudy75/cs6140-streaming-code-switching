@@ -1,0 +1,8 @@
+{
+  "source_work": "project_update_1/data/v1.1_relabel/philippines_en/claude_work",
+  "candidates": 5423,
+  "changes": 146,
+  "candidates_sha256": "d7d7cf03db7906af21a2aeae7599f11f5962b3b2eb8d0b70aa99a77d01309ed2",
+  "decisions_sha256": "c75478d511c3f5ebacb72218a08dc4b4e5410f42c5b2b84c9babb6d401ba9bf3",
+  "script_sha256": "3ef33b726b907e89f7d97cfdd2e11f45f1e0f925e0ca8f1ff5fe70c69158336a"
+}
