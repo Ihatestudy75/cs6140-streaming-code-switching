@@ -1,0 +1,74 @@
+{
+  "backbone": "logreg",
+  "model_id": "causal-hashed-logistic-regression",
+  "data_tag": "data-v1.1",
+  "data": "mbert/combined/labeled_tokens.jsonl",
+  "splits": "mbert/combined/splits.jsonl",
+  "tokenizer_sha256": "78b44c32238e3b5e83d1deaa63c3fa1466ddf73547ce641a36f75180079ab45f",
+  "data_sha256": "8f6675fa3af86170597549d13e72831c1e4f96f15cba3c9cc89e93cf33b58c2a",
+  "split_sha256": "c866facf86697b80080e1416345ac19dd4083042046e71eb918e5580de4c87de",
+  "split_manifest_sha256": "a4952f94649b1c886da4ff6aa869e717924d78a578c92a0092088840d912f480",
+  "seed": 6140,
+  "max_len": 128,
+  "coverage": {
+    "train": {
+      "n_sequences": 18601,
+      "n_valid_labels_total": 480671,
+      "n_dropped_by_truncation": 14,
+      "n_positions": 480657
+    },
+    "validation": {
+      "n_sequences": 2180,
+      "n_valid_labels_total": 55912,
+      "n_dropped_by_truncation": 0,
+      "n_positions": 55912
+    },
+    "test": {
+      "n_sequences": 2148,
+      "n_valid_labels_total": 55666,
+      "n_dropped_by_truncation": 0,
+      "n_positions": 55666
+    }
+  },
+  "python": "3.9.6",
+  "sklearn": "1.6.1",
+  "numpy": "2.0.2",
+  "scipy": "1.13.1",
+  "git_commit": "007d94f5cee9bbcfdf4eb57bde62140002c67cd8",
+  "source_sha256": {
+    "train_v1_1.py": "19cdb897a483a2a574674666a08480d22d3d416f001f31efb3cd6311d3fe0476",
+    "train.py": "f99534e5a8c5fd0cd59743b2ffb4030666ffba02f1d5afa35e5abc572ba37402",
+    "model.py": "df8dad47c2e44cae2b59e5a78c1bf36dce7fe40c91f32bd393ed73aebe2d5b12",
+    "metrics.py": "9c2da2b25d18d6754e76d2bc2a1db4662b98cf607e6adf646fda83a070f6fdf5"
+  },
+  "grid": {
+    "windows": [
+      5,
+      20
+    ],
+    "C": [
+      0.1,
+      1.0
+    ],
+    "class_weight": [
+      null,
+      "balanced"
+    ]
+  },
+  "hash_features": 262144,
+  "feature_version": "causal-position-bag-suffix-v1",
+  "switch_selection": "validation pooled F1, thresholds 0.05..0.95 step 0.01; ties keep first",
+  "duration_selection": "validation macro F1 at gold switches with known duration",
+  "input_contract": "current and past token IDs only; no gold language IDs or future tokens",
+  "selected_switch": {
+    "window": 5,
+    "C": 1.0,
+    "class_weight": null,
+    "threshold": 0.27
+  },
+  "selected_duration": {
+    "window": 5,
+    "C": 0.1,
+    "class_weight": null
+  }
+}

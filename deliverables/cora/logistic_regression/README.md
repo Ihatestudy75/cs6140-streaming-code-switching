@@ -73,3 +73,45 @@ Recall is 90.49% after punctuation and 18.51% at non-punctuation boundaries. Non
 Only current and past token IDs enter the predictors. Gold labels, pair IDs, cs_type, full text, and future tokens are excluded from features. Boundary groups are used for analysis only. Existing subword segmentation is reused; this is not a complete raw-character streaming system.
 
 Labels are automatic. Prior test scores had already been viewed, so this is an exploratory comparison. The five-token window won only the limited validation search and is not an assignment requirement or a general optimum.
+
+## Data-v1.1 validation runs
+
+Use the official `data-v1.1_combined.zip` and its `mbert/combined` directory.
+The runners preserve the supplied split and use `--max-len 128` (126 subwords,
+reserving the same two special-token slots as the sequence collator).
+Run from the repository root with the dependencies listed above:
+
+```bash
+python3 deliverables/cora/logistic_regression/train_v1_1.py \
+  --combined /path/to/mbert/combined --max-len 128 --out /path/to/new-original-run
+python3 deliverables/cora/logistic_regression/train_enhanced.py \
+  --combined /path/to/mbert/combined --max-len 128 \
+  --vocab /path/to/frozen-mbert/vocab.txt --out /path/to/new-enhanced-run
+```
+
+The enhanced runner adds causal subword, punctuation, and Unicode-script features
+and compares 88 configurations. Both runners select switch parameters by pooled
+validation F1 and duration parameters by validation macro F1 at known gold
+switches. They export the standard validation predictions and retain models in
+the local output directory. Neither runner evaluates test.
+
+| Validation metric | Original LR | Enhanced LR |
+|---|---:|---:|
+| Switch F1 | 58.05% | 59.55% |
+| Switch precision | 60.60% | 59.59% |
+| Switch recall | 55.71% | 59.51% |
+| Duration macro F1 | 55.14% | 57.16% |
+| Joint F1 | 34.96% | 34.90% |
+
+These are validation-selected development scores, not held-out test estimates.
+The Update 1 test scores above are not directly comparable to this data version.
+
+Results and ablations:
+- [Original LR](../../../project_update_2/results/logreg_v1.1_s6140_20261113_mac/NOTES.md)
+- [Enhanced LR](../../../project_update_2/results/logreg_enhanced_v1.1_s6140_20261113/NOTES.md)
+
+Run the feature and baseline checks from this directory:
+
+```bash
+python3 -m unittest test_model test_boundary_rules test_enhanced -v
+```
