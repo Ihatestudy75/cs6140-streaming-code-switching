@@ -10,7 +10,10 @@ Usage (from repo root):
 
 Outputs in --run:
   predictions_<split>.jsonl       one line per position with a valid switch label
-  predictions_<split>_meta.json   run, split, threshold, counts
+  predictions_<split>_meta.json   run, split, threshold, counts, and coverage:
+                                  n_valid_labels_total (valid switch labels before truncation),
+                                  n_dropped_by_truncation (= n_valid_labels_total - n_positions),
+                                  n_switches_dropped_by_truncation
   threshold.json                  written only by --tune-threshold on validation
 
 Each prediction line:
@@ -113,9 +116,16 @@ def main():
     with open(path, 'w', encoding='utf-8') as f:
         for r in preds:
             f.write(json.dumps(r) + '\n')
+    # Coverage: positions cut by max_len get no prediction, so count them here.
+    n_valid_total = sum(sum(y != -1 for y in r['switch_labels']) for r in rows)
+    n_switches_total = sum(sum(y == 1 for y in r['switch_labels']) for r in rows)
+    n_true_switches = sum(r['y_switch'] for r in preds)
     meta = {'run': a.run, 'backbone': cfg['backbone'], 'model_id': cfg['model_id'], 'split': a.split,
             'threshold': threshold, 'n_sequences': len(rows), 'n_positions': len(preds),
-            'n_true_switches': sum(r['y_switch'] for r in preds), 'checkpoint_epoch': ckpt['epoch']}
+            'n_true_switches': n_true_switches, 'checkpoint_epoch': ckpt['epoch'],
+            'max_len': cfg['max_len'], 'n_valid_labels_total': n_valid_total,
+            'n_dropped_by_truncation': n_valid_total - len(preds),
+            'n_switches_dropped_by_truncation': n_switches_total - n_true_switches}
     with open(os.path.join(a.run, f'predictions_{a.split}_meta.json'), 'w', encoding='utf-8') as f:
         json.dump(meta, f, indent=2)
 
@@ -127,6 +137,8 @@ def main():
     print(f'{a.split}: {len(preds)} positions, threshold {threshold:.2f}, '
           f'switch F1 {switch_f1(preds, threshold):.4f}, '
           f'duration acc {np.mean([r["duration_pred"] == r["y_duration"] for r in dur]):.4f} ({len(dur)} switches)')
+    print(f'coverage: {len(preds)} of {n_valid_total} valid labels scored, '
+          f'{meta["n_dropped_by_truncation"]} dropped by max_len {cfg["max_len"]}')
     for pair, items in sorted(by_pair.items()):
         print(f'  {pair:8s} F1 {switch_f1(items, threshold):.4f}  ({len(items)} positions)')
     print(f'wrote {path}')
