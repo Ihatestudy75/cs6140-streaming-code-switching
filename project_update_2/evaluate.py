@@ -35,6 +35,10 @@ LID_GROUPS = {
 }
 
 
+COVERAGE_FIELDS = ['max_len', 'n_valid_labels_total', 'n_dropped_by_truncation',
+                   'n_switches_dropped_by_truncation']   # written by predict.py (PR #17)
+
+
 def read_jsonl(path):
     with open(path, encoding='utf-8') as f:
         return [json.loads(line) for line in f if line.strip()]
@@ -101,6 +105,9 @@ def main():
     with open(os.path.join(a.run, f'predictions_{a.split}_meta.json'), encoding='utf-8') as f:
         meta = json.load(f)
     threshold = meta['threshold']
+    coverage = {k: meta.get(k) for k in COVERAGE_FIELDS}
+    if coverage['n_dropped_by_truncation']:
+        print(f"WARNING: {coverage['n_dropped_by_truncation']} positions were cut by max_len and are not scored")
 
     # 2. Pooled: all positions together.
     pooled = score_group([to_item(r) for r in rows], threshold)
@@ -141,8 +148,8 @@ def main():
     absent = sorted(known - set(all_pairs))
     if absent:
         print(f'WARNING: {len(absent)} of 14 pairs have no {a.split} positions: {absent}')
-    out = {'io_version': '0.5', 'run': meta.get('run', a.run), 'backbone': meta.get('backbone'),
-           'split': a.split, 'threshold': threshold, 'n_positions': len(rows),
+    out = {'io_version': '0.6', 'run': meta.get('run', a.run), 'backbone': meta.get('backbone'),
+           'split': a.split, 'threshold': threshold, 'n_positions': len(rows), 'coverage': coverage,
            'pooled': pooled, 'per_pair': per_pair, 'by_lid_method': by_lid_method, 'by_boundary': by_boundary,
            'universality': universality}
     path = os.path.join(a.run, f'metrics_{a.split}.json')

@@ -1,8 +1,8 @@
-# Experiment IO Standard (v0.5)
+# Experiment IO Standard (v0.6)
 
 Owner: Yufan · Applies to: `project_update_2/` and the Final deliverables (Performance JSONs)
-Status: **DRAFT for group review.** Items marked `[CONFIRM]` need a group decision; items marked
-`[GAP]` are missing from the current code and have an owner.
+Status: **Adopted by the group.** All `[CONFIRM]` items are decided and all `[GAP]` items are
+implemented (PR #11 for `config.json`, PR #17 for the coverage fields).
 
 v0.2 documents what PR #9 (`train.py`, `predict.py`, `data.py`) **already writes** and adds only
 what is missing. Where this document and the code disagree on a name, the code wins and this
@@ -132,12 +132,17 @@ locally by (`sequence_id`, `position`), so prediction files stay small and text-
 
 ### `predictions_<split>_meta.json`
 
-Current fields: `run`, `backbone`, `model_id`, `split`, `threshold`, `n_sequences`,
-`n_positions`, `n_true_switches`, `checkpoint_epoch`.
+Fields: `run`, `backbone`, `model_id`, `split`, `threshold`, `n_sequences`, `n_positions`,
+`n_true_switches`, `checkpoint_epoch`, and the coverage fields added by PR #17:
 
-`[GAP]` (owner: Shaoyu or Yufan) — add `n_valid_labels_total` (valid switch labels before
-truncation) and `n_dropped_by_truncation`. `predict.py` skips positions cut by `max_len`
-without counting them; without these two numbers we cannot say how much of the test set was scored.
+| Field | Meaning |
+|---|---|
+| `max_len` | `max_len` used by this run |
+| `n_valid_labels_total` | valid switch labels in the split before truncation |
+| `n_dropped_by_truncation` | `n_valid_labels_total − n_positions`: positions cut by `max_len`, not scored |
+| `n_switches_dropped_by_truncation` | true switches among the dropped positions |
+
+On data-v1.1 with `max_len 128`, validation drops 0 positions for both backbones.
 
 ### `threshold.json`
 
@@ -175,6 +180,8 @@ number in the comparison table comes from the same code.
   "split": "validation",
   "threshold": 0.31,
   "n_positions": 98123,
+  "coverage": {"max_len": 128, "n_valid_labels_total": 98123, "n_dropped_by_truncation": 0,
+               "n_switches_dropped_by_truncation": 0},
   "pooled":        { "...": "score_group output, see below" },
   "per_pair":      { "fr_en": { "...": "score_group output" } },
   "by_lid_method": { "script_rule": { "...": "score_group output" }, "llm": {} },
@@ -191,6 +198,8 @@ number in the comparison table comes from the same code.
 }
 ```
 
+- `coverage` is copied from `predictions_<split>_meta.json` (§4); a field is `null` if the meta file
+  predates PR #17.
 - `by_boundary` is `null` when `--data` is not given. A group appears only if it has positions.
 - `by_lid_method` pools all positions of the pairs in a group (one `score_group` call per group).
 
@@ -292,3 +301,5 @@ when a tokenizer is re-frozen (e.g. data-v1.1).
   `by_cs_type` deferred to the Final
 - v0.5 (2026-11-13) — data-v1.1 relabels fr/de/it/philippines with the LLM method on a fresh
   unscreened sample: LID groups become `script_rule` (6) and `llm` (8); `sigma_core10` removed
+- v0.6 (2026-11-14) — §4 coverage fields from PR #17 (the last `[GAP]`); `coverage` block in
+  `metrics_<split>.json`; status changed to adopted
