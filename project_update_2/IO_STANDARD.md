@@ -1,4 +1,4 @@
-# Experiment IO Standard (v0.3)
+# Experiment IO Standard (v0.5)
 
 Owner: Yufan · Applies to: `project_update_2/` and the Final deliverables (Performance JSONs)
 Status: **DRAFT for group review.** Items marked `[CONFIRM]` need a group decision; items marked
@@ -44,7 +44,7 @@ project_update_2/results/<run_id>/       # committed to GitHub — text-free cop
   threshold.json
   predictions_<split>.jsonl[.gz]         # gzip if > ~20 MB
   predictions_<split>_meta.json
-  metrics_<split>.json                   # written by the team evaluation code (Yulun)
+  metrics_<split>.json                   # written by project_update_2/evaluate.py
   NOTES.md                               # optional free text
 ```
 
@@ -146,87 +146,98 @@ Criterion: maximize **pooled** switch F1 on validation (see §6).
 
 ---
 
-## 5. `metrics_<split>.json` (written by the team evaluation code — Yulun)
+## 5. `metrics_<split>.json` (written by `project_update_2/evaluate.py`)
 
-Computed only from `predictions_<split>.jsonl` + `threshold.json` + local join data.
-The logistic regression baseline writes the same file (`backbone = "logreg"`).
+```bash
+python project_update_2/evaluate.py --run project_update_2/runs/<run_id> --split validation \
+    --data <local labeled_tokens.jsonl the run used>
+```
+
+Inputs: `predictions_<split>.jsonl` and `predictions_<split>_meta.json` (the threshold is read from the
+meta file, so scoring uses exactly the threshold the predictions were made with). `--data` is optional
+and local only: it supplies `text` and `offsets` for the punctuation groups; nothing from it is written out.
+
+Scoring code is **not re-implemented**. `evaluate.py` imports from the frozen baseline folder
+`deliverables/cora/logistic_regression/`:
+- `metrics.score_group()` for every switch / duration number,
+- `boundary_rules.boundary_kind()` / `boundary_group()` for `by_boundary`.
+
+The logistic regression baseline is scored with the same script (`backbone = "logreg"`), so every
+number in the comparison table comes from the same code.
+
+### Top-level structure
 
 ```json
 {
-  "io_version": "0.3",
-  "run_id": "xlmr_v1.1_s6140_20261113-1430",
+  "io_version": "0.5",
+  "run": "xlmr_v1.1_s6140_20261113-1430",
+  "backbone": "xlmr",
   "split": "validation",
   "threshold": 0.31,
-  "coverage": {"n_valid_labels_total": 0, "n_positions": 0, "n_dropped_by_truncation": 0},
-
-  "pooled": {
-    "switch":   {"precision": 0.0, "recall": 0.0, "f1": 0.0, "n_pos": 0, "n_positions": 0},
-    "duration": {"accuracy": 0.0, "macro_f1": 0.0, "n": 0,
-                 "per_class": {"0": {"precision": 0.0, "recall": 0.0, "f1": 0.0, "support": 0},
-                               "1": {"precision": 0.0, "recall": 0.0, "f1": 0.0, "support": 0},
-                               "2": {"precision": 0.0, "recall": 0.0, "f1": 0.0, "support": 0}},
-                 "confusion_matrix": [[0,0,0],[0,0,0],[0,0,0]]},
-    "joint_macro_f1": 0.0
-  },
-  "by_boundary": {
-    "after_punct": {"precision": 0.0, "recall": 0.0, "f1": 0.0, "n_pos": 0},
-    "non_punct":   {"precision": 0.0, "recall": 0.0, "f1": 0.0, "n_pos": 0}
-  },
-  "per_pair": {
-    "fr_en": {"lid_method": "lingua",
-              "switch": {"precision": 0.0, "recall": 0.0, "f1": 0.0, "n_pos": 0},
-              "duration": {"accuracy": 0.0, "macro_f1": 0.0, "n": 0}}
-  },
-  "by_cs_type": {
-    "intrasentential": {"switch": {"precision": 0.0, "recall": 0.0, "f1": 0.0, "n_pos": 0}}
-  },
+  "n_positions": 98123,
+  "pooled":        { "...": "score_group output, see below" },
+  "per_pair":      { "fr_en": { "...": "score_group output" } },
+  "by_lid_method": { "script_rule": { "...": "score_group output" }, "llm": {} },
+  "by_boundary":   { "punctuation": {}, "within_clause_proxy": {}, "unclassified": {} },
   "universality": {
-    "metric": "per_pair.switch.f1",
+    "metric": "per_pair.switch_f1",
     "ddof": 0,
-    "sigma_all": {"value": 0.0, "n_pairs": 14, "mean": 0.0},
-    "sigma_core10": {"value": 0.0, "n_pairs": 10, "mean": 0.0},
+    "sigma_all":    {"value": 0.0, "mean": 0.0, "n_pairs": 14},
     "sigma_by_lid_method": {
-      "script_rule": {"value": 0.0, "n_pairs": 6, "mean": 0.0},
-      "llm":         {"value": 0.0, "n_pairs": 4, "mean": 0.0},
-      "lingua":      {"value": 0.0, "n_pairs": 4, "mean": 0.0}
+      "script_rule": {"value": 0.0, "mean": 0.0, "n_pairs": 6},
+      "llm":         {"value": 0.0, "mean": 0.0, "n_pairs": 8}
     }
   }
 }
 ```
 
-### Metric definitions
+- `by_boundary` is `null` when `--data` is not given. A group appears only if it has positions.
+- `by_lid_method` pools all positions of the pairs in a group (one `score_group` call per group).
 
-- **Anticipatory (switch) F1** — positive class = switch at t+1; over rows of the prediction
-  file (all have `y_switch != -1`); predicted positive when `p_switch >= threshold`.
-- **Duration accuracy / macro F1** — over rows with `y_duration != -1` (gold switches), using
-  `duration_pred`. This measures the duration head alone. Both are required: ~65% of bursts are
-  Large, so accuracy alone flatters a model that always says "long".
-- **joint_macro_f1** — same definition as the Update 1 baseline: `joint_duration_macro_f1` from
-  `score_group()` in `deliverables/cora/logistic_regression/metrics.py` (frozen for comparability).
-  Per duration class k: TP = predicted switch, gold switch, and correct duration; FP = predicted
-  switch but no gold switch or a wrong duration (counted in the predicted class); FN = a gold switch
-  with a known duration that was missed or given the wrong duration (counted in the gold class).
-  Gold switches without a duration label are skipped. Score = mean F1 over the 3 classes.
-  The evaluation code calls `score_group()` directly instead of re-implementing it.
-- **by_boundary** — `after_punct`: subword x_t is punctuation; `non_punct`: all other positions.
-  Same rule as the Update 1 baseline evaluation.
-- **σ (universality)** — population std (`ddof = 0`) of per-pair switch F1 at the run's
-  threshold; over all 14 pairs, within each LID group, and over the core 10 pairs.
-- **core 10 pairs** — all pairs except fr_en, de_en, it_en, philippines_en (`SCREENED_PAIRS` in the
-  baseline's `metrics.py`). After the Update 1 screening these four keep only the retained part of
-  their data, so they are not a comparable sample. The core 10 are exactly the `script_rule` and
-  `llm` groups.
-- **by_cs_type** — optional for Update 2; needed for the Final (intra- vs inter-sentential).
+### `score_group()` output (every block above that says so)
+
+| Field | Meaning |
+|---|---|
+| `positions` | scored positions (rows of the prediction file in this group) |
+| `gold_switches`, `tp`, `fp`, `fn`, `tn` | confusion counts for switch at t+1, with `p_switch >= threshold` |
+| `precision`, `recall`, `switch_f1` | **Anticipatory (switch) F1** and its parts, positive class = switch |
+| `duration_support` | gold switches that have a duration label (`y_duration != -1`) |
+| `duration_accuracy_oracle_switch` | duration accuracy on those gold switches (`null` if none) |
+| `duration_macro_f1_oracle_switch` | mean F1 over the 3 duration classes on the same positions |
+| `duration_confusion_matrix` | 3 × 3, rows = gold class, columns = predicted class |
+| `joint_duration_macro_f1` | mean over the 3 classes of F1 where a TP needs predicted switch + gold switch + correct duration |
+
+"oracle_switch" = the duration head is judged on gold switches only ("if we know a switch is coming,
+how long is it?"). Accuracy and macro F1 are both reported because ~65% of bursts are class 2 (7+).
+
+### Definitions
+
+- **by_boundary** — for the row at position t, look at the observed text through the end offset of
+  subword t (never t+1), drop trailing whitespace, and take the last character: Unicode category `P*`
+  → `punctuation`; otherwise → `within_clause_proxy`; nothing observed → `unclassified`.
+  `within_clause_proxy` is a proxy, not a syntactic clause label.
+- **σ (universality)** — population std (`ddof = 0`) of per-pair `switch_f1` at the run's single
+  threshold: over all pairs present (`sigma_all`) and within each LID group. **With fewer than 2 pairs, `value` is `null`** (`mean` and `n_pairs` are still given):
+  the std of one number is 0, which would wrongly read as "perfectly universal".
+  A whole entry is `null` when none of its pairs is present.
+- **No `sigma_core10` in data-v1.1.** It excluded fr_en, de_en, it_en and philippines_en because after
+  the Update 1 screening they kept only part of their data. In data-v1.1 these four are resampled from
+  the raw CSV (500 records, seed `6140:<pair>`, the same rule as the other pairs) without screening, so
+  all 14 pairs are comparable samples and the exclusion has no basis. (The frozen baseline `metrics.py`
+  still defines `SCREENED_PAIRS` for Update 1; `evaluate.py` does not use it.)
+- **by_cs_type** — deferred to the Final (intra- vs inter-sentential analysis).
+- `evaluate.py` prints a warning when a pair is missing from the split or is not in any LID group.
 
 ### LID method groups
 
 | Group | Pairs |
 |---|---|
 | `script_rule` | ar_en, zh_en, ja_en, yue_en, ko_en, ru_en |
-| `llm` | es_en, vi_en, ms_en, hi_en* |
-| `lingua` | fr_en, de_en, it_en, philippines_en |
+| `llm` | es_en, vi_en, ms_en, hi_en*, fr_en, de_en, it_en, philippines_en |
 
 \* hi_en is Rule + Claude; grouped as `llm` because most of its text is romanized.
+fr_en, de_en, it_en and philippines_en used Lingua in Update 1; in data-v1.1 they are relabeled with
+the LLM method (Yulun), so there is no Lingua group.
 Pair names are the `language_pair` values in the data (confirmed by Yulun; DATA_V1.1.md §4 uses the same names).
 
 ---
@@ -276,3 +287,8 @@ when a tokenizer is re-frozen (e.g. data-v1.1).
   split name `validation`, threshold criterion, gaps with owners, tokenizer guard
 - v0.3 (2026-11-13) — Yulun's review: joint_macro_f1 definition (reuse `score_group()`),
   pair names confirmed, σ adds `sigma_core10`
+- v0.4 (2026-11-13) — §5 rewritten to match `evaluate.py`: `score_group()` field names, `by_lid_method`,
+  `by_boundary` from the baseline's `boundary_rules.py`, σ is `null` with fewer than 2 pairs,
+  `by_cs_type` deferred to the Final
+- v0.5 (2026-11-13) — data-v1.1 relabels fr/de/it/philippines with the LLM method on a fresh
+  unscreened sample: LID groups become `script_rule` (6) and `llm` (8); `sigma_core10` removed
