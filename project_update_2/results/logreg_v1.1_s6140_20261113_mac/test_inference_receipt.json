@@ -1,0 +1,14 @@
+{
+  "status": "complete",
+  "model_sha256": "cced6dd63f1f42f330846da5dcee78afefae4198f5539bc5a58b30de1f730eb2",
+  "threshold": 0.27,
+  "threshold_source": "validation",
+  "fit_calls": 0,
+  "data_sha256": "8f6675fa3af86170597549d13e72831c1e4f96f15cba3c9cc89e93cf33b58c2a",
+  "split_sha256": "c866facf86697b80080e1416345ac19dd4083042046e71eb918e5580de4c87de",
+  "predictions_sha256": "4737497add07b6b3fae16f577653531c0741d123ecb7fc4905d8a0b73175d910",
+  "inference_calls": {
+    "switch_predict_proba": 1,
+    "duration_predict_proba": 1
+  }
+}
