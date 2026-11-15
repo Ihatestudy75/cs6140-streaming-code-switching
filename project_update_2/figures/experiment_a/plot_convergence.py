@@ -5,7 +5,7 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
-from matplotlib.ticker import PercentFormatter
+from matplotlib.ticker import PercentFormatter, MultipleLocator
 import numpy as np
 ROOT=Path(__file__).resolve().parent
 
@@ -27,7 +27,7 @@ legend=[Line2D([0],[0],color=COLORS[k],lw=2.6,label=LABELS[k]) for k in COLORS]
 legend += [Line2D([0],[0],color='#697482',lw=2,label='Training: 100-step moving average'),Line2D([0],[0],color='#697482',lw=1.8,ls='--',marker='o',markersize=4,label='Validation: epoch-end observations')]
 fig.legend(handles=legend,loc='upper left',bbox_to_anchor=(.058,.885),ncol=4,frameon=False,fontsize=10,handlelength=2.5,columnspacing=2.4)
 losses=[('loss_total','Total loss'),('loss_switch','Switch loss'),('loss_duration','Duration loss')]
-metrics=[('switch_f1','Validation switch F1'),('switch_recall','Validation switch recall'),('duration_acc','Validation duration accuracy')]
+metrics=[('switch_f1','Validation switch F1\n(threshold 0.5)'),('switch_recall','Validation switch recall\n(threshold 0.5)'),('duration_acc','Validation duration accuracy')]
 export=[];summary=[]
 for model in COLORS:
  rows=[json.loads(l) for l in read_source(model,'train_log.jsonl').splitlines()]
@@ -44,18 +44,18 @@ for model in COLORS:
   for step,epoch,raw,smooth in zip(steps,x,y,ma):export.append({'model':model,'split':'train','step':int(step),'epoch':float(epoch),'metric':key,'raw':float(raw),'moving_average':float(smooth)})
  for ax,(key,title) in zip(axs[1],metrics):
   vals=[r[key] for r in valid];ax.plot(vx,vals,color=COLORS[model],lw=1.8,ls='--',marker='o',markersize=5)
-  ax.set_title(title,loc='left',pad=10);ax.yaxis.set_major_formatter(PercentFormatter(1,decimals=0))
+  ax.set_title(title,loc='left',pad=10);ax.yaxis.set_major_locator(MultipleLocator(.02));ax.yaxis.set_major_formatter(PercentFormatter(1,decimals=0))
   for r in valid:export.append({'model':model,'split':'validation','step':r['step'],'epoch':r['epoch'],'metric':key,'raw':r[key],'moving_average':''})
  for r in valid:
   for key,_ in losses:export.append({'model':model,'split':'validation','step':r['step'],'epoch':r['epoch'],'metric':key,'raw':r[key],'moving_average':''})
- threshold=json.loads(read_source(model,'threshold.json'));summary.append(f"{LABELS[model]}: {threshold['validation_switch_f1']:.3f} at threshold {threshold['threshold']:.2f}")
+ threshold=json.loads(read_source(model,'threshold.json'));summary.append(f"{LABELS[model]}: {threshold['validation_switch_f1']:.2%} at threshold {threshold['threshold']:.2f}")
 for ax in axs.flat:
  ax.set_xlim(0,4.12);ax.set_xticks([0,1,2,3,4]);ax.set_xlabel('Epoch');ax.grid(True,axis='y');ax.set_axisbelow(True)
 axs[1,0].set_ylim(.50,.66);axs[1,1].set_ylim(.40,.60);axs[1,2].set_ylim(.52,.62)
 fig.text(.065,.105,'Training curves: trailing mean of up to 100 steps; faint lines show raw batch losses. Validation points are not smoothed.',fontsize=9,color='#596574')
 fig.text(.065,.077,'Switch curves use the logged 0.5 threshold. Final threshold-tuned F1 (separate evaluation): '+'; '.join(summary)+'.',fontsize=9,color='#596574')
 fig.text(.065,.049,'Duration accuracy is measured at gold switches with known duration. Duration labels use each tokenizer\'s own subword counts.',fontsize=9,color='#596574')
-for ext in ('png','pdf'):fig.savefig(ROOT/f'experiment_a_convergence.{ext}',dpi=200,facecolor='white')
-manifest={'repository':'https://github.com/Ihatestudy75/cs6140-streaming-code-switching','commit':SOURCE_COMMIT,'runs':RUNS,'smoothing':'Trailing arithmetic mean, 100 optimizer steps; partial windows at beginning; training losses only','validation':'Unsmooth epoch-end values; switch metrics at argmax threshold 0.5','source_sha256':{model+'_train_log.jsonl':hashlib.sha256(read_source(model,'train_log.jsonl').encode()).hexdigest() for model in RUNS},'outputs':['experiment_a_convergence.png','experiment_a_convergence.pdf']}
+for ext in ('png','pdf','svg'):fig.savefig(ROOT/f'experiment_a_convergence.{ext}',dpi=200,facecolor='white')
+manifest={'repository':'https://github.com/Ihatestudy75/cs6140-streaming-code-switching','commit':SOURCE_COMMIT,'runs':RUNS,'smoothing':'Trailing arithmetic mean, 100 optimizer steps; partial windows at beginning; training losses only','validation':'Unsmooth epoch-end values; switch metrics at argmax threshold 0.5','source_sha256':{model+'_train_log.jsonl':hashlib.sha256(read_source(model,'train_log.jsonl').encode()).hexdigest() for model in RUNS},'outputs':['experiment_a_convergence.png','experiment_a_convergence.pdf','experiment_a_convergence.svg']}
 (ROOT/'plot_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
 print('Generated PNG, PDF and provenance manifest; verified 4652 training steps and 4 validation observations per model.')

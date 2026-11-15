@@ -13,6 +13,7 @@
   },
   "outputs": [
     "experiment_a_convergence.png",
-    "experiment_a_convergence.pdf"
+    "experiment_a_convergence.pdf",
+    "experiment_a_convergence.svg"
   ]
 }
