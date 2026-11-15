@@ -1,0 +1,19 @@
+{
+  "repository": "https://github.com/Ihatestudy75/cs6140-streaming-code-switching",
+  "commit": "7fe37273bdfe6fd0e90e5f6788072dafe63161f4",
+  "runs": {
+    "mbert": "mbert_v1.1_s6140_20261113-1805",
+    "xlmr": "xlmr_v1.1_s6140_20261113-1823"
+  },
+  "smoothing": "Trailing arithmetic mean, 100 optimizer steps; partial windows at beginning; training losses only",
+  "validation": "Unsmooth epoch-end values; switch metrics at argmax threshold 0.5",
+  "source_sha256": {
+    "mbert_train_log.jsonl": "fe0ea08fc44c21a31c3515be3660060956f2435d809f903ea7987f1dc1e1713c",
+    "xlmr_train_log.jsonl": "f4fd1cb12e2cede2f7649e92533cac685194fa6b41428382f298d7a58d904830"
+  },
+  "outputs": [
+    "experiment_a_convergence.png",
+    "experiment_a_convergence.pdf",
+    "experiment_a_convergence.svg"
+  ]
+}
