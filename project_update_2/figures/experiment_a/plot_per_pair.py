@@ -1,4 +1,5 @@
-"""Plot the verified three-model validation comparison, without retraining."""
+"""Plot validation or test per-pair F1 from saved results, without inference."""
+import argparse
 import json
 import os
 from pathlib import Path
@@ -10,12 +11,34 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 ROOT = Path(__file__).resolve().parent
-data = json.loads((ROOT / 'comparison/comparison.json').read_text())
-models = data['models']
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--split', choices=['validation', 'test'], default='validation')
+args = parser.parse_args()
+if args.split == 'validation':
+    data = json.loads((ROOT / 'comparison/comparison.json').read_text())
+    models = data['models']
+    n_sequences = 2180
+else:
+    results = ROOT.parents[1] / 'results'
+    runs = ['logreg_enhanced_v1.1_s6140_20261113',
+            'mbert_v1.1_s6140_20261113-1805', 'xlmr_v1.1_s6140_20261113-1823']
+    models = []
+    sequence_sets = []
+    for run in runs:
+        folder = results / run
+        metrics = json.loads((folder / 'metrics_test.json').read_text())
+        threshold = json.loads((folder / 'threshold.json').read_text())['threshold']
+        meta = json.loads((folder / 'predictions_test_meta.json').read_text())
+        assert metrics['split'] == 'test' and metrics['threshold'] == threshold == meta['threshold']
+        assert meta['n_sequences'] == 2148 and meta['max_len'] == 128
+        with (folder / 'predictions_test.jsonl').open() as f:
+            sequence_sets.append({json.loads(line)['sequence_id'] for line in f})
+        models.append(metrics)
+    assert sequence_sets[0] == sequence_sets[1] == sequence_sets[2]
+    n_sequences = 2148
 pairs = sorted(models[0]['per_pair'])
 assert len(models) == 3 and len(pairs) == 14
 assert all(set(m['per_pair']) == set(pairs) for m in models)
-assert data['split'] == 'validation'
 
 plt.rcParams.update({
     'font.family': 'DejaVu Sans', 'font.size': 11,
@@ -27,7 +50,7 @@ plt.rcParams.update({
 fig, ax = plt.subplots(figsize=(17, 8))
 fig.subplots_adjust(left=.065, right=.985, bottom=.22, top=.76)
 fig.text(.065, .94, 'Experiment A | Switch F1 by language pair', fontsize=23, weight='bold')
-fig.text(.065, .89, 'Validation  ·  data-v1.1  ·  2,180 sequences  ·  seed 6140  ·  max_len 128',
+fig.text(.065, .89, f'{args.split.title()}  ·  data-v1.1  ·  {n_sequences:,} sequences  ·  seed 6140  ·  max_len 128',
          fontsize=12, color='#596574')
 colors = ['#708174', '#2269B0', '#D46C23']
 labels = ['LR baseline (enhanced)', 'mBERT', 'XLM-R']
@@ -54,9 +77,12 @@ pooled = '   |   '.join(f"{label}: {model['pooled']['switch_f1'] * 100:.2f}%"
 fig.text(.065, .125, f'Pooled switch F1 — {pooled}', fontsize=11, weight='semibold')
 fig.text(.065, .078, 'Each model uses its validation-tuned threshold. Shared scorer; LR uses mBERT tokenization.',
          fontsize=10, color='#596574')
-fig.text(.065, .044, 'XLM-R uses different subword positions. ph–en denotes philippines_en. Validation results; no test evaluation.',
+fig.text(.065, .044, 'XLM-R uses different subword positions. ph–en denotes philippines_en. ' + ('Validation results; test reported separately.' if args.split == 'validation' else 'Test results; thresholds fixed from validation.'),
          fontsize=10, color='#596574')
+stem = 'experiment_a_per_pair_f1' + ('_test' if args.split == 'test' else '')
 for extension in ['png', 'pdf', 'svg']:
-    fig.savefig(ROOT / f'experiment_a_per_pair_f1.{extension}', dpi=200, facecolor='white')
+    fig.savefig(ROOT / f'{stem}.{extension}', dpi=200, facecolor='white')
+svg = ROOT / f'{stem}.svg'
+svg.write_text('\n'.join(line.rstrip() for line in svg.read_text().splitlines()) + '\n')
 plt.close(fig)
 print('Created PNG, PDF and SVG: 42 bars from verified per-pair metrics.')
