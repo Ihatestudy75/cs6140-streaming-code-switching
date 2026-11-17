@@ -110,7 +110,7 @@ Text-free files (in this repository):
 | fr/de/it/philippines: labels as character offsets, sample and pilot ids, `cs_type`, review and harmonization records | [`data_v1.1/relabel/<pair>/`](data_v1.1/relabel/) |
 | ar/zh/ja/es/vi/hi: Update 1 records (labels, ids, `cs_type`, review) | [`deliverables/yulun/<pair>/`](../deliverables/yulun/) |
 | yue/ko/ru/ms: Update 1 records | [`deliverables/shaoyu/<pair>/`](../deliverables/shaoyu/) |
-| fr/de/it/philippines, Update 1 Lingua version (superseded, not used in v1.1) | branch `data/yufan`, `deliverables/yufan/` |
+| fr/de/it/philippines, Update 1 Lingua version (superseded, not used in v1.1) | removed from the repository on 2026-11-17 because it contained SwitchLingua text; see [`HISTORY_REWRITE.md`](HISTORY_REWRITE.md) |
 
 Files with text (private Drive only): `data-v1.1_combined.zip` holds
 `{mbert,xlmr}/combined/{labeled_tokens,splits,split_manifest}`, the inputs of `train.py`.
