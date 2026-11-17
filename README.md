@@ -1,5 +1,16 @@
 # cs6140-streaming-code-switching
 
+## Project Update 2 (current)
+
+The dual-head causal model, data-v1.1 and all Update 2 results are in [`project_update_2/`](project_update_2/).
+Start with [`project_update_2/README.md`](project_update_2/README.md): contents, how to reproduce Experiment A, and the results table.
+
+- Data standard: [`project_update_2/DATA_V1.1.md`](project_update_2/DATA_V1.1.md)
+- Run outputs: [`project_update_2/results/`](project_update_2/results/)
+- Figures: [`project_update_2/figures/`](project_update_2/figures/)
+
+The sections below document the Update 1 data pipeline. In data-v1.1, French, German, Italian and Filipino were resampled and relabeled (see [`project_update_2/RELABEL_V1_1.md`](project_update_2/RELABEL_V1_1.md)), so the Lingua instructions for these four pairs describe Update 1 only.
+
 Group 8's CS6140 project on streaming code-switching prediction.
 
 For Project Update 1, choose the section matching the language pairs you want to process:
